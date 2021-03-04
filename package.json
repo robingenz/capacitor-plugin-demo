@@ -8,8 +8,10 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
+    "test:ci": "ng test --watch=false --progress=false --code-coverage --browsers=HeadlessChrome",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "e2e:ci": "ng e2e --protractorConfig=e2e/protractor-ci.conf.js",
     "prettier:write": "npx prettier --write \"{src,e2e/src}/**/*\" --ignore-unknown",
     "prettier:check": "npx prettier --check \"{src,e2e/src}/**/*\" --ignore-unknown"
   },
@@ -49,6 +51,7 @@
     "karma-jasmine-html-reporter": "^1.5.0",
     "prettier": "^2.2.1",
     "protractor": "~7.0.0",
+    "puppeteer": "^8.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~4.0.2"
