@@ -49,7 +49,7 @@ npx ionic cap run ios
 
 This project uses [Ionic](https://ionicframework.com/) as app development platform and the [Ionic CLI](https://ionicframework.com/docs/cli).
 
-<-- ## Changelog
+<!-- ## Changelog
 
 See [CHANGELOG.md](https://github.com/robingenz/capacitor-plugin-demo/blob/main/CHANGELOG.md). -->
 
