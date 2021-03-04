@@ -1,0 +1,7 @@
+{
+  "name": "capacitor-plugin-demo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
