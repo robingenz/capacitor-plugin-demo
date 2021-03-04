@@ -9,7 +9,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "prettier:write": "npx prettier --write \"{src,e2e/src}/**/*\" --ignore-unknown",
+    "prettier:check": "npx prettier --check \"{src,e2e/src}/**/*\" --ignore-unknown"
   },
   "private": true,
   "dependencies": {
@@ -45,6 +47,7 @@
     "karma-coverage-istanbul-reporter": "~3.0.2",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
+    "prettier": "^2.2.1",
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
