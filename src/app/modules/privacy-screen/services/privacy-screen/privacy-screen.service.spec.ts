@@ -1,39 +1,29 @@
 import { TestBed } from '@angular/core/testing';
-import { PrivacyScreenPlugin } from '@capacitor-community/privacy-screen';
-import { Plugins } from '@capacitor/core';
+import { PrivacyScreen } from '@capacitor-community/privacy-screen';
 import { PrivacyScreenService } from './privacy-screen.service';
 
 describe('PrivacyScreenService', () => {
   let service: PrivacyScreenService;
-  let originalPrivacyScreen: PrivacyScreenPlugin;
 
   beforeEach(() => {
-    originalPrivacyScreen = Plugins.PrivacyScreen;
-    Plugins.PrivacyScreen = jasmine.createSpyObj('PrivacyScreen', {
-      enable: undefined,
-      disable: undefined,
-    });
-
     TestBed.configureTestingModule({});
 
     service = TestBed.inject(PrivacyScreenService);
-  });
-
-  afterEach(() => {
-    Plugins.PrivacyScreen = originalPrivacyScreen;
   });
 
   it('should be created', () => {
     expect(service).toBeTruthy();
   });
 
-  it('should enable the privacy screen', () => {
-    service.enable();
-    expect(Plugins.PrivacyScreen.enable).toHaveBeenCalled();
+  it('should enable the privacy screen', async () => {
+    spyOn(PrivacyScreen, 'enable');
+    await service.enable();
+    expect(PrivacyScreen.enable).toHaveBeenCalled();
   });
 
-  it('should disable the privacy screen', () => {
-    service.disable();
-    expect(Plugins.PrivacyScreen.disable).toHaveBeenCalled();
+  it('should disable the privacy screen', async () => {
+    spyOn(PrivacyScreen, 'disable');
+    await service.disable();
+    expect(PrivacyScreen.disable).toHaveBeenCalled();
   });
 });
