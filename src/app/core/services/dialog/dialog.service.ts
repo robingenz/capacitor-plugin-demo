@@ -1,6 +1,16 @@
 import { Injectable } from '@angular/core';
-import { AlertController, LoadingController, ModalController, PopoverController } from '@ionic/angular';
-import { AlertOptions, LoadingOptions, ModalOptions, PopoverOptions } from '@ionic/core';
+import {
+  AlertController,
+  LoadingController,
+  ModalController,
+  PopoverController,
+} from '@ionic/angular';
+import {
+  AlertOptions,
+  LoadingOptions,
+  ModalOptions,
+  PopoverOptions,
+} from '@ionic/core';
 
 @Injectable({
   providedIn: 'root',
@@ -19,7 +29,9 @@ export class DialogService {
     return alert;
   }
 
-  public async showErrorAlert(opts?: AlertOptions): Promise<HTMLIonAlertElement> {
+  public async showErrorAlert(
+    opts?: AlertOptions,
+  ): Promise<HTMLIonAlertElement> {
     const defaultOpts: AlertOptions = {
       header: 'Fehlgeschlagen',
       buttons: ['OK'],
@@ -34,13 +46,17 @@ export class DialogService {
     return modal;
   }
 
-  public async showPopover(opts: PopoverOptions): Promise<HTMLIonPopoverElement> {
+  public async showPopover(
+    opts: PopoverOptions,
+  ): Promise<HTMLIonPopoverElement> {
     const popover = await this.popoverCtrl.create(opts);
     await popover.present();
     return popover;
   }
 
-  public async showLoading(opts?: LoadingOptions): Promise<HTMLIonLoadingElement> {
+  public async showLoading(
+    opts?: LoadingOptions,
+  ): Promise<HTMLIonLoadingElement> {
     const defaultOpts: LoadingOptions = {
       message: 'Bitte warten...',
     };

@@ -17,8 +17,12 @@ describe('DialogService', () => {
 
   beforeEach(() => {
     alertControllerSpy = jasmine.createSpyObj('AlertController', ['create']);
-    loadingControllerSpy = jasmine.createSpyObj('LoadingController', ['create']);
-    popoverControllerSpy = jasmine.createSpyObj('PopoverController', ['create']);
+    loadingControllerSpy = jasmine.createSpyObj('LoadingController', [
+      'create',
+    ]);
+    popoverControllerSpy = jasmine.createSpyObj('PopoverController', [
+      'create',
+    ]);
 
     TestBed.configureTestingModule({
       providers: [

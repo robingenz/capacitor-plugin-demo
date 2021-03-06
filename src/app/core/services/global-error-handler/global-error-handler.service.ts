@@ -12,8 +12,12 @@ export class GlobalErrorHandlerService implements ErrorHandler {
   public async handleError(error: Error): Promise<void> {
     try {
       console.error(error);
-      const dialogService: DialogService = this.injector.get<DialogService>(DialogService);
-      await dialogService.showErrorAlert({ message: 'Ein unbekannter Fehler ist aufgetreten.' });
+      const dialogService: DialogService = this.injector.get<DialogService>(
+        DialogService,
+      );
+      await dialogService.showErrorAlert({
+        message: 'Ein unbekannter Fehler ist aufgetreten.',
+      });
     } catch (errorHandlerError) {
       console.error(`${LOGTAG} Internal Exception:`, errorHandlerError);
     }
