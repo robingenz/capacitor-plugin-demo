@@ -3,7 +3,6 @@
   "bracketSpacing": true,
   "quoteProps": "as-needed",
   "semi": true,
-  "singleQuote": true,
   "trailingComma": "all",
   "overrides": [
     {
