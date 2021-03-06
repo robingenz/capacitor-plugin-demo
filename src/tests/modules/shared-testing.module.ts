@@ -1,7 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { IonicModule } from '@ionic/angular';
+import { Router } from '@angular/router';
+import { IonicModule, NavController } from '@ionic/angular';
 
 @NgModule({
   imports: [
@@ -11,6 +12,10 @@ import { IonicModule } from '@ionic/angular';
     IonicModule.forRoot(),
   ],
   declarations: [],
+  providers: [
+    { provide: NavController, useValue: {} },
+    { provide: Router, useValue: {} },
+  ],
   exports: [CommonModule, FormsModule, ReactiveFormsModule, IonicModule],
 })
 export class SharedTestingModule {}
