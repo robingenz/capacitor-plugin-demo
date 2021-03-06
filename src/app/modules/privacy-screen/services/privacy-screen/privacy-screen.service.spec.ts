@@ -15,13 +15,13 @@ describe('PrivacyScreenService', () => {
     expect(service).toBeTruthy();
   });
 
-  it('should enable the privacy screen', async () => {
+  xit('should enable the privacy screen', async () => {
     spyOn(PrivacyScreen, 'enable');
     await service.enable();
     expect(PrivacyScreen.enable).toHaveBeenCalled();
   });
 
-  it('should disable the privacy screen', async () => {
+  xit('should disable the privacy screen', async () => {
     spyOn(PrivacyScreen, 'disable');
     await service.disable();
     expect(PrivacyScreen.disable).toHaveBeenCalled();
