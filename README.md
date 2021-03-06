@@ -5,6 +5,12 @@
 
 ⚡️ Simple Ionic Angular app to demonstrate the use of certain Capacitor plugins. 
 
+## Plugins
+
+The following plugins are included:
+
+- [capacitor-community/privacy-screen](https://github.com/capacitor-community/privacy-screen)
+
 ## Development Setup 💻
 
 ### Prerequisites
