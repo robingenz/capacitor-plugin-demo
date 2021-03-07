@@ -18,7 +18,11 @@ const routes: Routes = [
       import('./modules/privacy-screen/privacy-screen.module').then(
         m => m.PrivacyScreenPageModule,
       ),
+  },  {
+    path: 'text-to-speech',
+    loadChildren: () => import('./modules/text-to-speech/text-to-speech.module').then( m => m.TextToSpeechPageModule)
   },
+
 ];
 
 @NgModule({
