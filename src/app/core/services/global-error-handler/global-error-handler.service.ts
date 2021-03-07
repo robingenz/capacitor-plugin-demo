@@ -24,7 +24,7 @@ export class GlobalErrorHandlerService implements ErrorHandler {
   }
 
   private getMessageFromUnknownError(error: unknown): string {
-    let message = 'Ein unbekannter Fehler ist aufgetreten.';
+    let message = 'An unknown error has occurred.';
     if (error instanceof Object && 'rejection' in error) {
       error = (error as any).rejection;
     }
