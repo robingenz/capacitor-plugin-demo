@@ -1,19 +1,10 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-
-import { IonicModule } from '@ionic/angular';
-
-import { PrivacyScreenPageRoutingModule } from './privacy-screen-routing.module';
+import { SharedModule } from '@app/shared';
 import { PrivacyScreenPage } from './pages';
+import { PrivacyScreenPageRoutingModule } from './privacy-screen-routing.module';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    PrivacyScreenPageRoutingModule,
-  ],
+  imports: [SharedModule, PrivacyScreenPageRoutingModule],
   declarations: [PrivacyScreenPage],
 })
 export class PrivacyScreenPageModule {}
