@@ -33,7 +33,7 @@ export class DialogService {
     opts?: AlertOptions,
   ): Promise<HTMLIonAlertElement> {
     const defaultOpts: AlertOptions = {
-      header: 'Fehlgeschlagen',
+      header: 'Error',
       buttons: ['OK'],
     };
     opts = { ...defaultOpts, ...opts };
@@ -58,7 +58,7 @@ export class DialogService {
     opts?: LoadingOptions,
   ): Promise<HTMLIonLoadingElement> {
     const defaultOpts: LoadingOptions = {
-      message: 'Bitte warten...',
+      message: 'Please wait...',
     };
     opts = { ...defaultOpts, ...opts };
     const loading = await this.loadingCtrl.create(opts);

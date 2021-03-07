@@ -9,17 +9,35 @@ const LOGTAG = '[GlobalErrorHandlerService]';
 export class GlobalErrorHandlerService implements ErrorHandler {
   constructor(private injector: Injector) {}
 
-  public async handleError(error: Error): Promise<void> {
+  public handleError(error: unknown): void {
+    this.handle(error);
+  }
+
+  private async handle(error: unknown): Promise<void> {
     try {
       console.error(error);
-      const dialogService: DialogService = this.injector.get<DialogService>(
-        DialogService,
-      );
-      await dialogService.showErrorAlert({
-        message: 'Ein unbekannter Fehler ist aufgetreten.',
-      });
+      const message = this.getMessageFromUnknownError(error);
+      await this.showErrorAlert(message);
     } catch (errorHandlerError) {
-      console.error(`${LOGTAG} Internal Exception:`, errorHandlerError);
+      console.error(`${LOGTAG} Internal exception:`, errorHandlerError);
     }
+  }
+
+  private getMessageFromUnknownError(error: unknown): string {
+    let message = 'An unknown error has occurred.';
+    if (error instanceof Object && 'rejection' in error) {
+      error = (error as any).rejection;
+    }
+    if (error instanceof Error && error.message) {
+      message = error.message;
+    }
+    return message;
+  }
+
+  private async showErrorAlert(message: string): Promise<void> {
+    const dialogService: DialogService = this.injector.get<DialogService>(
+      DialogService,
+    );
+    await dialogService.showErrorAlert({ message });
   }
 }
