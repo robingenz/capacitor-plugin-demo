@@ -4,6 +4,7 @@ import android.os.Bundle;
 
 import com.getcapacitor.BridgeActivity;
 import com.getcapacitor.Plugin;
+import com.getcapacitor.community.tts.TextToSpeech;
 import com.getcapacitor.plugin.privacyscreen.PrivacyScreen;
 
 import java.util.ArrayList;
@@ -18,6 +19,7 @@ public class MainActivity extends BridgeActivity {
       // Additional plugins you've installed go here
       // Ex: add(TotallyAwesomePlugin.class);
       add(PrivacyScreen.class);
+      add(TextToSpeech.class);
     }});
   }
 }

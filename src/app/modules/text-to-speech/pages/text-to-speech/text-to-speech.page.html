@@ -43,8 +43,7 @@
         <ion-item>
           <ion-label>Locale</ion-label>
           <ion-select formControlName="locale">
-            <ion-select-option value="en-US">en-US</ion-select-option>
-            <ion-select-option value="de-DE">de-DE</ion-select-option>
+            <ion-select-option *ngFor="let lang of supportedLanguages" [value]="lang">{{ lang }}</ion-select-option>
           </ion-select>
         </ion-item>
         <ion-item>
@@ -73,7 +72,9 @@
         </ion-item>
         <ion-item>
           <ion-label position="fixed">Voice</ion-label>
-          <ion-input formControlName="voice" type="number" min="1"></ion-input>
+          <ion-select formControlName="voice">
+            <ion-select-option *ngFor="let voice of supportedVoices" [value]="voice.voiceURI">{{ voice.name }}</ion-select-option>
+          </ion-select>
         </ion-item>
         <ion-item>
           <ion-label>Category</ion-label>
@@ -85,6 +86,7 @@
       </form>
       <ion-button expand="block" (click)="speak()">Speak</ion-button>
       <ion-button expand="block" (click)="stop()">Stop</ion-button>
+      <ion-button expand="block" (click)="openInstall()">Install</ion-button>
     </ion-card-content>
   </ion-card>
 </ion-content>

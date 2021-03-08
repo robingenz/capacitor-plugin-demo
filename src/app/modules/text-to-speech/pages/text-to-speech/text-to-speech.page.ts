@@ -17,19 +17,21 @@ export class TextToSpeechPage implements OnInit {
     speechRate: new FormControl(1),
     pitchRate: new FormControl(1),
     volume: new FormControl(1),
-    voice: new FormControl(1),
+    voice: new FormControl(),
     category: new FormControl('ambient'),
   });
-  private currentlySpeaking: boolean = false;
+  public supportedLanguages: string[] = [];
+  public supportedVoices: SpeechSynthesisVoice[] = [];
+  private currentlySpeaking = false;
 
   constructor(private readonly textToSpeechService: TextToSpeechService) {}
 
   public ngOnInit(): void {
-    this.textToSpeechService.getSupportedLanguages().then(languages => {
-      console.log(languages);
+    this.textToSpeechService.getSupportedLanguages().then(result => {
+      this.supportedLanguages = result.languages;
     });
-    this.textToSpeechService.getSupportedVoices().then(voices => {
-      console.log(voices);
+    this.textToSpeechService.getSupportedVoices().then(result => {
+      this.supportedVoices = result.voices;
     });
   }
 
@@ -44,7 +46,7 @@ export class TextToSpeechPage implements OnInit {
       speechRate: this.formGroup.get('speechRate')?.value,
       pitchRate: this.formGroup.get('pitchRate')?.value,
       volume: this.formGroup.get('volume')?.value,
-      // voice: this.formGroup.get('voice')?.value,
+      voice: this.formGroup.get('voice')?.value,
       category: this.formGroup.get('category')?.value,
     };
     this.currentlySpeaking = true;
