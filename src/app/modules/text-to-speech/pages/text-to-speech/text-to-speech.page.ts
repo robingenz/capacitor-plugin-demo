@@ -13,7 +13,7 @@ export class TextToSpeechPage implements OnInit {
     'https://github.com/capacitor-community/text-to-speech';
   public formGroup = new FormGroup({
     text: new FormControl(''),
-    locale: new FormControl('en-US'),
+    locale: new FormControl(),
     speechRate: new FormControl(1),
     pitchRate: new FormControl(1),
     volume: new FormControl(1),
