@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import '@capacitor-community/privacy-screen';
 import { PrivacyScreenPlugin } from '@capacitor-community/privacy-screen';
 import { Plugins } from '@capacitor/core';
 const PrivacyScreen: PrivacyScreenPlugin = Plugins.PrivacyScreen as PrivacyScreenPlugin;
