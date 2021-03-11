@@ -1,0 +1,6 @@
+[
+	{
+		"pkg": "@capacitor-community/privacy-screen",
+		"classpath": "com.getcapacitor.plugin.privacyscreen.PrivacyScreenPlugin"
+	}
+]
