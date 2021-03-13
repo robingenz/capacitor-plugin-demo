@@ -21,7 +21,10 @@ const routes: Routes = [
   },
   {
     path: 'text-to-speech',
-    loadChildren: () => import('./modules/text-to-speech/text-to-speech.module').then( m => m.TextToSpeechPageModule)
+    loadChildren: () =>
+      import('./modules/text-to-speech/text-to-speech.module').then(
+        m => m.TextToSpeechPageModule,
+      ),
   },
   {
     path: '**',
