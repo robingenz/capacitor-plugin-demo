@@ -57,7 +57,7 @@
             type="number"
             step="0.1"
             min="0.1"
-            (ionChange)="onSpeechRateChange($event)"
+            (ionChange)="onSpeechRateChange($any($event))"
           ></ion-input>
         </ion-item>
         <ion-item>
@@ -67,7 +67,7 @@
             type="number"
             step="0.1"
             min="0.1"
-            (ionChange)="onPitchRateChange($event)"
+            (ionChange)="onPitchRateChange($any($event))"
           ></ion-input>
         </ion-item>
         <ion-item>
