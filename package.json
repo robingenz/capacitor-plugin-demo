@@ -24,7 +24,7 @@
     "@angular/platform-browser-dynamic": "11.2.4",
     "@angular/router": "11.2.4",
     "@capacitor-community/privacy-screen": "1.1.2",
-    "@capacitor-community/text-to-speech": "0.2.1-dev.abde773-2",
+    "@capacitor-community/text-to-speech": "0.2.3",
     "@capacitor/android": "2.4.7",
     "@capacitor/core": "2.4.7",
     "@capacitor/ios": "2.4.7",

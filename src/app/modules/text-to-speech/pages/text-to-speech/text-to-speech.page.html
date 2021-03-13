@@ -43,7 +43,11 @@
         <ion-item>
           <ion-label>Locale</ion-label>
           <ion-select formControlName="locale">
-            <ion-select-option *ngFor="let lang of supportedLanguages" [value]="lang">{{ lang }}</ion-select-option>
+            <ion-select-option
+              *ngFor="let lang of supportedLanguages"
+              [value]="lang"
+              >{{ lang }}</ion-select-option
+            >
           </ion-select>
         </ion-item>
         <ion-item>
@@ -68,12 +72,22 @@
         </ion-item>
         <ion-item>
           <ion-label position="fixed">Volume</ion-label>
-          <ion-input formControlName="volume" type="number" min="0" max="1" step="0.1"></ion-input>
+          <ion-input
+            formControlName="volume"
+            type="number"
+            min="0"
+            max="1"
+            step="0.1"
+          ></ion-input>
         </ion-item>
         <ion-item>
           <ion-label position="fixed">Voice</ion-label>
           <ion-select formControlName="voice">
-            <ion-select-option *ngFor="let voice of supportedVoices" [value]="voice.voiceURI">{{ voice.name }}</ion-select-option>
+            <ion-select-option
+              *ngFor="let voice of supportedVoices; let i = index"
+              [value]="i"
+              >{{ voice.name }}</ion-select-option
+            >
           </ion-select>
         </ion-item>
         <ion-item>
