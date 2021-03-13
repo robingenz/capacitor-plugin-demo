@@ -2,5 +2,9 @@
 	{
 		"pkg": "@capacitor-community/privacy-screen",
 		"classpath": "com.getcapacitor.plugin.privacyscreen.PrivacyScreenPlugin"
+	},
+	{
+		"pkg": "@capacitor-community/text-to-speech",
+		"classpath": "com.getcapacitor.community.tts.TextToSpeechPlugin"
 	}
 ]
