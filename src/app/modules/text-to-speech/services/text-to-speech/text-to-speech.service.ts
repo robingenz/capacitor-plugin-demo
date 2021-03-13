@@ -1,6 +1,9 @@
 import { Injectable } from '@angular/core';
 import '@capacitor-community/text-to-speech';
-import { TextToSpeechPlugin, TTSOptions } from '@capacitor-community/text-to-speech';
+import {
+  TextToSpeechPlugin,
+  TTSOptions,
+} from '@capacitor-community/text-to-speech';
 import { Plugins } from '@capacitor/core';
 const TextToSpeech: TextToSpeechPlugin = Plugins.TextToSpeech as TextToSpeechPlugin;
 
@@ -18,7 +21,7 @@ export class TextToSpeechService {
     await TextToSpeech.stop();
   }
 
-  public getSupportedLanguages(): Promise<{ languages: any }> {
+  public getSupportedLanguages(): Promise<{ languages: string[] }> {
     return TextToSpeech.getSupportedLanguages();
   }
 
