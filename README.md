@@ -10,6 +10,7 @@
 The following plugins are included:
 
 - [capacitor-community/privacy-screen](https://github.com/capacitor-community/privacy-screen)
+- [capacitor-community/text-to-speech](https://github.com/capacitor-community/text-to-speech)
 
 ## Development Setup 💻
 
