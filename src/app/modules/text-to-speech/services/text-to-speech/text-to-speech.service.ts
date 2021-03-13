@@ -1,11 +1,5 @@
 import { Injectable } from '@angular/core';
-import '@capacitor-community/text-to-speech';
-import {
-  TextToSpeechPlugin,
-  TTSOptions,
-} from '@capacitor-community/text-to-speech';
-import { Plugins } from '@capacitor/core';
-const TextToSpeech: TextToSpeechPlugin = Plugins.TextToSpeech as TextToSpeechPlugin;
+import { TextToSpeech, TTSOptions } from '@capacitor-community/text-to-speech';
 
 @Injectable({
   providedIn: 'root',
