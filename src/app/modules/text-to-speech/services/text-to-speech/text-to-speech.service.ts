@@ -26,12 +26,4 @@ export class TextToSpeechService {
   public async openInstall(): Promise<void> {
     await TextToSpeech.openInstall();
   }
-
-  public async setPitchRate(options: { pitchRate: number }): Promise<void> {
-    await TextToSpeech.setPitchRate(options);
-  }
-
-  public async setSpeechRate(options: { speechRate: number }): Promise<void> {
-    await TextToSpeech.setSpeechRate(options);
-  }
 }

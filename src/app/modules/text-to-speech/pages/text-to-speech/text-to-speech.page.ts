@@ -13,16 +13,15 @@ export class TextToSpeechPage implements OnInit {
     'https://github.com/capacitor-community/text-to-speech';
   public formGroup = new FormGroup({
     text: new FormControl(''),
-    locale: new FormControl(),
-    speechRate: new FormControl(1),
-    pitchRate: new FormControl(1),
+    lang: new FormControl(),
+    rate: new FormControl(1),
+    pitch: new FormControl(1),
     volume: new FormControl(1),
     voice: new FormControl(),
     category: new FormControl('ambient'),
   });
   public supportedLanguages: string[] = [];
   public supportedVoices: SpeechSynthesisVoice[] = [];
-  private currentlySpeaking = false;
 
   constructor(private readonly textToSpeechService: TextToSpeechService) {}
 
@@ -42,17 +41,14 @@ export class TextToSpeechPage implements OnInit {
   public async speak(): Promise<void> {
     const options: TTSOptions = {
       text: this.formGroup.get('text')?.value,
-      locale: this.formGroup.get('locale')?.value,
-      speechRate: this.formGroup.get('speechRate')?.value,
-      pitchRate: this.formGroup.get('pitchRate')?.value,
+      lang: this.formGroup.get('lang')?.value,
+      rate: this.formGroup.get('rate')?.value,
+      pitch: this.formGroup.get('pitch')?.value,
       volume: this.formGroup.get('volume')?.value,
       voice: this.formGroup.get('voice')?.value,
       category: this.formGroup.get('category')?.value,
     };
-    this.currentlySpeaking = true;
-    await this.textToSpeechService.speak(options).then(() => {
-      this.currentlySpeaking = false;
-    });
+    await this.textToSpeechService.speak(options);
   }
 
   public async stop(): Promise<void> {
@@ -61,21 +57,5 @@ export class TextToSpeechPage implements OnInit {
 
   public async openInstall(): Promise<void> {
     await this.textToSpeechService.openInstall();
-  }
-
-  public async onPitchRateChange(event: CustomEvent): Promise<void> {
-    if (!this.currentlySpeaking) {
-      return;
-    }
-    const options = { pitchRate: event.detail.value };
-    await this.textToSpeechService.setPitchRate(options);
-  }
-
-  public async onSpeechRateChange(event: CustomEvent): Promise<void> {
-    if (!this.currentlySpeaking) {
-      return;
-    }
-    const options = { speechRate: event.detail.value };
-    await this.textToSpeechService.setSpeechRate(options);
   }
 }
