@@ -17,8 +17,6 @@ describe('TextToSpeechPage', () => {
         getSupportedLanguages: Promise.resolve({ languages: [] }),
         getSupportedVoices: Promise.resolve({ voices: [] }),
         openInstall: Promise.resolve(),
-        setPitchRate: Promise.resolve(),
-        setSpeechRate: Promise.resolve(),
       },
     );
 
