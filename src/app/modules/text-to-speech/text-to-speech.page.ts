@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
-import { TTSOptions } from '@capacitor-community/text-to-speech';
-import { TextToSpeechService } from '../../services';
+import { TextToSpeech, TTSOptions } from '@capacitor-community/text-to-speech';
 
 @Component({
   selector: 'app-text-to-speech',
@@ -23,13 +22,13 @@ export class TextToSpeechPage implements OnInit {
   public supportedLanguages: string[] = [];
   public supportedVoices: SpeechSynthesisVoice[] = [];
 
-  constructor(private readonly textToSpeechService: TextToSpeechService) {}
+  constructor() {}
 
   public ngOnInit(): void {
-    this.textToSpeechService.getSupportedLanguages().then(result => {
+    TextToSpeech.getSupportedLanguages().then(result => {
       this.supportedLanguages = result.languages;
     });
-    this.textToSpeechService.getSupportedVoices().then(result => {
+    TextToSpeech.getSupportedVoices().then(result => {
       this.supportedVoices = result.voices;
     });
   }
@@ -48,14 +47,14 @@ export class TextToSpeechPage implements OnInit {
       voice: this.formGroup.get('voice')?.value,
       category: this.formGroup.get('category')?.value,
     };
-    await this.textToSpeechService.speak(options);
+    await TextToSpeech.speak(options);
   }
 
   public async stop(): Promise<void> {
-    await this.textToSpeechService.stop();
+    await TextToSpeech.stop();
   }
 
   public async openInstall(): Promise<void> {
-    await this.textToSpeechService.openInstall();
+    await TextToSpeech.openInstall();
   }
 }
