@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PrivacyScreenService } from '../../services';
+import { PrivacyScreen } from '@capacitor-community/privacy-screen';
 
 @Component({
   selector: 'app-privacy-screen',
@@ -10,17 +10,17 @@ export class PrivacyScreenPage {
   private readonly GH_URL =
     'https://github.com/capacitor-community/privacy-screen';
 
-  constructor(private readonly privacyScreenService: PrivacyScreenService) {}
+  constructor() {}
 
   public openOnGithub(): void {
     window.open(this.GH_URL, '_blank');
   }
 
   public async enable(): Promise<void> {
-    await this.privacyScreenService.enable();
+    await PrivacyScreen.enable();
   }
 
   public async disable(): Promise<void> {
-    await this.privacyScreenService.disable();
+    await PrivacyScreen.disable();
   }
 }
