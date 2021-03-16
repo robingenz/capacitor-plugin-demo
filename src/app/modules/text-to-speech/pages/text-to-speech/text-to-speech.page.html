@@ -41,8 +41,8 @@
           ></ion-input>
         </ion-item>
         <ion-item>
-          <ion-label>Locale</ion-label>
-          <ion-select formControlName="locale">
+          <ion-label>Language</ion-label>
+          <ion-select formControlName="lang">
             <ion-select-option
               *ngFor="let lang of supportedLanguages"
               [value]="lang"
@@ -51,23 +51,23 @@
           </ion-select>
         </ion-item>
         <ion-item>
-          <ion-label position="fixed">Speech rate</ion-label>
+          <ion-label position="fixed">Rate</ion-label>
           <ion-input
-            formControlName="speechRate"
+            formControlName="rate"
             type="number"
-            step="0.1"
             min="0.1"
-            (ionChange)="onSpeechRateChange($any($event))"
+            max="10"
+            step="0.1"
           ></ion-input>
         </ion-item>
         <ion-item>
-          <ion-label position="fixed">Pitch rate</ion-label>
+          <ion-label position="fixed">Pitch</ion-label>
           <ion-input
-            formControlName="pitchRate"
+            formControlName="pitch"
             type="number"
-            step="0.1"
             min="0.1"
-            (ionChange)="onPitchRateChange($any($event))"
+            max="2"
+            step="0.1"
           ></ion-input>
         </ion-item>
         <ion-item>
