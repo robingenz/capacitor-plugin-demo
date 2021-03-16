@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { TextToSpeechPage } from './pages';
+import { TextToSpeechPage } from './text-to-speech.page';
 
 const routes: Routes = [
   {

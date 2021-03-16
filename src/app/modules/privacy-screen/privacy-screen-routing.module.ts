@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { PrivacyScreenPage } from './pages';
+import { RouterModule, Routes } from '@angular/router';
+import { PrivacyScreenPage } from './privacy-screen.page';
 
 const routes: Routes = [
   {
