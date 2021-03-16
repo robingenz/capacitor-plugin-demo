@@ -15,7 +15,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Set up Node.js 14
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: '14'
       - name: Install dependencies
@@ -40,7 +40,7 @@ jobs:
           name: www
           path: www
       - name: Set up Node.js 14
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: '14'
       - name: Install dependencies
@@ -69,7 +69,7 @@ jobs:
           name: www
           path: www
       - name: Set up Node.js 14
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: '14'
       - name: Install dependencies
@@ -96,7 +96,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Set up Node.js 14
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: '14'
       - name: Install dependencies
@@ -112,7 +112,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Set up Node.js 14
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: '14'
       - name: Install dependencies
@@ -126,7 +126,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Set up Node.js 14
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: '14'
       - name: Install dependencies
