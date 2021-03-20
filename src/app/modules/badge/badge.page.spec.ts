@@ -2,7 +2,6 @@ import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { SharedTestingModule } from '@tests/modules';
 import { BadgePage } from './badge.page';
 
-
 describe('BadgePage', () => {
   let component: BadgePage;
   let fixture: ComponentFixture<BadgePage>;
