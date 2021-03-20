@@ -12,9 +12,8 @@ export class BadgePage implements OnInit {
   public formGroup = new FormGroup({
     count: new FormControl(0),
   });
-  public currentBadgeCount = 0;
 
-  constructor() {}
+  constructor() { }
 
   public ngOnInit() {
     this.refreshBadgeCount();
@@ -42,6 +41,6 @@ export class BadgePage implements OnInit {
 
   private async refreshBadgeCount(): Promise<void> {
     const count = await this.getBadgeCount();
-    this.currentBadgeCount = count;
+    this.formGroup.setValue({ count });
   }
 }

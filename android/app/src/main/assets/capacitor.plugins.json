@@ -6,5 +6,9 @@
 	{
 		"pkg": "@capacitor-community/text-to-speech",
 		"classpath": "com.getcapacitor.community.tts.TextToSpeechPlugin"
+	},
+	{
+		"pkg": "@robingenz/capacitor-badge",
+		"classpath": "dev.robingenz.capacitor.badge.BadgePlugin"
 	}
 ]
