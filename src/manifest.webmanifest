@@ -1,8 +1,8 @@
 {
   "name": "Capacitor Plugin Demo",
   "short_name": "Capacitor Plugin Demo",
-  "theme_color": "#fff",
-  "background_color": "#fff",
+  "theme_color": "#119eff",
+  "background_color": "#ffffff",
   "display": "standalone",
   "scope": "./",
   "start_url": "./",
