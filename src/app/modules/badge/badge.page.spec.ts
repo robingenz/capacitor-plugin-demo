@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
-import { IonicModule } from '@ionic/angular';
-
+import { SharedTestingModule } from '@tests/modules';
 import { BadgePage } from './badge.page';
+
 
 describe('BadgePage', () => {
   let component: BadgePage;
@@ -11,7 +11,7 @@ describe('BadgePage', () => {
     waitForAsync(() => {
       TestBed.configureTestingModule({
         declarations: [BadgePage],
-        imports: [IonicModule.forRoot()],
+        imports: [SharedTestingModule],
       }).compileComponents();
 
       fixture = TestBed.createComponent(BadgePage);
