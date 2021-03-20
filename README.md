@@ -1,14 +1,16 @@
 # capacitor-plugin-demo
 
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/robingenz/capacitor-plugin-demo/CI/main)](https://github.com/robingenz/capacitor-plugin-demo/actions)
+
 <!-- [![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/robingenz/capacitor-plugin-demo?color=brightgreen&label=version)](https://github.com/robingenz/capacitor-plugin-demo/releases) -->
 
-⚡️ Simple Ionic Angular app to demonstrate the use of certain Capacitor plugins. 
+⚡️ Simple Ionic Angular app to demonstrate the use of certain Capacitor plugins.
 
 ## Plugins
 
 The following plugins are included:
 
+- [robingenz/capacitor-badge](https://github.com/robingenz/capacitor-badge)
 - [capacitor-community/privacy-screen](https://github.com/capacitor-community/privacy-screen)
 - [capacitor-community/text-to-speech](https://github.com/capacitor-community/text-to-speech)
 
