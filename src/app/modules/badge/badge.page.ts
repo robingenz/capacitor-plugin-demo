@@ -13,7 +13,7 @@ export class BadgePage implements OnInit {
     count: new FormControl(0),
   });
 
-  constructor() { }
+  constructor() {}
 
   public ngOnInit() {
     this.refreshBadgeCount();

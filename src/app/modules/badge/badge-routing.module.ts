@@ -6,8 +6,8 @@ import { BadgePage } from './badge.page';
 const routes: Routes = [
   {
     path: '',
-    component: BadgePage
-  }
+    component: BadgePage,
+  },
 ];
 
 @NgModule({
