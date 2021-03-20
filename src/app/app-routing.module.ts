@@ -13,6 +13,11 @@ const routes: Routes = [
       import('./modules/home/home.module').then(m => m.HomePageModule),
   },
   {
+    path: 'badge',
+    loadChildren: () =>
+      import('./modules/badge/badge.module').then(m => m.BadgePageModule),
+  },
+  {
     path: 'privacy-screen',
     loadChildren: () =>
       import('./modules/privacy-screen/privacy-screen.module').then(

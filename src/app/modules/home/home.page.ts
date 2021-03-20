@@ -8,6 +8,10 @@ import { Component } from '@angular/core';
 export class HomePage {
   public plugins = [
     {
+      name: 'Badge',
+      url: '/badge',
+    },
+    {
       name: 'Privacy Screen',
       url: '/privacy-screen',
     },
