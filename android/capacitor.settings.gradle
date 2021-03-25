@@ -8,5 +8,11 @@ project(':capacitor-community-privacy-screen').projectDir = new File('../node_mo
 include ':capacitor-community-text-to-speech'
 project(':capacitor-community-text-to-speech').projectDir = new File('../node_modules/@capacitor-community/text-to-speech/android')
 
+include ':capacitor-app'
+project(':capacitor-app').projectDir = new File('../node_modules/@capacitor/app/android')
+
+include ':robingenz-capacitor-background-task'
+project(':robingenz-capacitor-background-task').projectDir = new File('../node_modules/@robingenz/capacitor-background-task/android')
+
 include ':robingenz-capacitor-badge'
 project(':robingenz-capacitor-badge').projectDir = new File('../node_modules/@robingenz/capacitor-badge/android')

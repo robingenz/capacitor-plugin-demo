@@ -32,6 +32,13 @@ const routes: Routes = [
       ),
   },
   {
+    path: 'background-task',
+    loadChildren: () =>
+      import('./modules/background-task/background-task.module').then(
+        m => m.BackgroundTaskPageModule,
+      ),
+  },
+  {
     path: '**',
     redirectTo: 'home',
   },
