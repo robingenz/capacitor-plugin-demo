@@ -11,14 +11,14 @@ export class BackgroundTaskPage implements OnInit {
   private readonly GH_URL =
     'https://github.com/robingenz/capacitor-background-task';
 
-  constructor() {}
+  constructor() { }
 
   public ngOnInit() {
-    App.addListener('appStateChange', ({ isActive }) => {
+    App.addListener('appStateChange', async ({ isActive }) => {
       if (isActive) {
         return;
       }
-      const taskId = BackgroundTask.beforeExit(async () => {
+      const taskId = await BackgroundTask.beforeExit(async () => {
         await this.runTask();
         BackgroundTask.finish({ taskId });
       });
@@ -45,7 +45,7 @@ export class BackgroundTaskPage implements OnInit {
   private async runInnerTask(): Promise<void> {
     const taskDurationMs = 5000;
     const end = new Date().getTime() + taskDurationMs;
-    while (new Date().getTime() < end) {}
+    while (new Date().getTime() < end) { }
   }
 
   private async isAppActive(): Promise<boolean> {
