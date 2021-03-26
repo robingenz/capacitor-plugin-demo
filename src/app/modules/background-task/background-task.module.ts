@@ -13,8 +13,8 @@ import { BackgroundTaskPage } from './background-task.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    BackgroundTaskPageRoutingModule
+    BackgroundTaskPageRoutingModule,
   ],
-  declarations: [BackgroundTaskPage]
+  declarations: [BackgroundTaskPage],
 })
 export class BackgroundTaskPageModule {}

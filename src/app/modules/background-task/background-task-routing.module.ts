@@ -6,8 +6,8 @@ import { BackgroundTaskPage } from './background-task.page';
 const routes: Routes = [
   {
     path: '',
-    component: BackgroundTaskPage
-  }
+    component: BackgroundTaskPage,
+  },
 ];
 
 @NgModule({
