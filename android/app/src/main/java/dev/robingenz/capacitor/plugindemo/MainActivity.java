@@ -1,6 +1,4 @@
-package io.ionic.starter;
-
-import android.os.Bundle;
+package dev.robingenz.capacitor.plugindemo;
 
 import com.getcapacitor.BridgeActivity;
 
