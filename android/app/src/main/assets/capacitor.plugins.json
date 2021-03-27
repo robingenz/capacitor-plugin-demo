@@ -8,6 +8,14 @@
 		"classpath": "com.getcapacitor.community.tts.TextToSpeechPlugin"
 	},
 	{
+		"pkg": "@capacitor/app",
+		"classpath": "com.capacitorjs.plugins.app.AppPlugin"
+	},
+	{
+		"pkg": "@robingenz/capacitor-background-task",
+		"classpath": "dev.robingenz.capacitor.backgroundtask.BackgroundTaskPlugin"
+	},
+	{
 		"pkg": "@robingenz/capacitor-badge",
 		"classpath": "dev.robingenz.capacitor.badge.BadgePlugin"
 	}

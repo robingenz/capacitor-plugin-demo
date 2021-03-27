@@ -8,6 +8,10 @@ import { Component } from '@angular/core';
 export class HomePage {
   public plugins = [
     {
+      name: 'Background Task',
+      url: '/background-task',
+    },
+    {
       name: 'Badge',
       url: '/badge',
     },
