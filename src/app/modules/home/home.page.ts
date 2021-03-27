@@ -16,6 +16,10 @@ export class HomePage {
       url: '/badge',
     },
     {
+      name: 'Firebase Performance',
+      url: '/firebase-performance',
+    },
+    {
       name: 'Privacy Screen',
       url: '/privacy-screen',
     },
