@@ -9,11 +9,12 @@ install! 'cocoapods', :disable_input_output_paths => true
 def capacitor_pods
   pod 'Capacitor', :path => '../../node_modules/@capacitor/ios'
   pod 'CapacitorCordova', :path => '../../node_modules/@capacitor/ios'
-  pod 'CapacitorCommunityPrivacyScreen', :path => '../../node_modules/@capacitor-community/privacy-screen'
-  pod 'CapacitorCommunityTextToSpeech', :path => '../../node_modules/@capacitor-community/text-to-speech'
-  pod 'CapacitorApp', :path => '../../node_modules/@capacitor/app'
-  pod 'RobingenzCapacitorBackgroundTask', :path => '../../node_modules/@robingenz/capacitor-background-task'
-  pod 'RobingenzCapacitorBadge', :path => '../../node_modules/@robingenz/capacitor-badge'
+  pod 'CapacitorCommunityPrivacyScreen', :path => '..\..\node_modules\@capacitor-community\privacy-screen'
+  pod 'CapacitorCommunityTextToSpeech', :path => '..\..\node_modules\@capacitor-community\text-to-speech'
+  pod 'CapacitorApp', :path => '..\..\node_modules\@capacitor\app'
+  pod 'RobingenzCapacitorBackgroundTask', :path => '..\..\node_modules\@robingenz\capacitor-background-task'
+  pod 'RobingenzCapacitorBadge', :path => '..\..\node_modules\@robingenz\capacitor-badge'
+  pod 'RobingenzCapacitorFirebasePerformance', :path => '..\..\node_modules\@robingenz\capacitor-firebase-performance'
 end
 
 target 'App' do

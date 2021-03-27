@@ -16,3 +16,6 @@ project(':robingenz-capacitor-background-task').projectDir = new File('../node_m
 
 include ':robingenz-capacitor-badge'
 project(':robingenz-capacitor-badge').projectDir = new File('../node_modules/@robingenz/capacitor-badge/android')
+
+include ':robingenz-capacitor-firebase-performance'
+project(':robingenz-capacitor-firebase-performance').projectDir = new File('../node_modules/@robingenz/capacitor-firebase-performance/android')
