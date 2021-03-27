@@ -12,3 +12,5 @@ xcuserdata
 # Cordova plugins for Capacitor
 capacitor-cordova-ios-plugins
 
+# Firebase
+GoogleService-Info.plist
