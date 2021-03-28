@@ -75,7 +75,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Add empty `GoogleService-Info.plist`
-        run: touch ios/App/App/GoogleService-Info.plist
+        run: touch $GITHUB_WORKSPACE/ios/App/App/GoogleService-Info.plist
       - name: Copy web assets to native platform
         run: npx ionic capacitor copy ios --no-build
       - name: Update native platform
