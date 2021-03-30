@@ -11,6 +11,12 @@ project(':capacitor-community-text-to-speech').projectDir = new File('../node_mo
 include ':capacitor-app'
 project(':capacitor-app').projectDir = new File('../node_modules/@capacitor/app/android')
 
+include ':capacitor-haptics'
+project(':capacitor-haptics').projectDir = new File('../node_modules/@capacitor/haptics/android')
+
+include ':capacitor-keyboard'
+project(':capacitor-keyboard').projectDir = new File('../node_modules/@capacitor/keyboard/android')
+
 include ':robingenz-capacitor-background-task'
 project(':robingenz-capacitor-background-task').projectDir = new File('../node_modules/@robingenz/capacitor-background-task/android')
 
