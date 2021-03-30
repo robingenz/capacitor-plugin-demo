@@ -6,7 +6,8 @@
   "webDir": "www",
   "plugins": {
     "SplashScreen": {
-      "launchShowDuration": 0
+      "launchAutoHide": false,
+      "androidScaleType": "CENTER_CROP"
     }
   },
   "cordova": {}
