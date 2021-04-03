@@ -12,6 +12,8 @@ dependencies {
     implementation project(':capacitor-community-privacy-screen')
     implementation project(':capacitor-community-text-to-speech')
     implementation project(':capacitor-app')
+    implementation project(':capacitor-haptics')
+    implementation project(':capacitor-keyboard')
     implementation project(':robingenz-capacitor-background-task')
     implementation project(':robingenz-capacitor-badge')
     implementation project(':robingenz-capacitor-firebase-performance')
