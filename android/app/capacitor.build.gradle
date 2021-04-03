@@ -16,6 +16,7 @@ dependencies {
     implementation project(':capacitor-keyboard')
     implementation project(':robingenz-capacitor-background-task')
     implementation project(':robingenz-capacitor-badge')
+    implementation project(':robingenz-capacitor-firebase-performance')
 
 }
 

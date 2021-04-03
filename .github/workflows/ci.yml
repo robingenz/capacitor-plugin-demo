@@ -78,6 +78,10 @@ jobs:
         run: npx ionic capacitor copy ios --no-build
       - name: Update native platform
         run: npx ionic capacitor update ios
+      - name: Add empty `GoogleService-Info.plist`
+        run: echo "$GOOGLE_SERVICE_INFO_PLIST" > ios/App/App/GoogleService-Info.plist
+        env:
+          GOOGLE_SERVICE_INFO_PLIST: ${{secrets.GOOGLE_SERVICE_INFO_PLIST}}
       - name: Build and archive with xcodebuild
         working-directory: ios
         run: xcodebuild

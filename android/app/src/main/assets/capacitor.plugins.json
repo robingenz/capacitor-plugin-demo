@@ -26,5 +26,9 @@
 	{
 		"pkg": "@robingenz/capacitor-badge",
 		"classpath": "dev.robingenz.capacitor.badge.BadgePlugin"
+	},
+	{
+		"pkg": "@robingenz/capacitor-firebase-performance",
+		"classpath": "dev.robingenz.capacitor.firebaseperformance.FirebasePerformancePlugin"
 	}
 ]

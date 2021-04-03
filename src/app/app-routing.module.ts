@@ -39,6 +39,13 @@ const routes: Routes = [
       ),
   },
   {
+    path: 'firebase-performance',
+    loadChildren: () =>
+      import('./modules/firebase-performance/firebase-performance.module').then(
+        m => m.FirebasePerformancePageModule,
+      ),
+  },
+  {
     path: '**',
     redirectTo: 'home',
   },

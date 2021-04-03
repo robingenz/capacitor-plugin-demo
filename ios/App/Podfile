@@ -14,6 +14,7 @@ def capacitor_pods
   pod 'CapacitorApp', :path => '../../node_modules/@capacitor/app'
   pod 'RobingenzCapacitorBackgroundTask', :path => '../../node_modules/@robingenz/capacitor-background-task'
   pod 'RobingenzCapacitorBadge', :path => '../../node_modules/@robingenz/capacitor-badge'
+  pod 'RobingenzCapacitorFirebasePerformance', :path => '../../node_modules/@robingenz/capacitor-firebase-performance'
 end
 
 target 'App' do

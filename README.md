@@ -12,6 +12,7 @@ The following plugins are included:
 
 - [robingenz/capacitor-background-task](https://github.com/robingenz/capacitor-background-task)
 - [robingenz/capacitor-badge](https://github.com/robingenz/capacitor-badge)
+- [robingenz/capacitor-firebase-performance](https://github.com/robingenz/capacitor-firebase-performance)
 - [capacitor-community/privacy-screen](https://github.com/capacitor-community/privacy-screen)
 - [capacitor-community/text-to-speech](https://github.com/capacitor-community/text-to-speech)
 
