@@ -37,7 +37,7 @@
     "@robingenz/capacitor-badge": "1.0.0",
     "@robingenz/capacitor-firebase-performance": "1.0.0",
     "rxjs": "6.6.7",
-    "tslib": "2.1.0",
+    "tslib": "2.2.0",
     "zone.js": "0.11.4"
   },
   "devDependencies": {
