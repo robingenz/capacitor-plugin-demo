@@ -141,7 +141,7 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
     if: ${{ github.ref == 'refs/heads/main' }}
-    needs: [build, test, lint, android, ios]
+    needs: [build, lint, test, e2e, android, ios]
     steps:
       - name: Checkout
         uses: actions/checkout@v2
