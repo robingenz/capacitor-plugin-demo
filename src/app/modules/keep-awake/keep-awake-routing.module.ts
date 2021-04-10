@@ -6,8 +6,8 @@ import { KeepAwakePage } from './keep-awake.page';
 const routes: Routes = [
   {
     path: '',
-    component: KeepAwakePage
-  }
+    component: KeepAwakePage,
+  },
 ];
 
 @NgModule({
