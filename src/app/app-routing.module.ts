@@ -18,6 +18,13 @@ const routes: Routes = [
       import('./modules/badge/badge.module').then(m => m.BadgePageModule),
   },
   {
+    path: 'keep-awake',
+    loadChildren: () =>
+      import('./modules/keep-awake/keep-awake.module').then(
+        m => m.KeepAwakePageModule,
+      ),
+  },
+  {
     path: 'privacy-screen',
     loadChildren: () =>
       import('./modules/privacy-screen/privacy-screen.module').then(
