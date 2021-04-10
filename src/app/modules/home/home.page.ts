@@ -20,6 +20,10 @@ export class HomePage {
       url: '/firebase-performance',
     },
     {
+      name: 'Keep Awake',
+      url: '/keep-awake',
+    },
+    {
       name: 'Privacy Screen',
       url: '/privacy-screen',
     },
