@@ -55,7 +55,11 @@ const routes: Routes = [
   {
     path: '**',
     redirectTo: 'home',
+  },  {
+    path: 'firebase-crashlytics',
+    loadChildren: () => import('./modules/firebase-crashlytics/firebase-crashlytics.module').then( m => m.FirebaseCrashlyticsPageModule)
   },
+
 ];
 
 @NgModule({
