@@ -63,6 +63,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+      - name: versions
+        run: |
+          pod --version
+          xcodebuild -version
+      - name: install
+        run: |
+          gem install cocoapods -v 1.10.0
+          pod --version
+      - name: clean ios
+        working-directory: ios
+        run: |
+          pod cache clean --all
       - name: Download artifacts
         uses: actions/download-artifact@v2
         with:
