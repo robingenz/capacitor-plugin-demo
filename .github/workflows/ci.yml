@@ -63,18 +63,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: versions
-        run: |
-          pod --version
-          xcodebuild -version
-      - name: install
-        run: |
-          gem install cocoapods -v 1.10.0
-          pod --version
-      - name: clean ios
-        working-directory: ios
-        run: |
-          pod cache clean --all
       - name: Download artifacts
         uses: actions/download-artifact@v2
         with:
@@ -86,10 +74,8 @@ jobs:
           node-version: '14'
       - name: Install dependencies
         run: npm ci
-      - name: Copy web assets to native platform
-        run: npx ionic capacitor copy ios --no-build
-      - name: Update native platform
-        run: npx ionic capacitor update ios
+      - name: Sync native platform
+        run: npx ionic capacitor sync ios
       - name: Add empty `GoogleService-Info.plist`
         run: echo "$GOOGLE_SERVICE_INFO_PLIST" > ios/App/App/GoogleService-Info.plist
         env:
