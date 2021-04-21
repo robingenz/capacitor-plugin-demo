@@ -1,38 +1,42 @@
 [
-	{
-		"pkg": "@capacitor-community/keep-awake",
-		"classpath": "com.getcapacitor.community.keepawake.KeepAwakePlugin"
-	},
-	{
-		"pkg": "@capacitor-community/privacy-screen",
-		"classpath": "com.getcapacitor.plugin.privacyscreen.PrivacyScreenPlugin"
-	},
-	{
-		"pkg": "@capacitor-community/text-to-speech",
-		"classpath": "com.getcapacitor.community.tts.TextToSpeechPlugin"
-	},
-	{
-		"pkg": "@capacitor/app",
-		"classpath": "com.capacitorjs.plugins.app.AppPlugin"
-	},
-	{
-		"pkg": "@capacitor/haptics",
-		"classpath": "com.capacitorjs.plugins.haptics.HapticsPlugin"
-	},
-	{
-		"pkg": "@capacitor/keyboard",
-		"classpath": "com.capacitorjs.plugins.keyboard.KeyboardPlugin"
-	},
-	{
-		"pkg": "@robingenz/capacitor-background-task",
-		"classpath": "dev.robingenz.capacitor.backgroundtask.BackgroundTaskPlugin"
-	},
-	{
-		"pkg": "@robingenz/capacitor-badge",
-		"classpath": "dev.robingenz.capacitor.badge.BadgePlugin"
-	},
-	{
-		"pkg": "@robingenz/capacitor-firebase-performance",
-		"classpath": "dev.robingenz.capacitor.firebaseperformance.FirebasePerformancePlugin"
-	}
+  {
+    "pkg": "@capacitor-community/firebase-crashlytics",
+    "classpath": "com.getcapacitor.community.firebasecrashlytics.FirebaseCrashlyticsPlugin"
+  },
+  {
+    "pkg": "@capacitor-community/keep-awake",
+    "classpath": "com.getcapacitor.community.keepawake.KeepAwakePlugin"
+  },
+  {
+    "pkg": "@capacitor-community/privacy-screen",
+    "classpath": "com.getcapacitor.plugin.privacyscreen.PrivacyScreenPlugin"
+  },
+  {
+    "pkg": "@capacitor-community/text-to-speech",
+    "classpath": "com.getcapacitor.community.tts.TextToSpeechPlugin"
+  },
+  {
+    "pkg": "@capacitor/app",
+    "classpath": "com.capacitorjs.plugins.app.AppPlugin"
+  },
+  {
+    "pkg": "@capacitor/haptics",
+    "classpath": "com.capacitorjs.plugins.haptics.HapticsPlugin"
+  },
+  {
+    "pkg": "@capacitor/keyboard",
+    "classpath": "com.capacitorjs.plugins.keyboard.KeyboardPlugin"
+  },
+  {
+    "pkg": "@robingenz/capacitor-background-task",
+    "classpath": "dev.robingenz.capacitor.backgroundtask.BackgroundTaskPlugin"
+  },
+  {
+    "pkg": "@robingenz/capacitor-badge",
+    "classpath": "dev.robingenz.capacitor.badge.BadgePlugin"
+  },
+  {
+    "pkg": "@robingenz/capacitor-firebase-performance",
+    "classpath": "dev.robingenz.capacitor.firebaseperformance.FirebasePerformancePlugin"
+  }
 ]

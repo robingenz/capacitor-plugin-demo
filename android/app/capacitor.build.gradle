@@ -9,6 +9,7 @@ android {
 
 apply from: "../capacitor-cordova-android-plugins/cordova.variables.gradle"
 dependencies {
+    implementation project(':capacitor-community-firebase-crashlytics')
     implementation project(':capacitor-community-keep-awake')
     implementation project(':capacitor-community-privacy-screen')
     implementation project(':capacitor-community-text-to-speech')

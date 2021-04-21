@@ -53,6 +53,13 @@ const routes: Routes = [
       ),
   },
   {
+    path: 'firebase-crashlytics',
+    loadChildren: () =>
+      import('./modules/firebase-crashlytics/firebase-crashlytics.module').then(
+        m => m.FirebaseCrashlyticsPageModule,
+      ),
+  },
+  {
     path: '**',
     redirectTo: 'home',
   },
