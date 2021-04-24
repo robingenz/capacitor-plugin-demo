@@ -1,8 +1,8 @@
 {
   "name": "capacitor-plugin-demo",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "https://ionicframework.com/",
+  "author": "Robin Genz <mail@robingenz.dev>",
+  "homepage": "https://github.com/robingenz/capacitor-plugin-demo",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -75,5 +75,5 @@
     "ts-node": "9.1.1",
     "typescript": "4.0.2"
   },
-  "description": "An Ionic project"
+  "description": "Simple Ionic Angular app to demonstrate the use of certain Capacitor plugins."
 }
