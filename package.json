@@ -9,11 +9,11 @@
     "build": "ng build",
     "test": "ng test",
     "test:ci": "ng test --watch=false --progress=false --code-coverage --browsers=HeadlessChrome",
-    "lint": "ng lint",
     "e2e": "ng e2e",
     "e2e:ci": "ng e2e --protractorConfig=e2e/protractor-ci.conf.js",
-    "prettier:write": "npx prettier --write \"{src,e2e/src}/**/*\" --ignore-unknown",
-    "prettier:check": "npx prettier --check \"{src,e2e/src}/**/*\" --ignore-unknown"
+    "lint": "ng lint && npm run prettier -- --check",
+    "fmt": "ng lint --fix && npm run prettier -- --write",
+    "prettier": "prettier \"{src,e2e/src}/**/*.{css,scss,html,ts,js}\""
   },
   "private": true,
   "dependencies": {
@@ -44,6 +44,10 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "0.1102.10",
+    "@angular-eslint/builder": "4.0.0",
+    "@angular-eslint/eslint-plugin": "4.0.0",
+    "@angular-eslint/eslint-plugin-template": "4.0.0",
+    "@angular-eslint/template-parser": "4.0.0",
     "@angular/cli": "11.2.10",
     "@angular/compiler": "11.2.4",
     "@angular/compiler-cli": "11.2.4",
@@ -54,7 +58,9 @@
     "@types/jasmine": "3.6.9",
     "@types/jasminewd2": "2.0.8",
     "@types/node": "14.14.41",
-    "codelyzer": "6.0.1",
+    "@typescript-eslint/eslint-plugin": "4.16.1",
+    "@typescript-eslint/parser": "4.16.1",
+    "eslint": "7.6.0",
     "jasmine-core": "3.7.1",
     "jasmine-spec-reporter": "7.0.0",
     "karma": "6.3.2",
@@ -67,7 +73,6 @@
     "protractor": "7.0.0",
     "puppeteer": "9.0.0",
     "ts-node": "9.1.1",
-    "tslint": "6.1.3",
     "typescript": "4.0.2"
   },
   "description": "An Ionic project"
