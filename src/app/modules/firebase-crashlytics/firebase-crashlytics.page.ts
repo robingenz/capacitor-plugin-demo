@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { FirebaseCrashlytics } from '@capacitor-community/firebase-crashlytics';
 
 @Component({
@@ -6,13 +6,11 @@ import { FirebaseCrashlytics } from '@capacitor-community/firebase-crashlytics';
   templateUrl: './firebase-crashlytics.page.html',
   styleUrls: ['./firebase-crashlytics.page.scss'],
 })
-export class FirebaseCrashlyticsPage implements OnInit {
+export class FirebaseCrashlyticsPage {
   private readonly GH_URL =
     'https://github.com/capacitor-community/firebase-crashlytics';
 
   constructor() {}
-
-  public ngOnInit() {}
 
   public openOnGithub(): void {
     window.open(this.GH_URL, '_blank');

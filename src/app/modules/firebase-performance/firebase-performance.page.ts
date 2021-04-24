@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { FirebasePerformance } from '@robingenz/capacitor-firebase-performance';
 
 @Component({
@@ -6,13 +6,11 @@ import { FirebasePerformance } from '@robingenz/capacitor-firebase-performance';
   templateUrl: './firebase-performance.page.html',
   styleUrls: ['./firebase-performance.page.scss'],
 })
-export class FirebasePerformancePage implements OnInit {
+export class FirebasePerformancePage {
   private readonly GH_URL =
     'https://github.com/robingenz/capacitor-firebase-performance';
 
   constructor() {}
-
-  public ngOnInit() {}
 
   public openOnGithub(): void {
     window.open(this.GH_URL, '_blank');

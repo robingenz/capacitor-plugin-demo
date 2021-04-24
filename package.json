@@ -9,11 +9,11 @@
     "build": "ng build",
     "test": "ng test",
     "test:ci": "ng test --watch=false --progress=false --code-coverage --browsers=HeadlessChrome",
-    "lint": "ng lint",
     "e2e": "ng e2e",
     "e2e:ci": "ng e2e --protractorConfig=e2e/protractor-ci.conf.js",
-    "prettier:write": "npx prettier --write \"{src,e2e/src}/**/*\" --ignore-unknown",
-    "prettier:check": "npx prettier --check \"{src,e2e/src}/**/*\" --ignore-unknown"
+    "lint": "ng lint && npm run prettier -- --check",
+    "fmt": "ng lint --fix && npm run prettier -- --write",
+    "prettier": "prettier \"{src,e2e/src}/**/*.{css,scss,html,ts,js}\""
   },
   "private": true,
   "dependencies": {
