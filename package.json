@@ -25,7 +25,7 @@
     "@angular/router": "11.2.4",
     "@angular/service-worker": "11.2.4",
     "@capacitor-community/firebase-crashlytics": "1.0.0",
-    "@capacitor-community/keep-awake": "2.0.0",
+    "@capacitor-community/keep-awake": "2.1.0",
     "@capacitor-community/privacy-screen": "2.0.0",
     "@capacitor-community/text-to-speech": "1.1.0",
     "@capacitor/android": "3.0.0-rc.0",
