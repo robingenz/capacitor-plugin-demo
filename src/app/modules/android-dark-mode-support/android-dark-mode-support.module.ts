@@ -13,8 +13,8 @@ import { AndroidDarkModeSupportPage } from './android-dark-mode-support.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    AndroidDarkModeSupportPageRoutingModule
+    AndroidDarkModeSupportPageRoutingModule,
   ],
-  declarations: [AndroidDarkModeSupportPage]
+  declarations: [AndroidDarkModeSupportPage],
 })
 export class AndroidDarkModeSupportPageModule {}

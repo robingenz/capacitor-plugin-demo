@@ -6,8 +6,8 @@ import { AndroidDarkModeSupportPage } from './android-dark-mode-support.page';
 const routes: Routes = [
   {
     path: '',
-    component: AndroidDarkModeSupportPage
-  }
+    component: AndroidDarkModeSupportPage,
+  },
 ];
 
 @NgModule({
