@@ -56,7 +56,7 @@
     "@capacitor/cli": "3.0.0-rc.1",
     "@ionic/angular-toolkit": "3.1.1",
     "@ionic/cli": "6.14.1",
-    "@types/jasmine": "3.6.10",
+    "@types/jasmine": "3.6.11",
     "@types/jasminewd2": "2.0.8",
     "@types/node": "15.0.1",
     "@typescript-eslint/eslint-plugin": "4.22.0",
