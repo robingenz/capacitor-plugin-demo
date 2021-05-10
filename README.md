@@ -14,6 +14,7 @@ The following plugins are included:
 - [robingenz/capacitor-background-task](https://github.com/robingenz/capacitor-background-task)
 - [robingenz/capacitor-badge](https://github.com/robingenz/capacitor-badge)
 - [robingenz/capacitor-firebase-performance](https://github.com/robingenz/capacitor-firebase-performance)
+- [robingenz/capacitor-screen-orientation](https://github.com/robingenz/capacitor-screen-orientation)
 - [capacitor-community/firebase-crashlytics](https://github.com/capacitor-community/firebase-crashlytics)
 - [capacitor-community/keep-awake](https://github.com/capacitor-community/keep-awake)
 - [capacitor-community/privacy-screen](https://github.com/capacitor-community/privacy-screen)
