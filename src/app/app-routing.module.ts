@@ -68,7 +68,10 @@ const routes: Routes = [
   },
   {
     path: 'screen-orientation',
-    loadChildren: () => import('./modules/screen-orientation/screen-orientation.module').then( m => m.ScreenOrientationPageModule)
+    loadChildren: () =>
+      import('./modules/screen-orientation/screen-orientation.module').then(
+        m => m.ScreenOrientationPageModule,
+      ),
   },
   {
     path: '**',
