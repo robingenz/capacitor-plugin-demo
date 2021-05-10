@@ -35,9 +35,8 @@ export class GlobalErrorHandlerService implements ErrorHandler {
   }
 
   private async showErrorAlert(message: string): Promise<void> {
-    const dialogService: DialogService = this.injector.get<DialogService>(
-      DialogService,
-    );
+    const dialogService: DialogService =
+      this.injector.get<DialogService>(DialogService);
     await dialogService.showErrorAlert({ message });
   }
 }

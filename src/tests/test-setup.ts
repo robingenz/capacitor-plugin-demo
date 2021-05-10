@@ -7,9 +7,8 @@ function runOnPushChangeDetection<T>(
   cf: ComponentFixture<T>,
 ): () => Promise<void> {
   return async () => {
-    const cd: ChangeDetectorRef = cf.debugElement.injector.get<ChangeDetectorRef>(
-      ChangeDetectorRef as any,
-    );
+    const cd: ChangeDetectorRef =
+      cf.debugElement.injector.get<ChangeDetectorRef>(ChangeDetectorRef as any);
     cd.detectChanges();
     await cf.whenStable();
   };
