@@ -146,11 +146,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Download artifacts
-        uses: actions/download-artifact@v2
+      - name: Set up Node.js ${{ env.NODE_VERSION }}
+        uses: actions/setup-node@v2
         with:
-          name: www
-          path: www
+          node-version: ${{ env.NODE_VERSION }}
+      - name: Install dependencies
+        run: npm ci
+      - name: Build web assets
+        run: npm run build -- --prod --base-href capacitor-plugin-demo
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
