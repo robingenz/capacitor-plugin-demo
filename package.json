@@ -56,7 +56,7 @@
     "@angular/language-service": "11.2.13",
     "@capacitor/cli": "3.0.0-rc.2",
     "@ionic/angular-toolkit": "3.1.1",
-    "@ionic/cli": "6.14.1",
+    "@ionic/cli": "6.15.0",
     "@types/jasmine": "3.7.2",
     "@types/jasminewd2": "2.0.9",
     "@types/node": "15.0.2",
