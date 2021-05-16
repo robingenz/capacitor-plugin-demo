@@ -28,7 +28,7 @@
     "@capacitor-community/keep-awake": "2.1.0",
     "@capacitor-community/privacy-screen": "2.0.0",
     "@capacitor-community/text-to-speech": "1.1.1",
-    "@capacitor/android": "3.0.0-rc.2",
+    "@capacitor/android": "3.0.0-rc.3",
     "@capacitor/app": "0.3.10",
     "@capacitor/core": "3.0.0-rc.3",
     "@capacitor/haptics": "0.3.9",
@@ -44,7 +44,7 @@
     "zone.js": "0.11.4"
   },
   "devDependencies": {
-    "@angular-devkit/architect": "0.1102.12",
+    "@angular-devkit/architect": "0.1102.13",
     "@angular-devkit/build-angular": "0.1102.12",
     "@angular-eslint/builder": "4.2.0",
     "@angular-eslint/eslint-plugin": "4.2.0",
