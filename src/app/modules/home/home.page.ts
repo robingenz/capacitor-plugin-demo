@@ -32,6 +32,10 @@ export class HomePage {
       url: '/privacy-screen',
     },
     {
+      name: 'Screen Orientation',
+      url: '/screen-orientation',
+    },
+    {
       name: 'Text To Speech',
       url: '/text-to-speech',
     },

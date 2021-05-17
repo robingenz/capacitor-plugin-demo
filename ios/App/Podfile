@@ -19,6 +19,7 @@ def capacitor_pods
   pod 'RobingenzCapacitorBackgroundTask', :path => '../../node_modules/@robingenz/capacitor-background-task'
   pod 'RobingenzCapacitorBadge', :path => '../../node_modules/@robingenz/capacitor-badge'
   pod 'RobingenzCapacitorFirebasePerformance', :path => '../../node_modules/@robingenz/capacitor-firebase-performance'
+  pod 'RobingenzCapacitorScreenOrientation', :path => '../../node_modules/@robingenz/capacitor-screen-orientation'
 end
 
 target 'App' do

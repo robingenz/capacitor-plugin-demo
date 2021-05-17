@@ -67,6 +67,13 @@ const routes: Routes = [
       ).then(m => m.AndroidDarkModeSupportPageModule),
   },
   {
+    path: 'screen-orientation',
+    loadChildren: () =>
+      import('./modules/screen-orientation/screen-orientation.module').then(
+        m => m.ScreenOrientationPageModule,
+      ),
+  },
+  {
     path: '**',
     redirectTo: 'home',
   },

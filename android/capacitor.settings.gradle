@@ -34,3 +34,6 @@ project(':robingenz-capacitor-badge').projectDir = new File('../node_modules/@ro
 
 include ':robingenz-capacitor-firebase-performance'
 project(':robingenz-capacitor-firebase-performance').projectDir = new File('../node_modules/@robingenz/capacitor-firebase-performance/android')
+
+include ':robingenz-capacitor-screen-orientation'
+project(':robingenz-capacitor-screen-orientation').projectDir = new File('../node_modules/@robingenz/capacitor-screen-orientation/android')

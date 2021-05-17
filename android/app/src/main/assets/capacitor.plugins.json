@@ -42,5 +42,9 @@
 	{
 		"pkg": "@robingenz/capacitor-firebase-performance",
 		"classpath": "dev.robingenz.capacitor.firebaseperformance.FirebasePerformancePlugin"
+	},
+	{
+		"pkg": "@robingenz/capacitor-screen-orientation",
+		"classpath": "dev.robingenz.capacitor.screenorientation.ScreenOrientationPlugin"
 	}
 ]
