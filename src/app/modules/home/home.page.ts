@@ -41,5 +41,5 @@ export class HomePage {
     },
   ];
 
-  constructor() { }
+  constructor() {}
 }
