@@ -49,7 +49,7 @@
     "@angular-devkit/build-angular": "12.0.0",
     "@angular-eslint/builder": "4.2.0",
     "@angular-eslint/eslint-plugin": "4.2.0",
-    "@angular-eslint/eslint-plugin-template": "4.2.0",
+    "@angular-eslint/eslint-plugin-template": "12.0.0",
     "@angular-eslint/template-parser": "4.2.0",
     "@angular/cli": "12.0.0",
     "@angular/compiler": "12.0.0",
