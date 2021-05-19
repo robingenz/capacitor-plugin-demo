@@ -48,7 +48,7 @@
     "@angular-devkit/architect": "0.1200.0",
     "@angular-devkit/build-angular": "12.0.0",
     "@angular-eslint/builder": "12.0.0",
-    "@angular-eslint/eslint-plugin": "4.2.0",
+    "@angular-eslint/eslint-plugin": "12.0.0",
     "@angular-eslint/eslint-plugin-template": "12.0.0",
     "@angular-eslint/template-parser": "4.2.0",
     "@angular/cli": "12.0.0",
