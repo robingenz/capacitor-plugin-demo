@@ -17,11 +17,19 @@ export class ScreenOrientationPage {
   }
 
   public async lock(): Promise<void> {
+    await this.requestFullscreen();
     const currentOrientation = await ScreenOrientation.getCurrentOrientation();
     await ScreenOrientation.lock({ type: currentOrientation.type });
   }
 
   public async unlock(): Promise<void> {
     await ScreenOrientation.unlock();
+  }
+
+  private async requestFullscreen(): Promise<void> {
+    if (document.fullscreenElement) {
+      return;
+    }
+    return document.documentElement.requestFullscreen();
   }
 }
