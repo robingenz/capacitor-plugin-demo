@@ -75,7 +75,7 @@
     "prettier": "2.3.0",
     "protractor": "7.0.0",
     "puppeteer": "9.1.1",
-    "ts-node": "9.1.1",
+    "ts-node": "10.0.0",
     "typescript": "4.2.4"
   },
   "description": "Simple Ionic Angular app to demonstrate the use of certain Capacitor plugins."
