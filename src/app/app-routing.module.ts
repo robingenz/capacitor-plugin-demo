@@ -46,6 +46,13 @@ const routes: Routes = [
       ),
   },
   {
+    path: 'firebase-app',
+    loadChildren: () =>
+      import('./modules/firebase-app/firebase-app.module').then(
+        m => m.FirebaseAppPageModule,
+      ),
+  },
+  {
     path: 'firebase-performance',
     loadChildren: () =>
       import('./modules/firebase-performance/firebase-performance.module').then(
