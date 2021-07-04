@@ -6,8 +6,8 @@ import { FirebaseAppPage } from './firebase-app.page';
 const routes: Routes = [
   {
     path: '',
-    component: FirebaseAppPage
-  }
+    component: FirebaseAppPage,
+  },
 ];
 
 @NgModule({
