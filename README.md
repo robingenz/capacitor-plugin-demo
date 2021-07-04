@@ -13,6 +13,7 @@ The following plugins are included:
 - [robingenz/capacitor-android-dark-mode-support](https://github.com/robingenz/capacitor-android-dark-mode-support)
 - [robingenz/capacitor-background-task](https://github.com/robingenz/capacitor-background-task)
 - [robingenz/capacitor-badge](https://github.com/robingenz/capacitor-badge)
+- [robingenz/capacitor-firebase-app](https://github.com/robingenz/capacitor-firebase-app)
 - [robingenz/capacitor-firebase-performance](https://github.com/robingenz/capacitor-firebase-performance)
 - [robingenz/capacitor-screen-orientation](https://github.com/robingenz/capacitor-screen-orientation)
 - [capacitor-community/firebase-crashlytics](https://github.com/capacitor-community/firebase-crashlytics)
