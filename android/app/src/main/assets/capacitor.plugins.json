@@ -40,6 +40,10 @@
 		"classpath": "dev.robingenz.capacitor.badge.BadgePlugin"
 	},
 	{
+		"pkg": "@robingenz/capacitor-firebase-app",
+		"classpath": "dev.robingenz.capacitorjs.plugins.firebase.app.FirebaseAppPlugin"
+	},
+	{
 		"pkg": "@robingenz/capacitor-firebase-performance",
 		"classpath": "dev.robingenz.capacitor.firebaseperformance.FirebasePerformancePlugin"
 	},
