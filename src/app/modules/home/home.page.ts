@@ -16,6 +16,10 @@ export class HomePage {
       url: '/badge',
     },
     {
+      name: 'Firebase App',
+      url: '/firebase-app',
+    },
+    {
       name: 'Firebase Crashlytics',
       url: '/firebase-crashlytics',
     },
