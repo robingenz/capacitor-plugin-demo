@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Platform } from '@ionic/angular';
 import { FirebaseApp } from '@robingenz/capacitor-firebase-app';
 
 @Component({
@@ -18,9 +19,12 @@ export class FirebaseAppPage implements OnInit {
   private readonly GH_URL =
     'https://github.com/robingenz/capacitor-firebase-app';
 
-  constructor() {}
+  constructor(private readonly platform: Platform) {}
 
   public ngOnInit(): void {
+    if (!this.platform.is('capacitor')) {
+      return;
+    }
     FirebaseApp.getName().then(result => {
       this.name = result.name;
     });
