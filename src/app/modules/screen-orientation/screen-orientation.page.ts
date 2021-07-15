@@ -11,7 +11,7 @@ export class ScreenOrientationPage {
   private readonly GH_URL =
     'https://github.com/robingenz/capacitor-screen-orientation';
 
-  constructor(private readonly platform: Platform) { }
+  constructor(private readonly platform: Platform) {}
 
   public openOnGithub(): void {
     window.open(this.GH_URL, '_blank');
