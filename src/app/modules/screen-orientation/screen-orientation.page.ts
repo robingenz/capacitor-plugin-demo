@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Platform } from '@ionic/angular';
 import { ScreenOrientation } from '@robingenz/capacitor-screen-orientation';
 
 @Component({
@@ -10,7 +11,7 @@ export class ScreenOrientationPage {
   private readonly GH_URL =
     'https://github.com/robingenz/capacitor-screen-orientation';
 
-  constructor() {}
+  constructor(private readonly platform: Platform) { }
 
   public openOnGithub(): void {
     window.open(this.GH_URL, '_blank');
@@ -27,6 +28,9 @@ export class ScreenOrientationPage {
   }
 
   private async requestFullscreen(): Promise<void> {
+    if (this.platform.is('capacitor')) {
+      return;
+    }
     if (document.fullscreenElement) {
       return;
     }
