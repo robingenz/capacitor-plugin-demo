@@ -81,6 +81,13 @@ const routes: Routes = [
       ),
   },
   {
+    path: 'app-update',
+    loadChildren: () =>
+      import('./modules/app-update/app-update.module').then(
+        m => m.AppUpdatePageModule,
+      ),
+  },
+  {
     path: '**',
     redirectTo: 'home',
   },

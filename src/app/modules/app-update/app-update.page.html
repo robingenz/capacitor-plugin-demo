@@ -1,0 +1,102 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>App Update</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>About</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      ⚡️ Capacitor plugin that assists with app updates.
+    </ion-card-content>
+    <ion-row class="ion-no-padding">
+      <ion-col>
+        <ion-button
+          fill="clear"
+          (click)="openOnGithub()"
+          class="ion-float-right"
+          >GitHub</ion-button
+        >
+      </ion-col>
+    </ion-row>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Demo</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="fixed">Available App Version</ion-label>
+        <ion-input
+          type="text"
+          readonly
+          [value]="appUpdateInfo?.availableVersion"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="fixed">Available Version Release Date</ion-label>
+        <ion-input
+          type="text"
+          readonly
+          [value]="appUpdateInfo?.availableVersionReleaseDate"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="fixed">Current App Version</ion-label>
+        <ion-input
+          type="text"
+          readonly
+          [value]="appUpdateInfo?.currentVersion"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="fixed">Flexbile Update Allowed</ion-label>
+        <ion-checkbox
+          readonly
+          [checked]="appUpdateInfo?.flexibleUpdateAllowed"
+        ></ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-label position="fixed">Immediate Update Allowed</ion-label>
+        <ion-checkbox
+          readonly
+          [checked]="appUpdateInfo?.immediateUpdateAllowed"
+        ></ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-label position="fixed">Update Availability</ion-label>
+        <ion-input
+          type="number"
+          readonly
+          [value]="appUpdateInfo?.updateAvailability"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="fixed">Update Priority</ion-label>
+        <ion-input
+          type="number"
+          readonly
+          [value]="appUpdateInfo?.updatePriority"
+        ></ion-input>
+      </ion-item>
+      <ion-button expand="block" (click)="openAppStore()"
+        >Open App Store</ion-button
+      >
+      <ion-button expand="block" (click)="performImmediateUpdate()"
+        >Perform Immediate Update</ion-button
+      >
+      <ion-button expand="block" (click)="startFlexibleUpdate()"
+        >Start Flexible Update</ion-button
+      >
+      <ion-button expand="block" (click)="completeFlexibleUpdate()"
+        >Complete Flexible Update</ion-button
+      >
+    </ion-card-content>
+  </ion-card>
+</ion-content>
