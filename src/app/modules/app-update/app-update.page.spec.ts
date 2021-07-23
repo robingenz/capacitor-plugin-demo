@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
-import { IonicModule } from '@ionic/angular';
+import { SharedTestingModule } from '@tests/modules';
 import { AppUpdatePage } from './app-update.page';
 
 describe('AppUpdatePage', () => {
@@ -10,7 +10,7 @@ describe('AppUpdatePage', () => {
     waitForAsync(() => {
       TestBed.configureTestingModule({
         declarations: [AppUpdatePage],
-        imports: [IonicModule.forRoot()],
+        imports: [SharedTestingModule],
       }).compileComponents();
 
       fixture = TestBed.createComponent(AppUpdatePage);

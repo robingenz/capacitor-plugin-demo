@@ -1,7 +1,5 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
-import { IonicModule } from '@ionic/angular';
 import { SharedTestingModule } from '@tests/modules';
-
 import { BackgroundTaskPage } from './background-task.page';
 
 describe('BackgroundTaskPage', () => {
