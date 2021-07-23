@@ -11,6 +11,7 @@
 The following plugins are included:
 
 - [robingenz/capacitor-android-dark-mode-support](https://github.com/robingenz/capacitor-android-dark-mode-support)
+- [robingenz/capacitor-app-update](https://github.com/robingenz/capacitor-app-update)
 - [robingenz/capacitor-background-task](https://github.com/robingenz/capacitor-background-task)
 - [robingenz/capacitor-badge](https://github.com/robingenz/capacitor-badge)
 - [robingenz/capacitor-firebase-app](https://github.com/robingenz/capacitor-firebase-app)
