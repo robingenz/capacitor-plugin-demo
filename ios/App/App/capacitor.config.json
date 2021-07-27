@@ -10,6 +10,10 @@
 		},
 		"PrivacyScreen": {
 			"enable": true
+		},
+		"Badge": {
+			"persist": true,
+			"autoClear": true
 		}
 	},
 	"cordova": {}

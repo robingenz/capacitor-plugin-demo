@@ -32,6 +32,10 @@
 		"classpath": "dev.robingenz.capacitor.androiddarkmodesupport.AndroidDarkModeSupportPlugin"
 	},
 	{
+		"pkg": "@robingenz/capacitor-app-update",
+		"classpath": "dev.robingenz.capacitor.appupdate.AppUpdatePlugin"
+	},
+	{
 		"pkg": "@robingenz/capacitor-background-task",
 		"classpath": "dev.robingenz.capacitor.backgroundtask.BackgroundTaskPlugin"
 	},
