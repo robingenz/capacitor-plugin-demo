@@ -9,7 +9,11 @@
 			"launchShowDuration": 0
 		},
 		"PrivacyScreen": {
-			"enable": false
+			"enable": true
+		},
+		"Badge": {
+			"persist": true,
+			"autoClear": true
 		}
 	},
 	"cordova": {}
