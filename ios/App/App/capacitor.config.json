@@ -9,7 +9,7 @@
 			"launchShowDuration": 0
 		},
 		"PrivacyScreen": {
-			"enable": false
+			"enable": true
 		}
 	},
 	"cordova": {}
