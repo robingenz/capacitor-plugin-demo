@@ -12,10 +12,14 @@ export class BadgePage implements OnInit {
   public formGroup = new FormGroup({
     count: new FormControl(0),
   });
+  public isSupported = false;
 
   constructor() {}
 
   public ngOnInit() {
+    Badge.isSupported().then(result => {
+      this.isSupported = result.isSupported;
+    });
     this.refreshBadgeCount();
   }
 
@@ -36,6 +40,16 @@ export class BadgePage implements OnInit {
 
   public async clearBadgeCount(): Promise<void> {
     await Badge.clear();
+    await this.refreshBadgeCount();
+  }
+
+  public async increaseBadgeCount(): Promise<void> {
+    await Badge.increase();
+    await this.refreshBadgeCount();
+  }
+
+  public async decreaseBadgeCount(): Promise<void> {
+    await Badge.decrease();
     await this.refreshBadgeCount();
   }
 
