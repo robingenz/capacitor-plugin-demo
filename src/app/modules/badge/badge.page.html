@@ -35,11 +35,13 @@
       <form [formGroup]="formGroup">
         <ion-item>
           <ion-label position="fixed">Count</ion-label>
-          <ion-input formControlName="count" type="number"></ion-input>
+          <ion-input formControlName="count" type="number" [disabled]="!isSupported"></ion-input>
         </ion-item>
       </form>
       <ion-button expand="block" (click)="setBadgeCount()">Set</ion-button>
       <ion-button expand="block" (click)="clearBadgeCount()">Clear</ion-button>
+      <ion-button expand="block" (click)="increaseBadgeCount()">Increase</ion-button>
+      <ion-button expand="block" (click)="decreaseBadgeCount()">Decrease</ion-button>
     </ion-card-content>
   </ion-card>
 </ion-content>
