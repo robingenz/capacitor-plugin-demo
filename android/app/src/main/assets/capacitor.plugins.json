@@ -52,6 +52,10 @@
 		"classpath": "dev.robingenz.capacitor.firebaseperformance.FirebasePerformancePlugin"
 	},
 	{
+		"pkg": "@robingenz/capacitor-managed-configurations",
+		"classpath": "dev.robingenz.capacitorjs.plugins.managedconfigurations.ManagedConfigurationsPlugin"
+	},
+	{
 		"pkg": "@robingenz/capacitor-screen-orientation",
 		"classpath": "dev.robingenz.capacitor.screenorientation.ScreenOrientationPlugin"
 	}

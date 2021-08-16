@@ -88,6 +88,13 @@ const routes: Routes = [
       ),
   },
   {
+    path: 'managed-configurations',
+    loadChildren: () =>
+      import(
+        './modules/managed-configurations/managed-configurations.module'
+      ).then(m => m.ManagedConfigurationsPageModule),
+  },
+  {
     path: '**',
     redirectTo: 'home',
   },
