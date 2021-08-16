@@ -6,8 +6,8 @@ import { ManagedConfigurationsPage } from './managed-configurations.page';
 const routes: Routes = [
   {
     path: '',
-    component: ManagedConfigurationsPage
-  }
+    component: ManagedConfigurationsPage,
+  },
 ];
 
 @NgModule({

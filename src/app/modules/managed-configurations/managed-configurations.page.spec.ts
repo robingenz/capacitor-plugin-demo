@@ -1,6 +1,5 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
-import { IonicModule } from '@ionic/angular';
-
+import { SharedTestingModule } from '@tests/modules';
 import { ManagedConfigurationsPage } from './managed-configurations.page';
 
 describe('ManagedConfigurationsPage', () => {
@@ -11,7 +10,7 @@ describe('ManagedConfigurationsPage', () => {
     waitForAsync(() => {
       TestBed.configureTestingModule({
         declarations: [ManagedConfigurationsPage],
-        imports: [IonicModule.forRoot()],
+        imports: [SharedTestingModule],
       }).compileComponents();
 
       fixture = TestBed.createComponent(ManagedConfigurationsPage);

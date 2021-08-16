@@ -1,12 +1,10 @@
-import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { IonicModule } from '@ionic/angular';
+import { SharedModule } from '@app/shared';
 import { AppUpdatePageRoutingModule } from './app-update-routing.module';
 import { AppUpdatePage } from './app-update.page';
 
 @NgModule({
-  imports: [CommonModule, FormsModule, IonicModule, AppUpdatePageRoutingModule],
+  imports: [SharedModule, AppUpdatePageRoutingModule],
   declarations: [AppUpdatePage],
 })
 export class AppUpdatePageModule {}
