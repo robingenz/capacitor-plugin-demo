@@ -3,6 +3,7 @@
 
   <restriction
     android:key="server_url"
-    android:restrictionType="string" />
+    android:title="Server URL"
+    android:restrictionType="bool" />
 
 </restrictions>
