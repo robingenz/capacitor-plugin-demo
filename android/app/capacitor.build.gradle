@@ -22,6 +22,7 @@ dependencies {
     implementation project(':robingenz-capacitor-badge')
     implementation project(':robingenz-capacitor-firebase-app')
     implementation project(':robingenz-capacitor-firebase-performance')
+    implementation project(':robingenz-capacitor-managed-configurations')
     implementation project(':robingenz-capacitor-screen-orientation')
 
 }

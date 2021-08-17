@@ -41,5 +41,8 @@ project(':robingenz-capacitor-firebase-app').projectDir = new File('../node_modu
 include ':robingenz-capacitor-firebase-performance'
 project(':robingenz-capacitor-firebase-performance').projectDir = new File('../node_modules/@robingenz/capacitor-firebase-performance/android')
 
+include ':robingenz-capacitor-managed-configurations'
+project(':robingenz-capacitor-managed-configurations').projectDir = new File('../node_modules/@robingenz/capacitor-managed-configurations/android')
+
 include ':robingenz-capacitor-screen-orientation'
 project(':robingenz-capacitor-screen-orientation').projectDir = new File('../node_modules/@robingenz/capacitor-screen-orientation/android')

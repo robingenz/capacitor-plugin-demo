@@ -40,6 +40,10 @@ export class HomePage {
       url: '/keep-awake',
     },
     {
+      name: 'Managed Configuration',
+      url: '/managed-configurations',
+    },
+    {
       name: 'Privacy Screen',
       url: '/privacy-screen',
     },
