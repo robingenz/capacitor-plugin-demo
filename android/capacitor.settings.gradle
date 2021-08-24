@@ -35,6 +35,9 @@ project(':robingenz-capacitor-background-task').projectDir = new File('../node_m
 include ':robingenz-capacitor-badge'
 project(':robingenz-capacitor-badge').projectDir = new File('../node_modules/@robingenz/capacitor-badge/android')
 
+include ':robingenz-capacitor-file-picker'
+project(':robingenz-capacitor-file-picker').projectDir = new File('../node_modules/@robingenz/capacitor-file-picker/android')
+
 include ':robingenz-capacitor-firebase-app'
 project(':robingenz-capacitor-firebase-app').projectDir = new File('../node_modules/@robingenz/capacitor-firebase-app/android')
 
