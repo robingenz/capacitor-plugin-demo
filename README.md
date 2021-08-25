@@ -14,6 +14,7 @@ The following plugins are included:
 - [robingenz/capacitor-app-update](https://github.com/robingenz/capacitor-app-update)
 - [robingenz/capacitor-background-task](https://github.com/robingenz/capacitor-background-task)
 - [robingenz/capacitor-badge](https://github.com/robingenz/capacitor-badge)
+- [robingenz/capacitor-file-picker](https://github.com/robingenz/capacitor-file-picker)
 - [robingenz/capacitor-firebase-app](https://github.com/robingenz/capacitor-firebase-app)
 - [robingenz/capacitor-firebase-performance](https://github.com/robingenz/capacitor-firebase-performance)
 - [robingenz/capacitor-managed-configurations](https://github.com/robingenz/capacitor-managed-configurations)
