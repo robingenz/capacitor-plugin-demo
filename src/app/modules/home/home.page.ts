@@ -24,6 +24,10 @@ export class HomePage {
       url: '/badge',
     },
     {
+      name: 'File Picker',
+      url: '/file-picker',
+    },
+    {
       name: 'Firebase App',
       url: '/firebase-app',
     },
