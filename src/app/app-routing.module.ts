@@ -95,6 +95,13 @@ const routes: Routes = [
       ).then(m => m.ManagedConfigurationsPageModule),
   },
   {
+    path: 'file-picker',
+    loadChildren: () =>
+      import('./modules/file-picker/file-picker.module').then(
+        m => m.FilePickerPageModule,
+      ),
+  },
+  {
     path: '**',
     redirectTo: 'home',
   },
