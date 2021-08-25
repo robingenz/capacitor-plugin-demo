@@ -44,6 +44,10 @@
 		"classpath": "dev.robingenz.capacitor.badge.BadgePlugin"
 	},
 	{
+		"pkg": "@robingenz/capacitor-file-picker",
+		"classpath": "dev.robingenz.capacitorjs.plugins.filepicker.FilePickerPlugin"
+	},
+	{
 		"pkg": "@robingenz/capacitor-firebase-app",
 		"classpath": "dev.robingenz.capacitorjs.plugins.firebase.app.FirebaseAppPlugin"
 	},

@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>File Picker</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>About</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      ⚡️ Capacitor plugin that allows the user to select a file.
+    </ion-card-content>
+    <ion-row class="ion-no-padding">
+      <ion-col>
+        <ion-button
+          fill="clear"
+          (click)="openOnGithub()"
+          class="ion-float-right"
+          >GitHub</ion-button
+        >
+      </ion-col>
+    </ion-row>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Demo</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="fixed">Name</ion-label>
+        <ion-input type="text" readonly [value]="lastResult?.name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="fixed">Path</ion-label>
+        <ion-input type="text" readonly [value]="lastResult?.path"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="fixed">Mime Type</ion-label>
+        <ion-input
+          type="text"
+          readonly
+          [value]="lastResult?.mimeType"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="fixed">Size</ion-label>
+        <ion-input type="text" readonly [value]="lastResult?.size"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="fixed">Data</ion-label>
+        <ion-input type="text" readonly [value]="lastResult?.data"></ion-input>
+      </ion-item>
+      <ion-button expand="block" (click)="pickFile()">Pick File</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
