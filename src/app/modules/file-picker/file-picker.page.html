@@ -31,32 +31,30 @@
       <ion-card-title>Demo</ion-card-title>
     </ion-card-header>
     <ion-card-content>
-      <ng-container *ngIf="lastResult">
-        <ion-item>
-          <ion-label position="fixed">Name</ion-label>
-          <ion-input type="text" readonly [value]="lastResult.name"></ion-input>
-        </ion-item>
-        <ion-item>
-          <ion-label position="fixed">Path</ion-label>
-          <ion-input type="text" readonly [value]="lastResult.path"></ion-input>
-        </ion-item>
-        <ion-item>
-          <ion-label position="fixed">Mime Type</ion-label>
-          <ion-input
-            type="text"
-            readonly
-            [value]="lastResult.mimeType"
-          ></ion-input>
-        </ion-item>
-        <ion-item>
-          <ion-label position="fixed">Size</ion-label>
-          <ion-input type="text" readonly [value]="lastResult.size"></ion-input>
-        </ion-item>
-        <ion-item>
-          <ion-label position="fixed">Data</ion-label>
-          <ion-input type="text" readonly [value]="lastResult.data"></ion-input>
-        </ion-item>
-      </ng-container>
+      <ion-item>
+        <ion-label position="fixed">Name</ion-label>
+        <ion-input type="text" readonly [value]="lastResult?.name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="fixed">Path</ion-label>
+        <ion-input type="text" readonly [value]="lastResult?.path"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="fixed">Mime Type</ion-label>
+        <ion-input
+          type="text"
+          readonly
+          [value]="lastResult?.mimeType"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="fixed">Size</ion-label>
+        <ion-input type="text" readonly [value]="lastResult?.size"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="fixed">Data</ion-label>
+        <ion-input type="text" readonly [value]="lastResult?.data"></ion-input>
+      </ion-item>
       <ion-button expand="block" (click)="pickFile()">Pick File</ion-button>
     </ion-card-content>
   </ion-card>
