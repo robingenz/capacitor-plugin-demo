@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, NgZone, OnDestroy, OnInit } from '@angular/core';
 import { PluginListenerHandle } from '@capacitor/core';
 import { Platform } from '@ionic/angular';
 import { ScreenOrientation } from '@robingenz/capacitor-screen-orientation';
@@ -14,13 +14,18 @@ export class ScreenOrientationPage implements OnInit, OnDestroy {
     'https://github.com/robingenz/capacitor-screen-orientation';
   private orientationChangeListener: PluginListenerHandle | undefined;
 
-  constructor(private readonly platform: Platform) {}
+  constructor(
+    private readonly platform: Platform,
+    private readonly ngZone: NgZone,
+  ) {}
 
   public ngOnInit() {
     this.orientationChangeListener = ScreenOrientation.addListener(
       'screenOrientationChange',
       async ({ type }) => {
-        this.currentOrientation = type;
+        this.ngZone.run(() => {
+          this.currentOrientation = type;
+        });
       },
     );
   }
