@@ -19,8 +19,10 @@ def capacitor_pods
   pod 'RobingenzCapacitorAppUpdate', :path => '../../node_modules/@robingenz/capacitor-app-update'
   pod 'RobingenzCapacitorBackgroundTask', :path => '../../node_modules/@robingenz/capacitor-background-task'
   pod 'RobingenzCapacitorBadge', :path => '../../node_modules/@robingenz/capacitor-badge'
+  pod 'RobingenzCapacitorFilePicker', :path => '../../node_modules/@robingenz/capacitor-file-picker'
   pod 'RobingenzCapacitorFirebaseApp', :path => '../../node_modules/@robingenz/capacitor-firebase-app'
   pod 'RobingenzCapacitorFirebasePerformance', :path => '../../node_modules/@robingenz/capacitor-firebase-performance'
+  pod 'RobingenzCapacitorManagedConfigurations', :path => '../../node_modules/@robingenz/capacitor-managed-configurations'
   pod 'RobingenzCapacitorScreenOrientation', :path => '../../node_modules/@robingenz/capacitor-screen-orientation'
 end
 
