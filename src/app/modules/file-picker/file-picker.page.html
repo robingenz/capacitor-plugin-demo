@@ -31,6 +31,25 @@
       <ion-card-title>Demo</ion-card-title>
     </ion-card-header>
     <ion-card-content>
+      <form [formGroup]="formGroup">
+        <ion-item>
+          <ion-label position="fixed">Types</ion-label>
+          <ion-select
+            multiple="true"
+            placeholder="Types"
+            formControlName="types"
+          >
+            <ion-select-option value="audio/aac">audio/aac</ion-select-option>
+            <ion-select-option value="image/png">image/png</ion-select-option>
+            <ion-select-option value="application/pdf"
+              >application/pdf</ion-select-option
+            >
+            <ion-select-option value="application/json"
+              >application/json</ion-select-option
+            >
+          </ion-select>
+        </ion-item>
+      </form>
       <ion-item>
         <ion-label position="fixed">Name</ion-label>
         <ion-input type="text" readonly [value]="lastResult?.name"></ion-input>
