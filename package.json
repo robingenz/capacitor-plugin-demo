@@ -39,7 +39,7 @@
     "@robingenz/capacitor-app-update": "1.0.0-alpha.3",
     "@robingenz/capacitor-background-task": "1.0.0",
     "@robingenz/capacitor-badge": "1.2.0",
-    "@robingenz/capacitor-file-picker": "0.1.1-dev.14e75be.1630229855",
+    "@robingenz/capacitor-file-picker": "0.1.2",
     "@robingenz/capacitor-firebase-app": "1.1.0",
     "@robingenz/capacitor-firebase-performance": "1.2.0",
     "@robingenz/capacitor-managed-configurations": "0.1.3",
