@@ -20,7 +20,6 @@ export class FilePickerPage {
 
   public async pickFile(): Promise<void> {
     const types = this.formGroup.get('types')?.value || [];
-    console.log(types);
     this.lastResult = await FilePicker.pickFile({ types });
   }
 
