@@ -31,7 +31,7 @@
     "@capacitor/android": "3.2.2",
     "@capacitor/app": "1.0.3",
     "@capacitor/core": "3.2.0",
-    "@capacitor/haptics": "1.0.2",
+    "@capacitor/haptics": "1.0.3",
     "@capacitor/ios": "3.2.2",
     "@capacitor/keyboard": "1.0.3",
     "@ionic/angular": "5.7.0",
