@@ -30,7 +30,7 @@
     "@capacitor-community/text-to-speech": "1.1.1",
     "@capacitor/android": "3.2.2",
     "@capacitor/app": "1.0.3",
-    "@capacitor/core": "3.2.0",
+    "@capacitor/core": "3.2.2",
     "@capacitor/haptics": "1.0.3",
     "@capacitor/ios": "3.2.2",
     "@capacitor/keyboard": "1.0.3",
