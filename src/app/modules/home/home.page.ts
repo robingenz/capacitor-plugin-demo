@@ -28,18 +28,6 @@ export class HomePage {
       url: '/file-picker',
     },
     {
-      name: 'Firebase App',
-      url: '/firebase-app',
-    },
-    {
-      name: 'Firebase Crashlytics',
-      url: '/firebase-crashlytics',
-    },
-    {
-      name: 'Firebase Performance',
-      url: '/firebase-performance',
-    },
-    {
       name: 'Keep Awake',
       url: '/keep-awake',
     },
