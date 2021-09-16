@@ -2,9 +2,6 @@
 include ':capacitor-android'
 project(':capacitor-android').projectDir = new File('../node_modules/@capacitor/android/capacitor')
 
-include ':capacitor-community-firebase-crashlytics'
-project(':capacitor-community-firebase-crashlytics').projectDir = new File('../node_modules/@capacitor-community/firebase-crashlytics/android')
-
 include ':capacitor-community-keep-awake'
 project(':capacitor-community-keep-awake').projectDir = new File('../node_modules/@capacitor-community/keep-awake/android')
 
@@ -37,12 +34,6 @@ project(':robingenz-capacitor-badge').projectDir = new File('../node_modules/@ro
 
 include ':robingenz-capacitor-file-picker'
 project(':robingenz-capacitor-file-picker').projectDir = new File('../node_modules/@robingenz/capacitor-file-picker/android')
-
-include ':robingenz-capacitor-firebase-app'
-project(':robingenz-capacitor-firebase-app').projectDir = new File('../node_modules/@robingenz/capacitor-firebase-app/android')
-
-include ':robingenz-capacitor-firebase-performance'
-project(':robingenz-capacitor-firebase-performance').projectDir = new File('../node_modules/@robingenz/capacitor-firebase-performance/android')
 
 include ':robingenz-capacitor-managed-configurations'
 project(':robingenz-capacitor-managed-configurations').projectDir = new File('../node_modules/@robingenz/capacitor-managed-configurations/android')
