@@ -46,27 +46,6 @@ const routes: Routes = [
       ),
   },
   {
-    path: 'firebase-app',
-    loadChildren: () =>
-      import('./modules/firebase-app/firebase-app.module').then(
-        m => m.FirebaseAppPageModule,
-      ),
-  },
-  {
-    path: 'firebase-performance',
-    loadChildren: () =>
-      import('./modules/firebase-performance/firebase-performance.module').then(
-        m => m.FirebasePerformancePageModule,
-      ),
-  },
-  {
-    path: 'firebase-crashlytics',
-    loadChildren: () =>
-      import('./modules/firebase-crashlytics/firebase-crashlytics.module').then(
-        m => m.FirebaseCrashlyticsPageModule,
-      ),
-  },
-  {
     path: 'android-dark-mode-support',
     loadChildren: () =>
       import(

@@ -1,9 +1,5 @@
 [
 	{
-		"pkg": "@capacitor-community/firebase-crashlytics",
-		"classpath": "com.getcapacitor.community.firebasecrashlytics.FirebaseCrashlyticsPlugin"
-	},
-	{
 		"pkg": "@capacitor-community/keep-awake",
 		"classpath": "com.getcapacitor.community.keepawake.KeepAwakePlugin"
 	},
@@ -46,14 +42,6 @@
 	{
 		"pkg": "@robingenz/capacitor-file-picker",
 		"classpath": "dev.robingenz.capacitorjs.plugins.filepicker.FilePickerPlugin"
-	},
-	{
-		"pkg": "@robingenz/capacitor-firebase-app",
-		"classpath": "dev.robingenz.capacitorjs.plugins.firebase.app.FirebaseAppPlugin"
-	},
-	{
-		"pkg": "@robingenz/capacitor-firebase-performance",
-		"classpath": "dev.robingenz.capacitor.firebaseperformance.FirebasePerformancePlugin"
 	},
 	{
 		"pkg": "@robingenz/capacitor-managed-configurations",
