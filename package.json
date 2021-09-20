@@ -47,7 +47,7 @@
   },
   "devDependencies": {
     "@angular-devkit/architect": "0.1200.5",
-    "@angular-devkit/build-angular": "12.2.5",
+    "@angular-devkit/build-angular": "12.2.6",
     "@angular-eslint/builder": "12.4.1",
     "@angular-eslint/eslint-plugin": "12.4.1",
     "@angular-eslint/eslint-plugin-template": "12.4.1",
@@ -61,7 +61,7 @@
     "@ionic/cli": "6.17.1",
     "@types/jasmine": "3.9.0",
     "@types/jasminewd2": "2.0.10",
-    "@types/node": "16.9.1",
+    "@types/node": "16.9.4",
     "@typescript-eslint/eslint-plugin": "4.31.1",
     "@typescript-eslint/parser": "4.31.1",
     "eslint": "7.32.0",
