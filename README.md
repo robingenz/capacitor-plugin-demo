@@ -16,6 +16,7 @@ The following plugins are included:
 - [robingenz/capacitor-badge](https://github.com/robingenz/capacitor-badge)
 - [robingenz/capacitor-file-picker](https://github.com/robingenz/capacitor-file-picker)
 - [robingenz/capacitor-managed-configurations](https://github.com/robingenz/capacitor-managed-configurations)
+- [robingenz/capacitor-photo-editor](https://github.com/robingenz/capacitor-photo-editor)
 - [robingenz/capacitor-screen-orientation](https://github.com/robingenz/capacitor-screen-orientation)
 - [capacitor-community/keep-awake](https://github.com/capacitor-community/keep-awake)
 - [capacitor-community/privacy-screen](https://github.com/capacitor-community/privacy-screen)

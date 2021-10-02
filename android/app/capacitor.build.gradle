@@ -13,6 +13,8 @@ dependencies {
     implementation project(':capacitor-community-privacy-screen')
     implementation project(':capacitor-community-text-to-speech')
     implementation project(':capacitor-app')
+    implementation project(':capacitor-camera')
+    implementation project(':capacitor-filesystem')
     implementation project(':capacitor-haptics')
     implementation project(':capacitor-keyboard')
     implementation project(':robingenz-capacitor-android-dark-mode-support')
@@ -21,6 +23,7 @@ dependencies {
     implementation project(':robingenz-capacitor-badge')
     implementation project(':robingenz-capacitor-file-picker')
     implementation project(':robingenz-capacitor-managed-configurations')
+    implementation project(':robingenz-capacitor-photo-editor')
     implementation project(':robingenz-capacitor-screen-orientation')
 
 }

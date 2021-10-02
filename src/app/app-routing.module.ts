@@ -81,6 +81,13 @@ const routes: Routes = [
       ),
   },
   {
+    path: 'photo-editor',
+    loadChildren: () =>
+      import('./modules/photo-editor/photo-editor.module').then(
+        m => m.PhotoEditorPageModule,
+      ),
+  },
+  {
     path: '**',
     redirectTo: 'home',
   },
