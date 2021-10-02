@@ -14,6 +14,12 @@ project(':capacitor-community-text-to-speech').projectDir = new File('../node_mo
 include ':capacitor-app'
 project(':capacitor-app').projectDir = new File('../node_modules/@capacitor/app/android')
 
+include ':capacitor-camera'
+project(':capacitor-camera').projectDir = new File('../node_modules/@capacitor/camera/android')
+
+include ':capacitor-filesystem'
+project(':capacitor-filesystem').projectDir = new File('../node_modules/@capacitor/filesystem/android')
+
 include ':capacitor-haptics'
 project(':capacitor-haptics').projectDir = new File('../node_modules/@capacitor/haptics/android')
 
@@ -37,6 +43,9 @@ project(':robingenz-capacitor-file-picker').projectDir = new File('../node_modul
 
 include ':robingenz-capacitor-managed-configurations'
 project(':robingenz-capacitor-managed-configurations').projectDir = new File('../node_modules/@robingenz/capacitor-managed-configurations/android')
+
+include ':robingenz-capacitor-photo-editor'
+project(':robingenz-capacitor-photo-editor').projectDir = new File('../node_modules/@robingenz/capacitor-photo-editor/android')
 
 include ':robingenz-capacitor-screen-orientation'
 project(':robingenz-capacitor-screen-orientation').projectDir = new File('../node_modules/@robingenz/capacitor-screen-orientation/android')

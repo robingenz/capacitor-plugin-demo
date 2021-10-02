@@ -16,6 +16,14 @@
 		"classpath": "com.capacitorjs.plugins.app.AppPlugin"
 	},
 	{
+		"pkg": "@capacitor/camera",
+		"classpath": "com.capacitorjs.plugins.camera.CameraPlugin"
+	},
+	{
+		"pkg": "@capacitor/filesystem",
+		"classpath": "com.capacitorjs.plugins.filesystem.FilesystemPlugin"
+	},
+	{
 		"pkg": "@capacitor/haptics",
 		"classpath": "com.capacitorjs.plugins.haptics.HapticsPlugin"
 	},
@@ -46,6 +54,10 @@
 	{
 		"pkg": "@robingenz/capacitor-managed-configurations",
 		"classpath": "dev.robingenz.capacitorjs.plugins.managedconfigurations.ManagedConfigurationsPlugin"
+	},
+	{
+		"pkg": "@robingenz/capacitor-photo-editor",
+		"classpath": "dev.robingenz.capacitorjs.plugins.photoeditor.PhotoEditorPlugin"
 	},
 	{
 		"pkg": "@robingenz/capacitor-screen-orientation",
