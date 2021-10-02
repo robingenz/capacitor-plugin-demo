@@ -49,32 +49,39 @@
             >
           </ion-select>
         </ion-item>
+        <ion-item>
+          <ion-label position="fixed">Mulitple</ion-label>
+          <ion-checkbox formControlName="multiple"></ion-checkbox>
+        </ion-item>
       </form>
-      <ion-item>
-        <ion-label position="fixed">Name</ion-label>
-        <ion-input type="text" readonly [value]="lastResult?.name"></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label position="fixed">Path</ion-label>
-        <ion-input type="text" readonly [value]="lastResult?.path"></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label position="fixed">Mime Type</ion-label>
-        <ion-input
-          type="text"
-          readonly
-          [value]="lastResult?.mimeType"
-        ></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label position="fixed">Size</ion-label>
-        <ion-input type="text" readonly [value]="lastResult?.size"></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label position="fixed">Data</ion-label>
-        <ion-input type="text" readonly [value]="lastResult?.data"></ion-input>
-      </ion-item>
       <ion-button expand="block" (click)="pickFile()">Pick File</ion-button>
     </ion-card-content>
   </ion-card>
+
+  <ng-container *ngFor="let file of files">
+    <ion-card>
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="fixed">Name</ion-label>
+          <ion-input type="text" readonly [value]="file.name"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="fixed">Path</ion-label>
+          <ion-input type="text" readonly [value]="file.path"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="fixed">Mime Type</ion-label>
+          <ion-input type="text" readonly [value]="file.mimeType"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="fixed">Size</ion-label>
+          <ion-input type="text" readonly [value]="file.size"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="fixed">Data</ion-label>
+          <ion-input type="text" readonly [value]="file.data"></ion-input>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+  </ng-container>
 </ion-content>
