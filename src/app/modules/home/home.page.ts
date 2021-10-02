@@ -36,6 +36,10 @@ export class HomePage {
       url: '/managed-configurations',
     },
     {
+      name: 'Photo Editor',
+      url: '/photo-editor',
+    },
+    {
       name: 'Privacy Screen',
       url: '/privacy-screen',
     },

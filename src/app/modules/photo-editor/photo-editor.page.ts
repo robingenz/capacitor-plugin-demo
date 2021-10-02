@@ -18,14 +18,14 @@ export class PhotoEditorPage {
   constructor() {}
 
   public async selectPhoto(): Promise<void> {
-    const { base64String, path } = await Camera.getPhoto({
-      resultType: CameraResultType.Base64,
+    const { path } = await Camera.getPhoto({
+      resultType: CameraResultType.Uri,
     });
-    if (!base64String || !path) {
+    if (!path) {
       return;
     }
     this.path = path;
-    this.base64String = this.createImgSrcDataString(base64String);
+    await this.setBase64StringByPath(this.path);
   }
 
   public async editPhoto(): Promise<void> {
@@ -33,17 +33,17 @@ export class PhotoEditorPage {
       return;
     }
     await PhotoEditor.editPhoto({ path: this.path });
-    const { data } = await Filesystem.readFile({
-      path: this.path,
-    });
-    this.base64String = this.createImgSrcDataString(data);
+    await this.setBase64StringByPath(this.path);
   }
 
   public openOnGithub(): void {
     window.open(this.GH_URL, '_blank');
   }
 
-  private createImgSrcDataString(base64: string): string {
-    return `data:image/png;base64,${base64}`;
+  private async setBase64StringByPath(path: string): Promise<void> {
+    const { data } = await Filesystem.readFile({
+      path,
+    });
+    this.base64String = `data:image/png;base64,${data}`;
   }
 }
