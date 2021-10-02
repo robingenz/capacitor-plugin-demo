@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
-import { FilePicker, PickFileResult } from '@robingenz/capacitor-file-picker';
+import { File, FilePicker } from '@robingenz/capacitor-file-picker';
 
 @Component({
   selector: 'app-file-picker',
@@ -10,8 +10,9 @@ import { FilePicker, PickFileResult } from '@robingenz/capacitor-file-picker';
 export class FilePickerPage {
   public formGroup = new FormGroup({
     types: new FormControl([]),
+    multiple: new FormControl(false),
   });
-  public lastResult: PickFileResult | undefined;
+  public files: File[] = [];
 
   private readonly GH_URL =
     'https://github.com/robingenz/capacitor-file-picker';
@@ -20,7 +21,9 @@ export class FilePickerPage {
 
   public async pickFile(): Promise<void> {
     const types = this.formGroup.get('types')?.value || [];
-    this.lastResult = await FilePicker.pickFile({ types });
+    const multiple = this.formGroup.get('multiple')?.value || false;
+    const { files } = await FilePicker.pickFiles({ types, multiple });
+    this.files = files;
   }
 
   public openOnGithub(): void {
