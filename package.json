@@ -33,7 +33,7 @@
     "@capacitor/core": "3.2.4",
     "@capacitor/filesystem": "1.0.3",
     "@capacitor/haptics": "1.1.0",
-    "@capacitor/ios": "3.2.3",
+    "@capacitor/ios": "3.2.4",
     "@capacitor/keyboard": "1.1.0",
     "@ionic/angular": "5.8.1",
     "@robingenz/capacitor-android-dark-mode-support": "1.0.0",
