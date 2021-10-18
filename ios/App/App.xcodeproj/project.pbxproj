@@ -14,7 +14,6 @@
 		504EC30F1FED79650016851F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 504EC30E1FED79650016851F /* Assets.xcassets */; };
 		504EC3121FED79650016851F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 504EC3101FED79650016851F /* LaunchScreen.storyboard */; };
 		7C301D0325F3E411008D49E9 /* public in Resources */ = {isa = PBXBuildFile; fileRef = 7C301D0225F3E411008D49E9 /* public */; };
-		7C457D06260FC7A000F78B4D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7C457D05260FC7A000F78B4D /* GoogleService-Info.plist */; };
 		A084ECDBA7D38E1E42DFC39D /* Pods_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF277DCFFFF123FFC6DF26C7 /* Pods_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -164,7 +163,6 @@
 				7C301D0325F3E411008D49E9 /* public in Resources */,
 				504EC30D1FED79650016851F /* Main.storyboard in Resources */,
 				2FAD9763203C412B000D30F8 /* config.xml in Resources */,
-				7C457D06260FC7A000F78B4D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
