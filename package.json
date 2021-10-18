@@ -32,7 +32,7 @@
     "@capacitor/camera": "1.1.0",
     "@capacitor/core": "3.2.4",
     "@capacitor/filesystem": "1.0.3",
-    "@capacitor/haptics": "1.1.0",
+    "@capacitor/haptics": "1.1.2",
     "@capacitor/ios": "3.2.4",
     "@capacitor/keyboard": "1.1.0",
     "@ionic/angular": "5.8.3",
