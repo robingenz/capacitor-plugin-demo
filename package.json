@@ -51,7 +51,7 @@
   "devDependencies": {
     "@angular-devkit/architect": "0.1200.5",
     "@angular-devkit/build-angular": "12.2.10",
-    "@angular-eslint/builder": "12.5.0",
+    "@angular-eslint/builder": "12.6.0",
     "@angular-eslint/eslint-plugin": "12.5.0",
     "@angular-eslint/eslint-plugin-template": "12.6.0",
     "@angular-eslint/template-parser": "12.5.0",
