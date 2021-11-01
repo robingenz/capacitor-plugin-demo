@@ -37,7 +37,7 @@
     "@capacitor/keyboard": "1.1.2",
     "@ionic/angular": "5.8.4",
     "@robingenz/capacitor-android-dark-mode-support": "1.0.0",
-    "@robingenz/capacitor-app-update": "1.0.0",
+    "@robingenz/capacitor-app-update": "1.1.0",
     "@robingenz/capacitor-background-task": "1.0.0",
     "@robingenz/capacitor-badge": "1.2.0",
     "@robingenz/capacitor-file-picker": "0.2.0",
