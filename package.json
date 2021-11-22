@@ -64,7 +64,7 @@
     "@ionic/cli": "6.18.1",
     "@types/jasmine": "3.10.2",
     "@types/jasminewd2": "2.0.10",
-    "@types/node": "16.11.7",
+    "@types/node": "16.11.9",
     "@typescript-eslint/eslint-plugin": "4.33.0",
     "@typescript-eslint/parser": "4.33.0",
     "eslint": "7.32.0",
