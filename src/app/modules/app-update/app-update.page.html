@@ -85,6 +85,22 @@
           [value]="appUpdateInfo?.updatePriority"
         ></ion-input>
       </ion-item>
+      <ion-item>
+        <ion-label position="fixed">Client Version Staleness Days</ion-label>
+        <ion-input
+          type="number"
+          readonly
+          [value]="appUpdateInfo?.clientVersionStalenessDays"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="fixed">Install Status</ion-label>
+        <ion-input
+          type="number"
+          readonly
+          [value]="appUpdateInfo?.installStatus"
+        ></ion-input>
+      </ion-item>
       <ion-button expand="block" (click)="openAppStore()"
         >Open App Store</ion-button
       >
