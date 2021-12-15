@@ -101,6 +101,14 @@
           [value]="appUpdateInfo?.installStatus"
         ></ion-input>
       </ion-item>
+      <ion-item>
+        <ion-label position="fixed">Minimum OS Version</ion-label>
+        <ion-input
+          type="text"
+          readonly
+          [value]="appUpdateInfo?.minimumOsVersion"
+        ></ion-input>
+      </ion-item>
       <ion-button expand="block" (click)="openAppStore()"
         >Open App Store</ion-button
       >
