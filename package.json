@@ -27,7 +27,7 @@
     "@capacitor-community/keep-awake": "2.1.0",
     "@capacitor-community/privacy-screen": "2.1.0",
     "@capacitor-community/text-to-speech": "1.1.1",
-    "@capacitor/android": "3.3.3",
+    "@capacitor/android": "3.3.4",
     "@capacitor/app": "1.0.7",
     "@capacitor/camera": "1.2.2",
     "@capacitor/core": "3.3.4",
