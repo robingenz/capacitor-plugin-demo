@@ -1,7 +1,10 @@
 import { Component, NgZone, OnDestroy, OnInit } from '@angular/core';
 import { PluginListenerHandle } from '@capacitor/core';
 import { Platform } from '@ionic/angular';
-import { ScreenOrientation } from '@robingenz/capacitor-screen-orientation';
+import {
+  OrientationType,
+  ScreenOrientation,
+} from '@robingenz/capacitor-screen-orientation';
 
 @Component({
   selector: 'app-screen-orientation',
@@ -36,6 +39,11 @@ export class ScreenOrientationPage implements OnInit, OnDestroy {
 
   public openOnGithub(): void {
     window.open(this.GH_URL, '_blank');
+  }
+
+  public async getCurrentOrientation(): Promise<void> {
+    const { type } = await ScreenOrientation.getCurrentOrientation();
+    this.currentOrientation = type;
   }
 
   public async lock(): Promise<void> {
