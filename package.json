@@ -24,7 +24,7 @@
     "@angular/platform-browser-dynamic": "13.1.0",
     "@angular/router": "13.1.0",
     "@angular/service-worker": "13.1.0",
-    "@capacitor-community/keep-awake": "2.1.0",
+    "@capacitor-community/keep-awake": "2.1.1",
     "@capacitor-community/privacy-screen": "2.1.1",
     "@capacitor-community/text-to-speech": "1.1.2",
     "@capacitor/android": "3.4.0",
