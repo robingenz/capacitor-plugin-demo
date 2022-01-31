@@ -26,7 +26,7 @@
     "@angular/service-worker": "13.1.0",
     "@capacitor-community/keep-awake": "2.1.0",
     "@capacitor-community/privacy-screen": "2.1.0",
-    "@capacitor-community/text-to-speech": "1.1.1",
+    "@capacitor-community/text-to-speech": "1.1.2",
     "@capacitor/android": "3.4.0",
     "@capacitor/app": "1.1.0",
     "@capacitor/camera": "1.2.4",
