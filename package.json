@@ -39,7 +39,7 @@
     "@robingenz/capacitor-android-dark-mode-support": "1.0.0",
     "@robingenz/capacitor-app-update": "1.3.0",
     "@robingenz/capacitor-background-task": "1.0.0",
-    "@robingenz/capacitor-badge": "1.2.0",
+    "@robingenz/capacitor-badge": "1.2.1",
     "@robingenz/capacitor-file-picker": "0.2.2",
     "@robingenz/capacitor-managed-configurations": "0.1.3",
     "@robingenz/capacitor-photo-editor": "0.0.3",
