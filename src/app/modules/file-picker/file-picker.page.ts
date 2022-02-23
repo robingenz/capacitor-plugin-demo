@@ -11,6 +11,7 @@ export class FilePickerPage {
   public formGroup = new FormGroup({
     types: new FormControl([]),
     multiple: new FormControl(false),
+    readData: new FormControl(false),
   });
   public files: File[] = [];
 
@@ -22,7 +23,8 @@ export class FilePickerPage {
   public async pickFile(): Promise<void> {
     const types = this.formGroup.get('types')?.value || [];
     const multiple = this.formGroup.get('multiple')?.value || false;
-    const { files } = await FilePicker.pickFiles({ types, multiple });
+    const readData = this.formGroup.get('readData')?.value || false;
+    const { files } = await FilePicker.pickFiles({ types, multiple, readData });
     this.files = files;
   }
 
