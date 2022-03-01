@@ -44,7 +44,7 @@
     "@robingenz/capacitor-managed-configurations": "0.1.4",
     "@robingenz/capacitor-photo-editor": "0.0.3",
     "@robingenz/capacitor-screen-orientation": "1.1.4",
-    "rxjs": "7.5.2",
+    "rxjs": "7.5.4",
     "tslib": "2.3.1",
     "zone.js": "0.11.4"
   },
