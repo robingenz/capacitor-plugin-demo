@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { UntypedFormControl, UntypedFormGroup } from '@angular/forms';
 import { File, FilePicker } from '@robingenz/capacitor-file-picker';
 
 @Component({
@@ -8,10 +8,10 @@ import { File, FilePicker } from '@robingenz/capacitor-file-picker';
   styleUrls: ['./file-picker.page.scss'],
 })
 export class FilePickerPage {
-  public formGroup = new FormGroup({
-    types: new FormControl([]),
-    multiple: new FormControl(false),
-    readData: new FormControl(false),
+  public formGroup = new UntypedFormGroup({
+    types: new UntypedFormControl([]),
+    multiple: new UntypedFormControl(false),
+    readData: new UntypedFormControl(false),
   });
   public files: File[] = [];
 

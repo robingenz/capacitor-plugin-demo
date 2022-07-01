@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { UntypedFormControl, UntypedFormGroup } from '@angular/forms';
 import { Badge } from '@robingenz/capacitor-badge';
 
 @Component({
@@ -9,8 +9,8 @@ import { Badge } from '@robingenz/capacitor-badge';
 })
 export class BadgePage implements OnInit {
   private readonly GH_URL = 'https://github.com/robingenz/capacitor-badge';
-  public formGroup = new FormGroup({
-    count: new FormControl(0),
+  public formGroup = new UntypedFormGroup({
+    count: new UntypedFormControl(0),
   });
   public isSupported = false;
 

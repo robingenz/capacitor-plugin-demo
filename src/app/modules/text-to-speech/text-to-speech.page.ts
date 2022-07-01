@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { UntypedFormControl, UntypedFormGroup } from '@angular/forms';
 import { TextToSpeech, TTSOptions } from '@capacitor-community/text-to-speech';
 
 @Component({
@@ -10,14 +10,14 @@ import { TextToSpeech, TTSOptions } from '@capacitor-community/text-to-speech';
 export class TextToSpeechPage implements OnInit {
   private readonly GH_URL =
     'https://github.com/capacitor-community/text-to-speech';
-  public formGroup = new FormGroup({
-    text: new FormControl(''),
-    lang: new FormControl(),
-    rate: new FormControl(1),
-    pitch: new FormControl(1),
-    volume: new FormControl(1),
-    voice: new FormControl(),
-    category: new FormControl('ambient'),
+  public formGroup = new UntypedFormGroup({
+    text: new UntypedFormControl(''),
+    lang: new UntypedFormControl(),
+    rate: new UntypedFormControl(1),
+    pitch: new UntypedFormControl(1),
+    volume: new UntypedFormControl(1),
+    voice: new UntypedFormControl(),
+    category: new UntypedFormControl('ambient'),
   });
   public supportedLanguages: string[] = [];
   public supportedVoices: SpeechSynthesisVoice[] = [];
