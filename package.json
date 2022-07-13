@@ -10,7 +10,7 @@
     "test": "ng test",
     "test:ci": "ng test --watch=false --progress=false --code-coverage --browsers=HeadlessChrome",
     "e2e": "ng e2e",
-    "e2e:ci": "ng e2e --protractorConfig=e2e/protractor-ci.conf.js",
+    "e2e:ci": "ng e2e --configuration ci",
     "lint": "ng lint && npm run prettier -- --check",
     "fmt": "ng lint --fix && npm run prettier -- --write",
     "prettier": "prettier \"{src,e2e/src}/**/*.{css,scss,html,ts,js}\""
