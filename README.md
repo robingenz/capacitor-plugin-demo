@@ -10,7 +10,6 @@
 
 The following plugins are included:
 
-- [capawesome-team/capacitor-android-dark-mode-support](https://github.com/capawesome-team/capacitor-android-dark-mode-support)
 - [capawesome-team/capacitor-app-update](https://github.com/capawesome-team/capacitor-app-update)
 - [capawesome-team/capacitor-background-task](https://github.com/capawesome-team/capacitor-background-task)
 - [capawesome-team/capacitor-badge](https://github.com/capawesome-team/capacitor-badge)
