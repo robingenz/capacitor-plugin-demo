@@ -32,10 +32,6 @@
 		"classpath": "com.capacitorjs.plugins.keyboard.KeyboardPlugin"
 	},
 	{
-		"pkg": "@robingenz/capacitor-android-dark-mode-support",
-		"classpath": "dev.robingenz.capacitor.androiddarkmodesupport.AndroidDarkModeSupportPlugin"
-	},
-	{
 		"pkg": "@robingenz/capacitor-app-update",
 		"classpath": "dev.robingenz.capacitor.appupdate.AppUpdatePlugin"
 	},
