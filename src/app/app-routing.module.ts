@@ -46,13 +46,6 @@ const routes: Routes = [
       ),
   },
   {
-    path: 'android-dark-mode-support',
-    loadChildren: () =>
-      import(
-        './modules/android-dark-mode-support/android-dark-mode-support.module'
-      ).then(m => m.AndroidDarkModeSupportPageModule),
-  },
-  {
     path: 'screen-orientation',
     loadChildren: () =>
       import('./modules/screen-orientation/screen-orientation.module').then(

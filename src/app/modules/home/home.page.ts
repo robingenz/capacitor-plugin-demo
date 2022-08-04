@@ -8,10 +8,6 @@ import { Component } from '@angular/core';
 export class HomePage {
   public plugins = [
     {
-      name: 'Android Dark Mode Support',
-      url: '/android-dark-mode-support',
-    },
-    {
       name: 'App Update',
       url: '/app-update',
     },
