@@ -8,7 +8,8 @@ on:
   workflow_dispatch:
 
 env:
-  NODE_VERSION: 14
+  NODE_VERSION: 16
+  JAVA_VERSION: 11
 
 jobs:
   build:
@@ -46,6 +47,11 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ env.NODE_VERSION }}
+      - name: Set up Java ${{ env.JAVA_VERSION }}
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'zulu'
+          java-version: ${{ env.JAVA_VERSION }}
       - name: Install dependencies
         run: npm ci
       - name: Set up JDK 1.8
