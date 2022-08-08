@@ -24,6 +24,10 @@ export class HomePage {
       url: '/badge',
     },
     {
+      name: 'Datetime Picker',
+      url: '/datetime-picker',
+    },
+    {
       name: 'File Picker',
       url: '/file-picker',
     },

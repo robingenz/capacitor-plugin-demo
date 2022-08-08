@@ -18,6 +18,13 @@ const routes: Routes = [
       import('./modules/badge/badge.module').then(m => m.BadgePageModule),
   },
   {
+    path: 'datetime-picker',
+    loadChildren: () =>
+      import('./modules/datetime-picker/datetime-picker.module').then(
+        m => m.DatetimePickerPageModule,
+      ),
+  },
+  {
     path: 'keep-awake',
     loadChildren: () =>
       import('./modules/keep-awake/keep-awake.module').then(
@@ -90,6 +97,13 @@ const routes: Routes = [
   {
     path: '**',
     redirectTo: 'home',
+  },
+  {
+    path: 'datetime-picker',
+    loadChildren: () =>
+      import('./modules/datetime-picker/datetime-picker.module').then(
+        m => m.DatetimePickerPageModule,
+      ),
   },
 ];
 
