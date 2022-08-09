@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { UntypedFormControl, UntypedFormGroup } from '@angular/forms';
-import { DatetimePicker } from '@capawesome/capacitor-datetime-picker';
+import {
+  DatetimePicker,
+  PresentOptions,
+} from '@capawesome/capacitor-datetime-picker';
 
 @Component({
   selector: 'app-datetime-picker',
@@ -22,13 +25,29 @@ export class DatetimePickerPage {
   constructor() {}
 
   public async present(): Promise<void> {
-    await DatetimePicker.present({
-      value: this.formGroup.value.value,
-      mode: this.formGroup.value.mode,
-      format: this.formGroup.value.format,
-      min: this.formGroup.value.min,
-      max: this.formGroup.value.max,
-    });
+    const value = this.formGroup.value.value;
+    const mode = this.formGroup.value.mode;
+    const format = this.formGroup.value.format;
+    const min = this.formGroup.value.min;
+    const max = this.formGroup.value.max;
+    const options: PresentOptions = {};
+    if (value) {
+      options.value = value;
+    }
+    if (mode) {
+      options.mode = mode;
+    }
+    if (format) {
+      options.format = format;
+    }
+    if (min) {
+      options.min = min;
+    }
+    if (max) {
+      options.max = max;
+    }
+    const result = await DatetimePicker.present(options);
+    this.formGroup.patchValue({ value: result.value });
   }
 
   public openOnGithub(): void {
