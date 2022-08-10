@@ -6,8 +6,8 @@ import { DatetimePickerPage } from './datetime-picker.page';
 const routes: Routes = [
   {
     path: '',
-    component: DatetimePickerPage
-  }
+    component: DatetimePickerPage,
+  },
 ];
 
 @NgModule({

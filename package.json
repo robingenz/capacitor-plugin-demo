@@ -36,7 +36,7 @@
     "@capacitor/ios": "3.6.0",
     "@capacitor/keyboard": "1.2.3",
     "@ionic/angular": "6.1.12",
-    "@capawesome/capacitor-datetime-picker": "../../capawesome-team/capacitor-datetime-picker",
+    "@capawesome-team/capacitor-datetime-picker": "../../capawesome-team/capacitor-datetime-picker",
     "@robingenz/capacitor-android-dark-mode-support": "1.0.1",
     "@robingenz/capacitor-app-update": "1.3.1",
     "@robingenz/capacitor-background-task": "1.0.1",

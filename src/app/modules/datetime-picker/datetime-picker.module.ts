@@ -10,10 +10,7 @@ import { DatetimePickerPage } from './datetime-picker.page';
 import { SharedModule } from '@app/shared';
 
 @NgModule({
-  imports: [
-    SharedModule,
-    DatetimePickerPageRoutingModule
-  ],
-  declarations: [DatetimePickerPage]
+  imports: [SharedModule, DatetimePickerPageRoutingModule],
+  declarations: [DatetimePickerPage],
 })
 export class DatetimePickerPageModule {}

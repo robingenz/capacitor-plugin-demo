@@ -9,8 +9,8 @@ describe('DatetimePickerPage', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ DatetimePickerPage ],
-      imports: [IonicModule.forRoot()]
+      declarations: [DatetimePickerPage],
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(DatetimePickerPage);

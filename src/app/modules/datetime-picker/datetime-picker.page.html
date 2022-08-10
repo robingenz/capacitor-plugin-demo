@@ -46,6 +46,14 @@
           </ion-select>
         </ion-item>
         <ion-item>
+          <ion-label position="fixed">Theme</ion-label>
+          <ion-select placeholder="Theme" formControlName="theme">
+            <ion-select-option value="auto">Auto</ion-select-option>
+            <ion-select-option value="light">Light</ion-select-option>
+            <ion-select-option value="dark">Dark</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
           <ion-label position="fixed">Format</ion-label>
           <ion-input formControlName="format"></ion-input>
         </ion-item>
@@ -56,6 +64,14 @@
         <ion-item>
           <ion-label position="fixed">Max</ion-label>
           <ion-input formControlName="max"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="fixed">Cancel Button text</ion-label>
+          <ion-input formControlName="cancelButtonText"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="fixed">Done Button Text</ion-label>
+          <ion-input formControlName="doneButtonText"></ion-input>
         </ion-item>
       </form>
       <ion-button expand="block" (click)="present()">Open Picker</ion-button>
