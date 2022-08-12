@@ -17,7 +17,7 @@ def capacitor_pods
   pod 'CapacitorFilesystem', :path => '../../node_modules/@capacitor/filesystem'
   pod 'CapacitorHaptics', :path => '../../node_modules/@capacitor/haptics'
   pod 'CapacitorKeyboard', :path => '../../node_modules/@capacitor/keyboard'
-  pod 'CapawesomeCapacitorDatetimePicker', :path => '../../../../capawesome-team/capacitor-datetime-picker'
+  pod 'CapawesomeTeamCapacitorDatetimePicker', :path => '../../../../capawesome-team/capacitor-datetime-picker'
   pod 'RobingenzCapacitorAppUpdate', :path => '../../node_modules/@robingenz/capacitor-app-update'
   pod 'RobingenzCapacitorBackgroundTask', :path => '../../node_modules/@robingenz/capacitor-background-task'
   pod 'RobingenzCapacitorBadge', :path => '../../node_modules/@robingenz/capacitor-badge'

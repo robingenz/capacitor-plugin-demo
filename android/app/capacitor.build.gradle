@@ -17,7 +17,7 @@ dependencies {
     implementation project(':capacitor-filesystem')
     implementation project(':capacitor-haptics')
     implementation project(':capacitor-keyboard')
-    implementation project(':capawesome-capacitor-datetime-picker')
+    implementation project(':capawesome-team-capacitor-datetime-picker')
     implementation project(':robingenz-capacitor-android-dark-mode-support')
     implementation project(':robingenz-capacitor-app-update')
     implementation project(':robingenz-capacitor-background-task')
