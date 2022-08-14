@@ -16,6 +16,7 @@ export class DatetimePickerPage {
     mode: new FormControl<"datetime" | "date" | "time" | undefined>('datetime'),
     theme: new FormControl<"auto" | "light" | "dark" | undefined>('auto'),
     format: new FormControl("yyyy-MM-dd'T'HH:mm:ss.sss'Z'"),
+    locale: new FormControl("en-US"),
     min: new FormControl(''),
     max: new FormControl(''),
     cancelButtonText: new FormControl('Cancel'),
@@ -32,6 +33,7 @@ export class DatetimePickerPage {
     const mode = this.formGroup.value.mode;
     const theme = this.formGroup.value.theme;
     const format = this.formGroup.value.format;
+    const locale = this.formGroup.value.locale;
     const min = this.formGroup.value.min;
     const max = this.formGroup.value.max;
     const cancelButtonText = this.formGroup.value.cancelButtonText;
@@ -48,6 +50,9 @@ export class DatetimePickerPage {
     }
     if (format) {
       options.format = format;
+    }
+    if (locale) {
+      options.locale = locale;
     }
     if (min && min.length > 0) {
       options.min = min;
