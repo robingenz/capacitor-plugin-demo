@@ -24,6 +24,10 @@ export class HomePage {
       url: '/datetime-picker',
     },
     {
+      name: 'File Opener',
+      url: '/file-opener',
+    },
+    {
       name: 'File Picker',
       url: '/file-picker',
     },

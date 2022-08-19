@@ -74,6 +74,10 @@ const routes: Routes = [
       ).then(m => m.ManagedConfigurationsPageModule),
   },
   {
+    path: 'file-opener',
+    loadChildren: () => import('./modules/file-opener/file-opener.module').then( m => m.FileOpenerPageModule)
+  },
+  {
     path: 'file-picker',
     loadChildren: () =>
       import('./modules/file-picker/file-picker.module').then(
@@ -90,13 +94,6 @@ const routes: Routes = [
   {
     path: '**',
     redirectTo: 'home',
-  },
-  {
-    path: 'datetime-picker',
-    loadChildren: () =>
-      import('./modules/datetime-picker/datetime-picker.module').then(
-        m => m.DatetimePickerPageModule,
-      ),
   },
 ];
 
