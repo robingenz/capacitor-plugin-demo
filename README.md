@@ -10,14 +10,13 @@
 
 The following plugins are included:
 
-- [robingenz/capacitor-android-dark-mode-support](https://github.com/robingenz/capacitor-android-dark-mode-support)
-- [robingenz/capacitor-app-update](https://github.com/robingenz/capacitor-app-update)
-- [robingenz/capacitor-background-task](https://github.com/robingenz/capacitor-background-task)
-- [robingenz/capacitor-badge](https://github.com/robingenz/capacitor-badge)
-- [robingenz/capacitor-file-picker](https://github.com/robingenz/capacitor-file-picker)
-- [robingenz/capacitor-managed-configurations](https://github.com/robingenz/capacitor-managed-configurations)
-- [robingenz/capacitor-photo-editor](https://github.com/robingenz/capacitor-photo-editor)
-- [robingenz/capacitor-screen-orientation](https://github.com/robingenz/capacitor-screen-orientation)
+- [capawesome-team/capacitor-app-update](https://github.com/capawesome-team/capacitor-app-update)
+- [capawesome-team/capacitor-background-task](https://github.com/capawesome-team/capacitor-background-task)
+- [capawesome-team/capacitor-badge](https://github.com/capawesome-team/capacitor-badge)
+- [capawesome-team/capacitor-file-picker](https://github.com/capawesome-team/capacitor-file-picker)
+- [capawesome-team/capacitor-managed-configurations](https://github.com/capawesome-team/capacitor-managed-configurations)
+- [capawesome-team/capacitor-photo-editor](https://github.com/capawesome-team/capacitor-photo-editor)
+- [capawesome-team/capacitor-screen-orientation](https://github.com/capawesome-team/capacitor-screen-orientation)
 - [capacitor-community/keep-awake](https://github.com/capacitor-community/keep-awake)
 - [capacitor-community/privacy-screen](https://github.com/capacitor-community/privacy-screen)
 - [capacitor-community/text-to-speech](https://github.com/capacitor-community/text-to-speech)
