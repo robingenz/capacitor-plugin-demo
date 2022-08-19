@@ -13,6 +13,7 @@ The following plugins are included:
 - [capawesome-team/capacitor-app-update](https://github.com/capawesome-team/capacitor-app-update)
 - [capawesome-team/capacitor-background-task](https://github.com/capawesome-team/capacitor-background-task)
 - [capawesome-team/capacitor-badge](https://github.com/capawesome-team/capacitor-badge)
+- [capawesome-team/capacitor-datetime-picker](https://github.com/capawesome-team/capacitor-datetime-picker)
 - [capawesome-team/capacitor-file-picker](https://github.com/capawesome-team/capacitor-file-picker)
 - [capawesome-team/capacitor-managed-configurations](https://github.com/capawesome-team/capacitor-managed-configurations)
 - [capawesome-team/capacitor-photo-editor](https://github.com/capawesome-team/capacitor-photo-editor)
