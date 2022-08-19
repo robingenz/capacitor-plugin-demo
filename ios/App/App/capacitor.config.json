@@ -9,7 +9,7 @@
 			"launchShowDuration": 0
 		},
 		"PrivacyScreen": {
-			"enable": true
+			"enable": false
 		},
 		"Badge": {
 			"persist": true,
