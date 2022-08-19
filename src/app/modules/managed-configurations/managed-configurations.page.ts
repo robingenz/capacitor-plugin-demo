@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ManagedConfigurations } from '@capawesome/capacitor-managed-configurations';
 import { Platform } from '@ionic/angular';
-import { ManagedConfigurations } from '@robingenz/capacitor-managed-configurations';
 
 @Component({
   selector: 'app-managed-configurations',

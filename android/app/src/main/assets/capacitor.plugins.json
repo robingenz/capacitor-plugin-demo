@@ -32,35 +32,39 @@
 		"classpath": "com.capacitorjs.plugins.keyboard.KeyboardPlugin"
 	},
 	{
-		"pkg": "@robingenz/capacitor-android-dark-mode-support",
-		"classpath": "dev.robingenz.capacitor.androiddarkmodesupport.AndroidDarkModeSupportPlugin"
+		"pkg": "@capawesome-team/capacitor-datetime-picker",
+		"classpath": "io.capawesome.capacitorjs.plugins.datetimepicker.DatetimePickerPlugin"
 	},
 	{
-		"pkg": "@robingenz/capacitor-app-update",
-		"classpath": "dev.robingenz.capacitor.appupdate.AppUpdatePlugin"
+		"pkg": "@capawesome-team/capacitor-file-opener",
+		"classpath": "io.capawesome.capacitorjs.plugins.fileopener.FileOpenerPlugin"
 	},
 	{
-		"pkg": "@robingenz/capacitor-background-task",
-		"classpath": "dev.robingenz.capacitor.backgroundtask.BackgroundTaskPlugin"
+		"pkg": "@capawesome/capacitor-app-update",
+		"classpath": "io.capawesome.capacitorjs.plugins.appupdate.AppUpdatePlugin"
 	},
 	{
-		"pkg": "@robingenz/capacitor-badge",
-		"classpath": "dev.robingenz.capacitor.badge.BadgePlugin"
+		"pkg": "@capawesome/capacitor-background-task",
+		"classpath": "io.capawesome.capacitorjs.plugins.backgroundtask.BackgroundTaskPlugin"
 	},
 	{
-		"pkg": "@robingenz/capacitor-file-picker",
-		"classpath": "dev.robingenz.capacitorjs.plugins.filepicker.FilePickerPlugin"
+		"pkg": "@capawesome/capacitor-badge",
+		"classpath": "io.capawesome.capacitorjs.plugins.badge.BadgePlugin"
 	},
 	{
-		"pkg": "@robingenz/capacitor-managed-configurations",
-		"classpath": "dev.robingenz.capacitorjs.plugins.managedconfigurations.ManagedConfigurationsPlugin"
+		"pkg": "@capawesome/capacitor-file-picker",
+		"classpath": "io.capawesome.capacitorjs.plugins.filepicker.FilePickerPlugin"
 	},
 	{
-		"pkg": "@robingenz/capacitor-photo-editor",
-		"classpath": "dev.robingenz.capacitorjs.plugins.photoeditor.PhotoEditorPlugin"
+		"pkg": "@capawesome/capacitor-managed-configurations",
+		"classpath": "io.capawesome.capacitorjs.plugins.managedconfigurations.ManagedConfigurationsPlugin"
 	},
 	{
-		"pkg": "@robingenz/capacitor-screen-orientation",
-		"classpath": "dev.robingenz.capacitor.screenorientation.ScreenOrientationPlugin"
+		"pkg": "@capawesome/capacitor-photo-editor",
+		"classpath": "io.capawesome.capacitorjs.plugins.photoeditor.PhotoEditorPlugin"
+	},
+	{
+		"pkg": "@capawesome/capacitor-screen-orientation",
+		"classpath": "io.capawesome.capacitorjs.plugins.screenorientation.ScreenOrientationPlugin"
 	}
 ]

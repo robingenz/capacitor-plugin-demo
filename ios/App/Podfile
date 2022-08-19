@@ -19,14 +19,15 @@ def capacitor_pods
   pod 'CapacitorFilesystem', :path => '../../node_modules/@capacitor/filesystem'
   pod 'CapacitorHaptics', :path => '../../node_modules/@capacitor/haptics'
   pod 'CapacitorKeyboard', :path => '../../node_modules/@capacitor/keyboard'
-  pod 'CapawesomeTeamCapacitorDatetimePicker', :path => '../../../../capawesome-team/capacitor-datetime-picker-sponsorware'
-  pod 'RobingenzCapacitorAppUpdate', :path => '../../node_modules/@robingenz/capacitor-app-update'
-  pod 'RobingenzCapacitorBackgroundTask', :path => '../../node_modules/@robingenz/capacitor-background-task'
-  pod 'RobingenzCapacitorBadge', :path => '../../node_modules/@robingenz/capacitor-badge'
-  pod 'RobingenzCapacitorFilePicker', :path => '../../node_modules/@robingenz/capacitor-file-picker'
-  pod 'RobingenzCapacitorManagedConfigurations', :path => '../../node_modules/@robingenz/capacitor-managed-configurations'
-  pod 'RobingenzCapacitorPhotoEditor', :path => '../../node_modules/@robingenz/capacitor-photo-editor'
-  pod 'RobingenzCapacitorScreenOrientation', :path => '../../node_modules/@robingenz/capacitor-screen-orientation'
+  pod 'CapawesomeTeamCapacitorDatetimePicker', :path => '../../node_modules/@capawesome-team/capacitor-datetime-picker'
+  pod 'CapawesomeTeamCapacitorFileOpener', :path => '../../../../capawesome-team/capacitor-file-opener-sponsorware'
+  pod 'CapawesomeCapacitorAppUpdate', :path => '../../node_modules/@capawesome/capacitor-app-update'
+  pod 'CapawesomeCapacitorBackgroundTask', :path => '../../node_modules/@capawesome/capacitor-background-task'
+  pod 'CapawesomeCapacitorBadge', :path => '../../node_modules/@capawesome/capacitor-badge'
+  pod 'CapawesomeCapacitorFilePicker', :path => '../../node_modules/@capawesome/capacitor-file-picker'
+  pod 'CapawesomeCapacitorManagedConfigurations', :path => '../../node_modules/@capawesome/capacitor-managed-configurations'
+  pod 'CapawesomeCapacitorPhotoEditor', :path => '../../node_modules/@capawesome/capacitor-photo-editor'
+  pod 'CapawesomeCapacitorScreenOrientation', :path => '../../node_modules/@capawesome/capacitor-screen-orientation'
 end
 
 target 'App' do

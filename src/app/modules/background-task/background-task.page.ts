@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { App } from '@capacitor/app';
 import { PluginListenerHandle } from '@capacitor/core';
-import { BackgroundTask } from '@robingenz/capacitor-background-task';
+import { BackgroundTask } from '@capawesome/capacitor-background-task';
 
 @Component({
   selector: 'app-background-task',

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Camera, CameraResultType } from '@capacitor/camera';
 import { Filesystem } from '@capacitor/filesystem';
-import { PhotoEditor } from '@robingenz/capacitor-photo-editor';
+import { PhotoEditor } from '@capawesome/capacitor-photo-editor';
 
 @Component({
   selector: 'app-photo-editor',

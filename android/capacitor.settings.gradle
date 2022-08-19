@@ -26,26 +26,29 @@ project(':capacitor-haptics').projectDir = new File('../node_modules/@capacitor/
 include ':capacitor-keyboard'
 project(':capacitor-keyboard').projectDir = new File('../node_modules/@capacitor/keyboard/android')
 
-include ':robingenz-capacitor-android-dark-mode-support'
-project(':robingenz-capacitor-android-dark-mode-support').projectDir = new File('../node_modules/@robingenz/capacitor-android-dark-mode-support/android')
+include ':capawesome-team-capacitor-datetime-picker'
+project(':capawesome-team-capacitor-datetime-picker').projectDir = new File('../node_modules/@capawesome-team/capacitor-datetime-picker/android')
 
-include ':robingenz-capacitor-app-update'
-project(':robingenz-capacitor-app-update').projectDir = new File('../node_modules/@robingenz/capacitor-app-update/android')
+include ':capawesome-team-capacitor-file-opener'
+project(':capawesome-team-capacitor-file-opener').projectDir = new File('../../../capawesome-team/capacitor-file-opener-sponsorware/android')
 
-include ':robingenz-capacitor-background-task'
-project(':robingenz-capacitor-background-task').projectDir = new File('../node_modules/@robingenz/capacitor-background-task/android')
+include ':capawesome-capacitor-app-update'
+project(':capawesome-capacitor-app-update').projectDir = new File('../node_modules/@capawesome/capacitor-app-update/android')
 
-include ':robingenz-capacitor-badge'
-project(':robingenz-capacitor-badge').projectDir = new File('../node_modules/@robingenz/capacitor-badge/android')
+include ':capawesome-capacitor-background-task'
+project(':capawesome-capacitor-background-task').projectDir = new File('../node_modules/@capawesome/capacitor-background-task/android')
 
-include ':robingenz-capacitor-file-picker'
-project(':robingenz-capacitor-file-picker').projectDir = new File('../node_modules/@robingenz/capacitor-file-picker/android')
+include ':capawesome-capacitor-badge'
+project(':capawesome-capacitor-badge').projectDir = new File('../node_modules/@capawesome/capacitor-badge/android')
 
-include ':robingenz-capacitor-managed-configurations'
-project(':robingenz-capacitor-managed-configurations').projectDir = new File('../node_modules/@robingenz/capacitor-managed-configurations/android')
+include ':capawesome-capacitor-file-picker'
+project(':capawesome-capacitor-file-picker').projectDir = new File('../node_modules/@capawesome/capacitor-file-picker/android')
 
-include ':robingenz-capacitor-photo-editor'
-project(':robingenz-capacitor-photo-editor').projectDir = new File('../node_modules/@robingenz/capacitor-photo-editor/android')
+include ':capawesome-capacitor-managed-configurations'
+project(':capawesome-capacitor-managed-configurations').projectDir = new File('../node_modules/@capawesome/capacitor-managed-configurations/android')
 
-include ':robingenz-capacitor-screen-orientation'
-project(':robingenz-capacitor-screen-orientation').projectDir = new File('../node_modules/@robingenz/capacitor-screen-orientation/android')
+include ':capawesome-capacitor-photo-editor'
+project(':capawesome-capacitor-photo-editor').projectDir = new File('../node_modules/@capawesome/capacitor-photo-editor/android')
+
+include ':capawesome-capacitor-screen-orientation'
+project(':capawesome-capacitor-screen-orientation').projectDir = new File('../node_modules/@capawesome/capacitor-screen-orientation/android')

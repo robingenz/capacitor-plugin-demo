@@ -17,14 +17,15 @@ dependencies {
     implementation project(':capacitor-filesystem')
     implementation project(':capacitor-haptics')
     implementation project(':capacitor-keyboard')
-    implementation project(':robingenz-capacitor-android-dark-mode-support')
-    implementation project(':robingenz-capacitor-app-update')
-    implementation project(':robingenz-capacitor-background-task')
-    implementation project(':robingenz-capacitor-badge')
-    implementation project(':robingenz-capacitor-file-picker')
-    implementation project(':robingenz-capacitor-managed-configurations')
-    implementation project(':robingenz-capacitor-photo-editor')
-    implementation project(':robingenz-capacitor-screen-orientation')
+    implementation project(':capawesome-team-capacitor-datetime-picker')
+    implementation project(':capawesome-team-capacitor-file-opener')
+    implementation project(':capawesome-capacitor-app-update')
+    implementation project(':capawesome-capacitor-background-task')
+    implementation project(':capawesome-capacitor-badge')
+    implementation project(':capawesome-capacitor-file-picker')
+    implementation project(':capawesome-capacitor-managed-configurations')
+    implementation project(':capawesome-capacitor-photo-editor')
+    implementation project(':capawesome-capacitor-screen-orientation')
 
 }
 
