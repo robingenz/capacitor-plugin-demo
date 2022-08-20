@@ -1,6 +1,6 @@
 import UIKit
 import Capacitor
-import RobingenzCapacitorScreenOrientation
+import CapawesomeCapacitorScreenOrientation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

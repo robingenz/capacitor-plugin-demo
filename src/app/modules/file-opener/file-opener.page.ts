@@ -19,7 +19,9 @@ export class FileOpenerPage  {
 
   public async pickFile(): Promise<void> {
     await Filesystem.requestPermissions();
-    const { files } = await FilePicker.pickFiles();
+    const { files } = await FilePicker.pickFiles({
+      readData: false
+    });
     const path = files[0].path;
     if (!path) {
       return;
