@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import {
   DatetimePicker,
-  PresentOptions
+  PresentOptions,
 } from '@capawesome-team/capacitor-datetime-picker';
 
 @Component({
@@ -13,10 +13,10 @@ import {
 export class DatetimePickerPage {
   public formGroup = new FormGroup({
     value: new FormControl(''),
-    mode: new FormControl<"datetime" | "date" | "time" | undefined>('datetime'),
-    theme: new FormControl<"auto" | "light" | "dark" | undefined>('auto'),
+    mode: new FormControl<'datetime' | 'date' | 'time' | undefined>('datetime'),
+    theme: new FormControl<'auto' | 'light' | 'dark' | undefined>('auto'),
     format: new FormControl("yyyy-MM-dd'T'HH:mm:ss.sss'Z'"),
-    locale: new FormControl("en-US"),
+    locale: new FormControl('en-US'),
     min: new FormControl(''),
     max: new FormControl(''),
     cancelButtonText: new FormControl('Cancel'),

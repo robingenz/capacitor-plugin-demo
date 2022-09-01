@@ -1,8 +1,6 @@
 import { Component, NgZone, OnDestroy, OnInit } from '@angular/core';
 import { PluginListenerHandle } from '@capacitor/core';
-import {
-  ScreenOrientation
-} from '@capawesome/capacitor-screen-orientation';
+import { ScreenOrientation } from '@capawesome/capacitor-screen-orientation';
 import { Platform } from '@ionic/angular';
 
 @Component({

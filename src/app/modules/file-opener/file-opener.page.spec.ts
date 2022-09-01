@@ -9,8 +9,8 @@ describe('FileOpenerPage', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ FileOpenerPage ],
-      imports: [IonicModule.forRoot()]
+      declarations: [FileOpenerPage],
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(FileOpenerPage);
