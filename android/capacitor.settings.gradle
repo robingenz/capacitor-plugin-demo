@@ -26,6 +26,9 @@ project(':capacitor-haptics').projectDir = new File('../node_modules/@capacitor/
 include ':capacitor-keyboard'
 project(':capacitor-keyboard').projectDir = new File('../node_modules/@capacitor/keyboard/android')
 
+include ':capawesome-team-capacitor-android-battery-optimization'
+project(':capawesome-team-capacitor-android-battery-optimization').projectDir = new File('../../../capawesome-team/capacitor-android-battery-optimization-sponsorware/android')
+
 include ':capawesome-team-capacitor-datetime-picker'
 project(':capawesome-team-capacitor-datetime-picker').projectDir = new File('../node_modules/@capawesome-team/capacitor-datetime-picker/android')
 

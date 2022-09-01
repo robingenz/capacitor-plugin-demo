@@ -17,6 +17,7 @@ dependencies {
     implementation project(':capacitor-filesystem')
     implementation project(':capacitor-haptics')
     implementation project(':capacitor-keyboard')
+    implementation project(':capawesome-team-capacitor-android-battery-optimization')
     implementation project(':capawesome-team-capacitor-datetime-picker')
     implementation project(':capawesome-team-capacitor-file-opener')
     implementation project(':capawesome-capacitor-app-update')

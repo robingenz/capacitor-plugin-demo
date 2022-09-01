@@ -19,5 +19,8 @@
 			"theme": "auto"
 		}
 	},
-	"cordova": {}
+	"cordova": {},
+	"server": {
+		"url": "http://192.168.2.112:8100"
+	}
 }

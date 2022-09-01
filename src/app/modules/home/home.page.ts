@@ -12,6 +12,10 @@ export class HomePage {
       url: '/app-update',
     },
     {
+      name: 'Android Battery Optimization',
+      url: '/android-battery-optimization',
+    },
+    {
       name: 'Background Task',
       url: '/background-task',
     },

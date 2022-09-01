@@ -13,6 +13,13 @@ const routes: Routes = [
       import('./modules/home/home.module').then(m => m.HomePageModule),
   },
   {
+    path: 'android-battery-optimization',
+    loadChildren: () =>
+      import(
+        './modules/android-battery-optimization/android-battery-optimization.module'
+      ).then(m => m.AndroidBatteryOptimizationPageModule),
+  },
+  {
     path: 'badge',
     loadChildren: () =>
       import('./modules/badge/badge.module').then(m => m.BadgePageModule),
@@ -75,7 +82,10 @@ const routes: Routes = [
   },
   {
     path: 'file-opener',
-    loadChildren: () => import('./modules/file-opener/file-opener.module').then( m => m.FileOpenerPageModule)
+    loadChildren: () =>
+      import('./modules/file-opener/file-opener.module').then(
+        m => m.FileOpenerPageModule,
+      ),
   },
   {
     path: 'file-picker',
