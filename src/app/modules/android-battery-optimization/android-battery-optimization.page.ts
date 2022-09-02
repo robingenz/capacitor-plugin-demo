@@ -22,12 +22,10 @@ export class AndroidBatteryOptimizationPage {
 
   public async openBatteryOptimizationSettings(): Promise<void> {
     await BatteryOptimization.openBatteryOptimizationSettings();
-    await this.isBatteryOptimizationEnabled();
   }
 
   public async requestIgnoreBatteryOptimization(): Promise<void> {
     await BatteryOptimization.requestIgnoreBatteryOptimization();
-    await this.isBatteryOptimizationEnabled();
   }
 
   public openOnGithub(): void {
