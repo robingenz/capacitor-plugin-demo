@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="home"></ion-back-button>
     </ion-buttons>
-    <ion-title>Android Battery Optimization</ion-title>
+    <ion-title>Android Foreground Service</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -13,7 +13,7 @@
       <ion-card-title>About</ion-card-title>
     </ion-card-header>
     <ion-card-content>
-      ⚡️ Capacitor plugin to access battery optimization settings on Android.
+      ⚡️ Capacitor plugin to run a foreground service on Android.
     </ion-card-content>
     <ion-row class="ion-no-padding">
       <ion-col>
@@ -31,18 +31,11 @@
       <ion-card-title>Demo</ion-card-title>
     </ion-card-header>
     <ion-card-content>
-      <ion-item>
-        <ion-label position="fixed">Enabled</ion-label>
-        <ion-checkbox readonly [checked]="isEnabled"></ion-checkbox>
-      </ion-item>
-      <ion-button expand="block" (click)="isBatteryOptimizationEnabled()">
-        Is Battery Optimization Enabled
+      <ion-button expand="block" (click)="startForegroundService()">
+        Start
       </ion-button>
-      <ion-button expand="block" (click)="openBatteryOptimizationSettings()"
-        >Open Battery Optimization Settings</ion-button
-      >
-      <ion-button expand="block" (click)="requestIgnoreBatteryOptimization()"
-        >Request Ignore Battery Optimization</ion-button
+      <ion-button expand="block" (click)="stopForegroundService()"
+        >Stop</ion-button
       >
     </ion-card-content>
   </ion-card>

@@ -16,6 +16,10 @@ export class HomePage {
       url: '/android-battery-optimization',
     },
     {
+      name: 'Android Foreground Service',
+      url: '/android-foreground-service',
+    },
+    {
       name: 'Background Task',
       url: '/background-task',
     },

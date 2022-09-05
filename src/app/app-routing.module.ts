@@ -20,6 +20,13 @@ const routes: Routes = [
       ).then(m => m.AndroidBatteryOptimizationPageModule),
   },
   {
+    path: 'android-foreground-service',
+    loadChildren: () =>
+      import(
+        './modules/android-foreground-service/android-foreground-service.module'
+      ).then(m => m.AndroidForegroundServicePageModule),
+  },
+  {
     path: 'badge',
     loadChildren: () =>
       import('./modules/badge/badge.module').then(m => m.BadgePageModule),
