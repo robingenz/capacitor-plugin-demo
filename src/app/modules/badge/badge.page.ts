@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UntypedFormControl, UntypedFormGroup } from '@angular/forms';
-import { Badge } from '@robingenz/capacitor-badge';
+import { Badge } from '@capawesome/capacitor-badge';
 
 @Component({
   selector: 'app-badge',

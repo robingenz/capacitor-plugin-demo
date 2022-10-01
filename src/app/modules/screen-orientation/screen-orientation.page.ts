@@ -4,7 +4,7 @@ import { Platform } from '@ionic/angular';
 import {
   OrientationType,
   ScreenOrientation,
-} from '@robingenz/capacitor-screen-orientation';
+} from '@capawesome/capacitor-screen-orientation';
 
 @Component({
   selector: 'app-screen-orientation',

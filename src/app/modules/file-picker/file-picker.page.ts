@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { UntypedFormControl, UntypedFormGroup } from '@angular/forms';
-import { File, FilePicker } from '@robingenz/capacitor-file-picker';
+import { File, FilePicker } from '@capawesome/capacitor-file-picker';
 
 @Component({
   selector: 'app-file-picker',
