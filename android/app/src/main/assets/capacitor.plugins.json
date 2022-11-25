@@ -32,6 +32,22 @@
 		"classpath": "com.capacitorjs.plugins.keyboard.KeyboardPlugin"
 	},
 	{
+		"pkg": "@capawesome-team/capacitor-android-battery-optimization",
+		"classpath": "io.capawesome.capacitorjs.plugins.batteryoptimization.BatteryOptimizationPlugin"
+	},
+	{
+		"pkg": "@capawesome-team/capacitor-android-foreground-service",
+		"classpath": "io.capawesome.capacitorjs.plugins.foregroundservice.ForegroundServicePlugin"
+	},
+	{
+		"pkg": "@capawesome-team/capacitor-datetime-picker",
+		"classpath": "io.capawesome.capacitorjs.plugins.datetimepicker.DatetimePickerPlugin"
+	},
+	{
+		"pkg": "@capawesome-team/capacitor-file-opener",
+		"classpath": "io.capawesome.capacitorjs.plugins.fileopener.FileOpenerPlugin"
+	},
+	{
 		"pkg": "@capawesome/capacitor-app-update",
 		"classpath": "io.capawesome.capacitorjs.plugins.appupdate.AppUpdatePlugin"
 	},

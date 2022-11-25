@@ -13,9 +13,30 @@ const routes: Routes = [
       import('./modules/home/home.module').then(m => m.HomePageModule),
   },
   {
+    path: 'android-battery-optimization',
+    loadChildren: () =>
+      import(
+        './modules/android-battery-optimization/android-battery-optimization.module'
+      ).then(m => m.AndroidBatteryOptimizationPageModule),
+  },
+  {
+    path: 'android-foreground-service',
+    loadChildren: () =>
+      import(
+        './modules/android-foreground-service/android-foreground-service.module'
+      ).then(m => m.AndroidForegroundServicePageModule),
+  },
+  {
     path: 'badge',
     loadChildren: () =>
       import('./modules/badge/badge.module').then(m => m.BadgePageModule),
+  },
+  {
+    path: 'datetime-picker',
+    loadChildren: () =>
+      import('./modules/datetime-picker/datetime-picker.module').then(
+        m => m.DatetimePickerPageModule,
+      ),
   },
   {
     path: 'keep-awake',
@@ -65,6 +86,13 @@ const routes: Routes = [
       import(
         './modules/managed-configurations/managed-configurations.module'
       ).then(m => m.ManagedConfigurationsPageModule),
+  },
+  {
+    path: 'file-opener',
+    loadChildren: () =>
+      import('./modules/file-opener/file-opener.module').then(
+        m => m.FileOpenerPageModule,
+      ),
   },
   {
     path: 'file-picker',

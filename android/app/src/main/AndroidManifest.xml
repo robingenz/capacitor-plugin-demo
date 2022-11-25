@@ -50,6 +50,8 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths"></meta-data>
         </provider>
+
+        <service android:name="io.capawesome.capacitorjs.plugins.foregroundservice.AndroidForegroundService" />
     </application>
 
     <!-- Permissions -->
@@ -64,10 +66,13 @@
     <uses-feature android:name="android.hardware.location.gps" />
     <!-- Network API -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <!-- Navigator.getUserMedia -->
     <!-- Video -->
     <uses-permission android:name="android.permission.CAMERA" />
     <!-- Audio -->
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <!-- Battery Optimization -->
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <!-- Foreground Service -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
 </manifest>

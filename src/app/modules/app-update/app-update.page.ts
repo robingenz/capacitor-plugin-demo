@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Platform } from '@ionic/angular';
 import { AppUpdate, AppUpdateInfo } from '@capawesome/capacitor-app-update';
+import { Platform } from '@ionic/angular';
 
 @Component({
   selector: 'app-app-update',

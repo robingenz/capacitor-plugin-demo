@@ -12,12 +12,28 @@ export class HomePage {
       url: '/app-update',
     },
     {
+      name: 'Android Battery Optimization',
+      url: '/android-battery-optimization',
+    },
+    {
+      name: 'Android Foreground Service',
+      url: '/android-foreground-service',
+    },
+    {
       name: 'Background Task',
       url: '/background-task',
     },
     {
       name: 'Badge',
       url: '/badge',
+    },
+    {
+      name: 'Datetime Picker',
+      url: '/datetime-picker',
+    },
+    {
+      name: 'File Opener',
+      url: '/file-opener',
     },
     {
       name: 'File Picker',

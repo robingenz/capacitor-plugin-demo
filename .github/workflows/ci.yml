@@ -22,6 +22,8 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ env.NODE_VERSION }}
+      - name: Set npm access token for GitHub registry
+        run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_TOKEN }}" >> .npmrc
       - name: Install dependencies
         run: npm ci
       - name: Build web assets
@@ -52,6 +54,8 @@ jobs:
         with:
           distribution: 'zulu'
           java-version: ${{ env.JAVA_VERSION }}
+      - name: Set npm access token for GitHub registry
+        run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_TOKEN }}" >> .npmrc
       - name: Install dependencies
         run: npm ci
       - name: Copy web assets to native platform
@@ -77,6 +81,8 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ env.NODE_VERSION }}
+      - name: Set npm access token for GitHub registry
+        run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_TOKEN }}" >> .npmrc
       - name: Install dependencies
         run: npm ci
       - name: Copy web assets to native platform
@@ -108,6 +114,8 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ env.NODE_VERSION }}
+      - name: Set npm access token for GitHub registry
+        run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_TOKEN }}" >> .npmrc
       - name: Install dependencies
         run: npm ci
       - name: Run ESLint and Prettier
@@ -122,6 +130,8 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ env.NODE_VERSION }}
+      - name: Set npm access token for GitHub registry
+        run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_TOKEN }}" >> .npmrc
       - name: Install dependencies
         run: npm ci
       - name: Run unit tests

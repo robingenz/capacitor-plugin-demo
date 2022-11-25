@@ -1,0 +1,84 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Datetime Picker</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>About</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      ⚡️ Capacitor plugin that let the user easily enter both a date and a
+      time.
+    </ion-card-content>
+    <ion-row class="ion-no-padding">
+      <ion-col>
+        <ion-button
+          fill="clear"
+          (click)="openOnGithub()"
+          class="ion-float-right"
+          >GitHub</ion-button
+        >
+      </ion-col>
+    </ion-row>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Demo</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <form [formGroup]="formGroup">
+        <ion-item>
+          <ion-label position="fixed">Value</ion-label>
+          <ion-input formControlName="value"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="fixed">Mode</ion-label>
+          <ion-select placeholder="Mode" formControlName="mode">
+            <ion-select-option value="datetime">Datetime</ion-select-option>
+            <ion-select-option value="date">Date</ion-select-option>
+            <ion-select-option value="time">Time</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-label position="fixed">Theme</ion-label>
+          <ion-select placeholder="Theme" formControlName="theme">
+            <ion-select-option value="auto">Auto</ion-select-option>
+            <ion-select-option value="light">Light</ion-select-option>
+            <ion-select-option value="dark">Dark</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-label position="fixed">Format</ion-label>
+          <ion-input formControlName="format"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="fixed">Locale</ion-label>
+          <ion-input formControlName="locale"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="fixed">Min</ion-label>
+          <ion-input formControlName="min"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="fixed">Max</ion-label>
+          <ion-input formControlName="max"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="fixed">Cancel Button text</ion-label>
+          <ion-input formControlName="cancelButtonText"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="fixed">Done Button Text</ion-label>
+          <ion-input formControlName="doneButtonText"></ion-input>
+        </ion-item>
+      </form>
+      <ion-button expand="block" (click)="present()">Open Picker</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

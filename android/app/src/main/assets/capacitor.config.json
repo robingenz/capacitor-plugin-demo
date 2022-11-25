@@ -9,11 +9,14 @@
 			"launchShowDuration": 0
 		},
 		"PrivacyScreen": {
-			"enable": true
+			"enable": false
 		},
 		"Badge": {
 			"persist": true,
 			"autoClear": true
+		},
+		"DatetimePicker": {
+			"theme": "auto"
 		}
 	},
 	"cordova": {}

@@ -10,9 +10,13 @@
 
 The following plugins are included:
 
+- [capawesome-team/capacitor-android-battery-optimization](https://github.com/capawesome-team/capacitor-android-battery-optimization)
+- [capawesome-team/capacitor-android-foreground-service](https://github.com/capawesome-team/capacitor-android-foreground-service)
 - [capawesome-team/capacitor-app-update](https://github.com/capawesome-team/capacitor-app-update)
 - [capawesome-team/capacitor-background-task](https://github.com/capawesome-team/capacitor-background-task)
 - [capawesome-team/capacitor-badge](https://github.com/capawesome-team/capacitor-badge)
+- [capawesome-team/capacitor-datetime-picker](https://github.com/capawesome-team/capacitor-datetime-picker)
+- [capawesome-team/capacitor-file-opener](https://github.com/capawesome-team/capacitor-file-opener)
 - [capawesome-team/capacitor-file-picker](https://github.com/capawesome-team/capacitor-file-picker)
 - [capawesome-team/capacitor-managed-configurations](https://github.com/capawesome-team/capacitor-managed-configurations)
 - [capawesome-team/capacitor-photo-editor](https://github.com/capawesome-team/capacitor-photo-editor)
@@ -28,6 +32,7 @@ The following plugins are included:
 - Install [Node.js](https://nodejs.org) which includes [Node Package Manager](https://www.npmjs.com/get-npm)
 - Android development: Install [Android Studio](https://developer.android.com/studio)
 - iOS development: Install [XCode](https://apps.apple.com/de/app/xcode/id497799835?mt=12)
+- You must have access to the Capawesome Sponsorware ([Read more](https://github.com/capawesome-team/capacitor-datetime-picker#sponsorware))
 
 ### Getting Started
 
