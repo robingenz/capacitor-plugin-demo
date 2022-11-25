@@ -6,8 +6,8 @@ import { AndroidForegroundServicePage } from './android-foreground-service.page'
 const routes: Routes = [
   {
     path: '',
-    component: AndroidForegroundServicePage
-  }
+    component: AndroidForegroundServicePage,
+  },
 ];
 
 @NgModule({

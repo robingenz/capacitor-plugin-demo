@@ -9,8 +9,8 @@ describe('AndroidForegroundServicePage', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ AndroidForegroundServicePage ],
-      imports: [IonicModule.forRoot()]
+      declarations: [AndroidForegroundServicePage],
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(AndroidForegroundServicePage);
