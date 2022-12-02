@@ -13,7 +13,7 @@ export class FileOpenerPage {
   public base64String: string | undefined;
 
   private readonly GH_URL =
-    'https://github.com/robingenz/capacitor-file-opener';
+    'https://github.com/capawesome-team/capacitor-file-opener';
 
   constructor() {}
 
