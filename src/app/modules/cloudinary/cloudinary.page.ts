@@ -77,6 +77,6 @@ export class CloudinaryPage {
     if (!url) {
       return;
     }
-    return window.open(url, '_self');
+    return window.open(url, '_blank');
   }
 }
