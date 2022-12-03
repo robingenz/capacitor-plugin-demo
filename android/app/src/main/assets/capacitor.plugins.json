@@ -60,6 +60,10 @@
 		"classpath": "io.capawesome.capacitorjs.plugins.badge.BadgePlugin"
 	},
 	{
+		"pkg": "@capawesome/capacitor-cloudinary",
+		"classpath": "io.capawesome.capacitorjs.plugins.cloudinary.CloudinaryPlugin"
+	},
+	{
 		"pkg": "@capawesome/capacitor-file-picker",
 		"classpath": "io.capawesome.capacitorjs.plugins.filepicker.FilePickerPlugin"
 	},

@@ -42,7 +42,10 @@ const routes: Routes = [
   },
   {
     path: 'cloudinary',
-    loadChildren: () => import('./modules/cloudinary/cloudinary.module').then( m => m.CloudinaryPageModule)
+    loadChildren: () =>
+      import('./modules/cloudinary/cloudinary.module').then(
+        m => m.CloudinaryPageModule,
+      ),
   },
   {
     path: 'datetime-picker',

@@ -6,8 +6,8 @@ import { CloudinaryPage } from './cloudinary.page';
 const routes: Routes = [
   {
     path: '',
-    component: CloudinaryPage
-  }
+    component: CloudinaryPage,
+  },
 ];
 
 @NgModule({
