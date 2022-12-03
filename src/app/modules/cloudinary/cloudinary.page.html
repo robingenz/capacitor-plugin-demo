@@ -1,0 +1,77 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Cloudinary</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>About</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      ⚡️ Capacitor plugin for integrating with Cloudinary.
+    </ion-card-content>
+    <ion-row class="ion-no-padding">
+      <ion-col>
+        <ion-button
+          fill="clear"
+          (click)="openOnGithub()"
+          class="ion-float-right"
+          >GitHub</ion-button
+        >
+      </ion-col>
+    </ion-row>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Demo</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <form [formGroup]="formGroup">
+        <ion-item>
+          <ion-label position="fixed">Cloud Name</ion-label>
+          <ion-input formControlName="cloudName"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="fixed">Upload Preset</ion-label>
+          <ion-input formControlName="uploadPreset"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="fixed">Public ID</ion-label>
+          <ion-input formControlName="publicId"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="fixed">Resource Type</ion-label>
+          <ion-select formControlName="resourceType">
+            <ion-select-option [value]="resourceTypeImage"
+              >Image</ion-select-option
+            >
+            <ion-select-option [value]="resourceTypeVideo"
+              >Video</ion-select-option
+            >
+            <ion-select-option [value]="resourceTypeRaw">Raw</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-button expand="block" (click)="initialize()"
+          >Initialize</ion-button
+        >
+        <ion-button expand="block" (click)="selectFile()">
+          Select a file to upload
+        </ion-button>
+        <ion-button expand="block" (click)="uploadFile()" [disabled]="!file"
+          >Upload file</ion-button
+        >
+        <ion-button
+          expand="block"
+          (click)="openUrl()"
+          [disabled]="!formGroup.get('url')?.value"
+          >Open URL</ion-button
+        >
+      </form>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

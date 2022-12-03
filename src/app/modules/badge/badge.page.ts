@@ -8,7 +8,8 @@ import { Badge } from '@capawesome/capacitor-badge';
   styleUrls: ['./badge.page.scss'],
 })
 export class BadgePage implements OnInit {
-  private readonly GH_URL = 'https://github.com/robingenz/capacitor-badge';
+  private readonly GH_URL =
+    'https://github.com/capawesome-team/capacitor-badge';
   public formGroup = new UntypedFormGroup({
     count: new UntypedFormControl(0),
   });

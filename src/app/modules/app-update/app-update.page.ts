@@ -10,7 +10,8 @@ import { Platform } from '@ionic/angular';
 export class AppUpdatePage implements OnInit {
   public appUpdateInfo: AppUpdateInfo | undefined;
 
-  private readonly GH_URL = 'https://github.com/robingenz/capacitor-app-update';
+  private readonly GH_URL =
+    'https://github.com/capawesome-team/capacitor-app-update';
 
   constructor(private readonly platform: Platform) {}
 

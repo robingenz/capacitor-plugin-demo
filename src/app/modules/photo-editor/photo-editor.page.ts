@@ -13,7 +13,7 @@ export class PhotoEditorPage {
   public base64String: string | undefined;
 
   private readonly GH_URL =
-    'https://github.com/robingenz/capacitor-photo-editor';
+    'https://github.com/capawesome-team/capacitor-photo-editor';
 
   constructor() {}
 

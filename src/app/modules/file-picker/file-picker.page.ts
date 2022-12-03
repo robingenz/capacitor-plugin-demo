@@ -16,7 +16,7 @@ export class FilePickerPage {
   public files: File[] = [];
 
   private readonly GH_URL =
-    'https://github.com/robingenz/capacitor-file-picker';
+    'https://github.com/capawesome-team/capacitor-file-picker';
 
   constructor() {}
 

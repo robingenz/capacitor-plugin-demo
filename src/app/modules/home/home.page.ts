@@ -28,6 +28,10 @@ export class HomePage {
       url: '/badge',
     },
     {
+      name: 'Cloudinary',
+      url: '/cloudinary',
+    },
+    {
       name: 'Datetime Picker',
       url: '/datetime-picker',
     },

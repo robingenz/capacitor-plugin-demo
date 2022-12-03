@@ -8,9 +8,11 @@ const routes: Routes = [
     pathMatch: 'full',
   },
   {
-    path: 'home',
+    path: 'app-update',
     loadChildren: () =>
-      import('./modules/home/home.module').then(m => m.HomePageModule),
+      import('./modules/app-update/app-update.module').then(
+        m => m.AppUpdatePageModule,
+      ),
   },
   {
     path: 'android-battery-optimization',
@@ -27,39 +29,6 @@ const routes: Routes = [
       ).then(m => m.AndroidForegroundServicePageModule),
   },
   {
-    path: 'badge',
-    loadChildren: () =>
-      import('./modules/badge/badge.module').then(m => m.BadgePageModule),
-  },
-  {
-    path: 'datetime-picker',
-    loadChildren: () =>
-      import('./modules/datetime-picker/datetime-picker.module').then(
-        m => m.DatetimePickerPageModule,
-      ),
-  },
-  {
-    path: 'keep-awake',
-    loadChildren: () =>
-      import('./modules/keep-awake/keep-awake.module').then(
-        m => m.KeepAwakePageModule,
-      ),
-  },
-  {
-    path: 'privacy-screen',
-    loadChildren: () =>
-      import('./modules/privacy-screen/privacy-screen.module').then(
-        m => m.PrivacyScreenPageModule,
-      ),
-  },
-  {
-    path: 'text-to-speech',
-    loadChildren: () =>
-      import('./modules/text-to-speech/text-to-speech.module').then(
-        m => m.TextToSpeechPageModule,
-      ),
-  },
-  {
     path: 'background-task',
     loadChildren: () =>
       import('./modules/background-task/background-task.module').then(
@@ -67,25 +36,23 @@ const routes: Routes = [
       ),
   },
   {
-    path: 'screen-orientation',
+    path: 'badge',
     loadChildren: () =>
-      import('./modules/screen-orientation/screen-orientation.module').then(
-        m => m.ScreenOrientationPageModule,
+      import('./modules/badge/badge.module').then(m => m.BadgePageModule),
+  },
+  {
+    path: 'cloudinary',
+    loadChildren: () =>
+      import('./modules/cloudinary/cloudinary.module').then(
+        m => m.CloudinaryPageModule,
       ),
   },
   {
-    path: 'app-update',
+    path: 'datetime-picker',
     loadChildren: () =>
-      import('./modules/app-update/app-update.module').then(
-        m => m.AppUpdatePageModule,
+      import('./modules/datetime-picker/datetime-picker.module').then(
+        m => m.DatetimePickerPageModule,
       ),
-  },
-  {
-    path: 'managed-configurations',
-    loadChildren: () =>
-      import(
-        './modules/managed-configurations/managed-configurations.module'
-      ).then(m => m.ManagedConfigurationsPageModule),
   },
   {
     path: 'file-opener',
@@ -102,10 +69,50 @@ const routes: Routes = [
       ),
   },
   {
+    path: 'home',
+    loadChildren: () =>
+      import('./modules/home/home.module').then(m => m.HomePageModule),
+  },
+  {
+    path: 'keep-awake',
+    loadChildren: () =>
+      import('./modules/keep-awake/keep-awake.module').then(
+        m => m.KeepAwakePageModule,
+      ),
+  },
+  {
+    path: 'managed-configurations',
+    loadChildren: () =>
+      import(
+        './modules/managed-configurations/managed-configurations.module'
+      ).then(m => m.ManagedConfigurationsPageModule),
+  },
+  {
     path: 'photo-editor',
     loadChildren: () =>
       import('./modules/photo-editor/photo-editor.module').then(
         m => m.PhotoEditorPageModule,
+      ),
+  },
+  {
+    path: 'privacy-screen',
+    loadChildren: () =>
+      import('./modules/privacy-screen/privacy-screen.module').then(
+        m => m.PrivacyScreenPageModule,
+      ),
+  },
+  {
+    path: 'screen-orientation',
+    loadChildren: () =>
+      import('./modules/screen-orientation/screen-orientation.module').then(
+        m => m.ScreenOrientationPageModule,
+      ),
+  },
+  {
+    path: 'text-to-speech',
+    loadChildren: () =>
+      import('./modules/text-to-speech/text-to-speech.module').then(
+        m => m.TextToSpeechPageModule,
       ),
   },
   {

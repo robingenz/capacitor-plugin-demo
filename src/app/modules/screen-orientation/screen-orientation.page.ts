@@ -11,7 +11,7 @@ import { Platform } from '@ionic/angular';
 export class ScreenOrientationPage implements OnInit, OnDestroy {
   public currentOrientation = '';
   private readonly GH_URL =
-    'https://github.com/robingenz/capacitor-screen-orientation';
+    'https://github.com/capawesome-team/capacitor-screen-orientation';
   private orientationChangeListener: PluginListenerHandle | undefined;
 
   constructor(

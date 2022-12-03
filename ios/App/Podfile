@@ -24,6 +24,7 @@ def capacitor_pods
   pod 'CapawesomeCapacitorAppUpdate', :path => '../../node_modules/@capawesome/capacitor-app-update'
   pod 'CapawesomeCapacitorBackgroundTask', :path => '../../node_modules/@capawesome/capacitor-background-task'
   pod 'CapawesomeCapacitorBadge', :path => '../../node_modules/@capawesome/capacitor-badge'
+  pod 'CapawesomeCapacitorCloudinary', :path => '../../node_modules/@capawesome/capacitor-cloudinary'
   pod 'CapawesomeCapacitorFilePicker', :path => '../../node_modules/@capawesome/capacitor-file-picker'
   pod 'CapawesomeCapacitorManagedConfigurations', :path => '../../node_modules/@capawesome/capacitor-managed-configurations'
   pod 'CapawesomeCapacitorPhotoEditor', :path => '../../node_modules/@capawesome/capacitor-photo-editor'
