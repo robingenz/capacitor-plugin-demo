@@ -71,6 +71,12 @@
           [disabled]="!formGroup.get('url')?.value"
           >Open URL</ion-button
         >
+        <ion-button
+          expand="block"
+          (click)="downloadFile()"
+          [disabled]="!formGroup.get('url')?.value"
+          >Download file</ion-button
+        >
       </form>
     </ion-card-content>
   </ion-card>

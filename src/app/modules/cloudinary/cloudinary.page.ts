@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { UntypedFormControl, UntypedFormGroup } from '@angular/forms';
 import { DialogService } from '@app/core';
+import { FileOpener } from '@capawesome-team/capacitor-file-opener';
 import { Cloudinary, ResourceType } from '@capawesome/capacitor-cloudinary';
 import { File, FilePicker } from '@capawesome/capacitor-file-picker';
 
@@ -72,11 +73,43 @@ export class CloudinaryPage {
     }
   }
 
+  public async downloadFile(): Promise<void> {
+    const loadingElement = await this.dialogService.showLoading();
+    const url = this.formGroup.get('url')?.value;
+    if (!url) {
+      return;
+    }
+    try {
+      const { path, blob } = await Cloudinary.downloadResource({
+        url,
+      });
+      if (blob) {
+        this.downloadBlob(blob, url.split('/').pop() || 'file');
+      } else if (path) {
+        await FileOpener.openFile({
+          path,
+        });
+      }
+    } finally {
+      loadingElement.dismiss();
+    }
+  }
+
   public openUrl(): any {
     const url = this.formGroup.get('url')?.value;
     if (!url) {
       return;
     }
     return window.open(url, '_blank');
+  }
+
+  private downloadBlob(blob: Blob, fileName: string): void {
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = fileName;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   }
 }

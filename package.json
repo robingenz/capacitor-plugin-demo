@@ -40,7 +40,7 @@
     "@capawesome/capacitor-app-update": "2.0.0",
     "@capawesome/capacitor-background-task": "2.0.0",
     "@capawesome/capacitor-badge": "2.0.0",
-    "@capawesome/capacitor-cloudinary": "0.0.1",
+    "@capawesome/capacitor-cloudinary": "0.1.0",
     "@capawesome/capacitor-file-picker": "0.4.0",
     "@capawesome/capacitor-managed-configurations": "0.2.0",
     "@capawesome/capacitor-photo-editor": "0.1.0",
