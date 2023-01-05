@@ -1,6 +1,6 @@
 # capacitor-plugin-demo
 
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/robingenz/capacitor-plugin-demo/CI/main)](https://github.com/robingenz/capacitor-plugin-demo/actions)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/robingenz/capacitor-plugin-demo/ci.yml?branch=main)](https://github.com/robingenz/capacitor-plugin-demo/actions)
 
 <!-- [![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/robingenz/capacitor-plugin-demo?color=brightgreen&label=version)](https://github.com/robingenz/capacitor-plugin-demo/releases) -->
 
