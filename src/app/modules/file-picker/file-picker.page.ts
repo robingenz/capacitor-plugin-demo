@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { UntypedFormControl, UntypedFormGroup } from '@angular/forms';
+import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
+import { Capacitor } from '@capacitor/core';
 import { FilePicker, PickedFile } from '@capawesome/capacitor-file-picker';
 
 @Component({
@@ -18,7 +20,7 @@ export class FilePickerPage {
   private readonly GH_URL =
     'https://github.com/capawesome-team/capacitor-file-picker';
 
-  constructor() {}
+  constructor(private readonly domSanitizer: DomSanitizer) {}
 
   public async pickFile(): Promise<void> {
     const types = this.formGroup.get('types')?.value || [];
@@ -47,6 +49,11 @@ export class FilePickerPage {
     const readData = this.formGroup.get('readData')?.value || false;
     const { files } = await FilePicker.pickVideos({ multiple, readData });
     this.files = files;
+  }
+
+  public convertPathToWebPath(path: string): SafeUrl {
+    const fileSrc = Capacitor.convertFileSrc(path);
+    return this.domSanitizer.bypassSecurityTrustUrl(fileSrc);
   }
 
   public openOnGithub(): void {

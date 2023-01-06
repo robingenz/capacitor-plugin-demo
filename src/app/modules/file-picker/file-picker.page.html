@@ -99,6 +99,7 @@
           <ion-label position="fixed">Width</ion-label>
           <ion-input type="text" readonly [value]="file.width"></ion-input>
         </ion-item>
+        <img *ngIf="file.path" [src]="convertPathToWebPath(file.path)" />
       </ion-card-content>
     </ion-card>
   </ng-container>
