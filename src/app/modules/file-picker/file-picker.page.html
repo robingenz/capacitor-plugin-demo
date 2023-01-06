@@ -57,7 +57,10 @@
           <ion-checkbox formControlName="readData"></ion-checkbox>
         </ion-item>
       </form>
-      <ion-button expand="block" (click)="pickFile()">Pick File</ion-button>
+      <ion-button expand="block" (click)="pickFile()">Pick Files</ion-button>
+      <ion-button expand="block" (click)="pickImages()">Pick Images</ion-button>
+      <ion-button expand="block" (click)="pickMedia()">Pick Media</ion-button>
+      <ion-button expand="block" (click)="pickVideos()">Pick Videos</ion-button>
     </ion-card-content>
   </ion-card>
 
@@ -83,6 +86,18 @@
         <ion-item>
           <ion-label position="fixed">Data</ion-label>
           <ion-input type="text" readonly [value]="file.data"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="fixed">Duration</ion-label>
+          <ion-input type="text" readonly [value]="file.duration"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="fixed">Height</ion-label>
+          <ion-input type="text" readonly [value]="file.height"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="fixed">Width</ion-label>
+          <ion-input type="text" readonly [value]="file.width"></ion-input>
         </ion-item>
       </ion-card-content>
     </ion-card>
