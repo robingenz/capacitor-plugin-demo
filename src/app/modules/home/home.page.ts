@@ -28,6 +28,10 @@ export class HomePage {
       url: '/badge',
     },
     {
+      name: 'Barcode Scanner',
+      url: '/barcode-scanner',
+    },
+    {
       name: 'Cloudinary',
       url: '/cloudinary',
     },

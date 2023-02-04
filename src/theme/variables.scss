@@ -233,3 +233,13 @@
     --ion-card-background: #1e1e1e;
   }
 }
+
+body.barcode-scanner-active {
+  visibility: hidden;
+  --background: transparent !important;
+  --ion-background-color: transparent !important;
+}
+
+.barcode-scanner-modal {
+  visibility: visible;
+}

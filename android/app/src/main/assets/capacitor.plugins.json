@@ -40,6 +40,10 @@
 		"classpath": "io.capawesome.capacitorjs.plugins.foregroundservice.ForegroundServicePlugin"
 	},
 	{
+		"pkg": "@capawesome-team/capacitor-barcode-scanner",
+		"classpath": "io.capawesome.capacitorjs.plugins.barcodescanner.BarcodeScannerPlugin"
+	},
+	{
 		"pkg": "@capawesome-team/capacitor-datetime-picker",
 		"classpath": "io.capawesome.capacitorjs.plugins.datetimepicker.DatetimePickerPlugin"
 	},

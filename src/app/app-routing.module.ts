@@ -41,6 +41,13 @@ const routes: Routes = [
       import('./modules/badge/badge.module').then(m => m.BadgePageModule),
   },
   {
+    path: 'barcode-scanner',
+    loadChildren: () =>
+      import('./modules/barcode-scanner/barcode-scanner.module').then(
+        m => m.BarcodeScannerPageModule,
+      ),
+  },
+  {
     path: 'cloudinary',
     loadChildren: () =>
       import('./modules/cloudinary/cloudinary.module').then(

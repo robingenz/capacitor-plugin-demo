@@ -19,6 +19,7 @@ def capacitor_pods
   pod 'CapacitorFilesystem', :path => '../../node_modules/@capacitor/filesystem'
   pod 'CapacitorHaptics', :path => '../../node_modules/@capacitor/haptics'
   pod 'CapacitorKeyboard', :path => '../../node_modules/@capacitor/keyboard'
+  pod 'CapawesomeTeamCapacitorBarcodeScanner', :path => '../../../../capawesome-team/capacitor-barcode-scanner-sponsorware'
   pod 'CapawesomeTeamCapacitorDatetimePicker', :path => '../../node_modules/@capawesome-team/capacitor-datetime-picker'
   pod 'CapawesomeTeamCapacitorFileOpener', :path => '../../node_modules/@capawesome-team/capacitor-file-opener'
   pod 'CapawesomeCapacitorAppUpdate', :path => '../../node_modules/@capawesome/capacitor-app-update'

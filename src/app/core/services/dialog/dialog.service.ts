@@ -23,6 +23,10 @@ export class DialogService {
     private popoverCtrl: PopoverController,
   ) {}
 
+  public async dismissModal(data?: any): Promise<boolean> {
+    return this.modalCtrl.dismiss(data);
+  }
+
   public async showAlert(opts?: AlertOptions): Promise<HTMLIonAlertElement> {
     const alert = await this.alertCtrl.create(opts);
     await alert.present();
