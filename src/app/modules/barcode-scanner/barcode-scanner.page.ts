@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { UntypedFormControl, UntypedFormGroup } from '@angular/forms';
 import { DialogService } from '@app/core';
 import { BarcodeScanner } from '@capawesome-team/capacitor-barcode-scanner';
+import { FilePicker } from '@capawesome/capacitor-file-picker';
 import { BarcodeScannerModalComponent } from './barcode-scanner-modal.component';
 
 @Component({
@@ -34,6 +35,22 @@ export class BarcodeScannerPage {
 
   public async scan(): Promise<void> {
     const { barcode } = await BarcodeScanner.scan();
+    this.formGroup.get('value')?.setValue(barcode.value);
+  }
+
+  public async readBarcodeFromImage(): Promise<void> {
+    const { files } = await FilePicker.pickImages({ multiple: false });
+    const path = files[0]?.path;
+    if (!path) {
+      return;
+    }
+    const { barcodes } = await BarcodeScanner.readBarcodesFromImage({
+      path,
+    });
+    const barcode = barcodes[0];
+    if (!barcode) {
+      return;
+    }
     this.formGroup.get('value')?.setValue(barcode.value);
   }
 

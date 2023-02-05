@@ -1,4 +1,10 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  OnDestroy,
+  OnInit,
+  ViewChild,
+} from '@angular/core';
 import { DialogService } from '@app/core';
 import { BarcodeScanner } from '@capawesome-team/capacitor-barcode-scanner';
 
@@ -17,7 +23,12 @@ import { BarcodeScanner } from '@capawesome-team/capacitor-barcode-scanner';
     </ion-header>
 
     <ion-content>
-      <div>Test</div>
+      <div #square class="square"></div>
+      <ion-fab slot="fixed" horizontal="end" vertical="bottom">
+        <ion-fab-button (click)="toggleTorch()">
+          <ion-icon name="flashlight"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
     </ion-content>
   `,
   styles: [
@@ -25,10 +36,24 @@ import { BarcodeScanner } from '@capawesome-team/capacitor-barcode-scanner';
       ion-content {
         --background: transparent;
       }
+
+      .square {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 12px;
+        width: 250px;
+        height: 250px;
+        border: 12px solid white;
+      }
     `,
   ],
 })
 export class BarcodeScannerModalComponent implements OnInit, OnDestroy {
+  @ViewChild('square')
+  public squareElement: ElementRef<HTMLDivElement> | undefined;
+
   constructor(private readonly dialogService: DialogService) {}
 
   public ngOnInit(): void {
@@ -43,6 +68,11 @@ export class BarcodeScannerModalComponent implements OnInit, OnDestroy {
     this.dialogService.dismissModal({
       value: scannedText,
     });
+  }
+
+  public async toggleTorch(): Promise<void> {
+    // console.log(this.squareElement?.nativeElement.getBoundingClientRect());
+    await BarcodeScanner.toggleTorch();
   }
 
   private async startScan(): Promise<void> {
