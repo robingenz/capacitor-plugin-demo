@@ -57,7 +57,10 @@
           <ion-checkbox formControlName="readData"></ion-checkbox>
         </ion-item>
       </form>
-      <ion-button expand="block" (click)="pickFile()">Pick Files</ion-button>
+      <ion-button expand="block" (click)="pickDirectory()"
+        >Pick Directory</ion-button
+      >
+      <ion-button expand="block" (click)="pickFiles()">Pick Files</ion-button>
       <ion-button expand="block" (click)="pickImages()">Pick Images</ion-button>
       <ion-button expand="block" (click)="pickMedia()">Pick Media</ion-button>
       <ion-button expand="block" (click)="pickVideos()">Pick Videos</ion-button>
@@ -98,6 +101,14 @@
         <ion-item>
           <ion-label position="fixed">Width</ion-label>
           <ion-input type="text" readonly [value]="file.width"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="fixed">Modified At</ion-label>
+          <ion-input
+            type="text"
+            readonly
+            [value]="file.modifiedAt | date:'long'"
+          ></ion-input>
         </ion-item>
         <img *ngIf="file.path" [src]="convertPathToWebPath(file.path)" />
       </ion-card-content>
