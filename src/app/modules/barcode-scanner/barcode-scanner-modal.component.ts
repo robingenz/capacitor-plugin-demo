@@ -1,12 +1,17 @@
 import {
+  AfterViewInit,
   Component,
   ElementRef,
   OnDestroy,
-  OnInit,
   ViewChild,
 } from '@angular/core';
 import { DialogService } from '@app/core';
-import { BarcodeScanner } from '@capawesome-team/capacitor-barcode-scanner';
+import {
+  BarcodeFormat,
+  BarcodeScanner,
+  LensFacing,
+  StartScanOptions,
+} from '@capawesome-team/capacitor-barcode-scanner';
 
 @Component({
   selector: 'app-barcode-scanner',
@@ -50,14 +55,16 @@ import { BarcodeScanner } from '@capawesome-team/capacitor-barcode-scanner';
     `,
   ],
 })
-export class BarcodeScannerModalComponent implements OnInit, OnDestroy {
+export class BarcodeScannerModalComponent implements AfterViewInit, OnDestroy {
   @ViewChild('square')
   public squareElement: ElementRef<HTMLDivElement> | undefined;
 
   constructor(private readonly dialogService: DialogService) {}
 
-  public ngOnInit(): void {
-    this.startScan();
+  public ngAfterViewInit(): void {
+    setTimeout(() => {
+      this.startScan();
+    }, 250);
   }
 
   public ngOnDestroy(): void {
@@ -71,13 +78,29 @@ export class BarcodeScannerModalComponent implements OnInit, OnDestroy {
   }
 
   public async toggleTorch(): Promise<void> {
-    // console.log(this.squareElement?.nativeElement.getBoundingClientRect());
     await BarcodeScanner.toggleTorch();
   }
 
   private async startScan(): Promise<void> {
     // Hide everything behind the modal
     document.querySelector('body')?.classList.add('barcode-scanner-active');
+
+    const options: StartScanOptions = {
+      formats: [BarcodeFormat.QrCode],
+      lensFacing: LensFacing.Back,
+    };
+
+    const squareElementBoundingClientRect =
+      this.squareElement?.nativeElement.getBoundingClientRect();
+    console.log(squareElementBoundingClientRect);
+    if (squareElementBoundingClientRect) {
+      options.detectionArea = {
+        x: squareElementBoundingClientRect.x,
+        y: squareElementBoundingClientRect.y,
+        width: squareElementBoundingClientRect.width,
+        height: squareElementBoundingClientRect.height,
+      };
+    }
 
     const listener = await BarcodeScanner.addListener(
       'barcodeScanned',
@@ -86,7 +109,7 @@ export class BarcodeScannerModalComponent implements OnInit, OnDestroy {
         this.closeModal(result.barcode.value);
       },
     );
-    await BarcodeScanner.startScan();
+    await BarcodeScanner.startScan(options);
   }
 
   private async stopScan(): Promise<void> {
