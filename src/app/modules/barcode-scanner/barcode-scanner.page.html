@@ -33,8 +33,28 @@
     <ion-card-content>
       <form [formGroup]="formGroup">
         <ion-item>
-          <ion-label position="fixed">Value</ion-label>
-          <ion-input formControlName="value"></ion-input>
+          <ion-label position="fixed">Bytes</ion-label>
+          <ion-input formControlName="bytes"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="fixed">Corner Points</ion-label>
+          <ion-input formControlName="cornerPoints"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="fixed">Display Value</ion-label>
+          <ion-input formControlName="displayValue"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="fixed">Format</ion-label>
+          <ion-input formControlName="format"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="fixed">Raw Value</ion-label>
+          <ion-input formControlName="rawValue"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="fixed">Value Type</ion-label>
+          <ion-input formControlName="valueType"></ion-input>
         </ion-item>
         <ion-button expand="block" (click)="startScan()">Start Scan</ion-button>
         <ion-button expand="block" (click)="scan()">Scan</ion-button>

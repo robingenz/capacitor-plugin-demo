@@ -1,12 +1,7 @@
-import {
-  AfterViewInit,
-  Component,
-  ElementRef,
-  OnDestroy,
-  ViewChild,
-} from '@angular/core';
+import { AfterViewInit, Component, OnDestroy } from '@angular/core';
 import { DialogService } from '@app/core';
 import {
+  Barcode,
   BarcodeFormat,
   BarcodeScanner,
   LensFacing,
@@ -28,7 +23,7 @@ import {
     </ion-header>
 
     <ion-content>
-      <div #square class="square"></div>
+      <!-- <div #square class="square"></div> -->
       <ion-fab slot="fixed" horizontal="end" vertical="bottom">
         <ion-fab-button (click)="toggleTorch()">
           <ion-icon name="flashlight"></ion-icon>
@@ -56,8 +51,8 @@ import {
   ],
 })
 export class BarcodeScannerModalComponent implements AfterViewInit, OnDestroy {
-  @ViewChild('square')
-  public squareElement: ElementRef<HTMLDivElement> | undefined;
+  // @ViewChild('square')
+  // public squareElement: ElementRef<HTMLDivElement> | undefined;
 
   constructor(private readonly dialogService: DialogService) {}
 
@@ -71,9 +66,9 @@ export class BarcodeScannerModalComponent implements AfterViewInit, OnDestroy {
     this.stopScan();
   }
 
-  public async closeModal(scannedText?: string): Promise<void> {
+  public async closeModal(barcode?: Barcode): Promise<void> {
     this.dialogService.dismissModal({
-      value: scannedText,
+      barcode: barcode,
     });
   }
 
@@ -82,7 +77,7 @@ export class BarcodeScannerModalComponent implements AfterViewInit, OnDestroy {
   }
 
   private async startScan(): Promise<void> {
-    // Hide everything behind the modal
+    // Hide everything behind the modal (see `src/theme/variables.scss`)
     document.querySelector('body')?.classList.add('barcode-scanner-active');
 
     const options: StartScanOptions = {
@@ -90,30 +85,31 @@ export class BarcodeScannerModalComponent implements AfterViewInit, OnDestroy {
       lensFacing: LensFacing.Back,
     };
 
-    const squareElementBoundingClientRect =
+    /*const squareElementBoundingClientRect =
       this.squareElement?.nativeElement.getBoundingClientRect();
-    console.log(squareElementBoundingClientRect);
     if (squareElementBoundingClientRect) {
       options.detectionArea = {
-        x: squareElementBoundingClientRect.x,
-        y: squareElementBoundingClientRect.y,
-        width: squareElementBoundingClientRect.width,
-        height: squareElementBoundingClientRect.height,
+        x: squareElementBoundingClientRect.x * window.devicePixelRatio,
+        y: squareElementBoundingClientRect.y * window.devicePixelRatio,
+        width: squareElementBoundingClientRect.width * window.devicePixelRatio,
+        height:
+          squareElementBoundingClientRect.height * window.devicePixelRatio,
       };
     }
+    console.log(options.detectionArea);*/
 
     const listener = await BarcodeScanner.addListener(
       'barcodeScanned',
       async result => {
         await listener.remove();
-        this.closeModal(result.barcode.value);
+        this.closeModal(result.barcode);
       },
     );
     await BarcodeScanner.startScan(options);
   }
 
   private async stopScan(): Promise<void> {
-    // Show everything behind the modal
+    // Show everything behind the modal again
     document.querySelector('body')?.classList.remove('barcode-scanner-active');
 
     await BarcodeScanner.stopScan();

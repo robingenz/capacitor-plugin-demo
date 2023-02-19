@@ -1,7 +1,10 @@
 import { Component } from '@angular/core';
 import { UntypedFormControl, UntypedFormGroup } from '@angular/forms';
 import { DialogService } from '@app/core';
-import { BarcodeScanner } from '@capawesome-team/capacitor-barcode-scanner';
+import {
+  Barcode,
+  BarcodeScanner,
+} from '@capawesome-team/capacitor-barcode-scanner';
 import { FilePicker } from '@capawesome/capacitor-file-picker';
 import { BarcodeScannerModalComponent } from './barcode-scanner-modal.component';
 
@@ -12,7 +15,12 @@ import { BarcodeScannerModalComponent } from './barcode-scanner-modal.component'
 })
 export class BarcodeScannerPage {
   public formGroup = new UntypedFormGroup({
-    value: new UntypedFormControl(''),
+    bytes: new UntypedFormControl(''),
+    cornerPoints: new UntypedFormControl(''),
+    displayValue: new UntypedFormControl(''),
+    format: new UntypedFormControl(''),
+    rawValue: new UntypedFormControl(''),
+    valueType: new UntypedFormControl(''),
   });
 
   private readonly GH_URL =
@@ -23,19 +31,25 @@ export class BarcodeScannerPage {
   public async startScan(): Promise<void> {
     const element = await this.dialogService.showModal({
       component: BarcodeScannerModalComponent,
-      // Set `visibility` to `visible` to show the modal
+      // Set `visibility` to `visible` to show the modal (see `src/theme/variables.scss`)
       cssClass: 'barcode-scanner-modal',
       showBackdrop: false,
     });
     element.onDidDismiss().then(result => {
-      const value = result.data?.value || '';
-      this.formGroup.get('value')?.setValue(value);
+      const barcode: Barcode | undefined = result.data?.barcode;
+      if (barcode) {
+        this.updateFormGroupValues(barcode);
+      }
     });
   }
 
   public async scan(): Promise<void> {
-    const { barcode } = await BarcodeScanner.scan();
-    this.formGroup.get('value')?.setValue(barcode.value);
+    const { barcodes } = await BarcodeScanner.scan();
+    const barcode = barcodes[0];
+    if (!barcode) {
+      return;
+    }
+    this.updateFormGroupValues(barcode);
   }
 
   public async readBarcodeFromImage(): Promise<void> {
@@ -51,7 +65,7 @@ export class BarcodeScannerPage {
     if (!barcode) {
       return;
     }
-    this.formGroup.get('value')?.setValue(barcode.value);
+    this.updateFormGroupValues(barcode);
   }
 
   public async requestPermissions(): Promise<void> {
@@ -60,5 +74,16 @@ export class BarcodeScannerPage {
 
   public openOnGithub(): void {
     window.open(this.GH_URL, '_blank');
+  }
+
+  private updateFormGroupValues(barcode: Barcode): void {
+    this.formGroup.get('bytes')?.setValue((barcode.bytes || []).toString());
+    this.formGroup
+      .get('cornerPoints')
+      ?.setValue(barcode.cornerPoints.toString());
+    this.formGroup.get('displayValue')?.setValue(barcode.displayValue);
+    this.formGroup.get('format')?.setValue(barcode.format);
+    this.formGroup.get('rawValue')?.setValue(barcode.rawValue);
+    this.formGroup.get('valueType')?.setValue(barcode.valueType);
   }
 }

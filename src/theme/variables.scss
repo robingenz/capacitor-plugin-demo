@@ -234,12 +234,23 @@
   }
 }
 
+/**
+  * Barcode Scanner
+  * -------------------------------------------
+  */
 body.barcode-scanner-active {
   visibility: hidden;
-  --background: transparent !important;
-  --ion-background-color: transparent !important;
+  --background: transparent;
+  --ion-background-color: transparent;
 }
 
 .barcode-scanner-modal {
   visibility: visible;
+}
+
+@media (prefers-color-scheme: dark) {
+  .barcode-scanner-modal {
+    --background: transparent;
+    --ion-background-color: transparent;
+  }
 }

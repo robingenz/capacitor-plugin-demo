@@ -27,6 +27,13 @@ export class FilePickerPage {
     const multiple = this.formGroup.get('multiple')?.value || false;
     const readData = this.formGroup.get('readData')?.value || false;
     const { files } = await FilePicker.pickFiles({ types, multiple, readData });
+    for (const file of files) {
+      if (file.path && file.mimeType === 'image/heic') {
+        file.path = (
+          await FilePicker.convertHeicToJpeg({ path: file.path })
+        ).path;
+      }
+    }
     this.files = files;
   }
 
