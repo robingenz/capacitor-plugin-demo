@@ -1,4 +1,10 @@
-import { AfterViewInit, Component, OnDestroy } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  Input,
+  OnDestroy,
+  OnInit,
+} from '@angular/core';
 import { DialogService } from '@app/core';
 import {
   Barcode,
@@ -24,7 +30,12 @@ import {
 
     <ion-content>
       <!-- <div #square class="square"></div> -->
-      <ion-fab slot="fixed" horizontal="end" vertical="bottom">
+      <ion-fab
+        *ngIf="isTorchAvailable"
+        slot="fixed"
+        horizontal="end"
+        vertical="bottom"
+      >
         <ion-fab-button (click)="toggleTorch()">
           <ion-icon name="flashlight"></ion-icon>
         </ion-fab-button>
@@ -50,11 +61,26 @@ import {
     `,
   ],
 })
-export class BarcodeScannerModalComponent implements AfterViewInit, OnDestroy {
+export class BarcodeScannerModalComponent
+  implements OnInit, AfterViewInit, OnDestroy
+{
+  @Input()
+  public formats: BarcodeFormat[] = [];
+  @Input()
+  public lensFacing: LensFacing = LensFacing.Back;
+
   // @ViewChild('square')
   // public squareElement: ElementRef<HTMLDivElement> | undefined;
 
+  public isTorchAvailable = false;
+
   constructor(private readonly dialogService: DialogService) {}
+
+  public ngOnInit(): void {
+    BarcodeScanner.isTorchAvailable().then(result => {
+      this.isTorchAvailable = result.available;
+    });
+  }
 
   public ngAfterViewInit(): void {
     setTimeout(() => {
@@ -81,8 +107,8 @@ export class BarcodeScannerModalComponent implements AfterViewInit, OnDestroy {
     document.querySelector('body')?.classList.add('barcode-scanner-active');
 
     const options: StartScanOptions = {
-      formats: [BarcodeFormat.QrCode],
-      lensFacing: LensFacing.Back,
+      formats: this.formats,
+      lensFacing: this.lensFacing,
     };
 
     /*const squareElementBoundingClientRect =

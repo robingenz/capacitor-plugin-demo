@@ -33,38 +33,142 @@
     <ion-card-content>
       <form [formGroup]="formGroup">
         <ion-item>
-          <ion-label position="fixed">Bytes</ion-label>
-          <ion-input formControlName="bytes"></ion-input>
+          <ion-label position="fixed">Formats</ion-label>
+          <ion-select
+            multiple="true"
+            placeholder="Formats"
+            formControlName="formats"
+          >
+            <ion-select-option [value]="barcodeFormat.Aztec"
+              >Aztec</ion-select-option
+            >
+            <ion-select-option [value]="barcodeFormat.Codabar"
+              >Codabar</ion-select-option
+            >
+            <ion-select-option [value]="barcodeFormat.Code39"
+              >Code39</ion-select-option
+            >
+            <ion-select-option [value]="barcodeFormat.Code93"
+              >Code93</ion-select-option
+            >
+            <ion-select-option [value]="barcodeFormat.Code128"
+              >Code128</ion-select-option
+            >
+            <ion-select-option [value]="barcodeFormat.DataMatrix"
+              >DataMatrix</ion-select-option
+            >
+            <ion-select-option [value]="barcodeFormat.Ean8"
+              >Ean8</ion-select-option
+            >
+            <ion-select-option [value]="barcodeFormat.Ean13"
+              >Ean13</ion-select-option
+            >
+            <ion-select-option [value]="barcodeFormat.Itf"
+              >Itf</ion-select-option
+            >
+            <ion-select-option [value]="barcodeFormat.Pdf417"
+              >Pdf417</ion-select-option
+            >
+            <ion-select-option [value]="barcodeFormat.QrCode"
+              >QrCode</ion-select-option
+            >
+            <ion-select-option [value]="barcodeFormat.UpcA"
+              >UpcA</ion-select-option
+            >
+            <ion-select-option [value]="barcodeFormat.UpcE"
+              >UpcE</ion-select-option
+            >
+          </ion-select>
         </ion-item>
         <ion-item>
-          <ion-label position="fixed">Corner Points</ion-label>
-          <ion-input formControlName="cornerPoints"></ion-input>
+          <ion-label position="fixed">Lens Facing</ion-label>
+          <ion-select formControlName="lensFacing">
+            <ion-select-option [value]="lensFacing.Front"
+              >Front</ion-select-option
+            >
+            <ion-select-option [value]="lensFacing.Back"
+              >Back</ion-select-option
+            >
+          </ion-select>
         </ion-item>
-        <ion-item>
-          <ion-label position="fixed">Display Value</ion-label>
-          <ion-input formControlName="displayValue"></ion-input>
-        </ion-item>
-        <ion-item>
-          <ion-label position="fixed">Format</ion-label>
-          <ion-input formControlName="format"></ion-input>
-        </ion-item>
-        <ion-item>
-          <ion-label position="fixed">Raw Value</ion-label>
-          <ion-input formControlName="rawValue"></ion-input>
-        </ion-item>
-        <ion-item>
-          <ion-label position="fixed">Value Type</ion-label>
-          <ion-input formControlName="valueType"></ion-input>
-        </ion-item>
-        <ion-button expand="block" (click)="startScan()">Start Scan</ion-button>
-        <ion-button expand="block" (click)="scan()">Scan</ion-button>
-        <ion-button expand="block" (click)="readBarcodeFromImage()"
+        <ion-button
+          expand="block"
+          (click)="startScan()"
+          [disabled]="!isSupported"
+          >Start Scan</ion-button
+        >
+        <ion-button
+          expand="block"
+          (click)="readBarcodeFromImage()"
+          [disabled]="!isSupported"
           >Read Barcode From Image</ion-button
         >
-        <ion-button expand="block" (click)="requestPermissions()"
+        <ion-button expand="block" (click)="scan()" [disabled]="!isSupported"
+          >Scan</ion-button
+        >
+        <ion-button
+          expand="block"
+          (click)="openSettings()"
+          [disabled]="!isSupported"
+          >Open Settings</ion-button
+        >
+        <ion-button
+          expand="block"
+          (click)="requestPermissions()"
+          [disabled]="isPermissionGranted"
           >Request Permissions</ion-button
         >
       </form>
     </ion-card-content>
   </ion-card>
+  <ng-container *ngFor="let barcode of barcodes">
+    <ion-card>
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="fixed">Bytes</ion-label>
+          <ion-input
+            type="text"
+            readonly
+            [value]="barcode.bytes?.toString() || ''"
+          ></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="fixed">Corner Points</ion-label>
+          <ion-input
+            type="text"
+            readonly
+            [value]="barcode.cornerPoints?.toString() || ''"
+          ></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="fixed">Display Value</ion-label>
+          <ion-input
+            type="text"
+            readonly
+            [value]="barcode.displayValue"
+          ></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="fixed">Format</ion-label>
+          <ion-input type="text" readonly [value]="barcode.format"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="fixed">Raw Value</ion-label>
+          <ion-input
+            type="text"
+            readonly
+            [value]="barcode.rawValue"
+          ></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="fixed">Value Type</ion-label>
+          <ion-input
+            type="text"
+            readonly
+            [value]="barcode.valueType"
+          ></ion-input>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+  </ng-container>
 </ion-content>
