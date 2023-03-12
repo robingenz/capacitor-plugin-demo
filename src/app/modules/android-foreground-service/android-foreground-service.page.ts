@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ForegroundService } from '@capawesome-team/capacitor-android-foreground-service';
 
 @Component({
@@ -6,7 +6,7 @@ import { ForegroundService } from '@capawesome-team/capacitor-android-foreground
   templateUrl: './android-foreground-service.page.html',
   styleUrls: ['./android-foreground-service.page.scss'],
 })
-export class AndroidForegroundServicePage {
+export class AndroidForegroundServicePage implements OnInit {
   public isEnabled: boolean = false;
 
   private readonly GH_URL =
@@ -14,8 +14,22 @@ export class AndroidForegroundServicePage {
 
   constructor() {}
 
+  public ngOnInit(): void {
+    ForegroundService.removeAllListeners().then(() => {
+      ForegroundService.addListener('buttonClicked', event => {
+        ForegroundService.stopForegroundService();
+      });
+    });
+  }
+
   public async startForegroundService(): Promise<void> {
     await ForegroundService.startForegroundService({
+      buttons: [
+        {
+          id: 1,
+          title: 'Stop',
+        },
+      ],
       body: 'This is the body of the notification',
       title: 'This is the title of the notification',
       id: 12398473,

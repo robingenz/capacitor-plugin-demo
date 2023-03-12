@@ -51,6 +51,7 @@
                 android:resource="@xml/file_paths"></meta-data>
         </provider>
 
+        <receiver android:name="io.capawesome.capacitorjs.plugins.foregroundservice.NotificationActionBroadcastReceiver" />
         <service android:name="io.capawesome.capacitorjs.plugins.foregroundservice.AndroidForegroundService" />
     </application>
 
