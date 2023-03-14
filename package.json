@@ -44,7 +44,7 @@
     "@capawesome/capacitor-file-picker": "0.5.5",
     "@capawesome/capacitor-managed-configurations": "0.2.0",
     "@capawesome/capacitor-photo-editor": "0.1.0",
-    "@capawesome/capacitor-screen-orientation": "2.0.0",
+    "@capawesome/capacitor-screen-orientation": "2.0.2",
     "@ionic/angular": "6.2.9",
     "rxjs": "7.5.7",
     "tslib": "2.4.0",
