@@ -16,11 +16,13 @@ export class CloudinaryPage {
   public readonly resourceTypeRaw = ResourceType.Raw;
 
   public formGroup = new UntypedFormGroup({
-    cloudName: new UntypedFormControl(''),
-    uploadPreset: new UntypedFormControl(''),
+    cloudName: new UntypedFormControl('dbb9kry2z'),
+    uploadPreset: new UntypedFormControl('curof3f8'),
     publicId: new UntypedFormControl(undefined),
     resourceType: new UntypedFormControl(ResourceType.Image),
     url: new UntypedFormControl(undefined),
+    height: new UntypedFormControl(undefined),
+    width: new UntypedFormControl(undefined),
   });
   public file: File | undefined;
 
@@ -57,17 +59,20 @@ export class CloudinaryPage {
     }
     const loadingElement = await this.dialogService.showLoading();
     try {
-      const { publicId, resourceType, url } = await Cloudinary.uploadResource({
-        publicId: this.formGroup.get('publicId')?.value,
-        uploadPreset: this.formGroup.get('uploadPreset')?.value,
-        resourceType:
-          this.formGroup.get('resourceType')?.value || ResourceType.Image,
-        blob: blob,
-        path: path,
-      });
+      const { publicId, resourceType, url, height, width } =
+        await Cloudinary.uploadResource({
+          publicId: this.formGroup.get('publicId')?.value,
+          uploadPreset: this.formGroup.get('uploadPreset')?.value,
+          resourceType:
+            this.formGroup.get('resourceType')?.value || ResourceType.Image,
+          blob: blob,
+          path: path,
+        });
       this.formGroup.patchValue({ publicId: publicId });
       this.formGroup.patchValue({ resourceType: resourceType });
       this.formGroup.patchValue({ url: url });
+      this.formGroup.patchValue({ height: height });
+      this.formGroup.patchValue({ width: width });
     } finally {
       loadingElement.dismiss();
     }

@@ -56,6 +56,14 @@
             <ion-select-option [value]="resourceTypeRaw">Raw</ion-select-option>
           </ion-select>
         </ion-item>
+        <ion-item>
+          <ion-label position="fixed">Height</ion-label>
+          <ion-input formControlName="height"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="fixed">Width</ion-label>
+          <ion-input formControlName="width"></ion-input>
+        </ion-item>
         <ion-button expand="block" (click)="initialize()"
           >Initialize</ion-button
         >
