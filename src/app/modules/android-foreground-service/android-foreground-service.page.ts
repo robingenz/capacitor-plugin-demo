@@ -18,11 +18,17 @@ export class AndroidForegroundServicePage implements OnInit {
     ForegroundService.removeAllListeners().then(() => {
       ForegroundService.addListener('buttonClicked', event => {
         ForegroundService.stopForegroundService();
+        ForegroundService.moveToForeground();
       });
     });
   }
 
   public async startForegroundService(): Promise<void> {
+    const { granted } = await ForegroundService.checkManageOverlayPermission();
+    if (!granted) {
+      await ForegroundService.requestManageOverlayPermission();
+      return;
+    }
     await ForegroundService.startForegroundService({
       buttons: [
         {
