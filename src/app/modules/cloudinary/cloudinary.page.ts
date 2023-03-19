@@ -16,13 +16,15 @@ export class CloudinaryPage {
   public readonly resourceTypeRaw = ResourceType.Raw;
 
   public formGroup = new UntypedFormGroup({
-    cloudName: new UntypedFormControl('dbb9kry2z'),
-    uploadPreset: new UntypedFormControl('curof3f8'),
+    cloudName: new UntypedFormControl(''),
+    uploadPreset: new UntypedFormControl(''),
     publicId: new UntypedFormControl(undefined),
     resourceType: new UntypedFormControl(ResourceType.Image),
     url: new UntypedFormControl(undefined),
     height: new UntypedFormControl(undefined),
     width: new UntypedFormControl(undefined),
+    bytes: new UntypedFormControl(undefined),
+    duration: new UntypedFormControl(undefined),
   });
   public file: File | undefined;
 
@@ -59,7 +61,7 @@ export class CloudinaryPage {
     }
     const loadingElement = await this.dialogService.showLoading();
     try {
-      const { publicId, resourceType, url, height, width } =
+      const { publicId, resourceType, url, height, width, duration, bytes } =
         await Cloudinary.uploadResource({
           publicId: this.formGroup.get('publicId')?.value,
           uploadPreset: this.formGroup.get('uploadPreset')?.value,
@@ -73,6 +75,8 @@ export class CloudinaryPage {
       this.formGroup.patchValue({ url: url });
       this.formGroup.patchValue({ height: height });
       this.formGroup.patchValue({ width: width });
+      this.formGroup.patchValue({ duration: duration });
+      this.formGroup.patchValue({ bytes: bytes });
     } finally {
       loadingElement.dismiss();
     }
