@@ -54,7 +54,7 @@
         <service android:name="io.capawesome.capacitorjs.plugins.foregroundservice.AndroidForegroundService" />
     </application>
 
-    <uses-feature android:name="android.hardware.camera" required="false" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
 
     <!-- Permissions -->
 
