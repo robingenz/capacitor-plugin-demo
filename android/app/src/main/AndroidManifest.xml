@@ -54,6 +54,8 @@
         <service android:name="io.capawesome.capacitorjs.plugins.foregroundservice.AndroidForegroundService" />
     </application>
 
+    <uses-feature android:name="android.hardware.camera" required="false" />
+
     <!-- Permissions -->
 
     <uses-permission android:name="android.permission.INTERNET" />
