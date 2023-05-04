@@ -31,6 +31,12 @@
       <ion-card-title>Demo</ion-card-title>
     </ion-card-header>
     <ion-card-content>
+      <ion-button expand="block" (click)="requestPermissions()">
+        Request Permissions
+      </ion-button>
+      <ion-button expand="block" (click)="requestManageOverlayPermission()">
+        Request Manage Overlay Permission
+      </ion-button>
       <ion-button expand="block" (click)="startForegroundService()">
         Start
       </ion-button>

@@ -18,6 +18,7 @@ export class PhotoEditorPage {
   constructor() {}
 
   public async selectPhoto(): Promise<void> {
+    await Camera.requestPermissions();
     const { path } = await Camera.getPhoto({
       resultType: CameraResultType.Uri,
     });

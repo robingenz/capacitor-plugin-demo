@@ -23,12 +23,15 @@ export class AndroidForegroundServicePage implements OnInit {
     });
   }
 
+  public async requestPermissions(): Promise<void> {
+    await ForegroundService.requestPermissions();
+  }
+
+  public async requestManageOverlayPermission(): Promise<void> {
+    await ForegroundService.requestManageOverlayPermission();
+  }
+
   public async startForegroundService(): Promise<void> {
-    const { granted } = await ForegroundService.checkManageOverlayPermission();
-    if (!granted) {
-      await ForegroundService.requestManageOverlayPermission();
-      return;
-    }
     await ForegroundService.startForegroundService({
       buttons: [
         {
