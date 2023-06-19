@@ -33,7 +33,7 @@ The following plugins are included:
 - Install [Node.js](https://nodejs.org) which includes [Node Package Manager](https://www.npmjs.com/get-npm)
 - Android development: Install [Android Studio](https://developer.android.com/studio)
 - iOS development: Install [XCode](https://apps.apple.com/de/app/xcode/id497799835?mt=12)
-- You must have access to the Capawesome Sponsorware ([Read more](https://github.com/capawesome-team/capacitor-datetime-picker#sponsorware))
+- You must have access to the Capawesome Sponsorware ([Read more](https://capawesome.io/insiders/))
 
 ### Getting Started
 
