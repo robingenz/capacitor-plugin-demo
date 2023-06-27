@@ -7,7 +7,7 @@ PODS:
     - Capacitor
   - CapacitorCommunityKeepAwake (4.0.0):
     - Capacitor
-  - CapacitorCommunityPrivacyScreen (4.0.0):
+  - CapacitorCommunityPrivacyScreen (4.1.1):
     - Capacitor
   - CapacitorCommunityTextToSpeech (3.0.0):
     - Capacitor
@@ -116,7 +116,7 @@ SPEC CHECKSUMS:
   CapacitorApp: 16e189e0463976060ccf34868e3083858c977e2b
   CapacitorCamera: 347de0404ad65462cd348d1e62419e8f763c38ae
   CapacitorCommunityKeepAwake: f3442e3e9b666dd0162522fbd053da1fe81ede20
-  CapacitorCommunityPrivacyScreen: d25075c82792469405c090d9b7c3c413252174c6
+  CapacitorCommunityPrivacyScreen: 83e3d6bb8c959d4ad403e4a66d0a629d4ba7e08f
   CapacitorCommunityTextToSpeech: 8ab921460746482ac9381170ea97a76b73f18049
   CapacitorCordova: 4ea17670ee562680988a7ce9db68dee5160fe564
   CapacitorFilesystem: 095d81a2c46a4c614cf619b15fe3982f24b640b3
