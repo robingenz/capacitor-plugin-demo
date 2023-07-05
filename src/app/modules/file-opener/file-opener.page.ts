@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Filesystem } from '@capacitor/filesystem';
+import { Directory, Filesystem } from '@capacitor/filesystem';
 import { FileOpener } from '@capawesome-team/capacitor-file-opener';
 import { FilePicker } from '@capawesome/capacitor-file-picker';
 
@@ -11,6 +11,7 @@ import { FilePicker } from '@capawesome/capacitor-file-picker';
 export class FileOpenerPage {
   public path: string | undefined;
   public base64String: string | undefined;
+  public copyToAppDirectory: boolean = false;
 
   private readonly GH_URL =
     'https://github.com/capawesome-team/capacitor-file-opener';
@@ -18,15 +19,26 @@ export class FileOpenerPage {
   constructor() {}
 
   public async pickFile(): Promise<void> {
+    this.path = undefined;
     await Filesystem.requestPermissions();
     const { files } = await FilePicker.pickFiles({
-      readData: false,
+      readData: this.copyToAppDirectory,
     });
-    const path = files[0].path;
-    if (!path) {
-      return;
+    const file = files[0];
+    if (this.copyToAppDirectory && file.data) {
+      await Filesystem.writeFile({
+        data: file.data,
+        path: file.name,
+        directory: Directory.Library,
+      });
+      const { uri } = await Filesystem.getUri({
+        path: file.name,
+        directory: Directory.Library,
+      });
+      this.path = uri;
+    } else if (file.path) {
+      this.path = file.path;
     }
-    this.path = path;
   }
 
   public async openFile(): Promise<void> {
@@ -34,6 +46,7 @@ export class FileOpenerPage {
       return;
     }
     await FileOpener.openFile({ path: this.path });
+    console.log('File opened');
   }
 
   public openOnGithub(): void {
