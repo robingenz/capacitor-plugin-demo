@@ -37,7 +37,7 @@ PODS:
     - Capacitor
   - CapawesomeTeamCapacitorDatetimePicker (5.0.0):
     - Capacitor
-  - CapawesomeTeamCapacitorFileOpener (5.0.0):
+  - CapawesomeTeamCapacitorFileOpener (5.0.2):
     - Capacitor
   - Cloudinary (3.3.0):
     - Cloudinary/ios (= 3.3.0)
@@ -131,7 +131,7 @@ SPEC CHECKSUMS:
   CapawesomeCapacitorPhotoEditor: 26744e6317c4d781f6479336bd989dc3edb5498b
   CapawesomeCapacitorScreenOrientation: 5b7cfb76348775e4b824bf460e5c52212b94c8d1
   CapawesomeTeamCapacitorDatetimePicker: 507b9894902c55c0bc168575360caf256905be55
-  CapawesomeTeamCapacitorFileOpener: aea16f25d399e209a89d52993f50b52f828d2914
+  CapawesomeTeamCapacitorFileOpener: 9c19dd42873416cc346080f752d2c7b65fe04874
   Cloudinary: c6a6a66b8b9aac18dce2ad54eb0243ea5e5119b8
 
 PODFILE CHECKSUM: 24a859f27cf79e86131ad127d64d2dd81299126c
