@@ -36,7 +36,7 @@
     "@capawesome-team/capacitor-android-battery-optimization": "5.0.0",
     "@capawesome-team/capacitor-android-foreground-service": "5.0.0",
     "@capawesome-team/capacitor-datetime-picker": "5.0.0",
-    "@capawesome-team/capacitor-file-opener": "5.0.2",
+    "@capawesome-team/capacitor-file-opener": "5.0.3",
     "@capawesome/capacitor-app-update": "5.0.0",
     "@capawesome/capacitor-background-task": "5.0.0",
     "@capawesome/capacitor-badge": "5.0.0",
