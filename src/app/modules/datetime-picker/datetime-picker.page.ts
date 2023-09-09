@@ -14,6 +14,12 @@ export class DatetimePickerPage {
   public formGroup = new FormGroup({
     value: new FormControl(''),
     mode: new FormControl<'datetime' | 'date' | 'time' | undefined>('datetime'),
+    androidDatePickerMode: new FormControl<'calendar' | 'spinner' | undefined>(
+      'calendar',
+    ),
+    androidTimePickerMode: new FormControl<'clock' | 'spinner' | undefined>(
+      'clock',
+    ),
     theme: new FormControl<'auto' | 'light' | 'dark' | undefined>('auto'),
     format: new FormControl("yyyy-MM-dd'T'HH:mm:ss.sss'Z'"),
     locale: new FormControl('en-US'),
@@ -31,6 +37,8 @@ export class DatetimePickerPage {
   public async present(): Promise<void> {
     const value = this.formGroup.value.value;
     const mode = this.formGroup.value.mode;
+    const androidDatePickerMode = this.formGroup.value.androidDatePickerMode;
+    const androidTimePickerMode = this.formGroup.value.androidTimePickerMode;
     const theme = this.formGroup.value.theme;
     const format = this.formGroup.value.format;
     const locale = this.formGroup.value.locale;
@@ -44,6 +52,12 @@ export class DatetimePickerPage {
     }
     if (mode) {
       options.mode = mode;
+    }
+    if (androidDatePickerMode) {
+      options.androidDatePickerMode = androidDatePickerMode;
+    }
+    if (androidTimePickerMode) {
+      options.androidTimePickerMode = androidTimePickerMode;
     }
     if (theme) {
       options.theme = theme;

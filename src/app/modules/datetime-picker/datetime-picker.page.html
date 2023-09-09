@@ -46,6 +46,26 @@
           </ion-select>
         </ion-item>
         <ion-item>
+          <ion-label position="fixed">Android Date Picker Mode</ion-label>
+          <ion-select
+            placeholder="Android Datepicker Mode"
+            formControlName="androidDatePickerMode"
+          >
+            <ion-select-option value="calendar">Calendar</ion-select-option>
+            <ion-select-option value="spinner">Spinner</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-label position="fixed">Android Time Picker Mode</ion-label>
+          <ion-select
+            placeholder="Android Timepicker Mode"
+            formControlName="androidTimePickerMode"
+          >
+            <ion-select-option value="clock">Clock</ion-select-option>
+            <ion-select-option value="spinner">Spinner</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
           <ion-label position="fixed">Theme</ion-label>
           <ion-select placeholder="Theme" formControlName="theme">
             <ion-select-option value="auto">Auto</ion-select-option>
