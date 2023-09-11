@@ -23,7 +23,7 @@
     "@angular/router": "14.2.4",
     "@angular/service-worker": "14.2.4",
     "@capacitor-community/keep-awake": "4.0.0",
-    "@capacitor-community/privacy-screen": "4.1.1",
+    "@capacitor-community/privacy-screen": "4.2.0",
     "@capacitor-community/text-to-speech": "3.0.0",
     "@capacitor/android": "5.0.0",
     "@capacitor/app": "5.0.0",

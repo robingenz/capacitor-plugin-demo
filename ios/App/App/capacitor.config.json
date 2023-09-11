@@ -9,7 +9,8 @@
 			"launchShowDuration": 0
 		},
 		"PrivacyScreen": {
-			"enable": false
+			"enable": false,
+			"imageName": "Splash"
 		},
 		"Badge": {
 			"persist": true,
