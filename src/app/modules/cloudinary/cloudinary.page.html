@@ -33,20 +33,19 @@
     <ion-card-content>
       <form [formGroup]="formGroup">
         <ion-item>
-          <ion-label position="fixed">Cloud Name</ion-label>
-          <ion-input formControlName="cloudName"></ion-input>
+          <ion-input formControlName="cloudName" label="Cloud Name"></ion-input>
         </ion-item>
         <ion-item>
-          <ion-label position="fixed">Upload Preset</ion-label>
-          <ion-input formControlName="uploadPreset"></ion-input>
+          <ion-input
+            formControlName="uploadPreset"
+            label="Upload Preset"
+          ></ion-input>
         </ion-item>
         <ion-item>
-          <ion-label position="fixed">Public ID</ion-label>
-          <ion-input formControlName="publicId"></ion-input>
+          <ion-input formControlName="publicId" label="Public ID"></ion-input>
         </ion-item>
         <ion-item>
-          <ion-label position="fixed">Resource Type</ion-label>
-          <ion-select formControlName="resourceType">
+          <ion-select label="Resource Type" formControlName="resourceType">
             <ion-select-option [value]="resourceTypeImage"
               >Image</ion-select-option
             >
@@ -57,20 +56,16 @@
           </ion-select>
         </ion-item>
         <ion-item>
-          <ion-label position="fixed">Height</ion-label>
-          <ion-input formControlName="height"></ion-input>
+          <ion-input formControlName="height" label="Height"></ion-input>
         </ion-item>
         <ion-item>
-          <ion-label position="fixed">Width</ion-label>
-          <ion-input formControlName="width"></ion-input>
+          <ion-input formControlName="width" label="Width"></ion-input>
         </ion-item>
         <ion-item>
-          <ion-label position="fixed">Duration</ion-label>
-          <ion-input formControlName="duration"></ion-input>
+          <ion-input formControlName="duration" label="Duration"></ion-input>
         </ion-item>
         <ion-item>
-          <ion-label position="fixed">Bytes</ion-label>
-          <ion-input formControlName="bytes"></ion-input>
+          <ion-input formControlName="bytes" label="Bytes"></ion-input>
         </ion-item>
         <ion-button expand="block" (click)="initialize()"
           >Initialize</ion-button

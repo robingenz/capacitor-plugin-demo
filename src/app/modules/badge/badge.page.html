@@ -34,9 +34,9 @@
     <ion-card-content>
       <form [formGroup]="formGroup">
         <ion-item>
-          <ion-label position="fixed">Count</ion-label>
           <ion-input
             formControlName="count"
+            label="Count"
             type="number"
             [disabled]="!isSupported"
           ></ion-input>

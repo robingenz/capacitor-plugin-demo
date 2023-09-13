@@ -33,8 +33,8 @@
     <ion-card-content>
       <form [formGroup]="formGroup">
         <ion-item>
-          <ion-label position="fixed">Types</ion-label>
           <ion-select
+            label="Types"
             multiple="true"
             placeholder="Types"
             formControlName="types"
@@ -49,12 +49,10 @@
           </ion-select>
         </ion-item>
         <ion-item>
-          <ion-label position="fixed">Mulitple</ion-label>
-          <ion-checkbox formControlName="multiple"></ion-checkbox>
+          <ion-checkbox formControlName="multiple">Mulitple</ion-checkbox>
         </ion-item>
         <ion-item>
-          <ion-label position="fixed">Read data</ion-label>
-          <ion-checkbox formControlName="readData"></ion-checkbox>
+          <ion-checkbox formControlName="readData">Read data</ion-checkbox>
         </ion-item>
       </form>
       <ion-button expand="block" (click)="pickFile()">Pick Files</ion-button>
@@ -68,36 +66,68 @@
     <ion-card>
       <ion-card-content>
         <ion-item>
-          <ion-label position="fixed">Name</ion-label>
-          <ion-input type="text" readonly [value]="file.name"></ion-input>
+          <ion-input
+            label="Name"
+            type="text"
+            readonly
+            [value]="file.name"
+          ></ion-input>
         </ion-item>
         <ion-item>
-          <ion-label position="fixed">Path</ion-label>
-          <ion-input type="text" readonly [value]="file.path"></ion-input>
+          <ion-input
+            label="Path"
+            type="text"
+            readonly
+            [value]="file.path"
+          ></ion-input>
         </ion-item>
         <ion-item>
-          <ion-label position="fixed">Mime Type</ion-label>
-          <ion-input type="text" readonly [value]="file.mimeType"></ion-input>
+          <ion-input
+            label="Mime Type"
+            type="text"
+            readonly
+            [value]="file.mimeType"
+          ></ion-input>
         </ion-item>
         <ion-item>
-          <ion-label position="fixed">Size</ion-label>
-          <ion-input type="text" readonly [value]="file.size"></ion-input>
+          <ion-input
+            label="Size"
+            type="text"
+            readonly
+            [value]="file.size"
+          ></ion-input>
         </ion-item>
         <ion-item>
-          <ion-label position="fixed">Data</ion-label>
-          <ion-input type="text" readonly [value]="file.data"></ion-input>
+          <ion-input
+            label="Data"
+            type="text"
+            readonly
+            [value]="file.data"
+          ></ion-input>
         </ion-item>
         <ion-item>
-          <ion-label position="fixed">Duration</ion-label>
-          <ion-input type="text" readonly [value]="file.duration"></ion-input>
+          <ion-input
+            label="Duration"
+            type="text"
+            readonly
+            [value]="file.duration"
+          ></ion-input>
         </ion-item>
         <ion-item>
-          <ion-label position="fixed">Height</ion-label>
-          <ion-input type="text" readonly [value]="file.height"></ion-input>
+          <ion-input
+            label="Height"
+            type="text"
+            readonly
+            [value]="file.height"
+          ></ion-input>
         </ion-item>
         <ion-item>
-          <ion-label position="fixed">Width</ion-label>
-          <ion-input type="text" readonly [value]="file.width"></ion-input>
+          <ion-input
+            label="Width"
+            type="text"
+            readonly
+            [value]="file.width"
+          ></ion-input>
         </ion-item>
         <img *ngIf="file.path" [src]="convertPathToWebPath(file.path)" />
       </ion-card-content>

@@ -32,78 +32,74 @@
     </ion-card-header>
     <ion-card-content>
       <ion-item>
-        <ion-label position="fixed">Available App Version</ion-label>
         <ion-input
+          label="Available App Version"
           type="text"
           readonly
           [value]="appUpdateInfo?.availableVersion"
         ></ion-input>
       </ion-item>
       <ion-item>
-        <ion-label position="fixed">Available Version Release Date</ion-label>
         <ion-input
+          label="Available Version Release Date"
           type="text"
           readonly
           [value]="appUpdateInfo?.availableVersionReleaseDate"
         ></ion-input>
       </ion-item>
       <ion-item>
-        <ion-label position="fixed">Current App Version</ion-label>
         <ion-input
+          label="Current App Version"
           type="text"
           readonly
           [value]="appUpdateInfo?.currentVersion"
         ></ion-input>
       </ion-item>
       <ion-item>
-        <ion-label position="fixed">Flexbile Update Allowed</ion-label>
-        <ion-checkbox
-          readonly
-          [checked]="appUpdateInfo?.flexibleUpdateAllowed"
-        ></ion-checkbox>
+        <ion-checkbox readonly [checked]="appUpdateInfo?.flexibleUpdateAllowed"
+          >Flexbile Update Allowed</ion-checkbox
+        >
       </ion-item>
       <ion-item>
-        <ion-label position="fixed">Immediate Update Allowed</ion-label>
-        <ion-checkbox
-          readonly
-          [checked]="appUpdateInfo?.immediateUpdateAllowed"
-        ></ion-checkbox>
+        <ion-checkbox readonly [checked]="appUpdateInfo?.immediateUpdateAllowed"
+          >Immediate Update Allowed</ion-checkbox
+        >
       </ion-item>
       <ion-item>
-        <ion-label position="fixed">Update Availability</ion-label>
         <ion-input
+          label="Update Availability"
           type="number"
           readonly
           [value]="appUpdateInfo?.updateAvailability"
         ></ion-input>
       </ion-item>
       <ion-item>
-        <ion-label position="fixed">Update Priority</ion-label>
         <ion-input
+          label="Update Priority"
           type="number"
           readonly
           [value]="appUpdateInfo?.updatePriority"
         ></ion-input>
       </ion-item>
       <ion-item>
-        <ion-label position="fixed">Client Version Staleness Days</ion-label>
         <ion-input
+          label="Client Version Staleness Days"
           type="number"
           readonly
           [value]="appUpdateInfo?.clientVersionStalenessDays"
         ></ion-input>
       </ion-item>
       <ion-item>
-        <ion-label position="fixed">Install Status</ion-label>
         <ion-input
+          label="Install Status"
           type="number"
           readonly
           [value]="appUpdateInfo?.installStatus"
         ></ion-input>
       </ion-item>
       <ion-item>
-        <ion-label position="fixed">Minimum OS Version</ion-label>
         <ion-input
+          label="Minimum OS Version"
           type="text"
           readonly
           [value]="appUpdateInfo?.minimumOsVersion"

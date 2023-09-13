@@ -33,16 +33,15 @@
     <ion-card-content>
       <form [formGroup]="formGroup">
         <ion-item>
-          <ion-label position="fixed">Text</ion-label>
           <ion-input
             formControlName="text"
+            label="Text"
             type="text"
             placeholder="Text to speak"
           ></ion-input>
         </ion-item>
         <ion-item>
-          <ion-label>Language</ion-label>
-          <ion-select formControlName="lang">
+          <ion-select label="Language" formControlName="lang">
             <ion-select-option
               *ngFor="let lang of supportedLanguages"
               [value]="lang"
@@ -51,9 +50,9 @@
           </ion-select>
         </ion-item>
         <ion-item>
-          <ion-label position="fixed">Rate</ion-label>
           <ion-input
             formControlName="rate"
+            label="Rate"
             type="number"
             min="0.1"
             max="10"
@@ -61,9 +60,9 @@
           ></ion-input>
         </ion-item>
         <ion-item>
-          <ion-label position="fixed">Pitch</ion-label>
           <ion-input
             formControlName="pitch"
+            label="Pitch"
             type="number"
             min="0.1"
             max="2"
@@ -71,9 +70,9 @@
           ></ion-input>
         </ion-item>
         <ion-item>
-          <ion-label position="fixed">Volume</ion-label>
           <ion-input
             formControlName="volume"
+            label="Volume"
             type="number"
             min="0"
             max="1"
@@ -81,8 +80,7 @@
           ></ion-input>
         </ion-item>
         <ion-item>
-          <ion-label position="fixed">Voice</ion-label>
-          <ion-select formControlName="voice">
+          <ion-select label="Voice" formControlName="voice">
             <ion-select-option
               *ngFor="let voice of supportedVoices; let i = index"
               [value]="i"
@@ -91,8 +89,7 @@
           </ion-select>
         </ion-item>
         <ion-item>
-          <ion-label>Category</ion-label>
-          <ion-select formControlName="category">
+          <ion-select label="Category" formControlName="category">
             <ion-select-option value="ambient">Ambient</ion-select-option>
             <ion-select-option value="playback">Playback</ion-select-option>
           </ion-select>

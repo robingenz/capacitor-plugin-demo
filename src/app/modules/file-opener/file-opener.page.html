@@ -32,8 +32,9 @@
     </ion-card-header>
     <ion-card-content>
       <ion-item>
-        <ion-label position="fixed">Copy to App Directory</ion-label>
-        <ion-checkbox readonly [(ngModel)]="copyToAppDirectory"></ion-checkbox>
+        <ion-checkbox readonly [(ngModel)]="copyToAppDirectory"
+          >Copy to App Directory</ion-checkbox
+        >
       </ion-item>
       <ion-button expand="block" (click)="pickFile()"> Pick file </ion-button>
       <ion-button expand="block" (click)="openFile()" [disabled]="!path"
