@@ -14,6 +14,7 @@ export class FilePickerPage {
     types: new UntypedFormControl([]),
     multiple: new UntypedFormControl(false),
     readData: new UntypedFormControl(false),
+    skipTranscoding: new UntypedFormControl(false),
   });
   public files: PickedFile[] = [];
 
@@ -33,21 +34,39 @@ export class FilePickerPage {
   public async pickImages(): Promise<void> {
     const multiple = this.formGroup.get('multiple')?.value || false;
     const readData = this.formGroup.get('readData')?.value || false;
-    const { files } = await FilePicker.pickImages({ multiple, readData });
+    const skipTranscoding =
+      this.formGroup.get('skipTranscoding')?.value || false;
+    const { files } = await FilePicker.pickImages({
+      multiple,
+      readData,
+      skipTranscoding,
+    });
     this.files = files;
   }
 
   public async pickMedia(): Promise<void> {
     const multiple = this.formGroup.get('multiple')?.value || false;
     const readData = this.formGroup.get('readData')?.value || false;
-    const { files } = await FilePicker.pickMedia({ multiple, readData });
+    const skipTranscoding =
+      this.formGroup.get('skipTranscoding')?.value || false;
+    const { files } = await FilePicker.pickMedia({
+      multiple,
+      readData,
+      skipTranscoding,
+    });
     this.files = files;
   }
 
   public async pickVideos(): Promise<void> {
     const multiple = this.formGroup.get('multiple')?.value || false;
     const readData = this.formGroup.get('readData')?.value || false;
-    const { files } = await FilePicker.pickVideos({ multiple, readData });
+    const skipTranscoding =
+      this.formGroup.get('skipTranscoding')?.value || false;
+    const { files } = await FilePicker.pickVideos({
+      multiple,
+      readData,
+      skipTranscoding,
+    });
     this.files = files;
   }
 
