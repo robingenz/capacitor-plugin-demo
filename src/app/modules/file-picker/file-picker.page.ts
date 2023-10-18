@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { UntypedFormControl, UntypedFormGroup } from '@angular/forms';
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 import { Capacitor } from '@capacitor/core';
+import { Filesystem } from '@capacitor/filesystem';
 import { FilePicker, PickedFile } from '@capawesome/capacitor-file-picker';
 
 @Component({
@@ -23,7 +24,21 @@ export class FilePickerPage {
 
   constructor(private readonly domSanitizer: DomSanitizer) {}
 
-  public async pickFile(): Promise<void> {
+  public async pickDirectory(): Promise<void> {
+    await Filesystem.requestPermissions();
+    const { path } = await FilePicker.pickDirectory();
+    const { files } = await Filesystem.readdir({ path });
+    this.files = files.map(file => {
+      return {
+        name: file.name,
+        path: file.uri,
+        mimeType: file.type,
+        size: file.size,
+      };
+    });
+  }
+
+  public async pickFiles(): Promise<void> {
     const types = this.formGroup.get('types')?.value || [];
     const multiple = this.formGroup.get('multiple')?.value || false;
     const readData = this.formGroup.get('readData')?.value || false;
