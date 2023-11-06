@@ -50,6 +50,9 @@ project(':capawesome-capacitor-badge').projectDir = new File('../node_modules/@c
 include ':capawesome-capacitor-cloudinary'
 project(':capawesome-capacitor-cloudinary').projectDir = new File('../node_modules/@capawesome/capacitor-cloudinary/android')
 
+include ':capawesome-team-capacitor-file-compressor'
+project(':capawesome-team-capacitor-file-compressor').projectDir = new File('../node_modules/@capawesome-team/capacitor-file-compressor/android')
+
 include ':capawesome-capacitor-file-picker'
 project(':capawesome-capacitor-file-picker').projectDir = new File('../node_modules/@capawesome/capacitor-file-picker/android')
 

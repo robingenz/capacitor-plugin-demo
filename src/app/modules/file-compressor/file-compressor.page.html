@@ -1,0 +1,106 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>File Compressor</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>About</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      ⚡️ Capacitor plugin for compressing files.
+    </ion-card-content>
+    <ion-row class="ion-no-padding">
+      <ion-col>
+        <ion-button
+          fill="clear"
+          (click)="openOnGithub()"
+          class="ion-float-right"
+          >GitHub</ion-button
+        >
+      </ion-col>
+    </ion-row>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Demo</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <form [formGroup]="formGroup">
+        <ion-item>
+          <ion-select label="Mime Type" formControlName="mimeType">
+            <ion-select-option value="image/png">image/png</ion-select-option>
+            <ion-select-option value="image/jpeg">image/jpeg</ion-select-option>
+            <ion-select-option value="image/webp">image/webp</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-input formControlName="quality" type="number" label="Quality">
+          </ion-input>
+        </ion-item>
+      </form>
+      <ion-button expand="block" (click)="pickFile()"> Pick file </ion-button>
+      <ion-button
+        expand="block"
+        (click)="compressFile()"
+        [disabled]="!fileBefore"
+        >Compress file</ion-button
+      >
+    </ion-card-content>
+  </ion-card>
+  <ion-card *ngIf="fileBefore">
+    <ion-card-header>
+      <ion-card-title>Before</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item *ngIf="fileBefore.mimeType">
+        <ion-input
+          label="Mime Type"
+          type="text"
+          readonly
+          [value]="fileBefore.mimeType"
+        ></ion-input>
+      </ion-item>
+      <ion-item *ngIf="fileBefore.size">
+        <ion-input
+          label="Size"
+          type="text"
+          readonly
+          [value]="fileBefore.size | fileSize"
+        ></ion-input>
+      </ion-item>
+      <img *ngIf="fileBefore.path" [src]="fileBefore.path | fileSource" />
+      <img *ngIf="fileBefore.blob" [src]="fileBefore.blob | fileSource" />
+    </ion-card-content>
+  </ion-card>
+  <ion-card *ngIf="fileAfter">
+    <ion-card-header>
+      <ion-card-title>After</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item *ngIf="fileAfter.mimeType">
+        <ion-input
+          label="Mime Type"
+          type="text"
+          readonly
+          [value]="fileAfter.mimeType"
+        ></ion-input>
+      </ion-item>
+      <ion-item *ngIf="fileAfter.size">
+        <ion-input
+          label="Size"
+          type="text"
+          readonly
+          [value]="fileAfter.size | fileSize"
+        ></ion-input>
+      </ion-item>
+      <img *ngIf="fileAfter.path" [src]="fileAfter.path | fileSource" />
+      <img *ngIf="fileAfter.blob" [src]="fileAfter.blob | fileSource" />
+    </ion-card-content>
+  </ion-card>
+</ion-content>

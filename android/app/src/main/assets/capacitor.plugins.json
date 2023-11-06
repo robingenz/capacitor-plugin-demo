@@ -64,6 +64,10 @@
 		"classpath": "io.capawesome.capacitorjs.plugins.cloudinary.CloudinaryPlugin"
 	},
 	{
+		"pkg": "@capawesome-team/capacitor-file-compressor",
+		"classpath": "io.capawesome.capacitorjs.plugins.filecompressor.FileCompressorPlugin"
+	},
+	{
 		"pkg": "@capawesome/capacitor-file-picker",
 		"classpath": "io.capawesome.capacitorjs.plugins.filepicker.FilePickerPlugin"
 	},

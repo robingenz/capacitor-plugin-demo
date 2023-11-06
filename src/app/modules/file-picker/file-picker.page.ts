@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 import { UntypedFormControl, UntypedFormGroup } from '@angular/forms';
-import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
-import { Capacitor } from '@capacitor/core';
 import { FilePicker, PickedFile } from '@capawesome/capacitor-file-picker';
 
 @Component({
@@ -21,7 +19,11 @@ export class FilePickerPage {
   private readonly GH_URL =
     'https://github.com/capawesome-team/capacitor-plugins';
 
-  constructor(private readonly domSanitizer: DomSanitizer) {}
+  constructor() {}
+
+  public openOnGithub(): void {
+    window.open(this.GH_URL, '_blank');
+  }
 
   public async pickFile(): Promise<void> {
     const types = this.formGroup.get('types')?.value || [];
@@ -68,14 +70,5 @@ export class FilePickerPage {
       skipTranscoding,
     });
     this.files = files;
-  }
-
-  public convertPathToWebPath(path: string): SafeUrl {
-    const fileSrc = Capacitor.convertFileSrc(path);
-    return this.domSanitizer.bypassSecurityTrustUrl(fileSrc);
-  }
-
-  public openOnGithub(): void {
-    window.open(this.GH_URL, '_blank');
   }
 }

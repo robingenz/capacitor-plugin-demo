@@ -25,6 +25,7 @@ dependencies {
     implementation project(':capawesome-capacitor-background-task')
     implementation project(':capawesome-capacitor-badge')
     implementation project(':capawesome-capacitor-cloudinary')
+    implementation project(':capawesome-team-capacitor-file-compressor')
     implementation project(':capawesome-capacitor-file-picker')
     implementation project(':capawesome-capacitor-managed-configurations')
     implementation project(':capawesome-capacitor-photo-editor')

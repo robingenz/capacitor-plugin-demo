@@ -17,6 +17,7 @@ The following plugins are included:
 - [capawesome-team/capacitor-badge](https://capawesome.io/plugins/badge)
 - [capawesome-team/capacitor-cloudinary](https://capawesome.io/plugins/cloudinary/)
 - [capawesome-team/capacitor-datetime-picker](https://capawesome.io/plugins/datetime-picker)
+- [capawesome-team/capacitor-file-compressor](https://capawesome.io/plugins/file-compressor)
 - [capawesome-team/capacitor-file-opener](https://capawesome.io/plugins/file-opener)
 - [capawesome-team/capacitor-file-picker](https://capawesome.io/plugins/file-picker)
 - [capawesome-team/capacitor-managed-configurations](https://capawesome.io/plugins/managed-configurations)

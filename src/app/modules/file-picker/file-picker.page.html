@@ -134,7 +134,7 @@
             [value]="file.width"
           ></ion-input>
         </ion-item>
-        <img *ngIf="file.path" [src]="convertPathToWebPath(file.path)" />
+        <img *ngIf="file.path" [src]="file.path | fileSource" />
       </ion-card-content>
     </ion-card>
   </ng-container>

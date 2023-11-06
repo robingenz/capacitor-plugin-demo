@@ -55,6 +55,13 @@ const routes: Routes = [
       ),
   },
   {
+    path: 'file-compressor',
+    loadChildren: () =>
+      import('./modules/file-compressor/file-compressor.module').then(
+        m => m.FileCompressorPageModule,
+      ),
+  },
+  {
     path: 'file-opener',
     loadChildren: () =>
       import('./modules/file-opener/file-opener.module').then(

@@ -36,6 +36,10 @@ export class HomePage {
       url: '/datetime-picker',
     },
     {
+      name: 'File Compressor',
+      url: '/file-compressor',
+    },
+    {
       name: 'File Opener',
       url: '/file-opener',
     },
