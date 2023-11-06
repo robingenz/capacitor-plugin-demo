@@ -9,7 +9,7 @@ import { Badge } from '@capawesome/capacitor-badge';
 })
 export class BadgePage implements OnInit {
   private readonly GH_URL =
-    'https://github.com/capawesome-team/capacitor-badge';
+    'https://github.com/capawesome-team/capacitor-plugins';
   public formGroup = new UntypedFormGroup({
     count: new UntypedFormControl(0),
   });

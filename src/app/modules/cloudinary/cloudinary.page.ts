@@ -29,7 +29,7 @@ export class CloudinaryPage {
   public file: File | undefined;
 
   private readonly GH_URL =
-    'https://github.com/capawesome-team/capacitor-cloudinary';
+    'https://github.com/capawesome-team/capacitor-plugins';
 
   constructor(private readonly dialogService: DialogService) {}
 

@@ -19,7 +19,7 @@ export class FilePickerPage {
   public files: PickedFile[] = [];
 
   private readonly GH_URL =
-    'https://github.com/capawesome-team/capacitor-file-picker';
+    'https://github.com/capawesome-team/capacitor-plugins';
 
   constructor(private readonly domSanitizer: DomSanitizer) {}
 

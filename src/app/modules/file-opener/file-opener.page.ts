@@ -14,7 +14,7 @@ export class FileOpenerPage {
   public copyToAppDirectory: boolean = false;
 
   private readonly GH_URL =
-    'https://github.com/capawesome-team/capacitor-file-opener';
+    'https://github.com/capawesome-team/capacitor-plugins';
 
   constructor() {}
 

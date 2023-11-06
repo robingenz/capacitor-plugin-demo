@@ -10,7 +10,7 @@ export class AndroidBatteryOptimizationPage {
   public isEnabled: boolean = false;
 
   private readonly GH_URL =
-    'https://github.com/capawesome-team/capacitor-android-battery-optimization';
+    'https://github.com/capawesome-team/capacitor-plugins';
 
   constructor() {}
 

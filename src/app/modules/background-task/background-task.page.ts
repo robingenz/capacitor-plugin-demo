@@ -10,7 +10,7 @@ import { BackgroundTask } from '@capawesome/capacitor-background-task';
 })
 export class BackgroundTaskPage implements OnInit, OnDestroy {
   private readonly GH_URL =
-    'https://github.com/capawesome-team/capacitor-background-task';
+    'https://github.com/capawesome-team/capacitor-plugins';
   private appStateChangeListener: PluginListenerHandle | undefined;
 
   constructor() {}

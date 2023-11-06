@@ -11,7 +11,7 @@ export class ManagedConfigurationsPage implements OnInit {
   public serverUrl = '';
 
   private readonly GH_URL =
-    'https://github.com/capawesome-team/capacitor-managed-configurations';
+    'https://github.com/capawesome-team/capacitor-plugins';
 
   constructor(private readonly platform: Platform) {}
 

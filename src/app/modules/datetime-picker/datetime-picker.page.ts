@@ -30,7 +30,7 @@ export class DatetimePickerPage {
   });
 
   private readonly GH_URL =
-    'https://github.com/capawesome-team/capacitor-datetime-picker';
+    'https://github.com/capawesome-team/capacitor-plugins';
 
   constructor() {}
 

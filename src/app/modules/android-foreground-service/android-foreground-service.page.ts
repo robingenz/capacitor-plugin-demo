@@ -10,7 +10,7 @@ export class AndroidForegroundServicePage implements OnInit {
   public isEnabled: boolean = false;
 
   private readonly GH_URL =
-    'https://github.com/capawesome-team/capacitor-android-foreground-service';
+    'https://github.com/capawesome-team/capacitor-plugins';
 
   constructor() {}
 

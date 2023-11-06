@@ -11,7 +11,7 @@ export class AppUpdatePage implements OnInit {
   public appUpdateInfo: AppUpdateInfo | undefined;
 
   private readonly GH_URL =
-    'https://github.com/capawesome-team/capacitor-app-update';
+    'https://github.com/capawesome-team/capacitor-plugins';
 
   constructor(private readonly platform: Platform) {}
 
