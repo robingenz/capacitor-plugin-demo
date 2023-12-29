@@ -22,105 +22,98 @@
           (click)="openOnGithub()"
           class="ion-float-right"
           >GitHub</ion-button
-          >
-        </ion-col>
-      </ion-row>
-    </ion-card>
-    <ion-card>
-      <ion-card-header>
-        <ion-card-title>Demo</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        <form [formGroup]="formGroup">
-          <ion-item>
-            <ion-select label="Mime Type" formControlName="mimeType">
-              <ion-select-option value="image/png">image/png</ion-select-option>
-              <ion-select-option value="image/jpeg">image/jpeg</ion-select-option>
-              <ion-select-option value="image/webp">image/webp</ion-select-option>
-            </ion-select>
-          </ion-item>
-          <ion-item>
-            <ion-input formControlName="quality" type="number" label="Quality">
-            </ion-input>
-          </ion-item>
-        </form>
-        <ion-button expand="block" (click)="pickFile()"> Pick file </ion-button>
-        <ion-button
-          expand="block"
-          (click)="compressFile()"
-          [disabled]="!fileBefore"
-          >Compress file</ion-button
-          >
-        </ion-card-content>
-      </ion-card>
-      @if (fileBefore) {
-        <ion-card>
-          <ion-card-header>
-            <ion-card-title>Before</ion-card-title>
-          </ion-card-header>
-          <ion-card-content>
-            @if (fileBefore.mimeType) {
-              <ion-item>
-                <ion-input
-                  label="Mime Type"
-                  type="text"
-                  readonly
-                  [value]="fileBefore.mimeType"
-                ></ion-input>
-              </ion-item>
-            }
-            @if (fileBefore.size) {
-              <ion-item>
-                <ion-input
-                  label="Size"
-                  type="text"
-                  readonly
-                  [value]="fileBefore.size | fileSize"
-                ></ion-input>
-              </ion-item>
-            }
-            @if (fileBefore.path) {
-              <img [src]="fileBefore.path | fileSource" />
-            }
-            @if (fileBefore.blob) {
-              <img [src]="fileBefore.blob | fileSource" />
-            }
-          </ion-card-content>
-        </ion-card>
+        >
+      </ion-col>
+    </ion-row>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Demo</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <form [formGroup]="formGroup">
+        <ion-item>
+          <ion-select label="Mime Type" formControlName="mimeType">
+            <ion-select-option value="image/png">image/png</ion-select-option>
+            <ion-select-option value="image/jpeg">image/jpeg</ion-select-option>
+            <ion-select-option value="image/webp">image/webp</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-input formControlName="quality" type="number" label="Quality">
+          </ion-input>
+        </ion-item>
+      </form>
+      <ion-button expand="block" (click)="pickFile()"> Pick file </ion-button>
+      <ion-button
+        expand="block"
+        (click)="compressFile()"
+        [disabled]="!fileBefore"
+        >Compress file</ion-button
+      >
+    </ion-card-content>
+  </ion-card>
+  @if (fileBefore) {
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Before</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      @if (fileBefore.mimeType) {
+      <ion-item>
+        <ion-input
+          label="Mime Type"
+          type="text"
+          readonly
+          [value]="fileBefore.mimeType"
+        ></ion-input>
+      </ion-item>
+      } @if (fileBefore.size) {
+      <ion-item>
+        <ion-input
+          label="Size"
+          type="text"
+          readonly
+          [value]="fileBefore.size | fileSize"
+        ></ion-input>
+      </ion-item>
+      } @if (fileBefore.path) {
+      <img [src]="fileBefore.path | fileSource" />
+      } @if (fileBefore.blob) {
+      <img [src]="fileBefore.blob | fileSource" />
       }
-      @if (fileAfter) {
-        <ion-card>
-          <ion-card-header>
-            <ion-card-title>After</ion-card-title>
-          </ion-card-header>
-          <ion-card-content>
-            @if (fileAfter.mimeType) {
-              <ion-item>
-                <ion-input
-                  label="Mime Type"
-                  type="text"
-                  readonly
-                  [value]="fileAfter.mimeType"
-                ></ion-input>
-              </ion-item>
-            }
-            @if (fileAfter.size) {
-              <ion-item>
-                <ion-input
-                  label="Size"
-                  type="text"
-                  readonly
-                  [value]="fileAfter.size | fileSize"
-                ></ion-input>
-              </ion-item>
-            }
-            @if (fileAfter.path) {
-              <img [src]="fileAfter.path | fileSource" />
-            }
-            @if (fileAfter.blob) {
-              <img [src]="fileAfter.blob | fileSource" />
-            }
-          </ion-card-content>
-        </ion-card>
+    </ion-card-content>
+  </ion-card>
+  } @if (fileAfter) {
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>After</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      @if (fileAfter.mimeType) {
+      <ion-item>
+        <ion-input
+          label="Mime Type"
+          type="text"
+          readonly
+          [value]="fileAfter.mimeType"
+        ></ion-input>
+      </ion-item>
+      } @if (fileAfter.size) {
+      <ion-item>
+        <ion-input
+          label="Size"
+          type="text"
+          readonly
+          [value]="fileAfter.size | fileSize"
+        ></ion-input>
+      </ion-item>
+      } @if (fileAfter.path) {
+      <img [src]="fileAfter.path | fileSource" />
+      } @if (fileAfter.blob) {
+      <img [src]="fileAfter.blob | fileSource" />
       }
-    </ion-content>
+    </ion-card-content>
+  </ion-card>
+  }
+</ion-content>

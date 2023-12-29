@@ -22,122 +22,122 @@
           (click)="openOnGithub()"
           class="ion-float-right"
           >GitHub</ion-button
+        >
+      </ion-col>
+    </ion-row>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Demo</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <form [formGroup]="formGroup">
+        <ion-item>
+          <ion-select
+            label="Types"
+            multiple="true"
+            placeholder="Types"
+            formControlName="types"
           >
-        </ion-col>
-      </ion-row>
-    </ion-card>
-    <ion-card>
-      <ion-card-header>
-        <ion-card-title>Demo</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        <form [formGroup]="formGroup">
-          <ion-item>
-            <ion-select
-              label="Types"
-              multiple="true"
-              placeholder="Types"
-              formControlName="types"
-              >
-              <ion-select-option value="audio/aac">audio/aac</ion-select-option>
-              <ion-select-option value="application/pdf"
-                >application/pdf</ion-select-option
-                >
-                <ion-select-option value="image/jpeg">image/jpeg</ion-select-option>
-                <ion-select-option value="image/png">image/png</ion-select-option>
-                <ion-select-option value="text/csv">text/csv</ion-select-option>
-              </ion-select>
-            </ion-item>
-            <ion-item>
-              <ion-checkbox formControlName="multiple">Mulitple</ion-checkbox>
-            </ion-item>
-            <ion-item>
-              <ion-checkbox formControlName="readData">Read data</ion-checkbox>
-            </ion-item>
-            <ion-item>
-              <ion-checkbox formControlName="skipTranscoding"
-                >Skip Transcoding</ion-checkbox
-                >
-              </ion-item>
-            </form>
-            <ion-button expand="block" (click)="pickFile()">Pick Files</ion-button>
-            <ion-button expand="block" (click)="pickImages()">Pick Images</ion-button>
-            <ion-button expand="block" (click)="pickMedia()">Pick Media</ion-button>
-            <ion-button expand="block" (click)="pickVideos()">Pick Videos</ion-button>
-          </ion-card-content>
-        </ion-card>
+            <ion-select-option value="audio/aac">audio/aac</ion-select-option>
+            <ion-select-option value="application/pdf"
+              >application/pdf</ion-select-option
+            >
+            <ion-select-option value="image/jpeg">image/jpeg</ion-select-option>
+            <ion-select-option value="image/png">image/png</ion-select-option>
+            <ion-select-option value="text/csv">text/csv</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-checkbox formControlName="multiple">Mulitple</ion-checkbox>
+        </ion-item>
+        <ion-item>
+          <ion-checkbox formControlName="readData">Read data</ion-checkbox>
+        </ion-item>
+        <ion-item>
+          <ion-checkbox formControlName="skipTranscoding"
+            >Skip Transcoding</ion-checkbox
+          >
+        </ion-item>
+      </form>
+      <ion-button expand="block" (click)="pickFile()">Pick Files</ion-button>
+      <ion-button expand="block" (click)="pickImages()">Pick Images</ion-button>
+      <ion-button expand="block" (click)="pickMedia()">Pick Media</ion-button>
+      <ion-button expand="block" (click)="pickVideos()">Pick Videos</ion-button>
+    </ion-card-content>
+  </ion-card>
 
-        @for (file of files; track file) {
-          <ion-card>
-            <ion-card-content>
-              <ion-item>
-                <ion-input
-                  label="Name"
-                  type="text"
-                  readonly
-                  [value]="file.name"
-                ></ion-input>
-              </ion-item>
-              <ion-item>
-                <ion-input
-                  label="Path"
-                  type="text"
-                  readonly
-                  [value]="file.path"
-                ></ion-input>
-              </ion-item>
-              <ion-item>
-                <ion-input
-                  label="Mime Type"
-                  type="text"
-                  readonly
-                  [value]="file.mimeType"
-                ></ion-input>
-              </ion-item>
-              <ion-item>
-                <ion-input
-                  label="Size"
-                  type="text"
-                  readonly
-                  [value]="file.size"
-                ></ion-input>
-              </ion-item>
-              <ion-item>
-                <ion-input
-                  label="Data"
-                  type="text"
-                  readonly
-                  [value]="file.data"
-                ></ion-input>
-              </ion-item>
-              <ion-item>
-                <ion-input
-                  label="Duration"
-                  type="text"
-                  readonly
-                  [value]="file.duration"
-                ></ion-input>
-              </ion-item>
-              <ion-item>
-                <ion-input
-                  label="Height"
-                  type="text"
-                  readonly
-                  [value]="file.height"
-                ></ion-input>
-              </ion-item>
-              <ion-item>
-                <ion-input
-                  label="Width"
-                  type="text"
-                  readonly
-                  [value]="file.width"
-                ></ion-input>
-              </ion-item>
-              @if (file.path) {
-                <img [src]="file.path | fileSource" />
-              }
-            </ion-card-content>
-          </ion-card>
-        }
-      </ion-content>
+  @for (file of files; track file) {
+  <ion-card>
+    <ion-card-content>
+      <ion-item>
+        <ion-input
+          label="Name"
+          type="text"
+          readonly
+          [value]="file.name"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input
+          label="Path"
+          type="text"
+          readonly
+          [value]="file.path"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input
+          label="Mime Type"
+          type="text"
+          readonly
+          [value]="file.mimeType"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input
+          label="Size"
+          type="text"
+          readonly
+          [value]="file.size"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input
+          label="Data"
+          type="text"
+          readonly
+          [value]="file.data"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input
+          label="Duration"
+          type="text"
+          readonly
+          [value]="file.duration"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input
+          label="Height"
+          type="text"
+          readonly
+          [value]="file.height"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input
+          label="Width"
+          type="text"
+          readonly
+          [value]="file.width"
+        ></ion-input>
+      </ion-item>
+      @if (file.path) {
+      <img [src]="file.path | fileSource" />
+      }
+    </ion-card-content>
+  </ion-card>
+  }
+</ion-content>

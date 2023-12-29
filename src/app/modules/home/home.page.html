@@ -10,9 +10,9 @@
       <ion-label>Plugins</ion-label>
     </ion-list-header>
     @for (plugin of plugins; track plugin) {
-      <ion-item button [routerLink]="[plugin.url]">
-        <ion-label>{{ plugin.name }}</ion-label>
-      </ion-item>
+    <ion-item button [routerLink]="[plugin.url]">
+      <ion-label>{{ plugin.name }}</ion-label>
+    </ion-item>
     }
   </ion-list>
 </ion-content>
