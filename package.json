@@ -15,13 +15,13 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/common": "16.2.4",
-    "@angular/core": "16.2.4",
-    "@angular/forms": "16.2.4",
-    "@angular/platform-browser": "16.2.4",
-    "@angular/platform-browser-dynamic": "16.2.4",
-    "@angular/router": "16.2.4",
-    "@angular/service-worker": "16.2.4",
+    "@angular/common": "17.0.8",
+    "@angular/core": "17.0.8",
+    "@angular/forms": "17.0.8",
+    "@angular/platform-browser": "17.0.8",
+    "@angular/platform-browser-dynamic": "17.0.8",
+    "@angular/router": "17.0.8",
+    "@angular/service-worker": "17.0.8",
     "@capacitor-community/keep-awake": "4.0.0",
     "@capacitor-community/privacy-screen": "4.2.2",
     "@capacitor-community/text-to-speech": "3.0.1",
@@ -49,19 +49,19 @@
     "@ionic/angular": "7.3.4",
     "rxjs": "7.5.7",
     "tslib": "2.4.0",
-    "zone.js": "0.13.3"
+    "zone.js": "0.14.2"
   },
   "devDependencies": {
-    "@angular-devkit/architect": "0.1602.1",
-    "@angular-devkit/build-angular": "16.2.1",
+    "@angular-devkit/architect": "0.1700.8",
+    "@angular-devkit/build-angular": "17.0.8",
     "@angular-eslint/builder": "16.1.2",
     "@angular-eslint/eslint-plugin": "16.1.2",
     "@angular-eslint/eslint-plugin-template": "16.1.2",
     "@angular-eslint/template-parser": "16.1.2",
-    "@angular/cli": "16.2.1",
-    "@angular/compiler": "16.2.4",
-    "@angular/compiler-cli": "16.2.4",
-    "@angular/language-service": "16.2.4",
+    "@angular/cli": "17.0.8",
+    "@angular/compiler": "17.0.8",
+    "@angular/compiler-cli": "17.0.8",
+    "@angular/language-service": "17.0.8",
     "@capacitor/cli": "5.3.0",
     "@ionic/angular-toolkit": "10.0.0",
     "@ionic/cli": "7.1.1",
@@ -82,7 +82,7 @@
     "prettier": "3.0.3",
     "puppeteer": "21.2.1",
     "ts-node": "10.9.1",
-    "typescript": "4.9.5"
+    "typescript": "5.2.2"
   },
   "description": "Simple Ionic Angular app to demonstrate the use of certain Capacitor plugins."
 }
