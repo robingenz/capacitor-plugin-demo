@@ -22,82 +22,84 @@
           (click)="openOnGithub()"
           class="ion-float-right"
           >GitHub</ion-button
-        >
-      </ion-col>
-    </ion-row>
-  </ion-card>
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Demo</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <form [formGroup]="formGroup">
-        <ion-item>
-          <ion-input
-            formControlName="text"
-            label="Text"
-            type="text"
-            placeholder="Text to speak"
-          ></ion-input>
-        </ion-item>
-        <ion-item>
-          <ion-select label="Language" formControlName="lang">
-            <ion-select-option
-              *ngFor="let lang of supportedLanguages"
-              [value]="lang"
-              >{{ lang }}</ion-select-option
-            >
-          </ion-select>
-        </ion-item>
-        <ion-item>
-          <ion-input
-            formControlName="rate"
-            label="Rate"
-            type="number"
-            min="0.1"
-            max="10"
-            step="0.1"
-          ></ion-input>
-        </ion-item>
-        <ion-item>
-          <ion-input
-            formControlName="pitch"
-            label="Pitch"
-            type="number"
-            min="0.1"
-            max="2"
-            step="0.1"
-          ></ion-input>
-        </ion-item>
-        <ion-item>
-          <ion-input
-            formControlName="volume"
-            label="Volume"
-            type="number"
-            min="0"
-            max="1"
-            step="0.1"
-          ></ion-input>
-        </ion-item>
-        <ion-item>
-          <ion-select label="Voice" formControlName="voice">
-            <ion-select-option
-              *ngFor="let voice of supportedVoices; let i = index"
-              [value]="i"
-              >{{ voice.name }}</ion-select-option
-            >
-          </ion-select>
-        </ion-item>
-        <ion-item>
-          <ion-select label="Category" formControlName="category">
-            <ion-select-option value="ambient">Ambient</ion-select-option>
-            <ion-select-option value="playback">Playback</ion-select-option>
-          </ion-select>
-        </ion-item>
-      </form>
-      <ion-button expand="block" (click)="speak()">Speak</ion-button>
-      <ion-button expand="block" (click)="stop()">Stop</ion-button>
-      <ion-button expand="block" (click)="openInstall()">Install</ion-button>
-    </ion-card-content>
-  </ion-card>
-</ion-content>
+          >
+        </ion-col>
+      </ion-row>
+    </ion-card>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Demo</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <form [formGroup]="formGroup">
+          <ion-item>
+            <ion-input
+              formControlName="text"
+              label="Text"
+              type="text"
+              placeholder="Text to speak"
+            ></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-select label="Language" formControlName="lang">
+              @for (lang of supportedLanguages; track lang) {
+                <ion-select-option
+                  [value]="lang"
+                  >{{ lang }}</ion-select-option
+                  >
+                }
+              </ion-select>
+            </ion-item>
+            <ion-item>
+              <ion-input
+                formControlName="rate"
+                label="Rate"
+                type="number"
+                min="0.1"
+                max="10"
+                step="0.1"
+              ></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input
+                formControlName="pitch"
+                label="Pitch"
+                type="number"
+                min="0.1"
+                max="2"
+                step="0.1"
+              ></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input
+                formControlName="volume"
+                label="Volume"
+                type="number"
+                min="0"
+                max="1"
+                step="0.1"
+              ></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-select label="Voice" formControlName="voice">
+                @for (voice of supportedVoices; track voice; let i = $index) {
+                  <ion-select-option
+                    [value]="i"
+                    >{{ voice.name }}</ion-select-option
+                    >
+                  }
+                </ion-select>
+              </ion-item>
+              <ion-item>
+                <ion-select label="Category" formControlName="category">
+                  <ion-select-option value="ambient">Ambient</ion-select-option>
+                  <ion-select-option value="playback">Playback</ion-select-option>
+                </ion-select>
+              </ion-item>
+            </form>
+            <ion-button expand="block" (click)="speak()">Speak</ion-button>
+            <ion-button expand="block" (click)="stop()">Stop</ion-button>
+            <ion-button expand="block" (click)="openInstall()">Install</ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-content>
