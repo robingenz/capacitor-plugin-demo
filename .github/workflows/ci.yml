@@ -4,11 +4,15 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      - '**.md'
   pull_request:
+    paths-ignore:
+      - '**.md'
   workflow_dispatch:
 
 env:
-  NODE_VERSION: 16
+  NODE_VERSION: 20
   JAVA_VERSION: 17
 
 jobs:
@@ -17,19 +21,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Set up Node.js ${{ env.NODE_VERSION }}
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
       - name: Set npm access token for GitHub registry
         run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_TOKEN }}" >> .npmrc
-      - name: Install dependencies
+      - name: Install Node.js dependencies
         run: npm ci
       - name: Build web assets
         run: npm run build
       - name: Upload artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: www
           path: www
@@ -39,18 +43,18 @@ jobs:
     needs: [build]
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Download artifacts
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
           name: www
           path: www
       - name: Set up Node.js ${{ env.NODE_VERSION }}
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
-      - name: Set up Java ${{ env.JAVA_VERSION }}
-        uses: actions/setup-java@v3
+      - name: Set up JDK ${{ env.JAVA_VERSION }}
+        uses: actions/setup-java@v4
         with:
           distribution: 'zulu'
           java-version: ${{ env.JAVA_VERSION }}
@@ -65,39 +69,30 @@ jobs:
       - name: Build with Gradle
         working-directory: android
         run: ./gradlew build
-      - name: Upload artifacts
-        uses: actions/upload-artifact@v2
-        with:
-          name: android
-          path: android/app/build/outputs/apk/debug
   ios:
     name: Build iOS platform
     runs-on: macos-latest
     needs: [build]
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Download artifacts
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
           name: www
           path: www
       - name: Set up Node.js ${{ env.NODE_VERSION }}
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
       - name: Set npm access token for GitHub registry
         run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_TOKEN }}" >> .npmrc
-      - name: Install dependencies
+      - name: Install Node.js dependencies
         run: npm ci
       - name: Copy web assets to native platform
         run: npx ionic capacitor copy ios --no-build
       - name: Update native platform
         run: npx ionic capacitor update ios
-      - name: Add empty `GoogleService-Info.plist`
-        run: echo "$GOOGLE_SERVICE_INFO_PLIST" > ios/App/App/GoogleService-Info.plist
-        env:
-          GOOGLE_SERVICE_INFO_PLIST: ${{secrets.GOOGLE_SERVICE_INFO_PLIST}}
       - name: Build and archive with xcodebuild
         working-directory: ios
         run: xcodebuild
@@ -114,14 +109,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Set up Node.js ${{ env.NODE_VERSION }}
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
       - name: Set npm access token for GitHub registry
         run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_TOKEN }}" >> .npmrc
-      - name: Install dependencies
+      - name: Install Node.js dependencies
         run: npm ci
       - name: Run ESLint and Prettier
         run: npm run lint
@@ -131,9 +126,9 @@ jobs:
     if: false
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Set up Node.js ${{ env.NODE_VERSION }}
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
       - name: Set npm access token for GitHub registry
