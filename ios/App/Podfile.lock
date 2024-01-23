@@ -27,7 +27,7 @@ PODS:
   - CapawesomeCapacitorCloudinary (5.1.0):
     - Capacitor
     - Cloudinary (= 3.3.0)
-  - CapawesomeCapacitorFilePicker (5.1.1):
+  - CapawesomeCapacitorFilePicker (5.1.1-dev.fbc4f0a.1703929046):
     - Capacitor
   - CapawesomeCapacitorManagedConfigurations (5.0.0):
     - Capacitor
@@ -40,6 +40,8 @@ PODS:
   - CapawesomeTeamCapacitorFileCompressor (5.0.0):
     - Capacitor
   - CapawesomeTeamCapacitorFileOpener (5.0.3):
+    - Capacitor
+  - CapawesomeTeamCapacitorPrinter (5.0.0):
     - Capacitor
   - Cloudinary (3.3.0):
     - Cloudinary/ios (= 3.3.0)
@@ -67,6 +69,7 @@ DEPENDENCIES:
   - "CapawesomeTeamCapacitorDatetimePicker (from `../../node_modules/@capawesome-team/capacitor-datetime-picker`)"
   - "CapawesomeTeamCapacitorFileCompressor (from `../../node_modules/@capawesome-team/capacitor-file-compressor`)"
   - "CapawesomeTeamCapacitorFileOpener (from `../../node_modules/@capawesome-team/capacitor-file-opener`)"
+  - "CapawesomeTeamCapacitorPrinter (from `../../node_modules/@capawesome-team/capacitor-printer`)"
 
 SPEC REPOS:
   trunk:
@@ -115,6 +118,8 @@ EXTERNAL SOURCES:
     :path: "../../node_modules/@capawesome-team/capacitor-file-compressor"
   CapawesomeTeamCapacitorFileOpener:
     :path: "../../node_modules/@capawesome-team/capacitor-file-opener"
+  CapawesomeTeamCapacitorPrinter:
+    :path: "../../node_modules/@capawesome-team/capacitor-printer"
 
 SPEC CHECKSUMS:
   Capacitor: 1ac9165943bc4f2137642d218c5ba05df811de69
@@ -131,15 +136,16 @@ SPEC CHECKSUMS:
   CapawesomeCapacitorBackgroundTask: 53d905ff7c76d3a3ccf7d23bd8078c1ad7c55c09
   CapawesomeCapacitorBadge: 2b9919ea79b85bdc5455143cf6607c9e25bec9ae
   CapawesomeCapacitorCloudinary: b26aa866e62b502e3c4dd2b2fc36446d34e28d4f
-  CapawesomeCapacitorFilePicker: 4a27a464c569de315738fcb7bdd3ad544ef3c7c2
+  CapawesomeCapacitorFilePicker: 20fbe15f6cc9021d8a0061e1e180bd97ac6f8006
   CapawesomeCapacitorManagedConfigurations: 87db7aa30986c411b7a285d273b780acaca9b91a
   CapawesomeCapacitorPhotoEditor: 26744e6317c4d781f6479336bd989dc3edb5498b
   CapawesomeCapacitorScreenOrientation: 5b7cfb76348775e4b824bf460e5c52212b94c8d1
   CapawesomeTeamCapacitorDatetimePicker: 7e264d511d7bef99abbc80adb360bb97d98d7f9d
   CapawesomeTeamCapacitorFileCompressor: 4f7e0128e953b80dee40ed5edf86e035243f31ad
   CapawesomeTeamCapacitorFileOpener: 066077ffd3c179311e2fc0e484125d68b55d45dc
+  CapawesomeTeamCapacitorPrinter: 5ffaeaf5d4f62876798f42efbea3c9cf20ddb71e
   Cloudinary: c6a6a66b8b9aac18dce2ad54eb0243ea5e5119b8
 
-PODFILE CHECKSUM: 1a1298e91979c4e195aeeaa9da91a65bd307d8b9
+PODFILE CHECKSUM: 897e2c21f1ae1673b8adc76ab4f747b09509cf57
 
-COCOAPODS: 1.14.2
+COCOAPODS: 1.14.3

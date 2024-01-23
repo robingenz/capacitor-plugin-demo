@@ -44,8 +44,16 @@
 		"classpath": "io.capawesome.capacitorjs.plugins.datetimepicker.DatetimePickerPlugin"
 	},
 	{
+		"pkg": "@capawesome-team/capacitor-file-compressor",
+		"classpath": "io.capawesome.capacitorjs.plugins.filecompressor.FileCompressorPlugin"
+	},
+	{
 		"pkg": "@capawesome-team/capacitor-file-opener",
 		"classpath": "io.capawesome.capacitorjs.plugins.fileopener.FileOpenerPlugin"
+	},
+	{
+		"pkg": "@capawesome-team/capacitor-printer",
+		"classpath": "io.capawesome.capacitorjs.plugins.printer.PrinterPlugin"
 	},
 	{
 		"pkg": "@capawesome/capacitor-app-update",
@@ -62,10 +70,6 @@
 	{
 		"pkg": "@capawesome/capacitor-cloudinary",
 		"classpath": "io.capawesome.capacitorjs.plugins.cloudinary.CloudinaryPlugin"
-	},
-	{
-		"pkg": "@capawesome-team/capacitor-file-compressor",
-		"classpath": "io.capawesome.capacitorjs.plugins.filecompressor.FileCompressorPlugin"
 	},
 	{
 		"pkg": "@capawesome/capacitor-file-picker",

@@ -22,6 +22,7 @@ The following plugins are included:
 - [capawesome-team/capacitor-file-picker](https://capawesome.io/plugins/file-picker)
 - [capawesome-team/capacitor-managed-configurations](https://capawesome.io/plugins/managed-configurations)
 - [capawesome-team/capacitor-photo-editor](https://capawesome.io/plugins/photo-editor)
+- [capawesome-team/capacitor-printer](https://capawesome.io/plugins/printer)
 - [capawesome-team/capacitor-screen-orientation](https://capawesome.io/plugins/screen-orientation)
 - [capacitor-community/keep-awake](https://github.com/capacitor-community/keep-awake)
 - [capacitor-community/privacy-screen](https://github.com/capacitor-community/privacy-screen)

@@ -38,6 +38,7 @@
     "@capawesome-team/capacitor-datetime-picker": "5.1.0",
     "@capawesome-team/capacitor-file-compressor": "5.0.0",
     "@capawesome-team/capacitor-file-opener": "5.0.3",
+    "@capawesome-team/capacitor-printer": "5.0.0",
     "@capawesome/capacitor-app-update": "5.0.1",
     "@capawesome/capacitor-background-task": "5.0.0",
     "@capawesome/capacitor-badge": "5.0.0",

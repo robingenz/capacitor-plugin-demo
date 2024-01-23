@@ -60,6 +60,10 @@ export class HomePage {
       url: '/photo-editor',
     },
     {
+      name: 'Printer',
+      url: '/printer',
+    },
+    {
       name: 'Privacy Screen',
       url: '/privacy-screen',
     },

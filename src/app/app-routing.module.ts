@@ -102,6 +102,11 @@ const routes: Routes = [
       ),
   },
   {
+    path: 'printer',
+    loadChildren: () =>
+      import('./modules/printer/printer.module').then(m => m.PrinterPageModule),
+  },
+  {
     path: 'privacy-screen',
     loadChildren: () =>
       import('./modules/privacy-screen/privacy-screen.module').then(
