@@ -6,8 +6,8 @@ import { PrinterPage } from './printer.page';
 const routes: Routes = [
   {
     path: '',
-    component: PrinterPage
-  }
+    component: PrinterPage,
+  },
 ];
 
 @NgModule({
