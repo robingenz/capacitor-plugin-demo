@@ -6,8 +6,8 @@ import { LiveUpdatePage } from './live-update.page';
 const routes: Routes = [
   {
     path: '',
-    component: LiveUpdatePage
-  }
+    component: LiveUpdatePage,
+  },
 ];
 
 @NgModule({
