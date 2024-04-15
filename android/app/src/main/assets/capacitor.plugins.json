@@ -76,6 +76,10 @@
 		"classpath": "io.capawesome.capacitorjs.plugins.filepicker.FilePickerPlugin"
 	},
 	{
+		"pkg": "@capawesome/capacitor-live-update",
+		"classpath": "io.capawesome.capacitorjs.plugins.liveupdate.LiveUpdatePlugin"
+	},
+	{
 		"pkg": "@capawesome/capacitor-managed-configurations",
 		"classpath": "io.capawesome.capacitorjs.plugins.managedconfigurations.ManagedConfigurationsPlugin"
 	},

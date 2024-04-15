@@ -52,6 +52,10 @@ export class HomePage {
       url: '/keep-awake',
     },
     {
+      name: 'Live Update',
+      url: '/live-update',
+    },
+    {
       name: 'Managed Configuration',
       url: '/managed-configurations',
     },

@@ -28,6 +28,7 @@ dependencies {
     implementation project(':capawesome-capacitor-badge')
     implementation project(':capawesome-capacitor-cloudinary')
     implementation project(':capawesome-capacitor-file-picker')
+    implementation project(':capawesome-capacitor-live-update')
     implementation project(':capawesome-capacitor-managed-configurations')
     implementation project(':capawesome-capacitor-photo-editor')
     implementation project(':capawesome-capacitor-screen-orientation')
