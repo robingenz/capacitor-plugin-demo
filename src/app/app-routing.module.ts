@@ -88,6 +88,13 @@ const routes: Routes = [
       ),
   },
   {
+    path: 'live-update',
+    loadChildren: () =>
+      import('./modules/live-update/live-update.module').then(
+        m => m.LiveUpdatePageModule,
+      ),
+  },
+  {
     path: 'managed-configurations',
     loadChildren: () =>
       import(

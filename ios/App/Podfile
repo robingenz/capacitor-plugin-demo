@@ -39,6 +39,7 @@ def capacitor_pods
   pod 'CapawesomeCapacitorBadge', :path => '../../node_modules/@capawesome/capacitor-badge'
   pod 'CapawesomeCapacitorCloudinary', :path => '../../node_modules/@capawesome/capacitor-cloudinary'
   pod 'CapawesomeCapacitorFilePicker', :path => '../../node_modules/@capawesome/capacitor-file-picker'
+  pod 'CapawesomeCapacitorLiveUpdate', :path => '../../node_modules/@capawesome/capacitor-live-update'
   pod 'CapawesomeCapacitorManagedConfigurations', :path => '../../node_modules/@capawesome/capacitor-managed-configurations'
   pod 'CapawesomeCapacitorPhotoEditor', :path => '../../node_modules/@capawesome/capacitor-photo-editor'
   pod 'CapawesomeCapacitorScreenOrientation', :path => '../../node_modules/@capawesome/capacitor-screen-orientation'

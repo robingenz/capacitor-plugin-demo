@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (5.9.0)
   - Capacitor (5.3.0):
     - CapacitorCordova
   - CapacitorApp (5.0.6):
@@ -29,6 +30,10 @@ PODS:
     - Cloudinary (= 3.3.0)
   - CapawesomeCapacitorFilePicker (5.1.1-dev.fbc4f0a.1703929046):
     - Capacitor
+  - CapawesomeCapacitorLiveUpdate (5.0.0):
+    - Alamofire (~> 5.9.0)
+    - Capacitor
+    - SSZipArchive (~> 2.2)
   - CapawesomeCapacitorManagedConfigurations (5.0.0):
     - Capacitor
   - CapawesomeCapacitorPhotoEditor (5.0.0):
@@ -46,6 +51,7 @@ PODS:
   - Cloudinary (3.3.0):
     - Cloudinary/ios (= 3.3.0)
   - Cloudinary/ios (3.3.0)
+  - SSZipArchive (2.4.3)
 
 DEPENDENCIES:
   - "Capacitor (from `../../node_modules/@capacitor/ios`)"
@@ -63,6 +69,7 @@ DEPENDENCIES:
   - "CapawesomeCapacitorBadge (from `../../node_modules/@capawesome/capacitor-badge`)"
   - "CapawesomeCapacitorCloudinary (from `../../node_modules/@capawesome/capacitor-cloudinary`)"
   - "CapawesomeCapacitorFilePicker (from `../../node_modules/@capawesome/capacitor-file-picker`)"
+  - "CapawesomeCapacitorLiveUpdate (from `../../node_modules/@capawesome/capacitor-live-update`)"
   - "CapawesomeCapacitorManagedConfigurations (from `../../node_modules/@capawesome/capacitor-managed-configurations`)"
   - "CapawesomeCapacitorPhotoEditor (from `../../node_modules/@capawesome/capacitor-photo-editor`)"
   - "CapawesomeCapacitorScreenOrientation (from `../../node_modules/@capawesome/capacitor-screen-orientation`)"
@@ -73,7 +80,9 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - Cloudinary
+    - SSZipArchive
 
 EXTERNAL SOURCES:
   Capacitor:
@@ -106,6 +115,8 @@ EXTERNAL SOURCES:
     :path: "../../node_modules/@capawesome/capacitor-cloudinary"
   CapawesomeCapacitorFilePicker:
     :path: "../../node_modules/@capawesome/capacitor-file-picker"
+  CapawesomeCapacitorLiveUpdate:
+    :path: "../../node_modules/@capawesome/capacitor-live-update"
   CapawesomeCapacitorManagedConfigurations:
     :path: "../../node_modules/@capawesome/capacitor-managed-configurations"
   CapawesomeCapacitorPhotoEditor:
@@ -122,6 +133,7 @@ EXTERNAL SOURCES:
     :path: "../../node_modules/@capawesome-team/capacitor-printer"
 
 SPEC CHECKSUMS:
+  Alamofire: 02b772c9910e8eba1a079227c32fbd9e46c90a24
   Capacitor: 1ac9165943bc4f2137642d218c5ba05df811de69
   CapacitorApp: 024e1b1bea5f883d79f6330d309bc441c88ad04a
   CapacitorCamera: 084b0b228bba7d00587910337b1c89e93b1d32ab
@@ -137,15 +149,17 @@ SPEC CHECKSUMS:
   CapawesomeCapacitorBadge: 2b9919ea79b85bdc5455143cf6607c9e25bec9ae
   CapawesomeCapacitorCloudinary: b26aa866e62b502e3c4dd2b2fc36446d34e28d4f
   CapawesomeCapacitorFilePicker: 20fbe15f6cc9021d8a0061e1e180bd97ac6f8006
+  CapawesomeCapacitorLiveUpdate: ab492d67a8a4fd64bd94a949ddfbf8f86c155f34
   CapawesomeCapacitorManagedConfigurations: 87db7aa30986c411b7a285d273b780acaca9b91a
   CapawesomeCapacitorPhotoEditor: 26744e6317c4d781f6479336bd989dc3edb5498b
   CapawesomeCapacitorScreenOrientation: 5b7cfb76348775e4b824bf460e5c52212b94c8d1
   CapawesomeTeamCapacitorDatetimePicker: 7e264d511d7bef99abbc80adb360bb97d98d7f9d
   CapawesomeTeamCapacitorFileCompressor: 4f7e0128e953b80dee40ed5edf86e035243f31ad
   CapawesomeTeamCapacitorFileOpener: 066077ffd3c179311e2fc0e484125d68b55d45dc
-  CapawesomeTeamCapacitorPrinter: cf87f99164a86f5ff8ed53b47783e388bd2b4dcd
+  CapawesomeTeamCapacitorPrinter: 16901a3c7a02ca702b146c62d2ff217dd2210676
   Cloudinary: c6a6a66b8b9aac18dce2ad54eb0243ea5e5119b8
+  SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
 
-PODFILE CHECKSUM: 897e2c21f1ae1673b8adc76ab4f747b09509cf57
+PODFILE CHECKSUM: 2a23a17f6cb04ec563052a37dbda24e05137e960
 
 COCOAPODS: 1.15.2
