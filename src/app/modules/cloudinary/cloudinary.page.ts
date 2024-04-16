@@ -3,7 +3,7 @@ import { UntypedFormControl, UntypedFormGroup } from '@angular/forms';
 import { DialogService } from '@app/core';
 import { FileOpener } from '@capawesome-team/capacitor-file-opener';
 import { Cloudinary, ResourceType } from '@capawesome/capacitor-cloudinary';
-import { File, FilePicker } from '@capawesome/capacitor-file-picker';
+import { FilePicker, PickedFile } from '@capawesome/capacitor-file-picker';
 
 @Component({
   selector: 'app-cloudinary',
@@ -26,7 +26,7 @@ export class CloudinaryPage {
     bytes: new UntypedFormControl(undefined),
     duration: new UntypedFormControl(undefined),
   });
-  public file: File | undefined;
+  public file: PickedFile | undefined;
 
   private readonly GH_URL =
     'https://github.com/capawesome-team/capacitor-plugins';
@@ -46,7 +46,7 @@ export class CloudinaryPage {
 
   public async selectFile(): Promise<void> {
     const { files } = await FilePicker.pickFiles({
-      multiple: false,
+      limit: 1,
       readData: false,
     });
     this.file = files[0];

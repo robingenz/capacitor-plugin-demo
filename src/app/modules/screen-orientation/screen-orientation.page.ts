@@ -14,7 +14,7 @@ export class ScreenOrientationPage implements OnInit, OnDestroy {
   private readonly GH_URL =
     'https://github.com/capawesome-team/capacitor-plugins';
 
-  private orientationChangeListener: PluginListenerHandle | undefined;
+  private orientationChangeListener: Promise<PluginListenerHandle> | undefined;
 
   constructor(
     private readonly platform: Platform,
@@ -33,7 +33,7 @@ export class ScreenOrientationPage implements OnInit, OnDestroy {
   }
 
   public ngOnDestroy() {
-    this.orientationChangeListener?.remove();
+    this.orientationChangeListener?.then(listener => listener.remove());
   }
 
   public openOnGithub(): void {

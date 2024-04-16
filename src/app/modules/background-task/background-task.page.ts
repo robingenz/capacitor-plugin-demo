@@ -11,7 +11,7 @@ import { BackgroundTask } from '@capawesome/capacitor-background-task';
 export class BackgroundTaskPage implements OnInit, OnDestroy {
   private readonly GH_URL =
     'https://github.com/capawesome-team/capacitor-plugins';
-  private appStateChangeListener: PluginListenerHandle | undefined;
+  private appStateChangeListener: Promise<PluginListenerHandle> | undefined;
 
   constructor() {}
 
@@ -31,7 +31,7 @@ export class BackgroundTaskPage implements OnInit, OnDestroy {
   }
 
   public ngOnDestroy() {
-    this.appStateChangeListener?.remove();
+    this.appStateChangeListener?.then(listener => listener.remove());
   }
 
   public openOnGithub(): void {

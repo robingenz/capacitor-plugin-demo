@@ -10,7 +10,7 @@ import { FilePicker, PickedFile } from '@capawesome/capacitor-file-picker';
 export class FilePickerPage {
   public formGroup = new UntypedFormGroup({
     types: new UntypedFormControl([]),
-    multiple: new UntypedFormControl(false),
+    limit: new UntypedFormControl(0),
     readData: new UntypedFormControl(false),
     skipTranscoding: new UntypedFormControl(false),
   });
@@ -27,19 +27,19 @@ export class FilePickerPage {
 
   public async pickFile(): Promise<void> {
     const types = this.formGroup.get('types')?.value || [];
-    const multiple = this.formGroup.get('multiple')?.value || false;
+    const limit = this.formGroup.get('limit')?.value || false;
     const readData = this.formGroup.get('readData')?.value || false;
-    const { files } = await FilePicker.pickFiles({ types, multiple, readData });
+    const { files } = await FilePicker.pickFiles({ types, limit, readData });
     this.files = files;
   }
 
   public async pickImages(): Promise<void> {
-    const multiple = this.formGroup.get('multiple')?.value || false;
+    const limit = this.formGroup.get('limit')?.value || false;
     const readData = this.formGroup.get('readData')?.value || false;
     const skipTranscoding =
       this.formGroup.get('skipTranscoding')?.value || false;
     const { files } = await FilePicker.pickImages({
-      multiple,
+      limit,
       readData,
       skipTranscoding,
     });
@@ -47,12 +47,12 @@ export class FilePickerPage {
   }
 
   public async pickMedia(): Promise<void> {
-    const multiple = this.formGroup.get('multiple')?.value || false;
+    const limit = this.formGroup.get('limit')?.value || false;
     const readData = this.formGroup.get('readData')?.value || false;
     const skipTranscoding =
       this.formGroup.get('skipTranscoding')?.value || false;
     const { files } = await FilePicker.pickMedia({
-      multiple,
+      limit,
       readData,
       skipTranscoding,
     });
@@ -60,12 +60,12 @@ export class FilePickerPage {
   }
 
   public async pickVideos(): Promise<void> {
-    const multiple = this.formGroup.get('multiple')?.value || false;
+    const limit = this.formGroup.get('limit')?.value || false;
     const readData = this.formGroup.get('readData')?.value || false;
     const skipTranscoding =
       this.formGroup.get('skipTranscoding')?.value || false;
     const { files } = await FilePicker.pickVideos({
-      multiple,
+      limit,
       readData,
       skipTranscoding,
     });

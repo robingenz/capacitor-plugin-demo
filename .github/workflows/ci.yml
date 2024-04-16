@@ -71,7 +71,7 @@ jobs:
         run: ./gradlew build
   ios:
     name: Build iOS platform
-    runs-on: macos-latest
+    runs-on: macos-14
     needs: [build]
     steps:
       - name: Checkout

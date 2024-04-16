@@ -19,7 +19,7 @@ export class PrinterPage {
 
   public async printPdf(): Promise<void> {
     const result = await FilePicker.pickFiles({
-      multiple: false,
+      limit: 1,
       types: ['application/pdf'],
     });
     const file = result.files[0];

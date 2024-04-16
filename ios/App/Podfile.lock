@@ -1,56 +1,56 @@
 PODS:
-  - Alamofire (5.9.0)
-  - Capacitor (5.3.0):
+  - Alamofire (5.9.1)
+  - Capacitor (6.0.0):
     - CapacitorCordova
-  - CapacitorApp (5.0.6):
+  - CapacitorApp (6.0.0):
     - Capacitor
-  - CapacitorCamera (5.0.7):
+  - CapacitorCamera (6.0.0):
     - Capacitor
-  - CapacitorCommunityKeepAwake (4.0.0):
+  - CapacitorCommunityKeepAwake (5.0.0):
     - Capacitor
-  - CapacitorCommunityPrivacyScreen (4.2.2):
+  - CapacitorCommunityPrivacyScreen (5.0.0):
     - Capacitor
-  - CapacitorCommunityTextToSpeech (3.0.1):
+  - CapacitorCommunityTextToSpeech (4.0.0):
     - Capacitor
-  - CapacitorCordova (5.3.0)
-  - CapacitorFilesystem (5.1.3):
+  - CapacitorCordova (6.0.0)
+  - CapacitorFilesystem (6.0.0):
     - Capacitor
-  - CapacitorHaptics (5.0.6):
+  - CapacitorHaptics (6.0.0):
     - Capacitor
-  - CapacitorKeyboard (5.0.6):
+  - CapacitorKeyboard (6.0.0):
     - Capacitor
-  - CapawesomeCapacitorAppUpdate (5.0.1):
+  - CapawesomeCapacitorAppUpdate (6.0.0):
     - Capacitor
-  - CapawesomeCapacitorBackgroundTask (5.0.0):
+  - CapawesomeCapacitorBackgroundTask (6.0.0):
     - Capacitor
-  - CapawesomeCapacitorBadge (5.0.0):
+  - CapawesomeCapacitorBadge (6.0.0):
     - Capacitor
-  - CapawesomeCapacitorCloudinary (5.1.0):
+  - CapawesomeCapacitorCloudinary (6.0.0):
     - Capacitor
-    - Cloudinary (= 3.3.0)
-  - CapawesomeCapacitorFilePicker (5.1.1-dev.fbc4f0a.1703929046):
+    - Cloudinary (= 5.0.0)
+  - CapawesomeCapacitorFilePicker (6.0.0):
     - Capacitor
-  - CapawesomeCapacitorLiveUpdate (5.0.0):
+  - CapawesomeCapacitorLiveUpdate (6.0.0):
     - Alamofire (~> 5.9.0)
     - Capacitor
     - SSZipArchive (~> 2.2)
-  - CapawesomeCapacitorManagedConfigurations (5.0.0):
+  - CapawesomeCapacitorManagedConfigurations (6.0.0):
     - Capacitor
-  - CapawesomeCapacitorPhotoEditor (5.0.0):
+  - CapawesomeCapacitorPhotoEditor (6.0.0):
     - Capacitor
-  - CapawesomeCapacitorScreenOrientation (5.0.0):
+  - CapawesomeCapacitorScreenOrientation (6.0.0):
     - Capacitor
-  - CapawesomeTeamCapacitorDatetimePicker (5.1.0):
+  - CapawesomeTeamCapacitorDatetimePicker (6.0.0):
     - Capacitor
-  - CapawesomeTeamCapacitorFileCompressor (5.0.0):
+  - CapawesomeTeamCapacitorFileCompressor (6.0.0):
     - Capacitor
-  - CapawesomeTeamCapacitorFileOpener (5.0.3):
+  - CapawesomeTeamCapacitorFileOpener (6.0.0):
     - Capacitor
-  - CapawesomeTeamCapacitorPrinter (5.1.0):
+  - CapawesomeTeamCapacitorPrinter (6.0.0):
     - Capacitor
-  - Cloudinary (3.3.0):
-    - Cloudinary/ios (= 3.3.0)
-  - Cloudinary/ios (3.3.0)
+  - Cloudinary (5.0.0):
+    - Cloudinary/ios (= 5.0.0)
+  - Cloudinary/ios (5.0.0)
   - SSZipArchive (2.4.3)
 
 DEPENDENCIES:
@@ -133,33 +133,33 @@ EXTERNAL SOURCES:
     :path: "../../node_modules/@capawesome-team/capacitor-printer"
 
 SPEC CHECKSUMS:
-  Alamofire: 02b772c9910e8eba1a079227c32fbd9e46c90a24
-  Capacitor: 1ac9165943bc4f2137642d218c5ba05df811de69
-  CapacitorApp: 024e1b1bea5f883d79f6330d309bc441c88ad04a
-  CapacitorCamera: 084b0b228bba7d00587910337b1c89e93b1d32ab
-  CapacitorCommunityKeepAwake: f3442e3e9b666dd0162522fbd053da1fe81ede20
-  CapacitorCommunityPrivacyScreen: 9c89c32843d387949f608d6a0a7d4d60b4d19572
-  CapacitorCommunityTextToSpeech: a47d2746124fc06f1018791b3f154cfd2c5c4fe6
-  CapacitorCordova: b9374d68e63ce29e96ab5db994cf14fbefd722c9
-  CapacitorFilesystem: 9b4641db3d6d62b6cc1bf0a6a09681ebaea696b7
-  CapacitorHaptics: 1fffc1217c7e64a472d7845be50fb0c2f7d4204c
-  CapacitorKeyboard: b978154b024a5f65e044908e37d15b7de58b9d12
-  CapawesomeCapacitorAppUpdate: abbfaa26fe3817dce42bd722731acc23e7a3274c
-  CapawesomeCapacitorBackgroundTask: 53d905ff7c76d3a3ccf7d23bd8078c1ad7c55c09
-  CapawesomeCapacitorBadge: 2b9919ea79b85bdc5455143cf6607c9e25bec9ae
-  CapawesomeCapacitorCloudinary: b26aa866e62b502e3c4dd2b2fc36446d34e28d4f
-  CapawesomeCapacitorFilePicker: 20fbe15f6cc9021d8a0061e1e180bd97ac6f8006
-  CapawesomeCapacitorLiveUpdate: ab492d67a8a4fd64bd94a949ddfbf8f86c155f34
-  CapawesomeCapacitorManagedConfigurations: 87db7aa30986c411b7a285d273b780acaca9b91a
-  CapawesomeCapacitorPhotoEditor: 26744e6317c4d781f6479336bd989dc3edb5498b
-  CapawesomeCapacitorScreenOrientation: 5b7cfb76348775e4b824bf460e5c52212b94c8d1
-  CapawesomeTeamCapacitorDatetimePicker: 7e264d511d7bef99abbc80adb360bb97d98d7f9d
-  CapawesomeTeamCapacitorFileCompressor: 4f7e0128e953b80dee40ed5edf86e035243f31ad
-  CapawesomeTeamCapacitorFileOpener: 066077ffd3c179311e2fc0e484125d68b55d45dc
-  CapawesomeTeamCapacitorPrinter: 16901a3c7a02ca702b146c62d2ff217dd2210676
-  Cloudinary: c6a6a66b8b9aac18dce2ad54eb0243ea5e5119b8
+  Alamofire: f36a35757af4587d8e4f4bfa223ad10be2422b8c
+  Capacitor: 559d073c4ca6c27f8e7002c807eea94c3ba435a9
+  CapacitorApp: 9d53aec7101f7b030a950c5bdc4df8612576b279
+  CapacitorCamera: b61f125d92a0ef75d7becb7956fed7dd13187ee0
+  CapacitorCommunityKeepAwake: c820e5394a74ab73635107f0544378b026562243
+  CapacitorCommunityPrivacyScreen: 307d4713e8f085b292e4e7b42daf7eb8016904b2
+  CapacitorCommunityTextToSpeech: 01006ca642440323372afb2d9b684815495c210d
+  CapacitorCordova: 8c4bfdf69368512e85b1d8b724dd7546abeb30af
+  CapacitorFilesystem: 60e59ba274c234a979e7a3be2552feaadcee4263
+  CapacitorHaptics: 9ebc9363f0e9b8eb4295088a0b474530acf1859b
+  CapacitorKeyboard: deacbd09d8d1029c3681197fb05d206b721d5f73
+  CapawesomeCapacitorAppUpdate: 3c05b5c8e42f9c6a88d666093406e9336d9bfdb1
+  CapawesomeCapacitorBackgroundTask: e65f6ca09586bd33af10d4c4ed7f04248b38b785
+  CapawesomeCapacitorBadge: 3d0f281ad8e4a4f8db8c3d88b7622a7f4c413342
+  CapawesomeCapacitorCloudinary: 7a7103a57880d215985c242bfebe834b151c2db6
+  CapawesomeCapacitorFilePicker: 983e8d272d200897cf1c12cf9a62439fa2fb2c35
+  CapawesomeCapacitorLiveUpdate: 44ac48a9cbcb13022cd6daca2dfa282503318867
+  CapawesomeCapacitorManagedConfigurations: e6dbcbcf45d7b1f7acfa9b54a02e15201604a803
+  CapawesomeCapacitorPhotoEditor: 231e03215f026e0c2eeb6de0910e095e4aa0c823
+  CapawesomeCapacitorScreenOrientation: 82675c41cb616a64630c834b06344515a2849ff3
+  CapawesomeTeamCapacitorDatetimePicker: 6dd2e7ae30c4b55afd48f19bfeb4578dcaa9263e
+  CapawesomeTeamCapacitorFileCompressor: be4a55e6476c4084ef370e84c224fc63db27f7a5
+  CapawesomeTeamCapacitorFileOpener: b406c1a389cbb4b1a3e9d686c34c9a357abb5902
+  CapawesomeTeamCapacitorPrinter: 44da25bc3ff21298649046a175ff3ac588936798
+  Cloudinary: 1e8ed5ce1418ba50df625c1fec80ebec746141b6
   SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
 
-PODFILE CHECKSUM: 2a23a17f6cb04ec563052a37dbda24e05137e960
+PODFILE CHECKSUM: 7823fa6d7560dc81dffa3d9afd0c611fff342b75
 
 COCOAPODS: 1.15.2
