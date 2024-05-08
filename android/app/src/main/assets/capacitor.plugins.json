@@ -32,6 +32,10 @@
 		"classpath": "com.capacitorjs.plugins.keyboard.KeyboardPlugin"
 	},
 	{
+		"pkg": "@capacitor/share",
+		"classpath": "com.capacitorjs.plugins.share.SharePlugin"
+	},
+	{
 		"pkg": "@capawesome-team/capacitor-android-battery-optimization",
 		"classpath": "io.capawesome.capacitorjs.plugins.batteryoptimization.BatteryOptimizationPlugin"
 	},
@@ -54,6 +58,10 @@
 	{
 		"pkg": "@capawesome-team/capacitor-printer",
 		"classpath": "io.capawesome.capacitorjs.plugins.printer.PrinterPlugin"
+	},
+	{
+		"pkg": "@capawesome-team/capacitor-zip",
+		"classpath": "io.capawesome.capacitorjs.plugins.zip.ZipPlugin"
 	},
 	{
 		"pkg": "@capawesome/capacitor-app-update",

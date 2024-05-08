@@ -135,6 +135,11 @@ const routes: Routes = [
       ),
   },
   {
+    path: 'zip',
+    loadChildren: () =>
+      import('./modules/zip/zip.module').then(m => m.ZipPageModule),
+  },
+  {
     path: '**',
     redirectTo: 'home',
   },

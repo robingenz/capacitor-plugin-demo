@@ -19,6 +19,8 @@ PODS:
     - Capacitor
   - CapacitorKeyboard (6.0.0):
     - Capacitor
+  - CapacitorShare (6.0.0):
+    - Capacitor
   - CapawesomeCapacitorAppUpdate (6.0.0):
     - Capacitor
   - CapawesomeCapacitorBackgroundTask (6.0.0):
@@ -48,6 +50,9 @@ PODS:
     - Capacitor
   - CapawesomeTeamCapacitorPrinter (6.0.0):
     - Capacitor
+  - CapawesomeTeamCapacitorZip (6.0.0):
+    - Capacitor
+    - SSZipArchive (~> 2.2)
   - Cloudinary (5.0.0):
     - Cloudinary/ios (= 5.0.0)
   - Cloudinary/ios (5.0.0)
@@ -64,6 +69,7 @@ DEPENDENCIES:
   - "CapacitorFilesystem (from `../../node_modules/@capacitor/filesystem`)"
   - "CapacitorHaptics (from `../../node_modules/@capacitor/haptics`)"
   - "CapacitorKeyboard (from `../../node_modules/@capacitor/keyboard`)"
+  - "CapacitorShare (from `../../node_modules/@capacitor/share`)"
   - "CapawesomeCapacitorAppUpdate (from `../../node_modules/@capawesome/capacitor-app-update`)"
   - "CapawesomeCapacitorBackgroundTask (from `../../node_modules/@capawesome/capacitor-background-task`)"
   - "CapawesomeCapacitorBadge (from `../../node_modules/@capawesome/capacitor-badge`)"
@@ -77,6 +83,7 @@ DEPENDENCIES:
   - "CapawesomeTeamCapacitorFileCompressor (from `../../node_modules/@capawesome-team/capacitor-file-compressor`)"
   - "CapawesomeTeamCapacitorFileOpener (from `../../node_modules/@capawesome-team/capacitor-file-opener`)"
   - "CapawesomeTeamCapacitorPrinter (from `../../node_modules/@capawesome-team/capacitor-printer`)"
+  - "CapawesomeTeamCapacitorZip (from `../../node_modules/@capawesome-team/capacitor-zip`)"
 
 SPEC REPOS:
   trunk:
@@ -105,6 +112,8 @@ EXTERNAL SOURCES:
     :path: "../../node_modules/@capacitor/haptics"
   CapacitorKeyboard:
     :path: "../../node_modules/@capacitor/keyboard"
+  CapacitorShare:
+    :path: "../../node_modules/@capacitor/share"
   CapawesomeCapacitorAppUpdate:
     :path: "../../node_modules/@capawesome/capacitor-app-update"
   CapawesomeCapacitorBackgroundTask:
@@ -131,6 +140,8 @@ EXTERNAL SOURCES:
     :path: "../../node_modules/@capawesome-team/capacitor-file-opener"
   CapawesomeTeamCapacitorPrinter:
     :path: "../../node_modules/@capawesome-team/capacitor-printer"
+  CapawesomeTeamCapacitorZip:
+    :path: "../../node_modules/@capawesome-team/capacitor-zip"
 
 SPEC CHECKSUMS:
   Alamofire: f36a35757af4587d8e4f4bfa223ad10be2422b8c
@@ -144,6 +155,7 @@ SPEC CHECKSUMS:
   CapacitorFilesystem: 60e59ba274c234a979e7a3be2552feaadcee4263
   CapacitorHaptics: 9ebc9363f0e9b8eb4295088a0b474530acf1859b
   CapacitorKeyboard: deacbd09d8d1029c3681197fb05d206b721d5f73
+  CapacitorShare: a771200d3b924a5d7ad9d9fecbac517e4c0aa74f
   CapawesomeCapacitorAppUpdate: 3c05b5c8e42f9c6a88d666093406e9336d9bfdb1
   CapawesomeCapacitorBackgroundTask: e65f6ca09586bd33af10d4c4ed7f04248b38b785
   CapawesomeCapacitorBadge: 3d0f281ad8e4a4f8db8c3d88b7622a7f4c413342
@@ -157,9 +169,10 @@ SPEC CHECKSUMS:
   CapawesomeTeamCapacitorFileCompressor: be4a55e6476c4084ef370e84c224fc63db27f7a5
   CapawesomeTeamCapacitorFileOpener: b406c1a389cbb4b1a3e9d686c34c9a357abb5902
   CapawesomeTeamCapacitorPrinter: 44da25bc3ff21298649046a175ff3ac588936798
+  CapawesomeTeamCapacitorZip: 5b579e5e8812dee7b6fed794f3ee6cb1dca9b33f
   Cloudinary: 1e8ed5ce1418ba50df625c1fec80ebec746141b6
   SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
 
-PODFILE CHECKSUM: 7823fa6d7560dc81dffa3d9afd0c611fff342b75
+PODFILE CHECKSUM: 4ca49903ac471928dcd577796e3d0c22498439f5
 
 COCOAPODS: 1.15.2

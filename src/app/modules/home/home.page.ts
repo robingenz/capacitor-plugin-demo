@@ -79,6 +79,10 @@ export class HomePage {
       name: 'Text To Speech',
       url: '/text-to-speech',
     },
+    {
+      name: 'Zip',
+      url: '/zip',
+    },
   ];
 
   constructor() {}

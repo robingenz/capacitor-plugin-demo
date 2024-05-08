@@ -26,6 +26,9 @@ project(':capacitor-haptics').projectDir = new File('../node_modules/@capacitor/
 include ':capacitor-keyboard'
 project(':capacitor-keyboard').projectDir = new File('../node_modules/@capacitor/keyboard/android')
 
+include ':capacitor-share'
+project(':capacitor-share').projectDir = new File('../node_modules/@capacitor/share/android')
+
 include ':capawesome-team-capacitor-android-battery-optimization'
 project(':capawesome-team-capacitor-android-battery-optimization').projectDir = new File('../node_modules/@capawesome-team/capacitor-android-battery-optimization/android')
 
@@ -43,6 +46,9 @@ project(':capawesome-team-capacitor-file-opener').projectDir = new File('../node
 
 include ':capawesome-team-capacitor-printer'
 project(':capawesome-team-capacitor-printer').projectDir = new File('../node_modules/@capawesome-team/capacitor-printer/android')
+
+include ':capawesome-team-capacitor-zip'
+project(':capawesome-team-capacitor-zip').projectDir = new File('../node_modules/@capawesome-team/capacitor-zip/android')
 
 include ':capawesome-capacitor-app-update'
 project(':capawesome-capacitor-app-update').projectDir = new File('../node_modules/@capawesome/capacitor-app-update/android')

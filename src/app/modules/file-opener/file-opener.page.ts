@@ -25,6 +25,7 @@ export class FileOpenerPage {
       readData: this.copyToAppDirectory,
     });
     const file = files[0];
+    // Workaround for https://github.com/ionic-team/capacitor-plugins/issues/2087
     if (this.copyToAppDirectory && file.data) {
       await Filesystem.writeFile({
         data: file.data,
