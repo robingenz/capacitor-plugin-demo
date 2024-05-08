@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { Directory, Filesystem } from '@capacitor/filesystem';
 import { FileOpener } from '@capawesome-team/capacitor-file-opener';
+import { Zip } from '@capawesome-team/capacitor-zip';
 import { FilePicker } from '@capawesome/capacitor-file-picker';
-import { Zip } from '@capawesome/capacitor-zip';
 
 @Component({
   selector: 'app-zip',
