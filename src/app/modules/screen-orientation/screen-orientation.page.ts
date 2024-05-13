@@ -22,14 +22,7 @@ export class ScreenOrientationPage implements OnInit, OnDestroy {
   ) {}
 
   public ngOnInit() {
-    this.orientationChangeListener = ScreenOrientation.addListener(
-      'screenOrientationChange',
-      async ({ type }) => {
-        this.ngZone.run(() => {
-          this.currentOrientation = type;
-        });
-      },
-    );
+    this.addListeners();
   }
 
   public ngOnDestroy() {
@@ -53,6 +46,17 @@ export class ScreenOrientationPage implements OnInit, OnDestroy {
 
   public async unlock(): Promise<void> {
     await ScreenOrientation.unlock();
+  }
+
+  private addListeners(): void {
+    this.orientationChangeListener = ScreenOrientation.addListener(
+      'screenOrientationChange',
+      async ({ type }) => {
+        this.ngZone.run(() => {
+          this.currentOrientation = type;
+        });
+      },
+    );
   }
 
   private async requestFullscreen(): Promise<void> {

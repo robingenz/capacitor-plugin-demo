@@ -35,6 +35,9 @@ project(':capawesome-team-capacitor-android-battery-optimization').projectDir = 
 include ':capawesome-team-capacitor-android-foreground-service'
 project(':capawesome-team-capacitor-android-foreground-service').projectDir = new File('../node_modules/@capawesome-team/capacitor-android-foreground-service/android')
 
+include ':capawesome-team-capacitor-bluetooth-low-energy'
+project(':capawesome-team-capacitor-bluetooth-low-energy').projectDir = new File('../../../capawesome-team/capacitor-plugins-sponsorware/packages/bluetooth-low-energy/android')
+
 include ':capawesome-team-capacitor-datetime-picker'
 project(':capawesome-team-capacitor-datetime-picker').projectDir = new File('../node_modules/@capawesome-team/capacitor-datetime-picker/android')
 

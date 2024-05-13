@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, NgZone, OnDestroy, OnInit } from '@angular/core';
 import { App } from '@capacitor/app';
 import { PluginListenerHandle } from '@capacitor/core';
 import { BackgroundTask } from '@capawesome/capacitor-background-task';
@@ -13,21 +13,10 @@ export class BackgroundTaskPage implements OnInit, OnDestroy {
     'https://github.com/capawesome-team/capacitor-plugins';
   private appStateChangeListener: Promise<PluginListenerHandle> | undefined;
 
-  constructor() {}
+  constructor(private readonly ngZone: NgZone) {}
 
   public ngOnInit() {
-    this.appStateChangeListener = App.addListener(
-      'appStateChange',
-      async ({ isActive }) => {
-        if (isActive) {
-          return;
-        }
-        const taskId = await BackgroundTask.beforeExit(async () => {
-          await this.runTask();
-          BackgroundTask.finish({ taskId });
-        });
-      },
-    );
+    this.addListeners();
   }
 
   public ngOnDestroy() {
@@ -36,6 +25,23 @@ export class BackgroundTaskPage implements OnInit, OnDestroy {
 
   public openOnGithub(): void {
     window.open(this.GH_URL, '_blank');
+  }
+
+  private addListeners(): void {
+    this.appStateChangeListener = App.addListener(
+      'appStateChange',
+      ({ isActive }) => {
+        this.ngZone.run(async () => {
+          if (isActive) {
+            return;
+          }
+          const taskId = await BackgroundTask.beforeExit(async () => {
+            await this.runTask();
+            BackgroundTask.finish({ taskId });
+          });
+        });
+      },
+    );
   }
 
   private async runTask(): Promise<void> {
