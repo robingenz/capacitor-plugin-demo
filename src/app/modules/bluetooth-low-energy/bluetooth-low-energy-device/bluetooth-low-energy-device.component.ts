@@ -18,6 +18,7 @@ export class BluetoothLowEnergyDeviceComponent implements OnInit, OnDestroy {
   private characteristicChangedListener:
     | Promise<PluginListenerHandle>
     | undefined;
+  private deviceDisconnectedListener: Promise<PluginListenerHandle> | undefined;
 
   constructor(
     private readonly dialogService: DialogService,
@@ -130,11 +131,22 @@ export class BluetoothLowEnergyDeviceComponent implements OnInit, OnDestroy {
         });
       },
     );
+    this.deviceDisconnectedListener = BluetoothLowEnergy.addListener(
+      'deviceDisconnected',
+      event => {
+        this.ngZone.run(() => {
+          console.log('Device disconnected', event);
+        });
+      },
+    );
   }
 
   private removeListeners(): void {
     if (this.characteristicChangedListener) {
       this.characteristicChangedListener.then(listener => listener.remove());
+    }
+    if (this.deviceDisconnectedListener) {
+      this.deviceDisconnectedListener.then(listener => listener.remove());
     }
   }
 }

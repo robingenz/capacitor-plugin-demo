@@ -29,15 +29,7 @@ export class BluetoothLowEnergyPage {
   }
 
   public async getConnectedDevices(): Promise<void> {
-    this.stopScan();
-    const { devices } = await BluetoothLowEnergy.getConnectedDevices({
-      serviceIds: [
-        '0000180f-0000-1000-8000-00805f9b34fb', // Battery Service
-        '00001800-0000-1000-8000-00805f9b34fb', // Generic Access
-        '00001801-0000-1000-8000-00805f9b34fb', // Generic Attribute
-        '0000fff0-0000-1000-8000-00805f9b34fb', // Custom Service
-      ],
-    });
+    const { devices } = await BluetoothLowEnergy.getConnectedDevices();
     this.devices = devices;
   }
 
