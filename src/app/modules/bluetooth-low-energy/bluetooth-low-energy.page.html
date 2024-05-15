@@ -1,0 +1,81 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Bluetooth Low Energy</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>About</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      ⚡️ Capacitor plugin for Bluetooth Low Energy (BLE) communication in the
+      central role.
+    </ion-card-content>
+    <ion-row class="ion-no-padding">
+      <ion-col>
+        <ion-button
+          fill="clear"
+          (click)="openOnGithub()"
+          class="ion-float-right"
+          >GitHub</ion-button
+        >
+      </ion-col>
+    </ion-row>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Demo</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-button expand="block" (click)="checkPermissions()"
+        >Check Permissions</ion-button
+      >
+      <ion-button expand="block" (click)="getConnectedDevices()"
+        >Get Connected Devices</ion-button
+      >
+      <ion-button expand="block" (click)="initialize()">Initialize</ion-button>
+      <ion-button expand="block" (click)="isEnabled()">Is Enabled</ion-button>
+      <ion-button expand="block" (click)="openAppSettings()"
+        >Open App Settings</ion-button
+      >
+      <ion-button expand="block" (click)="openBluetoothSettings()"
+        >Open Bluetooth Settings</ion-button
+      >
+      <ion-button expand="block" (click)="openLocationSettings()"
+        >Open Location Settings</ion-button
+      >
+      <ion-button expand="block" (click)="requestPermissions()"
+        >Request Permissions</ion-button
+      >
+      <ion-button expand="block" (click)="startForegroundService()"
+        >Start Foreground Service</ion-button
+      >
+      <ion-button expand="block" (click)="startScan()">Start Scan</ion-button>
+      <ion-button expand="block" (click)="stopForegroundService()"
+        >Stop Foreground Service</ion-button
+      >
+      <ion-button expand="block" (click)="stopScan()">Stop Scan</ion-button>
+      <ion-list>
+        <ion-item
+          *ngFor="let device of devices"
+          (click)="openDeviceModal(device)"
+        >
+          <ion-label>
+            <h2>{{ device.name }}</h2>
+            <p>
+              <span>{{ device.id }}</span>
+              @if (device.rssi) {
+              <span>{{device.rssi}}</span>
+              }
+            </p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

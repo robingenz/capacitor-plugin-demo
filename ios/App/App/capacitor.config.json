@@ -38,6 +38,8 @@
 		"HapticsPlugin",
 		"KeyboardPlugin",
 		"SharePlugin",
+		"BluetoothLowEnergyPlugin",
+		"BluetoothLowEnergyPlugin",
 		"DatetimePickerPlugin",
 		"DatetimePickerPlugin",
 		"FileCompressorPlugin",

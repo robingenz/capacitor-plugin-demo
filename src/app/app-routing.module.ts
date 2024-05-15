@@ -41,6 +41,13 @@ const routes: Routes = [
       import('./modules/badge/badge.module').then(m => m.BadgePageModule),
   },
   {
+    path: 'bluetooth-low-energy',
+    loadChildren: () =>
+      import('./modules/bluetooth-low-energy/bluetooth-low-energy.module').then(
+        m => m.BluetoothLowEnergyPageModule,
+      ),
+  },
+  {
     path: 'cloudinary',
     loadChildren: () =>
       import('./modules/cloudinary/cloudinary.module').then(

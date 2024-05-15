@@ -20,6 +20,7 @@ dependencies {
     implementation project(':capacitor-share')
     implementation project(':capawesome-team-capacitor-android-battery-optimization')
     implementation project(':capawesome-team-capacitor-android-foreground-service')
+    implementation project(':capawesome-team-capacitor-bluetooth-low-energy')
     implementation project(':capawesome-team-capacitor-datetime-picker')
     implementation project(':capawesome-team-capacitor-file-compressor')
     implementation project(':capawesome-team-capacitor-file-opener')

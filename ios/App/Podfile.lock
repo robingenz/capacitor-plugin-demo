@@ -42,6 +42,8 @@ PODS:
     - Capacitor
   - CapawesomeCapacitorScreenOrientation (6.0.0):
     - Capacitor
+  - CapawesomeTeamCapacitorBluetoothLowEnergy (6.0.0):
+    - Capacitor
   - CapawesomeTeamCapacitorDatetimePicker (6.0.0):
     - Capacitor
   - CapawesomeTeamCapacitorFileCompressor (6.0.0):
@@ -79,6 +81,7 @@ DEPENDENCIES:
   - "CapawesomeCapacitorManagedConfigurations (from `../../node_modules/@capawesome/capacitor-managed-configurations`)"
   - "CapawesomeCapacitorPhotoEditor (from `../../node_modules/@capawesome/capacitor-photo-editor`)"
   - "CapawesomeCapacitorScreenOrientation (from `../../node_modules/@capawesome/capacitor-screen-orientation`)"
+  - "CapawesomeTeamCapacitorBluetoothLowEnergy (from `../../node_modules/@capawesome-team/capacitor-bluetooth-low-energy`)"
   - "CapawesomeTeamCapacitorDatetimePicker (from `../../node_modules/@capawesome-team/capacitor-datetime-picker`)"
   - "CapawesomeTeamCapacitorFileCompressor (from `../../node_modules/@capawesome-team/capacitor-file-compressor`)"
   - "CapawesomeTeamCapacitorFileOpener (from `../../node_modules/@capawesome-team/capacitor-file-opener`)"
@@ -132,6 +135,8 @@ EXTERNAL SOURCES:
     :path: "../../node_modules/@capawesome/capacitor-photo-editor"
   CapawesomeCapacitorScreenOrientation:
     :path: "../../node_modules/@capawesome/capacitor-screen-orientation"
+  CapawesomeTeamCapacitorBluetoothLowEnergy:
+    :path: "../../node_modules/@capawesome-team/capacitor-bluetooth-low-energy"
   CapawesomeTeamCapacitorDatetimePicker:
     :path: "../../node_modules/@capawesome-team/capacitor-datetime-picker"
   CapawesomeTeamCapacitorFileCompressor:
@@ -165,6 +170,7 @@ SPEC CHECKSUMS:
   CapawesomeCapacitorManagedConfigurations: e6dbcbcf45d7b1f7acfa9b54a02e15201604a803
   CapawesomeCapacitorPhotoEditor: 231e03215f026e0c2eeb6de0910e095e4aa0c823
   CapawesomeCapacitorScreenOrientation: 82675c41cb616a64630c834b06344515a2849ff3
+  CapawesomeTeamCapacitorBluetoothLowEnergy: 8a79dcc9f2edde2cf8304b4f628fa3260e12a5d4
   CapawesomeTeamCapacitorDatetimePicker: 6dd2e7ae30c4b55afd48f19bfeb4578dcaa9263e
   CapawesomeTeamCapacitorFileCompressor: be4a55e6476c4084ef370e84c224fc63db27f7a5
   CapawesomeTeamCapacitorFileOpener: b406c1a389cbb4b1a3e9d686c34c9a357abb5902
@@ -173,6 +179,6 @@ SPEC CHECKSUMS:
   Cloudinary: 1e8ed5ce1418ba50df625c1fec80ebec746141b6
   SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
 
-PODFILE CHECKSUM: 4ca49903ac471928dcd577796e3d0c22498439f5
+PODFILE CHECKSUM: f974117138a426727b8e09e678d6f634d232fac0
 
 COCOAPODS: 1.15.2

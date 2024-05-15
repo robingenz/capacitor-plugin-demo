@@ -44,6 +44,10 @@
 		"classpath": "io.capawesome.capacitorjs.plugins.foregroundservice.ForegroundServicePlugin"
 	},
 	{
+		"pkg": "@capawesome-team/capacitor-bluetooth-low-energy",
+		"classpath": "io.capawesome.capacitorjs.plugins.bluetoothle.BluetoothLowEnergyPlugin"
+	},
+	{
 		"pkg": "@capawesome-team/capacitor-datetime-picker",
 		"classpath": "io.capawesome.capacitorjs.plugins.datetimepicker.DatetimePickerPlugin"
 	},

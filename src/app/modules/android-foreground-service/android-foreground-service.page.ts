@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, NgZone, OnInit } from '@angular/core';
 import { ForegroundService } from '@capawesome-team/capacitor-android-foreground-service';
 
 @Component({
@@ -12,15 +12,10 @@ export class AndroidForegroundServicePage implements OnInit {
   private readonly GH_URL =
     'https://github.com/capawesome-team/capacitor-plugins';
 
-  constructor() {}
+  constructor(private readonly ngZone: NgZone) {}
 
   public ngOnInit(): void {
-    ForegroundService.removeAllListeners().then(() => {
-      ForegroundService.addListener('buttonClicked', event => {
-        ForegroundService.stopForegroundService();
-        ForegroundService.moveToForeground();
-      });
-    });
+    this.addListeners();
   }
 
   public async requestPermissions(): Promise<void> {
@@ -52,5 +47,16 @@ export class AndroidForegroundServicePage implements OnInit {
 
   public openOnGithub(): void {
     window.open(this.GH_URL, '_blank');
+  }
+
+  private addListeners(): void {
+    ForegroundService.removeAllListeners().then(() => {
+      ForegroundService.addListener('buttonClicked', event => {
+        this.ngZone.run(() => {
+          ForegroundService.stopForegroundService();
+          ForegroundService.moveToForeground();
+        });
+      });
+    });
   }
 }

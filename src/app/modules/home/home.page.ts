@@ -28,6 +28,10 @@ export class HomePage {
       url: '/badge',
     },
     {
+      name: 'Bluetooth Low Energy',
+      url: '/bluetooth-low-energy',
+    },
+    {
       name: 'Cloudinary',
       url: '/cloudinary',
     },

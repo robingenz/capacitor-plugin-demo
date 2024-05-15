@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Device</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="closeModal()">
+        <ion-icon name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>{{ device?.name || device?.id }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-button expand="block" (click)="connect()">Connect</ion-button>
+      <ion-button expand="block" (click)="createBond()">Create Bond</ion-button>
+      <ion-button expand="block" (click)="disconnect()">Disconnect</ion-button>
+      <ion-button expand="block" (click)="discoverServices()"
+        >Discover Service</ion-button
+      >
+      <ion-button expand="block" (click)="getServices()"
+        >Get Services</ion-button
+      >
+      <ion-button expand="block" (click)="isBonded()">Is Bonded</ion-button>
+      <ion-button expand="block" (click)="readCharacteristic()"
+        >Read Characteristic</ion-button
+      >
+      <ion-button expand="block" (click)="readRssi()">Read Rssi</ion-button>
+      <ion-button expand="block" (click)="requestConnectionPriority()"
+        >Request Connection Priority</ion-button
+      >
+      <ion-button expand="block" (click)="requestMtu()">Request Mtu</ion-button>
+      <ion-button expand="block" (click)="startCharacteristicNotifications()"
+        >Start Characteristic Notifications</ion-button
+      >
+      <ion-button expand="block" (click)="stopCharacteristicNotifications()"
+        >Stop Characteristic Notifications</ion-button
+      >
+      <ion-button expand="block" (click)="writeCharacteristic()"
+        >Write Characteristic</ion-button
+      >
+    </ion-card-content>
+  </ion-card>
+</ion-content>

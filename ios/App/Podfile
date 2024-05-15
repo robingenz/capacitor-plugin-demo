@@ -20,6 +20,7 @@ def capacitor_pods
   pod 'CapacitorHaptics', :path => '../../node_modules/@capacitor/haptics'
   pod 'CapacitorKeyboard', :path => '../../node_modules/@capacitor/keyboard'
   pod 'CapacitorShare', :path => '../../node_modules/@capacitor/share'
+  pod 'CapawesomeTeamCapacitorBluetoothLowEnergy', :path => '../../node_modules/@capawesome-team/capacitor-bluetooth-low-energy'
   pod 'CapawesomeTeamCapacitorDatetimePicker', :path => '../../node_modules/@capawesome-team/capacitor-datetime-picker'
   pod 'CapawesomeTeamCapacitorFileCompressor', :path => '../../node_modules/@capawesome-team/capacitor-file-compressor'
   pod 'CapawesomeTeamCapacitorFileOpener', :path => '../../node_modules/@capawesome-team/capacitor-file-opener'
