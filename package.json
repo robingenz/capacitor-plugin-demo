@@ -36,7 +36,7 @@
     "@capacitor/share": "6.0.0",
     "@capawesome-team/capacitor-android-battery-optimization": "6.0.0",
     "@capawesome-team/capacitor-android-foreground-service": "6.0.0",
-    "@capawesome-team/capacitor-bluetooth-low-energy": "../../capawesome-team/capacitor-plugins-sponsorware/packages/bluetooth-low-energy",
+    "@capawesome-team/capacitor-bluetooth-low-energy": "6.0.0",
     "@capawesome-team/capacitor-datetime-picker": "6.0.0",
     "@capawesome-team/capacitor-file-compressor": "6.0.0",
     "@capawesome-team/capacitor-file-opener": "6.0.0",

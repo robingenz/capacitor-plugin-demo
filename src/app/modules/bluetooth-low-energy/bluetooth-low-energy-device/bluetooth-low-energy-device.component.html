@@ -16,6 +16,7 @@
     </ion-card-header>
     <ion-card-content>
       <ion-button expand="block" (click)="connect()">Connect</ion-button>
+      <ion-button expand="block" (click)="createBond()">Create Bond</ion-button>
       <ion-button expand="block" (click)="disconnect()">Disconnect</ion-button>
       <ion-button expand="block" (click)="discoverServices()"
         >Discover Service</ion-button
@@ -23,10 +24,15 @@
       <ion-button expand="block" (click)="getServices()"
         >Get Services</ion-button
       >
+      <ion-button expand="block" (click)="isBonded()">Is Bonded</ion-button>
       <ion-button expand="block" (click)="readCharacteristic()"
         >Read Characteristic</ion-button
       >
       <ion-button expand="block" (click)="readRssi()">Read Rssi</ion-button>
+      <ion-button expand="block" (click)="requestConnectionPriority()"
+        >Request Connection Priority</ion-button
+      >
+      <ion-button expand="block" (click)="requestMtu()">Request Mtu</ion-button>
       <ion-button expand="block" (click)="startCharacteristicNotifications()"
         >Start Characteristic Notifications</ion-button
       >

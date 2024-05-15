@@ -3,6 +3,7 @@ import { DialogService } from '@app/core';
 import { PluginListenerHandle } from '@capacitor/core';
 import {
   BluetoothLowEnergy,
+  ConnectionPriority,
   DeviceScannedEvent,
 } from '@capawesome-team/capacitor-bluetooth-low-energy';
 
@@ -46,6 +47,15 @@ export class BluetoothLowEnergyDeviceComponent implements OnInit, OnDestroy {
     });
   }
 
+  public async createBond(): Promise<void> {
+    if (!this.device) {
+      return;
+    }
+    await BluetoothLowEnergy.createBond({
+      deviceId: this.device.id,
+    });
+  }
+
   public async disconnect(): Promise<void> {
     if (!this.device) {
       return;
@@ -73,6 +83,15 @@ export class BluetoothLowEnergyDeviceComponent implements OnInit, OnDestroy {
     });
   }
 
+  public async isBonded(): Promise<void> {
+    if (!this.device) {
+      return;
+    }
+    await BluetoothLowEnergy.isBonded({
+      deviceId: this.device.id,
+    });
+  }
+
   public async readCharacteristic(): Promise<void> {
     if (!this.device) {
       return;
@@ -90,6 +109,26 @@ export class BluetoothLowEnergyDeviceComponent implements OnInit, OnDestroy {
     }
     await BluetoothLowEnergy.readRssi({
       deviceId: this.device.id,
+    });
+  }
+
+  public async requestConnectionPriority(): Promise<void> {
+    if (!this.device) {
+      return;
+    }
+    await BluetoothLowEnergy.requestConnectionPriority({
+      connectionPriority: ConnectionPriority.HIGH,
+      deviceId: this.device.id,
+    });
+  }
+
+  public async requestMtu(): Promise<void> {
+    if (!this.device) {
+      return;
+    }
+    await BluetoothLowEnergy.requestMtu({
+      deviceId: this.device.id,
+      mtu: 512,
     });
   }
 
