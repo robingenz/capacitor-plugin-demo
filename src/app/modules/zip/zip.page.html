@@ -36,6 +36,13 @@
           >Copy to App Directory</ion-checkbox
         >
       </ion-item>
+      <ion-item>
+        <ion-input
+          label="Password"
+          type="text"
+          [(ngModel)]="password"
+        ></ion-input>
+      </ion-item>
       <ion-button expand="block" (click)="pickFile()"> Pick file </ion-button>
       <ion-button expand="block" (click)="unzip()" [disabled]="!path"
         >Unzip</ion-button

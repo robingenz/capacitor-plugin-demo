@@ -52,7 +52,7 @@ PODS:
     - Capacitor
   - CapawesomeTeamCapacitorPrinter (6.0.0):
     - Capacitor
-  - CapawesomeTeamCapacitorZip (6.0.0):
+  - CapawesomeTeamCapacitorZip (6.1.0):
     - Capacitor
     - SSZipArchive (~> 2.2)
   - Cloudinary (5.0.0):
@@ -175,7 +175,7 @@ SPEC CHECKSUMS:
   CapawesomeTeamCapacitorFileCompressor: be4a55e6476c4084ef370e84c224fc63db27f7a5
   CapawesomeTeamCapacitorFileOpener: b406c1a389cbb4b1a3e9d686c34c9a357abb5902
   CapawesomeTeamCapacitorPrinter: 44da25bc3ff21298649046a175ff3ac588936798
-  CapawesomeTeamCapacitorZip: 5b579e5e8812dee7b6fed794f3ee6cb1dca9b33f
+  CapawesomeTeamCapacitorZip: ea89e0336d69de1a1395b9d22ab014102c8da169
   Cloudinary: 1e8ed5ce1418ba50df625c1fec80ebec746141b6
   SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
 

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Directory, Filesystem } from '@capacitor/filesystem';
-import { FileOpener } from '@capawesome-team/capacitor-file-opener';
+import { Share } from '@capacitor/share';
 import { Zip } from '@capawesome-team/capacitor-zip';
 import { FilePicker } from '@capawesome/capacitor-file-picker';
 
@@ -12,6 +12,7 @@ import { FilePicker } from '@capawesome/capacitor-file-picker';
 export class ZipPage {
   public path: string | undefined;
   public copyToAppDirectory: boolean = false;
+  public password: string = '';
 
   private readonly GH_URL =
     'https://github.com/capawesome-team/capacitor-plugins';
@@ -50,17 +51,18 @@ export class ZipPage {
     const directoryName = `${Date.now().toString()}`;
     await Filesystem.mkdir({
       path: directoryName,
-      directory: Directory.Cache,
+      directory: Directory.Documents,
       recursive: true,
     });
     const { uri: destinationUri } = await Filesystem.getUri({
       path: directoryName,
-      directory: Directory.Cache,
+      directory: Directory.Documents,
     });
     // Unzip the file
     await Zip.unzip({
       source: this.path,
       destination: destinationUri,
+      password: this.password,
     });
     // List the files in the destination directory
     await Filesystem.readdir({
@@ -76,16 +78,17 @@ export class ZipPage {
     const fileName = `${Date.now().toString()}.zip`;
     const { uri: destinationUri } = await Filesystem.getUri({
       path: fileName,
-      directory: Directory.Cache,
+      directory: Directory.Documents,
     });
     // Zip the directory
     await Zip.zip({
       source: this.path,
       destination: destinationUri,
+      password: this.password,
     });
     // Share the zip file
-    // await Share.share({ files: [destinationUri] });
-    await FileOpener.openFile({ path: destinationUri });
+    await Share.share({ files: [destinationUri] });
+    // await FileOpener.openFile({ path: destinationUri });
   }
 
   public openOnGithub(): void {

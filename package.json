@@ -41,7 +41,7 @@
     "@capawesome-team/capacitor-file-compressor": "6.0.0",
     "@capawesome-team/capacitor-file-opener": "6.0.0",
     "@capawesome-team/capacitor-printer": "6.0.0",
-    "@capawesome-team/capacitor-zip": "6.0.0",
+    "@capawesome-team/capacitor-zip": "6.1.0",
     "@capawesome/capacitor-app-update": "6.0.0",
     "@capawesome/capacitor-background-task": "6.0.0",
     "@capawesome/capacitor-badge": "6.0.0",
