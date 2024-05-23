@@ -50,6 +50,9 @@ project(':capawesome-team-capacitor-file-opener').projectDir = new File('../node
 include ':capawesome-team-capacitor-printer'
 project(':capawesome-team-capacitor-printer').projectDir = new File('../node_modules/@capawesome-team/capacitor-printer/android')
 
+include ':capawesome-team-capacitor-wifi'
+project(':capawesome-team-capacitor-wifi').projectDir = new File('../node_modules/@capawesome-team/capacitor-wifi/android')
+
 include ':capawesome-team-capacitor-zip'
 project(':capawesome-team-capacitor-zip').projectDir = new File('../node_modules/@capawesome-team/capacitor-zip/android')
 

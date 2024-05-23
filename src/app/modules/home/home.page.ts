@@ -84,6 +84,10 @@ export class HomePage {
       url: '/text-to-speech',
     },
     {
+      name: 'Wifi',
+      url: '/wifi',
+    },
+    {
       name: 'Zip',
       url: '/zip',
     },

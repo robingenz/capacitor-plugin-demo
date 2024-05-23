@@ -142,6 +142,11 @@ const routes: Routes = [
       ),
   },
   {
+    path: 'wifi',
+    loadChildren: () =>
+      import('./modules/wifi/wifi.module').then(m => m.WifiPageModule),
+  },
+  {
     path: 'zip',
     loadChildren: () =>
       import('./modules/zip/zip.module').then(m => m.ZipPageModule),

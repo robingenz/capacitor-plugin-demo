@@ -64,6 +64,10 @@
 		"classpath": "io.capawesome.capacitorjs.plugins.printer.PrinterPlugin"
 	},
 	{
+		"pkg": "@capawesome-team/capacitor-wifi",
+		"classpath": "io.capawesome.capacitorjs.plugins.wifi.WifiPlugin"
+	},
+	{
 		"pkg": "@capawesome-team/capacitor-zip",
 		"classpath": "io.capawesome.capacitorjs.plugins.zip.ZipPlugin"
 	},

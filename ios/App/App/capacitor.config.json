@@ -48,6 +48,8 @@
 		"FileOpenerPlugin",
 		"PrinterPlugin",
 		"PrinterPlugin",
+		"WifiPlugin",
+		"WifiPlugin",
 		"ZipPlugin",
 		"ZipPlugin",
 		"AppUpdatePlugin",
