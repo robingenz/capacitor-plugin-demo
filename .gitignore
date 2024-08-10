@@ -32,3 +32,7 @@ npm-debug.log*
 /www
 
 /.gradle
+
+# Public and private keys
+*.pem
+*.crt

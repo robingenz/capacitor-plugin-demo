@@ -32,7 +32,7 @@ PODS:
     - Cloudinary (= 5.0.0)
   - CapawesomeCapacitorFilePicker (6.0.0):
     - Capacitor
-  - CapawesomeCapacitorLiveUpdate (6.0.3):
+  - CapawesomeCapacitorLiveUpdate (6.3.0):
     - Alamofire (~> 5.9.0)
     - Capacitor
     - SSZipArchive (~> 2.2)
@@ -171,7 +171,7 @@ SPEC CHECKSUMS:
   CapawesomeCapacitorBadge: 3d0f281ad8e4a4f8db8c3d88b7622a7f4c413342
   CapawesomeCapacitorCloudinary: 7a7103a57880d215985c242bfebe834b151c2db6
   CapawesomeCapacitorFilePicker: 983e8d272d200897cf1c12cf9a62439fa2fb2c35
-  CapawesomeCapacitorLiveUpdate: 1ed043cd02ce81d545e4a5ab2c1bc7b001eb89ce
+  CapawesomeCapacitorLiveUpdate: 2dba42b57ad4cc6ef8a0e5911f4d32d1d2404654
   CapawesomeCapacitorManagedConfigurations: e6dbcbcf45d7b1f7acfa9b54a02e15201604a803
   CapawesomeCapacitorPhotoEditor: 231e03215f026e0c2eeb6de0910e095e4aa0c823
   CapawesomeCapacitorScreenOrientation: 82675c41cb616a64630c834b06344515a2849ff3

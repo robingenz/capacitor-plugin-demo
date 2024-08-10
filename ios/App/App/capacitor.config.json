@@ -14,7 +14,9 @@
 		},
 		"LiveUpdate": {
 			"appId": "259cba88-20ee-48e4-8dd2-5829d5471702",
-			"autoCleanup": true
+			"autoDeleteBundles": true,
+			"defaultChannel": "test",
+			"location": "eu"
 		},
 		"PrivacyScreen": {
 			"enable": false,

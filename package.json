@@ -48,7 +48,7 @@
     "@capawesome/capacitor-badge": "6.0.0",
     "@capawesome/capacitor-cloudinary": "6.0.0",
     "@capawesome/capacitor-file-picker": "6.0.0",
-    "@capawesome/capacitor-live-update": "6.0.3",
+    "@capawesome/capacitor-live-update": "6.3.0",
     "@capawesome/capacitor-managed-configurations": "6.0.0",
     "@capawesome/capacitor-photo-editor": "6.0.0",
     "@capawesome/capacitor-screen-orientation": "6.0.0",
