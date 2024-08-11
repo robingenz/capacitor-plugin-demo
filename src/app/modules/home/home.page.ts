@@ -52,6 +52,10 @@ export class HomePage {
       url: '/file-picker',
     },
     {
+      name: 'File Transfer',
+      url: '/file-transfer',
+    },
+    {
       name: 'Keep Awake',
       url: '/keep-awake',
     },

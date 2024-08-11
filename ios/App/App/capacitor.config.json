@@ -48,6 +48,8 @@
 		"FileCompressorPlugin",
 		"FileOpenerPlugin",
 		"FileOpenerPlugin",
+		"FileTransferPlugin",
+		"FileTransferPlugin",
 		"PrinterPlugin",
 		"PrinterPlugin",
 		"WifiPlugin",

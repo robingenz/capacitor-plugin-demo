@@ -60,6 +60,10 @@
 		"classpath": "io.capawesome.capacitorjs.plugins.fileopener.FileOpenerPlugin"
 	},
 	{
+		"pkg": "@capawesome-team/capacitor-file-transfer",
+		"classpath": "io.capawesome.capacitorjs.plugins.filetransfer.FileTransferPlugin"
+	},
+	{
 		"pkg": "@capawesome-team/capacitor-printer",
 		"classpath": "io.capawesome.capacitorjs.plugins.printer.PrinterPlugin"
 	},

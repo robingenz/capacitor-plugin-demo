@@ -24,6 +24,7 @@ dependencies {
     implementation project(':capawesome-team-capacitor-datetime-picker')
     implementation project(':capawesome-team-capacitor-file-compressor')
     implementation project(':capawesome-team-capacitor-file-opener')
+    implementation project(':capawesome-team-capacitor-file-transfer')
     implementation project(':capawesome-team-capacitor-printer')
     implementation project(':capawesome-team-capacitor-wifi')
     implementation project(':capawesome-team-capacitor-zip')

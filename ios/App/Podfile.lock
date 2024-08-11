@@ -50,6 +50,8 @@ PODS:
     - Capacitor
   - CapawesomeTeamCapacitorFileOpener (6.0.0):
     - Capacitor
+  - CapawesomeTeamCapacitorFileTransfer (6.0.0):
+    - Capacitor
   - CapawesomeTeamCapacitorPrinter (6.0.0):
     - Capacitor
   - CapawesomeTeamCapacitorWifi (6.0.0):
@@ -87,6 +89,7 @@ DEPENDENCIES:
   - "CapawesomeTeamCapacitorDatetimePicker (from `../../node_modules/@capawesome-team/capacitor-datetime-picker`)"
   - "CapawesomeTeamCapacitorFileCompressor (from `../../node_modules/@capawesome-team/capacitor-file-compressor`)"
   - "CapawesomeTeamCapacitorFileOpener (from `../../node_modules/@capawesome-team/capacitor-file-opener`)"
+  - CapawesomeTeamCapacitorFileTransfer (from `../../../../capawesome-team/capacitor-file-transfer-sponsorware`)
   - "CapawesomeTeamCapacitorPrinter (from `../../node_modules/@capawesome-team/capacitor-printer`)"
   - "CapawesomeTeamCapacitorWifi (from `../../node_modules/@capawesome-team/capacitor-wifi`)"
   - "CapawesomeTeamCapacitorZip (from `../../node_modules/@capawesome-team/capacitor-zip`)"
@@ -146,6 +149,8 @@ EXTERNAL SOURCES:
     :path: "../../node_modules/@capawesome-team/capacitor-file-compressor"
   CapawesomeTeamCapacitorFileOpener:
     :path: "../../node_modules/@capawesome-team/capacitor-file-opener"
+  CapawesomeTeamCapacitorFileTransfer:
+    :path: "../../../../capawesome-team/capacitor-file-transfer-sponsorware"
   CapawesomeTeamCapacitorPrinter:
     :path: "../../node_modules/@capawesome-team/capacitor-printer"
   CapawesomeTeamCapacitorWifi:
@@ -179,12 +184,13 @@ SPEC CHECKSUMS:
   CapawesomeTeamCapacitorDatetimePicker: 6dd2e7ae30c4b55afd48f19bfeb4578dcaa9263e
   CapawesomeTeamCapacitorFileCompressor: be4a55e6476c4084ef370e84c224fc63db27f7a5
   CapawesomeTeamCapacitorFileOpener: b406c1a389cbb4b1a3e9d686c34c9a357abb5902
+  CapawesomeTeamCapacitorFileTransfer: 00372b7bc0abe002952640c505e88d88bfa773a3
   CapawesomeTeamCapacitorPrinter: 44da25bc3ff21298649046a175ff3ac588936798
   CapawesomeTeamCapacitorWifi: 5aa54073db59016e60f945be35ebefc3f5bc9845
   CapawesomeTeamCapacitorZip: ea89e0336d69de1a1395b9d22ab014102c8da169
   Cloudinary: 1e8ed5ce1418ba50df625c1fec80ebec746141b6
   SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
 
-PODFILE CHECKSUM: 4fdd382ed7cda356b8b714f58c128ab5c8712abe
+PODFILE CHECKSUM: 3d6b0c7ce3cbcb09d18425b8871fb34bb73ce0db
 
 COCOAPODS: 1.15.2

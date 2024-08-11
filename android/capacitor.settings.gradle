@@ -47,6 +47,9 @@ project(':capawesome-team-capacitor-file-compressor').projectDir = new File('../
 include ':capawesome-team-capacitor-file-opener'
 project(':capawesome-team-capacitor-file-opener').projectDir = new File('../node_modules/@capawesome-team/capacitor-file-opener/android')
 
+include ':capawesome-team-capacitor-file-transfer'
+project(':capawesome-team-capacitor-file-transfer').projectDir = new File('../../../capawesome-team/capacitor-file-transfer-sponsorware/android')
+
 include ':capawesome-team-capacitor-printer'
 project(':capawesome-team-capacitor-printer').projectDir = new File('../node_modules/@capawesome-team/capacitor-printer/android')
 

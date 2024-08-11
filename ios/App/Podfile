@@ -24,6 +24,7 @@ def capacitor_pods
   pod 'CapawesomeTeamCapacitorDatetimePicker', :path => '../../node_modules/@capawesome-team/capacitor-datetime-picker'
   pod 'CapawesomeTeamCapacitorFileCompressor', :path => '../../node_modules/@capawesome-team/capacitor-file-compressor'
   pod 'CapawesomeTeamCapacitorFileOpener', :path => '../../node_modules/@capawesome-team/capacitor-file-opener'
+  pod 'CapawesomeTeamCapacitorFileTransfer', :path => '../../../../capawesome-team/capacitor-file-transfer-sponsorware'
   pod 'CapawesomeTeamCapacitorPrinter', :path => '../../node_modules/@capawesome-team/capacitor-printer'
   pod 'CapawesomeTeamCapacitorWifi', :path => '../../node_modules/@capawesome-team/capacitor-wifi'
   pod 'CapawesomeTeamCapacitorZip', :path => '../../node_modules/@capawesome-team/capacitor-zip'

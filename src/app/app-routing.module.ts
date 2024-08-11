@@ -83,6 +83,13 @@ const routes: Routes = [
       ),
   },
   {
+    path: 'file-transfer',
+    loadChildren: () =>
+      import('./modules/file-transfer/file-transfer.module').then(
+        m => m.FileTransferPageModule,
+      ),
+  },
+  {
     path: 'home',
     loadChildren: () =>
       import('./modules/home/home.module').then(m => m.HomePageModule),
