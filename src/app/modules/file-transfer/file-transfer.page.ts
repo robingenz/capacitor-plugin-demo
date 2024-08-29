@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Directory, Filesystem } from '@capacitor/filesystem';
+import { FileOpener } from '@capawesome-team/capacitor-file-opener';
 import { FileTransfer } from '@capawesome-team/capacitor-file-transfer';
 import { FilePicker } from '@capawesome/capacitor-file-picker';
 
@@ -21,18 +22,23 @@ export class FileTransferPage {
   public async abort(): Promise<void> {}
 
   public async downloadFile(): Promise<void> {
-    const fileName = 'file.pdf';
+    const fileName = 'selfie1.jpg';
     const { uri } = await Filesystem.getUri({
       path: fileName,
       directory: Directory.Cache,
     });
     await FileTransfer.downloadFile(
       {
-        url: `https://proposition-understand-boys-lending.trycloudflare.com/download/${fileName}`,
+        url: `https://symposium-creating-gordon-nepal.trycloudflare.com/download/${fileName}`,
         path: uri,
       },
       (event, error) => {
         console.log('downloadFile', { event, error });
+        if (event && event.currentBytes === event.totalBytes) {
+          void FileOpener.openFile({
+            path: uri,
+          });
+        }
       },
     );
   }
@@ -43,16 +49,22 @@ export class FileTransferPage {
     if (!file) {
       return;
     }
+    // const result = await Filesystem.writeFile({
+    //   data: file.data || '',
+    //   path: file.name,
+    //   directory: Directory.Cache,
+    // });
     await FileTransfer.uploadFile(
       {
         path: file.path || '',
-        url: 'https://proposition-understand-boys-lending.trycloudflare.com/upload',
+        url: 'https://symposium-creating-gordon-nepal.trycloudflare.com/upload',
         fileKey: 'file',
         fileName: file.name,
         mimeType: file.mimeType,
       },
       (event, error) => {
-        console.log('uploadFile', { event, error });
+        const progress = (event?.currentBytes || 0) / (event?.totalBytes || 1);
+        console.log('uploadFile', progress);
       },
     );
   }
