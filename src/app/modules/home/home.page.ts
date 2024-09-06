@@ -68,6 +68,10 @@ export class HomePage {
       url: '/photo-editor',
     },
     {
+      name: 'PostHog',
+      url: '/posthog',
+    },
+    {
       name: 'Printer',
       url: '/printer',
     },

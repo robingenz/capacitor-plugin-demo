@@ -35,6 +35,7 @@ dependencies {
     implementation project(':capawesome-capacitor-live-update')
     implementation project(':capawesome-capacitor-managed-configurations')
     implementation project(':capawesome-capacitor-photo-editor')
+    implementation project(':capawesome-capacitor-posthog')
     implementation project(':capawesome-capacitor-screen-orientation')
 
 }

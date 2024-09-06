@@ -104,6 +104,10 @@
 		"classpath": "io.capawesome.capacitorjs.plugins.photoeditor.PhotoEditorPlugin"
 	},
 	{
+		"pkg": "@capawesome/capacitor-posthog",
+		"classpath": "io.capawesome.capacitorjs.plugins.posthog.PosthogPlugin"
+	},
+	{
 		"pkg": "@capawesome/capacitor-screen-orientation",
 		"classpath": "io.capawesome.capacitorjs.plugins.screenorientation.ScreenOrientationPlugin"
 	}

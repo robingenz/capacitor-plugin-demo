@@ -116,6 +116,11 @@ const routes: Routes = [
       ),
   },
   {
+    path: 'posthog',
+    loadChildren: () =>
+      import('./modules/posthog/posthog.module').then(m => m.PosthogPageModule),
+  },
+  {
     path: 'printer',
     loadChildren: () =>
       import('./modules/printer/printer.module').then(m => m.PrinterPageModule),

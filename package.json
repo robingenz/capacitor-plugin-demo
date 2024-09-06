@@ -51,8 +51,10 @@
     "@capawesome/capacitor-live-update": "6.3.0",
     "@capawesome/capacitor-managed-configurations": "6.0.0",
     "@capawesome/capacitor-photo-editor": "6.0.0",
+    "@capawesome/capacitor-posthog": "https://pkg.pr.new/capawesome-team/capacitor-plugins/@capawesome/capacitor-posthog@dae64ba",
     "@capawesome/capacitor-screen-orientation": "6.0.1",
     "@ionic/angular": "7.3.4",
+    "posthog-js": "1.160.3",
     "rxjs": "7.5.7",
     "tslib": "2.4.0",
     "zone.js": "0.14.2"

@@ -80,5 +80,8 @@ project(':capawesome-capacitor-managed-configurations').projectDir = new File('.
 include ':capawesome-capacitor-photo-editor'
 project(':capawesome-capacitor-photo-editor').projectDir = new File('../node_modules/@capawesome/capacitor-photo-editor/android')
 
+include ':capawesome-capacitor-posthog'
+project(':capawesome-capacitor-posthog').projectDir = new File('../node_modules/@capawesome/capacitor-posthog/android')
+
 include ':capawesome-capacitor-screen-orientation'
 project(':capawesome-capacitor-screen-orientation').projectDir = new File('../node_modules/@capawesome/capacitor-screen-orientation/android')
