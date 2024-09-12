@@ -31,6 +31,22 @@
       <ion-card-title>Demo</ion-card-title>
     </ion-card-header>
     <ion-card-content>
+      <form [formGroup]="formGroup">
+        <ion-item>
+          <ion-input
+            formControlName="apiKey"
+            label="Api Key"
+            type="text"
+          ></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input
+            formControlName="host"
+            label="Host"
+            type="text"
+          ></ion-input>
+        </ion-item>
+      </form>
       <ion-button expand="block" (click)="alias()">Alias</ion-button>
       <ion-button expand="block" (click)="capture()">Capture</ion-button>
       <ion-button expand="block" (click)="flush()">Flush</ion-button>

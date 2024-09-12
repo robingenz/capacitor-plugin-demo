@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UntypedFormControl, UntypedFormGroup } from '@angular/forms';
 import { Posthog } from '@capawesome/capacitor-posthog';
 
 @Component({
@@ -7,6 +8,11 @@ import { Posthog } from '@capawesome/capacitor-posthog';
   styleUrls: ['./posthog.page.scss'],
 })
 export class PosthogPage {
+  public formGroup = new UntypedFormGroup({
+    apiKey: new UntypedFormControl(''),
+    host: new UntypedFormControl(''),
+  });
+
   private readonly GH_URL =
     'https://github.com/capawesome-team/capacitor-plugins';
 
@@ -17,13 +23,13 @@ export class PosthogPage {
   }
 
   public async alias(): Promise<void> {
-    Posthog.alias({
+    await Posthog.alias({
       alias: 'alias',
     });
   }
 
   public async capture(): Promise<void> {
-    Posthog.capture({
+    await Posthog.capture({
       event: 'test',
       properties: {
         key: 'value',
@@ -32,28 +38,28 @@ export class PosthogPage {
   }
 
   public async flush(): Promise<void> {
-    Posthog.flush();
+    await Posthog.flush();
   }
 
   public async identify(): Promise<void> {
-    Posthog.identify({
+    await Posthog.identify({
       distinctId: 'distinctId',
     });
   }
 
   public async register(): Promise<void> {
-    Posthog.register({
+    await Posthog.register({
       key: 'key',
       value: 'value',
     });
   }
 
   public async reset(): Promise<void> {
-    Posthog.reset();
+    await Posthog.reset();
   }
 
   public async screen(): Promise<void> {
-    Posthog.screen({
+    await Posthog.screen({
       screenTitle: 'screenTitle',
       properties: {
         key: 'value',
@@ -62,14 +68,16 @@ export class PosthogPage {
   }
 
   public async setup(): Promise<void> {
-    Posthog.setup({
-      apiKey: 'phc_g8wMenebiIQ1pYd5v9Vy7oakn6MczVKIsNG5ZHCspdy',
-      host: 'https://eu.i.posthog.com',
+    const apiKey = this.formGroup.get('apiKey')?.value;
+    const host = this.formGroup.get('host')?.value;
+    await Posthog.setup({
+      apiKey,
+      host,
     });
   }
 
   public async unregister(): Promise<void> {
-    Posthog.unregister({
+    await Posthog.unregister({
       key: 'key',
     });
   }
