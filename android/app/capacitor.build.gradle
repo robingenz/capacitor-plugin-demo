@@ -37,6 +37,7 @@ dependencies {
     implementation project(':capawesome-capacitor-photo-editor')
     implementation project(':capawesome-capacitor-posthog')
     implementation project(':capawesome-capacitor-screen-orientation')
+    implementation project(':capawesome-capacitor-torch')
 
 }
 

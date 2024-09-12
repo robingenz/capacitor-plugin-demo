@@ -45,6 +45,8 @@ PODS:
     - PostHog (= 3.8.2)
   - CapawesomeCapacitorScreenOrientation (6.0.1):
     - Capacitor
+  - CapawesomeCapacitorTorch (5.0.0):
+    - Capacitor
   - CapawesomeTeamCapacitorBluetoothLowEnergy (6.0.0):
     - Capacitor
   - CapawesomeTeamCapacitorDatetimePicker (6.0.0):
@@ -88,6 +90,7 @@ DEPENDENCIES:
   - "CapawesomeCapacitorPhotoEditor (from `../../node_modules/@capawesome/capacitor-photo-editor`)"
   - "CapawesomeCapacitorPosthog (from `../../node_modules/@capawesome/capacitor-posthog`)"
   - "CapawesomeCapacitorScreenOrientation (from `../../node_modules/@capawesome/capacitor-screen-orientation`)"
+  - "CapawesomeCapacitorTorch (from `../../node_modules/@capawesome/capacitor-torch`)"
   - "CapawesomeTeamCapacitorBluetoothLowEnergy (from `../../node_modules/@capawesome-team/capacitor-bluetooth-low-energy`)"
   - "CapawesomeTeamCapacitorDatetimePicker (from `../../node_modules/@capawesome-team/capacitor-datetime-picker`)"
   - "CapawesomeTeamCapacitorFileCompressor (from `../../node_modules/@capawesome-team/capacitor-file-compressor`)"
@@ -146,6 +149,8 @@ EXTERNAL SOURCES:
     :path: "../../node_modules/@capawesome/capacitor-posthog"
   CapawesomeCapacitorScreenOrientation:
     :path: "../../node_modules/@capawesome/capacitor-screen-orientation"
+  CapawesomeCapacitorTorch:
+    :path: "../../node_modules/@capawesome/capacitor-torch"
   CapawesomeTeamCapacitorBluetoothLowEnergy:
     :path: "../../node_modules/@capawesome-team/capacitor-bluetooth-low-energy"
   CapawesomeTeamCapacitorDatetimePicker:
@@ -184,6 +189,7 @@ SPEC CHECKSUMS:
   CapawesomeCapacitorPhotoEditor: 231e03215f026e0c2eeb6de0910e095e4aa0c823
   CapawesomeCapacitorPosthog: 84e91ce0c10ce2ffc98fe07a887377370eab7c26
   CapawesomeCapacitorScreenOrientation: 9cc68ecd085fcea2e1755475a3ed60d85e604a6c
+  CapawesomeCapacitorTorch: 147301bf35352215d3b472c10f83e3a8bbe30677
   CapawesomeTeamCapacitorBluetoothLowEnergy: 8a79dcc9f2edde2cf8304b4f628fa3260e12a5d4
   CapawesomeTeamCapacitorDatetimePicker: 6dd2e7ae30c4b55afd48f19bfeb4578dcaa9263e
   CapawesomeTeamCapacitorFileCompressor: be4a55e6476c4084ef370e84c224fc63db27f7a5
@@ -195,6 +201,6 @@ SPEC CHECKSUMS:
   PostHog: c5e174a4c52c45a37bc3960ab103d21eb29b63d6
   SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
 
-PODFILE CHECKSUM: b8b66170f00243d5012b498430c2d9fb5995ebc1
+PODFILE CHECKSUM: a8752795a6c6c530420d974700ec4950f815b7ba
 
 COCOAPODS: 1.15.2

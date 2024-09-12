@@ -110,5 +110,9 @@
 	{
 		"pkg": "@capawesome/capacitor-screen-orientation",
 		"classpath": "io.capawesome.capacitorjs.plugins.screenorientation.ScreenOrientationPlugin"
+	},
+	{
+		"pkg": "@capawesome/capacitor-torch",
+		"classpath": "io.capawesome.capacitorjs.plugins.torch.TorchPlugin"
 	}
 ]

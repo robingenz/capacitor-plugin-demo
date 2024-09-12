@@ -147,6 +147,11 @@ const routes: Routes = [
       ),
   },
   {
+    path: 'torch',
+    loadChildren: () =>
+      import('./modules/torch/torch.module').then(m => m.TorchPageModule),
+  },
+  {
     path: 'wifi',
     loadChildren: () =>
       import('./modules/wifi/wifi.module').then(m => m.WifiPageModule),

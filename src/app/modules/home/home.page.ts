@@ -88,6 +88,10 @@ export class HomePage {
       url: '/text-to-speech',
     },
     {
+      name: 'Torch',
+      url: '/torch',
+    },
+    {
       name: 'Wifi',
       url: '/wifi',
     },

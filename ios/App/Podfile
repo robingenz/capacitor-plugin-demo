@@ -37,6 +37,7 @@ def capacitor_pods
   pod 'CapawesomeCapacitorPhotoEditor', :path => '../../node_modules/@capawesome/capacitor-photo-editor'
   pod 'CapawesomeCapacitorPosthog', :path => '../../node_modules/@capawesome/capacitor-posthog'
   pod 'CapawesomeCapacitorScreenOrientation', :path => '../../node_modules/@capawesome/capacitor-screen-orientation'
+  pod 'CapawesomeCapacitorTorch', :path => '../../node_modules/@capawesome/capacitor-torch'
 end
 
 target 'App' do

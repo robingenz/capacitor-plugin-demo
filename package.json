@@ -53,6 +53,7 @@
     "@capawesome/capacitor-photo-editor": "6.0.0",
     "@capawesome/capacitor-posthog": "https://pkg.pr.new/capawesome-team/capacitor-plugins/@capawesome/capacitor-posthog@dae64ba",
     "@capawesome/capacitor-screen-orientation": "6.0.1",
+    "@capawesome/capacitor-torch": "https://pkg.pr.new/capawesome-team/capacitor-plugins/@capawesome/capacitor-torch@289",
     "@ionic/angular": "7.3.4",
     "posthog-js": "1.160.3",
     "rxjs": "7.5.7",

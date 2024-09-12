@@ -53,6 +53,7 @@
 		"ManagedConfigurationsPlugin",
 		"PhotoEditorPlugin",
 		"PosthogPlugin",
-		"ScreenOrientationPlugin"
+		"ScreenOrientationPlugin",
+		"TorchPlugin"
 	]
 }
