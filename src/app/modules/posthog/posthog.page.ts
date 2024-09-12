@@ -16,9 +16,45 @@ export class PosthogPage {
     window.open(this.GH_URL, '_blank');
   }
 
+  public async alias(): Promise<void> {
+    Posthog.alias({
+      alias: 'alias',
+    });
+  }
+
   public async capture(): Promise<void> {
     Posthog.capture({
       event: 'test',
+      properties: {
+        key: 'value',
+      },
+    });
+  }
+
+  public async flush(): Promise<void> {
+    Posthog.flush();
+  }
+
+  public async identify(): Promise<void> {
+    Posthog.identify({
+      distinctId: 'distinctId',
+    });
+  }
+
+  public async register(): Promise<void> {
+    Posthog.register({
+      key: 'key',
+      value: 'value',
+    });
+  }
+
+  public async reset(): Promise<void> {
+    Posthog.reset();
+  }
+
+  public async screen(): Promise<void> {
+    Posthog.screen({
+      screenTitle: 'screenTitle',
       properties: {
         key: 'value',
       },
@@ -29,6 +65,12 @@ export class PosthogPage {
     Posthog.setup({
       apiKey: 'phc_g8wMenebiIQ1pYd5v9Vy7oakn6MczVKIsNG5ZHCspdy',
       host: 'https://eu.i.posthog.com',
+    });
+  }
+
+  public async unregister(): Promise<void> {
+    Posthog.unregister({
+      key: 'key',
     });
   }
 }
