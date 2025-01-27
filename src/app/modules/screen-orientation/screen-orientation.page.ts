@@ -1,7 +1,6 @@
 import { Component, NgZone, OnDestroy, OnInit } from '@angular/core';
-import { PluginListenerHandle } from '@capacitor/core';
+import { Capacitor, PluginListenerHandle } from '@capacitor/core';
 import { ScreenOrientation } from '@capawesome/capacitor-screen-orientation';
-import { Platform } from '@ionic/angular';
 
 @Component({
   selector: 'app-screen-orientation',
@@ -16,10 +15,7 @@ export class ScreenOrientationPage implements OnInit, OnDestroy {
 
   private orientationChangeListener: Promise<PluginListenerHandle> | undefined;
 
-  constructor(
-    private readonly platform: Platform,
-    private readonly ngZone: NgZone,
-  ) {}
+  constructor(private readonly ngZone: NgZone) {}
 
   public ngOnInit() {
     this.addListeners();
@@ -60,7 +56,7 @@ export class ScreenOrientationPage implements OnInit, OnDestroy {
   }
 
   private async requestFullscreen(): Promise<void> {
-    if (this.platform.is('capacitor')) {
+    if (Capacitor.getPlatform() !== 'web') {
       return;
     }
     if (document.fullscreenElement) {
