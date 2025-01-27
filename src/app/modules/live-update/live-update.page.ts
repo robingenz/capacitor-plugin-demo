@@ -45,8 +45,8 @@ export class LiveUpdatePage {
     });
   }
 
-  public async getBundle(): Promise<void> {
-    await LiveUpdate.getBundle();
+  public async getCurrentBundle(): Promise<void> {
+    await LiveUpdate.getCurrentBundle();
   }
 
   public async getBundles(): Promise<void> {
@@ -85,12 +85,12 @@ export class LiveUpdatePage {
     await LiveUpdate.reset();
   }
 
-  public async setBundle(): Promise<void> {
+  public async setNextBundle(): Promise<void> {
     const bundleId = this.formGroup.get('bundleId')?.value;
     if (!bundleId) {
       return;
     }
-    await LiveUpdate.setBundle({ bundleId });
+    await LiveUpdate.setNextBundle({ bundleId });
   }
 
   public async setChannel(): Promise<void> {
