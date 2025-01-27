@@ -62,7 +62,7 @@ export class ZipPage {
     await Zip.unzip({
       source: this.path,
       destination: destinationUri,
-      password: this.password,
+      password: this.password.length > 0 ? this.password : undefined,
     });
     // List the files in the destination directory
     await Filesystem.readdir({
@@ -84,7 +84,7 @@ export class ZipPage {
     await Zip.zip({
       source: this.path,
       destination: destinationUri,
-      password: this.password,
+      password: this.password.length > 0 ? this.password : undefined,
     });
     // Share the zip file
     await Share.share({ files: [destinationUri] });

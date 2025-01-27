@@ -67,9 +67,11 @@
       <ion-button expand="block" (click)="downloadBundle()"
         >Download Bundle</ion-button
       >
-      <ion-button expand="block" (click)="getBundle()">Get Bundle</ion-button>
       <ion-button expand="block" (click)="getBundles()">Get Bundles</ion-button>
       <ion-button expand="block" (click)="getChannel()">Get Channel</ion-button>
+      <ion-button expand="block" (click)="getCurrentBundle()"
+        >Get Current Bundle</ion-button
+      >
       <ion-button expand="block" (click)="getCustomId()"
         >Get Custom ID</ion-button
       >
@@ -85,10 +87,12 @@
       <ion-button expand="block" (click)="ready()">Ready</ion-button>
       <ion-button expand="block" (click)="reload()">Reload</ion-button>
       <ion-button expand="block" (click)="reset()">Reset</ion-button>
-      <ion-button expand="block" (click)="setBundle()">Set Bundle</ion-button>
       <ion-button expand="block" (click)="setChannel()">Set Channel</ion-button>
       <ion-button expand="block" (click)="setCustomId()"
         >Set Custom ID</ion-button
+      >
+      <ion-button expand="block" (click)="setNextBundle()"
+        >Set Next Bundle</ion-button
       >
       <ion-button expand="block" (click)="sync()">Sync</ion-button>
     </ion-card-content>
