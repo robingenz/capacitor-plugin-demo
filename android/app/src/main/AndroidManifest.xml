@@ -51,7 +51,7 @@
         </provider>
 
         <receiver android:name="io.capawesome.capacitorjs.plugins.foregroundservice.NotificationActionBroadcastReceiver" />
-        <service android:name="io.capawesome.capacitorjs.plugins.foregroundservice.AndroidForegroundService" />
+        <service android:name="io.capawesome.capacitorjs.plugins.foregroundservice.AndroidForegroundService" android:foregroundServiceType="location" />
 
         <service android:name="io.capawesome.capacitorjs.plugins.bluetoothle.BluetoothLowEnergyService" android:foregroundServiceType="connectedDevice" />
     </application>
@@ -85,6 +85,7 @@
     <!-- Foreground Service + Bluetooth Low Energy -->
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
     <!-- Bluetooth Low Energy  -->
     <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
     <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />

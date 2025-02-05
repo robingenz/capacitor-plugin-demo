@@ -1,5 +1,8 @@
 import { Component, NgZone, OnInit } from '@angular/core';
-import { ForegroundService } from '@capawesome-team/capacitor-android-foreground-service';
+import {
+  ForegroundService,
+  ServiceType,
+} from '@capawesome-team/capacitor-android-foreground-service';
 
 @Component({
   selector: 'app-android-foreground-service',
@@ -38,6 +41,7 @@ export class AndroidForegroundServicePage implements OnInit {
       title: 'This is the title of the notification',
       id: 12398473,
       smallIcon: 'push_icon',
+      serviceType: ServiceType.Location,
     });
   }
 
