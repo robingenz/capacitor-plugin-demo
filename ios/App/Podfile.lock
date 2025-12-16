@@ -1,70 +1,72 @@
 PODS:
   - Alamofire (5.9.1)
-  - Capacitor (7.0.0):
+  - Capacitor (8.0.0):
     - CapacitorCordova
-  - CapacitorApp (7.0.0):
+  - CapacitorApp (8.0.0):
     - Capacitor
-  - CapacitorCamera (7.0.0):
+  - CapacitorCamera (8.0.0):
     - Capacitor
-  - CapacitorCommunityKeepAwake (5.0.1-dev.a09f5c3.1738003115):
+  - CapacitorCommunityKeepAwake (7.0.0):
     - Capacitor
-  - CapacitorCommunityPrivacyScreen (5.2.1-dev.11d7af3.1738003749):
+  - CapacitorCommunityPrivacyScreen (6.0.0):
     - Capacitor
-  - CapacitorCommunityTextToSpeech (5.1.0-dev.cf04aa9.1738003753):
+  - CapacitorCommunityTextToSpeech (6.0.0):
     - Capacitor
-  - CapacitorCordova (7.0.0)
-  - CapacitorFilesystem (7.0.0):
+  - CapacitorCordova (8.0.0)
+  - CapacitorFilesystem (8.0.0):
     - Capacitor
-  - CapacitorHaptics (7.0.0):
+    - IONFilesystemLib (~> 1.0.1)
+  - CapacitorHaptics (8.0.0):
     - Capacitor
-  - CapacitorKeyboard (7.0.0):
+  - CapacitorKeyboard (8.0.0):
     - Capacitor
-  - CapacitorShare (7.0.0):
+  - CapacitorShare (8.0.0):
     - Capacitor
-  - CapawesomeCapacitorAppUpdate (6.1.0):
+  - CapawesomeCapacitorAppUpdate (7.0.0):
     - Capacitor
-  - CapawesomeCapacitorBackgroundTask (6.0.0):
+  - CapawesomeCapacitorBackgroundTask (7.0.0):
     - Capacitor
-  - CapawesomeCapacitorBadge (6.0.0):
+  - CapawesomeCapacitorBadge (7.0.0):
     - Capacitor
-  - CapawesomeCapacitorCloudinary (6.0.0):
+  - CapawesomeCapacitorCloudinary (7.0.0):
     - Capacitor
     - Cloudinary (~> 5.1.0)
-  - CapawesomeCapacitorFilePicker (6.2.0):
+  - CapawesomeCapacitorFilePicker (7.0.0):
     - Capacitor
-  - CapawesomeCapacitorLiveUpdate (6.7.1):
+  - CapawesomeCapacitorLiveUpdate (7.0.0):
     - Alamofire (~> 5.9.0)
     - Capacitor
     - SSZipArchive (~> 2.2.3)
-  - CapawesomeCapacitorManagedConfigurations (6.0.0):
+  - CapawesomeCapacitorManagedConfigurations (7.0.0):
     - Capacitor
-  - CapawesomeCapacitorPhotoEditor (6.0.0):
+  - CapawesomeCapacitorPhotoEditor (7.0.0):
     - Capacitor
-  - CapawesomeCapacitorPosthog (6.0.0):
+  - CapawesomeCapacitorPosthog (7.0.0):
     - Capacitor
     - PostHog (~> 3.19.1)
-  - CapawesomeCapacitorScreenOrientation (6.0.1):
+  - CapawesomeCapacitorScreenOrientation (7.0.0):
     - Capacitor
-  - CapawesomeCapacitorTorch (6.2.1):
+  - CapawesomeCapacitorTorch (7.0.0):
     - Capacitor
-  - CapawesomeTeamCapacitorBluetoothLowEnergy (6.2.0-dev.8e68386.1738002535):
+  - CapawesomeTeamCapacitorBluetoothLowEnergy (7.0.0):
     - Capacitor
-  - CapawesomeTeamCapacitorDatetimePicker (6.0.0):
+  - CapawesomeTeamCapacitorDatetimePicker (7.0.0):
     - Capacitor
-  - CapawesomeTeamCapacitorFileCompressor (6.1.0-dev.8e68386.1738002535):
+  - CapawesomeTeamCapacitorFileCompressor (7.0.0):
     - Capacitor
-  - CapawesomeTeamCapacitorFileOpener (6.1.0):
+  - CapawesomeTeamCapacitorFileOpener (7.0.0):
     - Capacitor
-  - CapawesomeTeamCapacitorPrinter (6.2.0-dev.8e68386.1738002535):
+  - CapawesomeTeamCapacitorPrinter (7.0.0):
     - Capacitor
-  - CapawesomeTeamCapacitorWifi (6.3.0-dev.8e68386.1738002535):
+  - CapawesomeTeamCapacitorWifi (7.0.0):
     - Capacitor
-  - CapawesomeTeamCapacitorZip (6.2.0-dev.8e68386.1738002535):
+  - CapawesomeTeamCapacitorZip (7.0.0):
     - Capacitor
     - SSZipArchive (~> 2.2)
   - Cloudinary (5.1.0):
     - Cloudinary/ios (= 5.1.0)
   - Cloudinary/ios (5.1.0)
+  - IONFilesystemLib (1.0.1)
   - PostHog (3.19.1)
   - SSZipArchive (2.2.3)
 
@@ -103,6 +105,7 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - Cloudinary
+    - IONFilesystemLib
     - PostHog
     - SSZipArchive
 
@@ -168,39 +171,40 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: f36a35757af4587d8e4f4bfa223ad10be2422b8c
-  Capacitor: 82d1f3b4480d66b5996814f74500dcbc0908558c
-  CapacitorApp: 9cb31064a6c6bb2b1438583733a7bf45557fc1da
-  CapacitorCamera: 20a37684b81c69c0c33fb5a7216919f135371a6f
-  CapacitorCommunityKeepAwake: 0fc1bea1854a596b7675178a67b5821c25d3d195
-  CapacitorCommunityPrivacyScreen: c4199fac977602af55e4ffc5e75142b26b76396e
-  CapacitorCommunityTextToSpeech: ce7c0bb5cacc5a347b17f23c4ea69f5d65beb6e2
-  CapacitorCordova: 345f93b7edd121db98e4ec20ac94d6d7bcaf7e48
-  CapacitorFilesystem: 59a2b7b56a897c6a3de4d04c5718e1d80de9d2f5
-  CapacitorHaptics: 7be406a91e4eb87287f321c6c68e1709d6837b3a
-  CapacitorKeyboard: 4db71e694e7afb5d7c0be09b05495c19f7d6c914
-  CapacitorShare: d94c53d7656f1ce8f6712ae8d19ab0c18a69259f
-  CapawesomeCapacitorAppUpdate: f2c84f5d92abbaf7f09a2f6ca8f748c57c6075fb
-  CapawesomeCapacitorBackgroundTask: 2f6cfef5df7049e82ba25013ef176829806edd9b
-  CapawesomeCapacitorBadge: df7591ae74a916b48773c7c6d9be62dad1b81b94
-  CapawesomeCapacitorCloudinary: 1e6da52d3b84f5e4ea5a71198b7340969cebf5f0
-  CapawesomeCapacitorFilePicker: 433bf83bc2fd583e55859023f108ba39f3df7cb9
-  CapawesomeCapacitorLiveUpdate: 88d07e8af953fcbf74fe33358a3638402ea329d1
-  CapawesomeCapacitorManagedConfigurations: 7e8c9e5c0c4ce069f0602dbd93e5bf245487133d
-  CapawesomeCapacitorPhotoEditor: 37aa717c982876f329d37b422eb55f9863b33689
-  CapawesomeCapacitorPosthog: f5df4c411e3b9c342eaded1c72518f4447f04467
-  CapawesomeCapacitorScreenOrientation: c1548befa901db8d684a6e8d2a00ca4c8d61324b
-  CapawesomeCapacitorTorch: 0bcc3bf30e31246ae6ddd17d72db7e91e08ca90c
-  CapawesomeTeamCapacitorBluetoothLowEnergy: 62bb6287f00414b9eb8c6496591f43780e954ad9
-  CapawesomeTeamCapacitorDatetimePicker: 5aa964529ddee83b90b9e44c1c9715ee88a1b5d6
-  CapawesomeTeamCapacitorFileCompressor: 6c89d423e344714df45e9f1225418d2cd0016d09
-  CapawesomeTeamCapacitorFileOpener: 6353f705a24ec15b8817e1146876f28caf6bc36f
-  CapawesomeTeamCapacitorPrinter: d636058ac00ff9a7d0fa20d38c12d6b6db61009f
-  CapawesomeTeamCapacitorWifi: 78fd8c4cdd7b2a0d8a5832b4a0c569775be06cb7
-  CapawesomeTeamCapacitorZip: fccd552070b6cbb20297c675c039871df44add93
+  Capacitor: 341ff7cf652ec695d1a8ebf604db448ac7b6d635
+  CapacitorApp: 3963a84197280757b84f126afd1520a85ae3b092
+  CapacitorCamera: 592acb7ab9fb748e2d8571eb03af30ec4e1ace12
+  CapacitorCommunityKeepAwake: ae762ce29b53147d28cfcaae5273cd1db0c38fc4
+  CapacitorCommunityPrivacyScreen: 682470c41cce325d7a85b95907887919d4694066
+  CapacitorCommunityTextToSpeech: 4e82235c0e184d2edbd1b2d81ef22af531bda13e
+  CapacitorCordova: 5dc3912d25ef770a3fe0f431bb65c9fbfa2e92f9
+  CapacitorFilesystem: 2cb7c29536024668f333266a2177f8c10bbd9c98
+  CapacitorHaptics: 2079d9fa04c5a71e18663b4722323c304c58245c
+  CapacitorKeyboard: d7868c079a4d5277a3deca27a10a488fcbbb8b69
+  CapacitorShare: 12f1d192170cbcf9f108fd675ac8e343761a4638
+  CapawesomeCapacitorAppUpdate: a567c07467ab9ffb120ff966415e9b8a85725bdc
+  CapawesomeCapacitorBackgroundTask: c8e404adf0c41948dbd75f9352d4d9de5037a0cb
+  CapawesomeCapacitorBadge: dc0ff16bb770822c8fc46ea26981a37d1b5d814c
+  CapawesomeCapacitorCloudinary: 3657480b2e34c0c4e0982b06e0137a994230e644
+  CapawesomeCapacitorFilePicker: 14e5eef9b494c0ced87143d5c03ef690a79c9851
+  CapawesomeCapacitorLiveUpdate: 806cfc3adf39aad5b4f5342f8511d7185b97d314
+  CapawesomeCapacitorManagedConfigurations: c3475190e1cddf7234607d65fbdc89c9ef977094
+  CapawesomeCapacitorPhotoEditor: 2652f170cb5430f9173fc64b2daed1dda9649c8a
+  CapawesomeCapacitorPosthog: 2067711f7d39e46b3a705c5da397324b6fdadf73
+  CapawesomeCapacitorScreenOrientation: ab429a5727e7b85abb693a56284b59c583980b13
+  CapawesomeCapacitorTorch: 9c98ee771501ec9e72923972484fa15fee1fab27
+  CapawesomeTeamCapacitorBluetoothLowEnergy: 04d877ec0a85913c1e6eb211a78ce4a37f26e132
+  CapawesomeTeamCapacitorDatetimePicker: 1c42da8fd55c6603e6390c0f32ffa288420c3063
+  CapawesomeTeamCapacitorFileCompressor: fd6a0487ff934b776a00df56dad16d334ed2bb08
+  CapawesomeTeamCapacitorFileOpener: f9bb7f4c64d39f7b71e1fb93185fb9929a779e25
+  CapawesomeTeamCapacitorPrinter: 661bda35ed0dd692c5475e6d2ff72621eef437bf
+  CapawesomeTeamCapacitorWifi: c4abb5e132ddda1cf69e98aca42d72c1fdfcf42f
+  CapawesomeTeamCapacitorZip: 0fe659dd46a27bd5673fa7121f86301041711cf4
   Cloudinary: bab47d625e409936fb5c61d53f17719c80c258ad
+  IONFilesystemLib: 89258b8e3e85465da93127d25d7ce37f977e8a6f
   PostHog: 9e2227227ab5273d35f6c61f9e1f8cc0a031b1ba
   SSZipArchive: 62d4947b08730e4cda640473b0066d209ff033c9
 
-PODFILE CHECKSUM: c423bb7506698d820ecef78cd36c4729ae0c8f4f
+PODFILE CHECKSUM: 19c5cc26bcae7ca71068ef30d2194f06a7f25490
 
 COCOAPODS: 1.16.2

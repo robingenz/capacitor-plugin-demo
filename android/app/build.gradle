@@ -1,8 +1,8 @@
 apply plugin: 'com.android.application'
 
 android {
-    namespace "dev.robingenz.capacitor.plugindemo"
-    compileSdk rootProject.ext.compileSdkVersion
+    namespace = "dev.robingenz.capacitor.plugindemo"
+    compileSdk = rootProject.ext.compileSdkVersion
     defaultConfig {
         applicationId "dev.robingenz.capacitor.plugindemo"
         minSdkVersion rootProject.ext.minSdkVersion
