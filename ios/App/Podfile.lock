@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (5.9.1)
+  - Alamofire (5.10.2)
   - Capacitor (8.0.0):
     - CapacitorCordova
   - CapacitorApp (8.0.0):
@@ -22,53 +22,53 @@ PODS:
     - Capacitor
   - CapacitorShare (8.0.0):
     - Capacitor
-  - CapawesomeCapacitorAppUpdate (7.0.0):
+  - CapawesomeCapacitorAppUpdate (7.0.0-dev.1765885034):
     - Capacitor
-  - CapawesomeCapacitorBackgroundTask (7.0.0):
+  - CapawesomeCapacitorBackgroundTask (7.0.0-dev.1765885034):
     - Capacitor
-  - CapawesomeCapacitorBadge (7.0.0):
+  - CapawesomeCapacitorBadge (7.0.0-dev.1765885034):
     - Capacitor
-  - CapawesomeCapacitorCloudinary (7.0.0):
+  - CapawesomeCapacitorCloudinary (7.0.0-dev.1765885034):
     - Capacitor
     - Cloudinary (~> 5.1.0)
-  - CapawesomeCapacitorFilePicker (7.0.0):
+  - CapawesomeCapacitorFilePicker (7.0.0-dev.1765885034):
     - Capacitor
-  - CapawesomeCapacitorLiveUpdate (7.0.0):
-    - Alamofire (~> 5.9.0)
+  - CapawesomeCapacitorLiveUpdate (7.0.0-dev.1765885034):
+    - Alamofire (~> 5.10.2)
     - Capacitor
-    - SSZipArchive (~> 2.2.3)
-  - CapawesomeCapacitorManagedConfigurations (7.0.0):
+    - SSZipArchive (~> 2.4.0)
+  - CapawesomeCapacitorManagedConfigurations (7.0.0-dev.1765885034):
     - Capacitor
-  - CapawesomeCapacitorPhotoEditor (7.0.0):
+  - CapawesomeCapacitorPhotoEditor (7.0.0-dev.1765885034):
     - Capacitor
-  - CapawesomeCapacitorPosthog (7.0.0):
+  - CapawesomeCapacitorPosthog (7.0.0-dev.1765885034):
     - Capacitor
     - PostHog (~> 3.19.1)
-  - CapawesomeCapacitorScreenOrientation (7.0.0):
+  - CapawesomeCapacitorScreenOrientation (7.0.0-dev.1765885034):
     - Capacitor
-  - CapawesomeCapacitorTorch (7.0.0):
+  - CapawesomeCapacitorTorch (7.0.0-dev.1765885034):
     - Capacitor
-  - CapawesomeTeamCapacitorBluetoothLowEnergy (7.0.0):
+  - CapawesomeTeamCapacitorBluetoothLowEnergy (7.0.0-dev.1765885034):
     - Capacitor
-  - CapawesomeTeamCapacitorDatetimePicker (7.0.0):
+  - CapawesomeTeamCapacitorDatetimePicker (7.0.0-dev.1765885034):
     - Capacitor
-  - CapawesomeTeamCapacitorFileCompressor (7.0.0):
+  - CapawesomeTeamCapacitorFileCompressor (7.0.0-dev.1765885034):
     - Capacitor
-  - CapawesomeTeamCapacitorFileOpener (7.0.0):
+  - CapawesomeTeamCapacitorFileOpener (7.0.0-dev.1765885034):
     - Capacitor
-  - CapawesomeTeamCapacitorPrinter (7.0.0):
+  - CapawesomeTeamCapacitorPrinter (7.0.0-dev.1765885034):
     - Capacitor
-  - CapawesomeTeamCapacitorWifi (7.0.0):
+  - CapawesomeTeamCapacitorWifi (7.0.0-dev.1765885034):
     - Capacitor
-  - CapawesomeTeamCapacitorZip (7.0.0):
+  - CapawesomeTeamCapacitorZip (7.0.0-dev.1765885034):
     - Capacitor
-    - SSZipArchive (~> 2.2)
+    - SSZipArchive (~> 2.4.0)
   - Cloudinary (5.1.0):
     - Cloudinary/ios (= 5.1.0)
   - Cloudinary/ios (5.1.0)
   - IONFilesystemLib (1.0.1)
-  - PostHog (3.19.1)
-  - SSZipArchive (2.2.3)
+  - PostHog (3.19.9)
+  - SSZipArchive (2.4.3)
 
 DEPENDENCIES:
   - "Capacitor (from `../../node_modules/@capacitor/ios`)"
@@ -170,7 +170,7 @@ EXTERNAL SOURCES:
     :path: "../../node_modules/@capawesome-team/capacitor-zip"
 
 SPEC CHECKSUMS:
-  Alamofire: f36a35757af4587d8e4f4bfa223ad10be2422b8c
+  Alamofire: 7193b3b92c74a07f85569e1a6c4f4237291e7496
   Capacitor: 341ff7cf652ec695d1a8ebf604db448ac7b6d635
   CapacitorApp: 3963a84197280757b84f126afd1520a85ae3b092
   CapacitorCamera: 592acb7ab9fb748e2d8571eb03af30ec4e1ace12
@@ -182,28 +182,28 @@ SPEC CHECKSUMS:
   CapacitorHaptics: 2079d9fa04c5a71e18663b4722323c304c58245c
   CapacitorKeyboard: d7868c079a4d5277a3deca27a10a488fcbbb8b69
   CapacitorShare: 12f1d192170cbcf9f108fd675ac8e343761a4638
-  CapawesomeCapacitorAppUpdate: a567c07467ab9ffb120ff966415e9b8a85725bdc
-  CapawesomeCapacitorBackgroundTask: c8e404adf0c41948dbd75f9352d4d9de5037a0cb
-  CapawesomeCapacitorBadge: dc0ff16bb770822c8fc46ea26981a37d1b5d814c
-  CapawesomeCapacitorCloudinary: 3657480b2e34c0c4e0982b06e0137a994230e644
-  CapawesomeCapacitorFilePicker: 14e5eef9b494c0ced87143d5c03ef690a79c9851
-  CapawesomeCapacitorLiveUpdate: 806cfc3adf39aad5b4f5342f8511d7185b97d314
-  CapawesomeCapacitorManagedConfigurations: c3475190e1cddf7234607d65fbdc89c9ef977094
-  CapawesomeCapacitorPhotoEditor: 2652f170cb5430f9173fc64b2daed1dda9649c8a
-  CapawesomeCapacitorPosthog: 2067711f7d39e46b3a705c5da397324b6fdadf73
-  CapawesomeCapacitorScreenOrientation: ab429a5727e7b85abb693a56284b59c583980b13
-  CapawesomeCapacitorTorch: 9c98ee771501ec9e72923972484fa15fee1fab27
-  CapawesomeTeamCapacitorBluetoothLowEnergy: 04d877ec0a85913c1e6eb211a78ce4a37f26e132
-  CapawesomeTeamCapacitorDatetimePicker: 1c42da8fd55c6603e6390c0f32ffa288420c3063
-  CapawesomeTeamCapacitorFileCompressor: fd6a0487ff934b776a00df56dad16d334ed2bb08
-  CapawesomeTeamCapacitorFileOpener: f9bb7f4c64d39f7b71e1fb93185fb9929a779e25
-  CapawesomeTeamCapacitorPrinter: 661bda35ed0dd692c5475e6d2ff72621eef437bf
-  CapawesomeTeamCapacitorWifi: c4abb5e132ddda1cf69e98aca42d72c1fdfcf42f
-  CapawesomeTeamCapacitorZip: 0fe659dd46a27bd5673fa7121f86301041711cf4
+  CapawesomeCapacitorAppUpdate: 6ce5b2e52d60c699793d7983cf0b66bd16123355
+  CapawesomeCapacitorBackgroundTask: bc61a42665ae1213131b04913b204d900bf7606d
+  CapawesomeCapacitorBadge: a2a14651c75f45c72d5e2dc22608bb748ec54fd8
+  CapawesomeCapacitorCloudinary: 149975c7166f5c1430040f65914b35916c17209b
+  CapawesomeCapacitorFilePicker: 37ffe33ab8e5340fba712b145a551a7fe910eeb9
+  CapawesomeCapacitorLiveUpdate: 2229e03881f54138f19ae2f80bdeaffd827d4759
+  CapawesomeCapacitorManagedConfigurations: 36587af1e83c59806d3ec8b095a01c2633c4a6ce
+  CapawesomeCapacitorPhotoEditor: a5f8c2db403dddc72baa926bef36519aa96d2962
+  CapawesomeCapacitorPosthog: f4e9bf9b998e3fc24bd85e2028ecb258b2f7a31e
+  CapawesomeCapacitorScreenOrientation: 9e486ce0b580ed44c34a178862a13f9034ee0c09
+  CapawesomeCapacitorTorch: 5debdaa9acc9e8fea465b2bdc3c50dd28e762fe6
+  CapawesomeTeamCapacitorBluetoothLowEnergy: 75882405307ea58f152cfb8b9d47f4dc81dfd116
+  CapawesomeTeamCapacitorDatetimePicker: a214a131863b317977c4ed9a5413bba1e868286f
+  CapawesomeTeamCapacitorFileCompressor: c69dba9ef148e7b8bee02a606d85f1f4efe5fe00
+  CapawesomeTeamCapacitorFileOpener: 352898138f768f5132d83b367cb24e89038dda49
+  CapawesomeTeamCapacitorPrinter: f9f63f6f1f22a615d55bbda07bbfbf23022f4d3e
+  CapawesomeTeamCapacitorWifi: 4573d76408d58992f856b48357fcd289acffd8df
+  CapawesomeTeamCapacitorZip: 319a106f5afb828bd7d1ebe14fb1f00cedd4a0b9
   Cloudinary: bab47d625e409936fb5c61d53f17719c80c258ad
   IONFilesystemLib: 89258b8e3e85465da93127d25d7ce37f977e8a6f
-  PostHog: 9e2227227ab5273d35f6c61f9e1f8cc0a031b1ba
-  SSZipArchive: 62d4947b08730e4cda640473b0066d209ff033c9
+  PostHog: 49247855f4cfdc1d2750b4247e6f6c0ff921e142
+  SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
 
 PODFILE CHECKSUM: 19c5cc26bcae7ca71068ef30d2194f06a7f25490
 
