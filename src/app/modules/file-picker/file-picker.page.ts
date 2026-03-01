@@ -3,6 +3,7 @@ import { UntypedFormControl, UntypedFormGroup } from '@angular/forms';
 import { FilePicker, PickedFile } from '@capawesome/capacitor-file-picker';
 
 @Component({
+  standalone: false,
   selector: 'app-file-picker',
   templateUrl: './file-picker.page.html',
   styleUrls: ['./file-picker.page.scss'],

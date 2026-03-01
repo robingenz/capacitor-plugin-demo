@@ -5,6 +5,7 @@ import {
 } from '@capawesome-team/capacitor-android-foreground-service';
 
 @Component({
+  standalone: false,
   selector: 'app-android-foreground-service',
   templateUrl: './android-foreground-service.page.html',
   styleUrls: ['./android-foreground-service.page.scss'],

@@ -7,6 +7,7 @@ import {
 import { BluetoothLowEnergyDeviceComponent } from './bluetooth-low-energy-device/bluetooth-low-energy-device.component';
 
 @Component({
+  standalone: false,
   selector: 'app-bluetooth-low-energy',
   templateUrl: './bluetooth-low-energy.page.html',
   styleUrls: ['./bluetooth-low-energy.page.scss'],

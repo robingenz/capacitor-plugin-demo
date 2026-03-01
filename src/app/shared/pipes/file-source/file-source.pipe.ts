@@ -2,7 +2,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 import { Capacitor } from '@capacitor/core';
 
-@Pipe({ name: 'fileSource' })
+@Pipe({ name: 'fileSource', standalone: false })
 export class FileSourcePipe implements PipeTransform {
   constructor(private readonly domSanitizer: DomSanitizer) {}
 

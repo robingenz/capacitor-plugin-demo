@@ -17,6 +17,7 @@
       "dom"
     ],
     "strict": true,
+    "skipLibCheck": true,
     "paths": {
       "@app/*": [
         "src/app/*"

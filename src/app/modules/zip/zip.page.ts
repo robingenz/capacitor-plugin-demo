@@ -5,6 +5,7 @@ import { Zip } from '@capawesome-team/capacitor-zip';
 import { FilePicker } from '@capawesome/capacitor-file-picker';
 
 @Component({
+  standalone: false,
   selector: 'app-zip',
   templateUrl: './zip.page.html',
   styleUrls: ['./zip.page.scss'],

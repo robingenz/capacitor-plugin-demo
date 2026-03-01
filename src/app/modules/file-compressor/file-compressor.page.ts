@@ -6,6 +6,7 @@ import { FileCompressor } from '@capawesome-team/capacitor-file-compressor';
 import { FilePicker } from '@capawesome/capacitor-file-picker';
 
 @Component({
+  standalone: false,
   selector: 'app-file-compressor',
   templateUrl: './file-compressor.page.html',
   styleUrls: ['./file-compressor.page.scss'],

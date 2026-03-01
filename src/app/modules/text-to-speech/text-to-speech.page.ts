@@ -3,6 +3,7 @@ import { UntypedFormControl, UntypedFormGroup } from '@angular/forms';
 import { TextToSpeech, TTSOptions } from '@capacitor-community/text-to-speech';
 
 @Component({
+  standalone: false,
   selector: 'app-text-to-speech',
   templateUrl: './text-to-speech.page.html',
   styleUrls: ['./text-to-speech.page.scss'],

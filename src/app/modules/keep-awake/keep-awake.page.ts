@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { KeepAwake } from '@capacitor-community/keep-awake';
 
 @Component({
+  standalone: false,
   selector: 'app-keep-awake',
   templateUrl: './keep-awake.page.html',
   styleUrls: ['./keep-awake.page.scss'],

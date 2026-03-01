@@ -3,6 +3,7 @@ import { UntypedFormControl, UntypedFormGroup } from '@angular/forms';
 import { Badge } from '@capawesome/capacitor-badge';
 
 @Component({
+  standalone: false,
   selector: 'app-badge',
   templateUrl: './badge.page.html',
   styleUrls: ['./badge.page.scss'],

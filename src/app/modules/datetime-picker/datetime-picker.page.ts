@@ -6,6 +6,7 @@ import {
 } from '@capawesome-team/capacitor-datetime-picker';
 
 @Component({
+  standalone: false,
   selector: 'app-datetime-picker',
   templateUrl: './datetime-picker.page.html',
   styleUrls: ['./datetime-picker.page.scss'],

@@ -5,6 +5,7 @@ import { LiveUpdate } from '@capawesome/capacitor-live-update';
 import { AlertInput } from '@ionic/angular';
 
 @Component({
+  standalone: false,
   selector: 'app-live-update',
   templateUrl: './live-update.page.html',
   styleUrls: ['./live-update.page.scss'],

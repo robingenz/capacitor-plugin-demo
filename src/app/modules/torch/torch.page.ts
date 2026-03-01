@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Torch } from '@capawesome/capacitor-torch';
 
 @Component({
+  standalone: false,
   selector: 'app-torch',
   templateUrl: './torch.page.html',
   styleUrls: ['./torch.page.scss'],

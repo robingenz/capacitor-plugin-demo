@@ -3,6 +3,7 @@ import { AppUpdate, AppUpdateInfo } from '@capawesome/capacitor-app-update';
 import { Platform } from '@ionic/angular';
 
 @Component({
+  standalone: false,
   selector: 'app-app-update',
   templateUrl: './app-update.page.html',
   styleUrls: ['./app-update.page.scss'],

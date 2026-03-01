@@ -3,6 +3,7 @@ import { Capacitor, PluginListenerHandle } from '@capacitor/core';
 import { ScreenOrientation } from '@capawesome/capacitor-screen-orientation';
 
 @Component({
+  standalone: false,
   selector: 'app-screen-orientation',
   templateUrl: './screen-orientation.page.html',
   styleUrls: ['./screen-orientation.page.scss'],

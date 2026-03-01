@@ -6,6 +6,7 @@ import { Cloudinary, ResourceType } from '@capawesome/capacitor-cloudinary';
 import { FilePicker, PickedFile } from '@capawesome/capacitor-file-picker';
 
 @Component({
+  standalone: false,
   selector: 'app-cloudinary',
   templateUrl: './cloudinary.page.html',
   styleUrls: ['./cloudinary.page.scss'],

@@ -3,6 +3,7 @@ import { UntypedFormControl, UntypedFormGroup } from '@angular/forms';
 import { Posthog } from '@capawesome/capacitor-posthog';
 
 @Component({
+  standalone: false,
   selector: 'app-posthog',
   templateUrl: './posthog.page.html',
   styleUrls: ['./posthog.page.scss'],

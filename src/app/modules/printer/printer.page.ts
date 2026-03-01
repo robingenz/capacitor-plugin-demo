@@ -3,6 +3,7 @@ import { Printer } from '@capawesome-team/capacitor-printer';
 import { FilePicker } from '@capawesome/capacitor-file-picker';
 
 @Component({
+  standalone: false,
   selector: 'app-printer',
   templateUrl: './printer.page.html',
   styleUrls: ['./printer.page.scss'],

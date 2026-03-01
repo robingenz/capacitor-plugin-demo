@@ -2,6 +2,7 @@ import { Component, NgZone, OnInit } from '@angular/core';
 import { Wifi } from '@capawesome-team/capacitor-wifi';
 
 @Component({
+  standalone: false,
   selector: 'app-wifi',
   templateUrl: './wifi.page.html',
   styleUrls: ['./wifi.page.scss'],

@@ -8,6 +8,7 @@ import {
 } from '@capawesome-team/capacitor-bluetooth-low-energy';
 
 @Component({
+  standalone: false,
   selector: 'app-bluetooth-low-energy-device',
   templateUrl: './bluetooth-low-energy-device.component.html',
   styleUrls: ['./bluetooth-low-energy-device.component.scss'],

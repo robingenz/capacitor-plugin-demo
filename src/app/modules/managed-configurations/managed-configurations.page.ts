@@ -3,6 +3,7 @@ import { ManagedConfigurations } from '@capawesome/capacitor-managed-configurati
 import { Platform } from '@ionic/angular';
 
 @Component({
+  standalone: false,
   selector: 'app-managed-configurations',
   templateUrl: './managed-configurations.page.html',
   styleUrls: ['./managed-configurations.page.scss'],

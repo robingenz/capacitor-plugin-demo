@@ -4,6 +4,7 @@ import { Filesystem } from '@capacitor/filesystem';
 import { PhotoEditor } from '@capawesome/capacitor-photo-editor';
 
 @Component({
+  standalone: false,
   selector: 'app-photo-editor',
   templateUrl: './photo-editor.page.html',
   styleUrls: ['./photo-editor.page.scss'],

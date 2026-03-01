@@ -4,6 +4,7 @@ import { FileOpener } from '@capawesome-team/capacitor-file-opener';
 import { FilePicker } from '@capawesome/capacitor-file-picker';
 
 @Component({
+  standalone: false,
   selector: 'app-file-opener',
   templateUrl: './file-opener.page.html',
   styleUrls: ['./file-opener.page.scss'],

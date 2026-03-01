@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { BatteryOptimization } from '@capawesome-team/capacitor-android-battery-optimization';
 
 @Component({
+  standalone: false,
   selector: 'app-android-battery-optimization',
   templateUrl: './android-battery-optimization.page.html',
   styleUrls: ['./android-battery-optimization.page.scss'],

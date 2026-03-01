@@ -4,6 +4,7 @@ import { PluginListenerHandle } from '@capacitor/core';
 import { BackgroundTask } from '@capawesome/capacitor-background-task';
 
 @Component({
+  standalone: false,
   selector: 'app-background-task',
   templateUrl: './background-task.page.html',
   styleUrls: ['./background-task.page.scss'],
