@@ -17,16 +17,16 @@ const routes: Routes = [
   {
     path: 'android-battery-optimization',
     loadChildren: () =>
-      import(
-        './modules/android-battery-optimization/android-battery-optimization.module'
-      ).then(m => m.AndroidBatteryOptimizationPageModule),
+      import('./modules/android-battery-optimization/android-battery-optimization.module').then(
+        m => m.AndroidBatteryOptimizationPageModule,
+      ),
   },
   {
     path: 'android-foreground-service',
     loadChildren: () =>
-      import(
-        './modules/android-foreground-service/android-foreground-service.module'
-      ).then(m => m.AndroidForegroundServicePageModule),
+      import('./modules/android-foreground-service/android-foreground-service.module').then(
+        m => m.AndroidForegroundServicePageModule,
+      ),
   },
   {
     path: 'background-task',
@@ -104,9 +104,9 @@ const routes: Routes = [
   {
     path: 'managed-configurations',
     loadChildren: () =>
-      import(
-        './modules/managed-configurations/managed-configurations.module'
-      ).then(m => m.ManagedConfigurationsPageModule),
+      import('./modules/managed-configurations/managed-configurations.module').then(
+        m => m.ManagedConfigurationsPageModule,
+      ),
   },
   {
     path: 'photo-editor',
